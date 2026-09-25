@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P+T4rtqsJjQmd5vshHxq57fhZTeRLuh/dPygWU5NYbs=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P+T4rtqsJjQmd5vshHxq57fhZTeRLuh/dPygWU5NYbs=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI=' 'sha256-wiagW86IwkJYIG852J0Bg3Pwl5A7qg0LlWVgEQCtRy0='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://earthquake.usgs.gov; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Plantão de fenômenos naturais e monitoramento do El Niño 2026–27, em português.">
 <title>Painel Terra e Clima</title>
@@ -161,6 +161,15 @@ a{color:var(--cool)}
 .evm.sel .bg{stroke:#fff;stroke-width:2.5}
 .evm:focus{outline:none}.evm:focus-visible .bg{stroke:var(--warm);stroke-width:3}
 .evlabel{font:600 10px var(--mono);fill:var(--ink);paint-order:stroke;stroke:#07121B;stroke-width:3px}
+/* sismos ao vivo */
+.eqlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px 18px}
+.eqrow{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.eqrow:hover .eqgo{color:var(--ink)}
+.eqmag{font:700 1rem/1 var(--mono);color:#1b0f00;text-align:center;padding:8px 0;border-radius:4px}
+.eqplace{display:grid;gap:2px;min-width:0}
+.eqplace b{font-weight:600;font-size:.92rem;overflow-wrap:anywhere}
+.eqplace small{font:500 .75rem/1.3 var(--mono);color:var(--muted)}
+.eqgo{font:500 .72rem/1 var(--mono);color:var(--cool)}
 footer{font-size:.8rem;color:var(--muted);display:grid;gap:8px;border-top:1px solid var(--line);padding-top:18px}
 footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 .sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
@@ -178,14 +187,14 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <span class="live"><i></i>Ao vivo</span>
     <span class="stamp" id="stamp"></span>
     <nav aria-label="Seções">
-      <a href="#mapa">Mapa</a><a href="#plantao">Plantão</a><a href="#boletins">Boletins</a><a href="#previsao">Previsão</a><a href="#imagens">Imagens</a><a href="#noticias">Notícias</a>
+      <a href="#mapa">Mapa</a><a href="#plantao">Plantão</a><a href="#sismos">Sismos</a><a href="#boletins">Boletins</a><a href="#previsao">Previsão</a><a href="#imagens">Imagens</a><a href="#noticias">Notícias</a>
     </nav>
   </div>
 </div>
 
 <div class="wrap">
   <div class="head">
-    <div class="lbl">Monitoramento de fenômenos naturais · atualizado duas vezes por dia</div>
+    <div class="lbl">Monitoramento de fenômenos naturais · plantão a cada 6 horas · sismos ao vivo</div>
     <h1>O planeta hoje: <span id="headline"></span></h1>
     <div class="counts" id="counts"></div>
     <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b style="color:var(--hot)">+3,0 °C</b> no Pacífico.</p>
@@ -197,6 +206,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
         <div class="lbl" style="align-self:center">Mapa global · eventos e El Niño</div>
         <div class="layers" role="group" aria-label="Camadas do mapa">
           <button type="button" id="ly-ev" aria-pressed="true" data-layer="ev">Eventos</button>
+          <button type="button" id="ly-eq" aria-pressed="true" data-layer="eq">Sismos</button>
           <button type="button" id="ly-nino" aria-pressed="true" data-layer="nino">Oceano</button>
           <button type="button" id="ly-rain" aria-pressed="true" data-layer="rain">Chuva</button>
           <button type="button" id="ly-dry" aria-pressed="true" data-layer="dry">Seca</button>
@@ -225,11 +235,13 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
           <text x="6" y="230" fill="#4d6b80" font-size="10" font-family="JetBrains Mono, monospace">EQUADOR</text>
           <g id="g-nino2" class="nbox"></g>
           <g id="g-mk"></g>
+          <g id="g-eq"></g>
           <g id="g-ev"></g>
         </svg>
       </div>
       <div class="maplegend">
         <span>Ícones = eventos do plantão</span>
+        <span><i style="background:var(--quake)"></i>Sismo M4,5+ nas últimas 24 h (ao vivo)</span>
         <span><i class="sq" style="background:var(--hot)"></i>Niño 3.4 medido</span>
         <span><i class="sq" style="background:var(--hot2)"></i>Niño 1+2 medido</span>
         <span><i style="background:var(--cool)"></i>Mais chuva</span>
@@ -248,6 +260,12 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
       <div class="chips" role="group" aria-label="Filtrar por tipo" id="chips"></div>
     </div>
     <div class="evs" id="evs"></div>
+  </section>
+
+  <section id="sismos" class="panel card" aria-label="Terremotos ao vivo">
+    <div class="sechead"><h2>Terremotos ao vivo</h2><span class="lbl" id="eq-stamp">USGS · M4,5+ · últimas 24 h</span></div>
+    <p class="note" id="eq-status">Carregando dados do USGS…</p>
+    <div class="eqlist" id="eq-list"></div>
   </section>
 
   <div class="sechead" style="border-top:1px solid var(--line);padding-top:20px"><h2>Destaque: El Niño 2026–27</h2><span class="lbl">NOAA · IRI · set/2026</span></div>
@@ -800,6 +818,67 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   var ly=document.getElementById("ly-ev");
   if(ly)ly.addEventListener("click",function(){g.classList.toggle("hide",ly.getAttribute("aria-pressed")!=="true");});
   if(evs.length)show(evs[0],false);
+})();
+</script>
+<script>
+(function(){
+  "use strict";
+  var FEED="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson";
+  var SITE="https://farincal.github.io/painel-terra-clima/";
+  var NS="http://www.w3.org/2000/svg";
+  var g=document.getElementById("g-eq"),list=document.getElementById("eq-list"),st=document.getElementById("eq-status"),stamp=document.getElementById("eq-stamp");
+  if(!g||!list||!st)return;
+  var onSite=/\.github\.io$/.test(location.hostname),timer=null;
+  function proj(lat,lon){var d=((lon+155)%360+540)%360-180;return [500+d*1000/360,220-(lat-5)*1000/360];}
+  function mk(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
+  function col(m){return m>=6?"var(--hot2)":m>=5?"var(--warm)":"var(--quake)";}
+  function ago(t){var m=Math.max(0,Math.round((Date.now()-t)/60000));return m<60?"há "+m+" min":"há "+Math.floor(m/60)+" h"+(m%60?" "+(m%60)+" min":"");}
+  function fmtM(m){return m.toFixed(1).replace(".",",");}
+  function safe(u){try{var x=new URL(u);return x.protocol==="https:"&&x.hostname==="earthquake.usgs.gov"?x.href:null;}catch(e){return null;}}
+  function render(fc){
+    var qs=((fc&&fc.features)||[]).map(function(f){
+      var p=f&&f.properties||{},c=f&&f.geometry&&f.geometry.coordinates||[];
+      return {m:+p.mag,t:+p.time,place:String(p.place||"Local não informado").slice(0,90),url:safe(p.url),lon:+c[0],lat:+c[1],dep:+c[2]};
+    }).filter(function(q){return isFinite(q.m)&&isFinite(q.t)&&isFinite(q.lat)&&isFinite(q.lon)&&Math.abs(q.lat)<=90&&Math.abs(q.lon)<=180;});
+    g.textContent="";
+    qs.slice().sort(function(a,b){return a.m-b.m;}).forEach(function(q){
+      var p=proj(q.lat,q.lon);
+      var c=document.createElementNS(NS,"circle");
+      c.setAttribute("cx",p[0]);c.setAttribute("cy",p[1]);c.setAttribute("r",Math.max(2.5,2.5+(q.m-4.5)*2.4));
+      c.setAttribute("fill",col(q.m));c.setAttribute("fill-opacity",".55");c.setAttribute("stroke",col(q.m));c.setAttribute("stroke-width","1");
+      var ti=document.createElementNS(NS,"title");ti.textContent="M"+fmtM(q.m)+" · "+q.place+" · "+ago(q.t);c.appendChild(ti);
+      g.appendChild(c);
+    });
+    list.textContent="";
+    var top=qs.slice().sort(function(a,b){return b.m-a.m||b.t-a.t;}).slice(0,10);
+    top.forEach(function(q){
+      var row=mk(q.url?"a":"div","eqrow");
+      if(q.url){row.href=q.url;row.target="_blank";row.rel="noopener noreferrer";}
+      var b=mk("span","eqmag",fmtM(q.m));b.style.background=col(q.m);if(q.m>=6)b.style.color="#fff";row.appendChild(b);
+      var mid=mk("span","eqplace");mid.appendChild(mk("b",null,q.place));mid.appendChild(mk("small",null,ago(q.t)+(isFinite(q.dep)?" · "+Math.round(q.dep)+" km de profundidade":"")));row.appendChild(mid);
+      if(q.url)row.appendChild(mk("span","eqgo","USGS ↗"));
+      list.appendChild(row);
+    });
+    var max=top[0];
+    st.textContent=qs.length?(qs.length+" terremotos de magnitude 4,5 ou mais nas últimas 24 horas. Maior: M"+fmtM(max.m)+", "+max.place+"."):"Nenhum terremoto de magnitude 4,5 ou mais nas últimas 24 horas.";
+    if(stamp)stamp.textContent="USGS · ao vivo · atualizado "+new Date().toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+  }
+  function fail(){
+    st.textContent="";
+    if(onSite){st.textContent="Não foi possível carregar os dados do USGS agora. Nova tentativa em 5 minutos.";return;}
+    st.appendChild(document.createTextNode("Os terremotos ao vivo aparecem no site público: "));
+    var a=mk("a",null,"farincal.github.io/painel-terra-clima ↗");a.href=SITE;a.target="_blank";a.rel="noopener noreferrer";st.appendChild(a);
+  }
+  function load(){
+    if(!window.fetch){fail();return;}
+    fetch(FEED,{cache:"no-store",credentials:"omit",referrerPolicy:"no-referrer"})
+      .then(function(r){if(!r.ok)throw new Error("http");return r.json();})
+      .then(function(j){render(j);if(!timer)timer=setInterval(load,5*60*1000);})
+      .catch(function(){fail();if(onSite&&!timer)timer=setInterval(load,5*60*1000);});
+  }
+  var ly=document.getElementById("ly-eq");
+  if(ly)ly.addEventListener("click",function(){g.classList.toggle("hide",ly.getAttribute("aria-pressed")!=="true");});
+  load();
 })();
 </script>
 
