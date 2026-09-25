@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://farincal.github.io/painel-terra-clima/sitemap.xml
