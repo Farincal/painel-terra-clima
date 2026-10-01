@@ -226,7 +226,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <div class="lbl">Monitoramento de fenômenos naturais · plantão a cada 6 horas · sismos ao vivo</div>
     <h1>O planeta hoje: <span id="headline"></span></h1>
     <div class="counts" id="counts"></div>
-    <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b id="nino-val" style="color:var(--hot)">+3,0 °C</b> no Pacífico.</p>
+    <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b id="nino-val" style="color:var(--hot)">+3,1 °C</b> no Pacífico.</p>
   </div>
 
   <section id="mapa" class="mapgrid" aria-label="Mapa de monitoramento">
@@ -321,7 +321,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <article class="panel bull">
       <header><h3>Boletim oceânico</h3><span class="sev r">Extremo</span></header>
       <div class="kv">
-        <span>Niño 3.4 · semana 16/09</span><b class="h">+3,0°</b>
+        <span>Niño 3.4 · semana 23/09</span><b class="h">+3,1°</b>
         <span>Niño 3.4 · agosto</span><b class="h">+2,52°</b>
         <span>Niño 1+2 · 6 semanas</span><b class="h">&gt;+4°</b>
         <span>Subsuperfície 50–150 m</span><b class="h">&gt;+8°</b>
@@ -406,6 +406,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   <section id="noticias" class="panel card" aria-label="Notícias">
     <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Setembro 2026</span></div>
     <div class="feed">
+      <div class="item"><time datetime="2026-09-28">28 SET</time><div><h3>Niño 3.4 chega a +3,1 °C, recorde da série</h3><p>Semana de 23/09 é a mais quente desde 1981. Alta de 0,5 °C em quatro semanas.</p></div></div>
       <div class="item"><time datetime="2026-09-22">22 SET</time><div><h3>Atlântico sem nenhum furacão até o pico da temporada</h3><p>Início de temporada mais tardio desde o começo da era dos satélites, efeito típico do El Niño sobre os ventos.</p></div></div>
       <div class="item"><time datetime="2026-09-21">21 SET</time><div><h3>IRI: todos os 22 modelos preveem El Niño “muito forte”</h3><p>Niño 3.4 atinge +3,0 °C. Probabilidade de 100% até fevereiro de 2027.</p></div></div>
       <div class="item"><time datetime="2026-09-10">10 SET</time><div><h3>NOAA mantém alerta e eleva chance de evento histórico</h3><p>Mais de 90% de chance de “muito forte” e 75% de superar todos os eventos desde 1950 em out–dez.</p></div></div>
@@ -428,110 +429,216 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-09-25T12:00:00+02:00",
- "manchete": "três furacões no Pacífico, Nolo ameaça o Havaí e o RS espera nova chuva forte",
+ "atualizado": "2026-10-01T05:30:00+02:00",
+ "manchete": "furacão Rachel fecha portos no México, Valência e Catalunha encaram chuva forte e Tailândia chega a 40 mortos",
  "eventos": [
-  {
-   "id": "polo",
-   "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Furacão Polo segue como categoria 4 ao largo do México",
-   "local": "Pacífico, sudoeste de Manzanillo, México",
-   "data": "2026-09-24",
-   "lat": 17.1,
-   "lon": -105.5,
-   "resumo": "A cerca de 250 km de Manzanillo, move-se para oeste. O NHC prevê que se aproxime da Baja California como furacão no início da próxima semana.",
-   "pontos": [
-    "Ventos sustentados de 240 km/h e pressão de 935 hPa no boletim de quinta à tarde.",
-    "No pico chegou à categoria 5, a segunda mais forte já registrada no Pacífico leste pela pressão.",
-    "Chuva de 50 a 100 mm, com picos de 150 mm, em Michoacán, Colima, Jalisco e Nayarit.",
-    "Portos de Acapulco e Zihuatanejo fechados e aulas suspensas em Guerrero e Michoacán."
-   ],
-   "fonte": "NHC / CBS News / Rio Times",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP2.shtml",
-   "rotulo": "Polo",
-   "lado": "r"
-  },
   {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "RS contabiliza estragos e espera nova chuva forte",
+   "titulo": "Temporais afetam mais de 68 mil pessoas no Rio Grande do Sul",
    "local": "Rio Grande do Sul, Brasil",
-   "data": "2026-09-24",
-   "lat": -30.9,
-   "lon": -52.0,
-   "resumo": "Temporais e enchentes já afetaram mais de 527 mil pessoas. A MetSul prevê novo episódio de chuva volumosa entre domingo (27/09) e terça (29/09).",
+   "data": "2026-09-30",
+   "lat": -29.2,
+   "lon": -54.9,
+   "resumo": "Chuva, granizo e cheias já afetam 68,5 mil pessoas em 130 cidades do Rio Grande do Sul. Santiago é a mais atingida, com 26 mil afetados pelo granizo.",
    "pontos": [
-    "4 mortes e 1 desaparecido; cerca de 3.900 pessoas fora de casa.",
-    "Mais de 110 mil imóveis ficaram sem energia; 2.195 casas destelhadas.",
-    "Nova chuva pode somar 100 a 200 mm no oeste gaúcho, com risco de novas cheias.",
-    "O alerta de cheia do Guaíba em Porto Alegre foi prorrogado até sexta (25/09)."
+    "6.396 desalojados, 13 desabrigados e 4 feridos; nenhuma morte.",
+    "8.282 casas danificadas, 398 delas destelhadas; 43 escolas atingidas.",
+    "Rios Jacuí e Taquari em cheia; risco alto de inundação do rio Uruguai em Iraí (30/09).",
+    "Temporais seguem nesta quarta (30/09) em PR, SC, MS e parte de SP."
    ],
-   "fonte": "NC News / MetSul / POA 24 Horas",
-   "url": "https://metsul.com/novo-episodio-de-chuva-volumosa-pode-trazer-ate-200-mm/",
-   "rotulo": "Enchentes RS",
+   "fonte": "Defesa Civil RS via ND+",
+   "url": "https://ndmais.com.br/tempo/temporais-afetam-mais-de-68-mil-pessoas-no-rio-grande-do-sul-confirma-defesa-civil/",
+   "rotulo": "Chuva RS",
    "lado": "l"
+  },
+  {
+   "id": "rachel",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Furacão Rachel fecha portos e destrói praia em Colima",
+   "local": "Pacífico, costa oeste do México",
+   "data": "2026-10-01",
+   "lat": 19.5,
+   "lon": -108.6,
+   "resumo": "O furacão Rachel, de categoria 1, avança paralelo à costa do Pacífico mexicano e fechou os portos de Manzanillo, Lázaro Cárdenas e Zihuatanejo. Pode chegar à categoria 3 em alto-mar antes de se afastar do país.",
+   "pontos": [
+    "Ventos de 140 km/h e rajadas de 170 km/h, a 315 km de Cabo Corrientes (01/10, 1h UTC).",
+    "Move-se para noroeste a 13 km/h; pressão de 978 hPa.",
+    "Ondas de até 8 m danificaram cerca de 25 restaurantes e hotéis na praia El Paraíso, em Colima.",
+    "Alertas de chuva forte em Jalisco, Michoacán, Colima e Guerrero."
+   ],
+   "fonte": "SMN / NHC via Uno TV",
+   "url": "https://unotv.com/nacional/rachel-en-vivo",
+   "rotulo": "Furacão Rachel",
+   "lado": "b"
+  },
+  {
+   "id": "india-nepal",
+   "tipo": "enchente",
+   "gravidade": "critico",
+   "titulo": "Enchentes matam mais de 100 na Índia e no Nepal",
+   "local": "Norte da Índia e Nepal",
+   "data": "2026-09-28",
+   "lat": 27.5,
+   "lon": 83.5,
+   "resumo": "Chuvas intensas mataram 81 pessoas em Uttar Pradesh, na Índia, e 21 no Nepal. Grandes rios da região seguem acima do nível de perigo.",
+   "pontos": [
+    "Uttar Pradesh: 81 mortos e 62 feridos em três dias; escolas fechadas em vários distritos.",
+    "Nepal: 21 mortos, 5 desaparecidos e cerca de 2 mil pessoas retiradas.",
+    "Odisha retirou mais de 70 mil pessoas de áreas baixas.",
+    "Ganges, Gandak, Kosi, Bagmati e Narmada acima do nível de perigo."
+   ],
+   "fonte": "Malay Mail / Al Jazeera / SANA",
+   "url": "https://www.malaymail.com/news/world/2026/09/28/indias-uttar-pradesh-reels-from-heavy-rains-and-floods-that-leave-81-dead/236913",
+   "rotulo": "Chuva Índia/Nepal",
+   "lado": "t"
+  },
+  {
+   "id": "bangkok",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Enchentes na Tailândia já matam 40; Chao Phraya sobe",
+   "local": "Bangkok e bacia do Chao Phraya, Tailândia",
+   "data": "2026-09-30",
+   "lat": 14.35,
+   "lon": 100.55,
+   "resumo": "As enchentes na Tailândia já deixaram 40 mortos, segundo o Ministério da Saúde. A água recua em Bangkok, mas seis províncias ao longo do Chao Phraya podem ver o rio subir até 60 cm.",
+   "pontos": [
+    "Vazão das represas chegou ao teto de 2.500 m³/s em 30/09.",
+    "Pico de 2.700 a 3.000 m³/s previsto na estação C.2 até 02/10.",
+    "Alerta em Chai Nat, Sing Buri, Ang Thong, Ayutthaya, Pathum Thani e Nonthaburi.",
+    "2.700 km² alagados; Toyota parou quatro fábricas."
+   ],
+   "fonte": "Bangkok Post / The Nation",
+   "url": "https://www.nationthailand.com/news/general/40071727",
+   "rotulo": "Chuva Tailândia",
+   "lado": "b"
+  },
+  {
+   "id": "leste-espanha",
+   "tipo": "outro",
+   "gravidade": "alto",
+   "titulo": "Valência no limite do alerta vermelho por chuva",
+   "local": "Valência, Castellón e Alicante, Espanha",
+   "data": "2026-10-01",
+   "lat": 39.3,
+   "lon": -0.3,
+   "resumo": "A Aemet mantém alerta laranja no litoral de Valência, sul de Castellón e norte de Alicante a partir das 14h desta quinta (01/10). A Generalitat diz que a situação está no limite do alerta vermelho e universidades suspenderam aulas presenciais à tarde.",
+   "pontos": [
+    "Até 160 mm em 12 horas e 60 mm em uma hora no litoral; o vermelho começa em 180 mm.",
+    "O modelo AROME indica até 250 mm perto de Jávea.",
+    "UPV, UCV e CEU passam aulas da tarde para o formato on-line.",
+    "Risco de granizo grande, rajadas fortes e enchentes repentinas até sexta (02/10)."
+   ],
+   "fonte": "Aemet via El Debate",
+   "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260930/clases-suspendidas-universidades-valencianas-este-jueves-1-octubre-ante-alerta-lluvias_464741.html",
+   "rotulo": "Chuva Valência",
+   "lado": "l"
+  },
+  {
+   "id": "polo",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Restos do Polo levam risco de enchente do Texas aos Grandes Lagos",
+   "local": "Texas, Oklahoma e Planícies, EUA",
+   "data": "2026-10-01",
+   "lat": 33.5,
+   "lon": -101.0,
+   "resumo": "A umidade recorde do Polo, que se desfez no México, desloca o risco de enchentes do sudoeste para as Planícies dos EUA. No Novo México, a represa McLeod rompeu e Rincon segue sob ordem de evacuação.",
+   "pontos": [
+    "Evacuação suspensa em Hatch, Garfield, Salem e Placitas; Rincon (250 moradores) segue alagada.",
+    "Bullhead City, no Arizona, somou 99 mm; Albuquerque passou de 50 mm.",
+    "Previsão de 75 a 125 mm em Dallas, Austin e San Antonio e do Kansas ao norte de Illinois.",
+    "Nesta quinta (01/10) o risco vai do Texas ao Michigan."
+   ],
+   "fonte": "Santa Fe New Mexican / weather.com",
+   "url": "https://www.santafenewmexican.com/las_cruces/local_news/evacuation-orders-lifted-in-southern-new-mexico-after-dam-breach/article_483d67a9-6b3c-404f-a8e0-46f418715780.html",
+   "rotulo": "Restos do Polo",
+   "lado": "r"
+  },
+  {
+   "id": "catalunha",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Catalunha volta ao alerta; Terres de l'Ebre em perigo alto",
+   "local": "Catalunha, Espanha",
+   "data": "2026-10-01",
+   "lat": 40.8,
+   "lon": 0.6,
+   "resumo": "A Proteção Civil da Catalunha ativou o plano Inuncat em alerta para as tempestades desta quinta (01/10). O pior deve cair nas Terres de l'Ebre, com mais de 90 mm em três horas.",
+   "pontos": [
+    "Pancadas de mais de 40 mm em 30 minutos e risco de granizo.",
+    "Pico entre 14h e 20h; à noite a chuva se concentra no vale do Ebro.",
+    "Barcelona deve ter só alerta amarelo.",
+    "Na terça (29/09), o Penedès somou até 120 mm e o metrô de Barcelona parou em parte."
+   ],
+   "fonte": "Meteocat via Betevé",
+   "url": "https://beteve.cat/medi-ambient/inuncat-alerta-previsio-pluja-torrencial-catalunya-1-octubre/",
+   "rotulo": "Chuva Catalunha",
+   "lado": "t"
+  },
+  {
+   "id": "calor-br",
+   "tipo": "calor",
+   "gravidade": "moderado",
+   "titulo": "Frente fria derruba o calor; Nordeste segue perto de 40 °C",
+   "local": "Sul, Sudeste, Centro-Oeste e Nordeste, Brasil",
+   "data": "2026-10-01",
+   "lat": -19.9,
+   "lon": -47.5,
+   "resumo": "Uma frente fria avança nesta quinta (01/10) pelo Sul, Sudeste e Centro-Oeste, com chuva forte e queda de temperatura. No interior do Nordeste, o calor continua perto de 40 °C.",
+   "pontos": [
+    "O alerta vermelho de onda de calor do Inmet em oito estados terminou na quarta (30/09).",
+    "Chuva moderada a forte em SP, MS, sul de GO e centro-leste de PR e SC.",
+    "Geada possível na sexta (02/10) nas serras do Sul; novo ciclone deve se formar no sábado.",
+    "Máximas perto de 40 °C no Piauí, oeste da Bahia e sul do Maranhão."
+   ],
+   "fonte": "Canal Rural / Inmet",
+   "url": "https://www.canalrural.com.br/previsao-do-tempo/outubro-comeca-com-frente-fria-chuva-forte-e-ciclone-veja-a-previsao/",
+   "rotulo": "Frente fria Brasil",
+   "lado": "r"
   },
   {
    "id": "nolo",
    "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Furacão Nolo ameaça o Havaí com enchentes catastróficas",
-   "local": "Sul da Big Island, Havaí, EUA",
-   "data": "2026-09-25",
-   "lat": 15.4,
-   "lon": -155.6,
-   "resumo": "Virou furacão categoria 1 a cerca de 385 km ao sul de South Point. Deve se intensificar rapidamente e virar furacão maior no fim de semana.",
-   "pontos": [
-    "Ventos de 130 km/h; move-se para norte-nordeste a 8 km/h.",
-    "Aviso de tempestade tropical e vigilância de furacão na Big Island; vigilância em Maui.",
-    "Previsão de 380 a 760 mm de chuva na Big Island, com picos de até 890 mm.",
-    "Pode ser o pior impacto de furacão na Big Island desde o Dot, em 1959."
-   ],
-   "fonte": "Hawaii News Now / The Weather Channel",
-   "url": "https://www.hawaiinewsnow.com/2026/09/25/nolo-now-hurricane-set-rapidly-intensify-it-nears-hawaii-island/",
-   "rotulo": "Nolo",
-   "lado": "b"
-  },
-  {
-   "id": "gonzalo",
-   "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tempestade Gonzalo se forma e atinge Cabo Verde",
-   "local": "Sul de Cabo Verde, Atlântico",
-   "data": "2026-09-25",
-   "lat": 13.7,
-   "lon": -22.3,
-   "resumo": "Formou-se ao sul-sudeste de Cabo Verde. Há aviso de tempestade tropical para todas as ilhas.",
+   "titulo": "Nolo se afasta do Havaí, mas pode voltar a ganhar força",
+   "local": "Pacífico, sudeste de French Frigate Shoals, Havaí, EUA",
+   "data": "2026-10-01",
+   "lat": 21.5,
+   "lon": -164.8,
+   "resumo": "A tempestade tropical Nolo está perto de French Frigate Shoals, a cerca de 1.300 km a noroeste do Havaí. Suas bandas de chuva fecharam a rodovia Kuhio em Kauai na quarta (30/09).",
    "pontos": [
-    "Ventos de 75 km/h, a cerca de 260 km das ilhas mais ao sul.",
-    "Chuva de 30 a 75 mm nas ilhas do leste entre sexta e sábado.",
-    "Litoral de Guiné-Bissau, Gâmbia e Senegal pode ter 50 a 100 mm.",
-    "Deve enfraquecer aos poucos a partir do fim de semana."
+    "Ventos de 85 km/h e pressão de 996 hPa (30/09, 21h UTC).",
+    "Quase parado, a 4 km/h para o sul; deve virar para oeste e acelerar.",
+    "Escola de Hanalei sem aulas; pancadas seguem em Kauai e Oahu nesta quinta (01/10).",
+    "Pode voltar a ser furacão no início de outubro."
    ],
-   "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPAT2.shtml",
-   "rotulo": "Gonzalo",
+   "fonte": "CPHC via Zoom Earth / Hawaii News Now",
+   "url": "https://zoom.earth/storms/nolo-2026/",
+   "rotulo": "Nolo",
    "lado": "l"
   },
   {
    "id": "surigae",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Tempestade Surigae (Queenie) entra na área das Filipinas",
-   "local": "Mar das Filipinas, leste de Luzon",
-   "data": "2026-09-24",
-   "lat": 18.0,
-   "lon": 133.0,
-   "resumo": "Estava a cerca de 1.225 km a leste do norte de Luzon. A PAGASA prevê que vire tufão no fim de semana.",
+   "titulo": "Surigae enfraquece perto das ilhas Izu",
+   "local": "Sul do Japão, ilhas Izu e Kanto",
+   "data": "2026-10-01",
+   "lat": 33.1,
+   "lon": 139.8,
+   "resumo": "O Surigae, já bem mais fraco, passa pelo sul das ilhas Izu na madrugada desta quinta (01/10). Deve virar ciclone extratropical na sexta (02/10).",
    "pontos": [
-    "Ventos de 75 km/h, com rajadas de 90 km/h.",
-    "Deve virar tempestade tropical severa na sexta (25/09).",
-    "Por enquanto não afeta diretamente o tempo nas Filipinas."
+    "Pressão de 1.000 hPa e ventos de 65 km/h, com rajadas de 90 km/h (30/09, 9h).",
+    "Move-se para nordeste a 15 km/h.",
+    "Hachijo registrou 39 mm em uma hora na madrugada de 30/09.",
+    "Kanto deve ter pouco impacto direto."
    ],
-   "fonte": "PAGASA via Philstar",
-   "url": "https://www.philstar.com/headlines/2026/09/25/2558779/tropical-storm-queenie-enters-par",
+   "fonte": "Weathernews",
+   "url": "https://weathernews.jp/news/202609/300071/",
    "rotulo": "Surigae",
    "lado": "r"
   },
@@ -539,98 +646,40 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "kilauea",
    "tipo": "vulcao",
    "gravidade": "moderado",
-   "titulo": "Kīlauea volta a transbordar lava antes da chegada do Nolo",
+   "titulo": "Kīlauea tem mais de 100 transbordamentos de lava",
    "local": "Havaí, EUA",
-   "data": "2026-09-24",
+   "data": "2026-09-30",
    "lat": 19.4,
    "lon": -155.3,
-   "resumo": "Nível de alerta WATCH e código laranja para aviação. O parque nacional fechou por completo às 17h de quinta por causa do Nolo.",
+   "resumo": "O Kīlauea segue em alerta WATCH e código laranja para aviação, com mais de 100 pequenos transbordamentos de lava na boca sul entre 28 e 29/09. Um novo episódio de fontes de lava, o 55º, é possível.",
    "pontos": [
-    "22 transbordamentos de lava desde 22/09, com fontes de 5 a 9 metros.",
-    "Leve inflação do cume nas últimas 24 horas.",
-    "Erupção episódica em curso desde dezembro de 2024."
+    "Transbordamentos seguem nas bocas norte e sul (30/09).",
+    "O episódio 54 terminou em 25/08, após cerca de 9 horas.",
+    "Emissão de SO₂ de 1.000 a 5.000 toneladas por dia entre episódios."
    ],
    "fonte": "USGS HVO",
-   "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-09-24T17:15:03+00:00",
+   "url": "https://volcanoes.usgs.gov/hans-public/volcano/hi3",
    "rotulo": "Kīlauea",
    "lado": "t"
   },
   {
-   "id": "espanha",
-   "tipo": "calor",
+   "id": "noreaster",
+   "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Calor fora de época na Espanha e aviso nas Canárias",
-   "local": "Canárias e interior da Espanha",
-   "data": "2026-09-25",
-   "lat": 28.3,
-   "lon": -15.6,
-   "resumo": "A AEMET ativou aviso amarelo por calor nas Canárias nesta sexta. No interior, o calor segue até sábado e o outono chega na segunda (28/09).",
+   "titulo": "Nor'easter se afasta do nordeste dos EUA",
+   "local": "Nova Jersey a Nova Inglaterra, EUA",
+   "data": "2026-09-28",
+   "lat": 40.6,
+   "lon": -73.8,
+   "resumo": "A tempestade costeira que alagou o nordeste dos EUA se afastou para o mar depois de segunda (28/09). Deixou um morto no Brooklyn e mais de 130 mil clientes sem luz no pico.",
    "pontos": [
-    "Máximas de até 38 °C em Gran Canaria, Tenerife, Lanzarote, Fuerteventura e La Gomera.",
-    "Calima e tempestades isoladas com rajadas muito fortes nas ilhas.",
-    "Madri com 30 a 35 °C até sábado e cerca de 25 °C na segunda."
+    "Rajadas chegaram a 114 km/h em Cape Cod e Block Island.",
+    "New Bedford somou 164 mm de chuva; Boston, quase 75 mm.",
+    "Tempo firme voltou à região na terça (29/09)."
    ],
-   "fonte": "AEMET via Libertad Digital / Que.es",
-   "url": "https://www.libertaddigital.com/canarias/2026-09-25/aemet-activa-el-aviso-amarillo-con-maximas-de-hasta-38-grados-en-canarias-7465716/",
-   "rotulo": "Calor Canárias",
-   "lado": "b"
-  },
-  {
-   "id": "tonga",
-   "tipo": "terremoto",
-   "gravidade": "moderado",
-   "titulo": "Terremoto de magnitude 5,7 em Tonga",
-   "local": "180 km a noroeste de Hihifo, Tonga",
-   "data": "2026-09-23",
-   "lat": -14.9,
-   "lon": -175.1,
-   "resumo": "Segue como o mais forte das últimas 48 horas no mundo, a 10 km de profundidade. Alerta verde do USGS.",
-   "pontos": [
-    "Sem alerta de tsunami.",
-    "Nenhum dano foi relatado nas fontes consultadas."
-   ],
-   "fonte": "USGS",
-   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx3m",
-   "rotulo": "M5,7 Tonga",
-   "lado": "b"
-  },
-  {
-   "id": "odalys",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Furacão Odalys no Pacífico leste",
-   "local": "Pacífico leste, em alto-mar",
-   "data": "2026-09-24",
-   "lat": 16.8,
-   "lon": -124.9,
-   "resumo": "Categoria 1 a cerca de 1.700 km a oeste-sudoeste da Baja California. Não ameaça áreas habitadas.",
-   "pontos": [
-    "Ventos de 150 km/h e pressão de 976 hPa.",
-    "Deve virar para nordeste e norte na sexta e no sábado.",
-    "Umidade do Odalys e do Polo pode causar enchentes no sudoeste dos EUA."
-   ],
-   "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
-   "rotulo": "Odalys",
-   "lado": "l"
-  },
-  {
-   "id": "fay",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Tempestade Fay no Atlântico central",
-   "local": "Atlântico central, sudoeste dos Açores",
-   "data": "2026-09-24",
-   "lat": 29.8,
-   "lon": -41.8,
-   "resumo": "A cerca de 1.640 km a sudoeste dos Açores, sem ameaça a terra. Deve enfraquecer a partir de sexta.",
-   "pontos": [
-    "Ventos de 85 km/h e pressão de 1005 hPa.",
-    "Move-se para oeste a 9 km/h."
-   ],
-   "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPAT1.shtml",
-   "rotulo": "Fay",
+   "fonte": "FOX Weather / AP",
+   "url": "https://www.foxweather.com/weather-news/bryan-norcross-exclusive-analysis-sept-28-2026",
+   "rotulo": "Nor'easter EUA",
    "lado": "r"
   }
  ]
@@ -969,6 +1018,5 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
 </body>
 </html>
