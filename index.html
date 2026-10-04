@@ -45,6 +45,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -454,28 +455,28 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-04T05:30:00+02:00",
- "manchete": "Catalunha conta os estragos do minifuracão, temporais ameaçam o Sul do Brasil na eleição e Nolo corre para a linha do dia",
+ "atualizado": "2026-10-04T11:30:00+02:00",
+ "manchete": "temporal mata dois na Catalunha, o Sul do Brasil vota sob alerta de tempestade e Nolo cruza a linha do dia",
  "eventos": [
   {
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Minifuracão mediterrâneo inunda a região de Barcelona",
+   "titulo": "Temporal na Catalunha deixa dois mortos e Besòs no limite",
    "local": "Catalunha, Espanha",
    "data": "2026-10-04",
    "lat": 41.4,
    "lon": 2.1,
-   "resumo": "A chuva torrencial da noite de sábado (03/10) gerou 3.042 chamadas ao 112 na Catalunha, a maioria por alagamentos na região de Barcelona. Até as 3h de domingo os bombeiros não registravam feridos graves.",
+   "resumo": "O temporal na Catalunha deixou dois mortos neste domingo (04/10), em Tordera e em Montornès del Vallès, e uma pessoa segue desaparecida em Pineda de Mar. O rio Besòs chegou a 937 m³/s e as chuvas avançam para Girona.",
    "pontos": [
-    "Acumulados até as 22h20 de sábado: mais de 200 mm em L'Hospitalet, 139 mm em Cornellà e 106 mm em Barcelona.",
-    "3.042 chamadas ao 112 até as 3h de domingo, 2.252 por alagamento; 991 vieram de Barcelona e 683 de L'Hospitalet.",
-    "Os bombeiros atenderam 682 ocorrências, 439 delas no sul da região metropolitana.",
-    "A estrada N-II foi cortada entre Montgat e El Masnou; Aemet mantinha aviso vermelho no litoral de Barcelona até as 12h de domingo."
+    "Em Tordera, um homem foi atingido por um muro num camping; em Montornès, um homem ficou preso numa garagem.",
+    "Acumulados: 248 mm em Granollers, 244 mm em Mataró e cerca de 192 mm no Raval, em Barcelona.",
+    "O 112 recebeu 4.585 chamadas até as 5h, 3.760 por alagamento; o plano Inuncat segue em emergência.",
+    "Besòs bateu 937 m³/s às 7h em Santa Coloma de Gramenet; alerta SE-Alert em Barcelona, Sant Adrià, Montcada e Santa Coloma."
    ],
-   "fonte": "Bombers / 112 via Europa Press (Infobae) e Aemet",
-   "url": "https://www.infobae.com/espana/agencias/2026/10/04/los-bombers-reciben-en-cataluna-682-avisos-de-inundacion-ninguno-con-heridos-graves/",
-   "rotulo": "Barcelona alagada",
+   "fonte": "EFE/TV3 via Infobae, ElNacional.cat e Catalunya Press",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/04/el-fuerte-temporal-en-cataluna-provoca-dos-muertos-en-tordera-y-en-montornes-del-valles/",
+   "rotulo": "Mortes Catalunha",
    "lado": "t"
   },
   {
@@ -545,20 +546,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "nolo",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Nolo, de categoria 3, corre para a linha do dia",
+   "titulo": "Nolo cruza a linha do dia na categoria 3",
    "local": "Pacífico, noroeste do Havaí, EUA",
    "data": "2026-10-04",
-   "lat": 23.3,
-   "lon": -174.1,
-   "resumo": "O furacão Nolo chegou a ventos de 195 km/h, na categoria 3, e avança rápido para oeste no noroeste do Havaí. O CPHC prevê pico de cerca de 215 km/h e a travessia da linha internacional do dia nas próximas 24 horas.",
+   "lat": 23.6,
+   "lon": -176.7,
+   "resumo": "O furacão Nolo, de categoria 3, segue para oeste com ventos de 175 km/h a sudoeste da ilha Lisianski e deve cruzar a linha internacional do dia neste domingo. Não há mais avisos para as ilhas do Havaí.",
    "pontos": [
-    "Ventos de 195 km/h e pressão de 957 hPa (aviso 53A, 03/10 às 14h no Havaí).",
-    "Move-se para oeste a 32 km/h, na posição 23,3° N e 174,1° O.",
-    "Aviso de tempestade tropical de Maro Reef a Lisianski, nas ilhas do noroeste do Havaí.",
-    "Troca de parede do olho pode causar oscilações; enfraquecimento previsto do terceiro ao quinto dia."
+    "Ventos de 175 km/h e pressão de 963 hPa (aviso 55, 03/10 às 23h no Havaí).",
+    "Move-se para oeste a 29 km/h, a cerca de 385 km a sudoeste de Lisianski.",
+    "Pode voltar a se fortalecer em um ou dois dias e enfraquecer de forma abrupta no meio da semana.",
+    "Ondulações fortes seguem no monumento Papahānaumokuākea, com risco de inundar atóis baixos."
    ],
-   "fonte": "CPHC / NHC (aviso 53A)",
-   "url": "https://www.nhc.noaa.gov/",
+   "fonte": "CPHC (aviso 55)",
+   "url": "https://capeweather.com/hurricane-nolo-public-advisory-number-55/",
    "rotulo": "Furacão Nolo",
    "lado": "l"
   },
@@ -584,6 +585,27 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "l"
   },
   {
+   "id": "rachel",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Rachel volta à categoria 2 longe do México",
+   "local": "Pacífico, costa oeste do México",
+   "data": "2026-10-04",
+   "lat": 20.2,
+   "lon": -113.2,
+   "resumo": "O furacão Rachel voltou a ganhar força e tem ventos de 160 km/h, na categoria 2, longe da costa do México. O NHC prevê que ele siga devagar para oeste e enfraqueça aos poucos, sem ameaça a terra.",
+   "pontos": [
+    "Ventos de 160 km/h (85 nós) em 04/10, às 2h no horário das Montanhas (EUA).",
+    "Move-se para oés-noroeste a cerca de 7 km/h, na posição 20,2° N e 113,2° O.",
+    "Previsão de 130 km/h em 72 horas e de 85 km/h em cinco dias.",
+    "Ar mais seco e águas mais frias devem enfraquecer o sistema depois de três dias."
+   ],
+   "fonte": "NHC (discussão 29)",
+   "url": "https://capeweather.com/hurricane-rachel-forecast-discussion-number-29/",
+   "rotulo": "Furacão Rachel",
+   "lado": "b"
+  },
+  {
    "id": "calor-california",
    "tipo": "calor",
    "gravidade": "alto",
@@ -603,27 +625,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "url": "https://watchers.news/2026/10/03/california-heat-wave-triggers-heat-advisories-and-extreme-heat-warnings-through-october-8/",
    "rotulo": "Calor Califórnia",
    "lado": "l"
-  },
-  {
-   "id": "rachel",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Rachel perde força e quase para no Pacífico",
-   "local": "Pacífico, costa oeste do México",
-   "data": "2026-10-03",
-   "lat": 19.8,
-   "lon": -112.5,
-   "resumo": "O furacão Rachel caiu para ventos de 130 km/h, na categoria 1, e se arrasta a 7 km/h longe da costa do México. O NHC prevê enfraquecimento gradual pelos próximos cinco dias, sem ameaça a terra.",
-   "pontos": [
-    "Ventos de 130 km/h, rajadas de 155 km/h e pressão de 977 hPa (03/10, 21h UTC).",
-    "Move-se para oés-noroeste a 7 km/h.",
-    "Ventos de furacão até 74 km do centro; de tempestade, até 240 km.",
-    "Olho ficou maior e a parede interna sumiu, com cisalhamento e água mais fria na esteira do Polo."
-   ],
-   "fonte": "NHC (aviso 27)",
-   "url": "https://capeweather.com/hurricane-rachel-forecast-advisory-number-27/",
-   "rotulo": "Furacão Rachel",
-   "lado": "b"
   },
   {
    "id": "bangkok",
@@ -668,25 +669,25 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "r"
   },
   {
-   "id": "krakatau",
-   "tipo": "vulcao",
+   "id": "calor-china",
+   "tipo": "calor",
    "gravidade": "moderado",
-   "titulo": "Anak Krakatau forma duas ilhas novas após erupção",
-   "local": "Estreito de Sunda, Indonésia",
+   "titulo": "Calor recorde de outubro no sul da China",
+   "local": "Yunnan, Fujian e sul da China",
    "data": "2026-10-02",
-   "lat": -6.1,
-   "lon": 105.42,
-   "resumo": "Imagens de satélite mostram duas pequenas ilhas novas na caldeira do Anak Krakatau, na Indonésia, após a erupção de setembro. O vulcão está no nível 2 de 4, com zona de exclusão de 3 km.",
+   "lat": 26.9,
+   "lon": 102.9,
+   "resumo": "Uma onda de calor tardia bateu recordes de outubro em dezenas de estações do sul da China. Qiaojia, em Yunnan, chegou a 39,5 °C.",
    "pontos": [
-    "Uma ilha fica a cerca de 760 m a noroeste do vulcão; a outra, a 495 m a sudoeste.",
-    "A erupção de setembro durou 25 horas sem parar.",
-    "Cinco jornalistas e três tripulantes de barco são dados como mortos.",
-    "As ilhas podem sumir com a erosão, como em 1927."
+    "62 estações bateram o recorde de dia mais quente de outubro em 01/10.",
+    "Mais 18 recordes de máxima em 02/10; Yuanyang (Yunnan) marcou 39,4 °C.",
+    "Yongding, em Fujian, teve 39,1 °C.",
+    "O calor atinge Yunnan, Fujian, Jiangxi, Hunan, Guangxi e Guangdong."
    ],
-   "fonte": "Agência vulcanológica da Indonésia via Dawn",
-   "url": "https://dawn.com/news/2034235",
-   "rotulo": "Anak Krakatau",
-   "lado": "b"
+   "fonte": "The Watchers",
+   "url": "https://watchers.news/2026/10/03/october-heat-records-reported-across-southern-china-after-temperatures-reach-39-5c-103-1f/",
+   "rotulo": "Calor China",
+   "lado": "l"
   },
   {
    "id": "rincon-vieja",
@@ -1045,6 +1046,9 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
+
+
+
 
 </body>
 </html>
