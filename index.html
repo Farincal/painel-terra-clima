@@ -21,8 +21,6 @@
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
 
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -318,18 +316,18 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <div class="eqlist" id="eq-list"></div>
   </section>
 
-  <div class="sechead" style="border-top:1px solid var(--line);padding-top:20px"><h2>Destaque: El Niño 2026–27</h2><span class="lbl">NOAA · IRI · set/2026</span></div>
+  <div class="sechead" style="border-top:1px solid var(--line);padding-top:20px"><h2>Destaque: El Niño 2026–27</h2><span class="lbl">NOAA · IRI · out/2026</span></div>
 
   <section id="boletins" class="bulls" aria-label="Boletins">
     <article class="panel bull">
       <header><h3>Boletim oceânico</h3><span class="sev r">Extremo</span></header>
       <div class="kv">
-        <span>Niño 3.4 · semana 23/09</span><b class="h">+3,1°</b>
-        <span>Niño 3.4 · agosto</span><b class="h">+2,52°</b>
-        <span>Niño 1+2 · 6 semanas</span><b class="h">&gt;+4°</b>
-        <span>Subsuperfície 50–150 m</span><b class="h">&gt;+8°</b>
+        <span>Niño 3.4 · CPC, semana 05/10</span><b class="h">+2,3°</b>
+        <span>Niño 3 · CPC, semana 05/10</span><b class="h">+3,3°</b>
+        <span>Niño 1+2 · CPC, semana 05/10</span><b class="h">+4,5°</b>
+        <span>Niño 3.4 · IRI, semana 23/09</span><b class="h">+3,1°</b>
       </div>
-      <p>Anomalias em °C sobre a média 1991–2020. Fonte: IRI.</p>
+      <p>Anomalias em °C sobre a média 1991–2020. A NOAA CPC e o IRI usam produtos de temperatura do mar diferentes, por isso os valores do Niño 3.4 divergem.</p>
     </article>
     <article class="panel bull">
       <header><h3>Boletim atmosférico</h3><span class="sev o">Acoplado</span></header>
@@ -407,8 +405,9 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </section>
 
   <section id="noticias" class="panel card" aria-label="Notícias">
-    <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Setembro 2026</span></div>
+    <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Set–out 2026</span></div>
     <div class="feed">
+      <div class="item"><time datetime="2026-10-05">05 OUT</time><div><h3>NOAA: Niño 3 e Niño 1+2 em níveis recordes</h3><p>Atualização semanal de 05/10: Niño 3.4 a +2,3 °C, Niño 3 a +3,3 °C e Niño 1+2 a +4,5 °C.</p></div></div>
       <div class="item"><time datetime="2026-09-28">28 SET</time><div><h3>Niño 3.4 chega a +3,1 °C, recorde da série</h3><p>Semana de 23/09 é a mais quente desde 1981. Alta de 0,5 °C em quatro semanas.</p></div></div>
       <div class="item"><time datetime="2026-09-22">22 SET</time><div><h3>Atlântico sem nenhum furacão até o pico da temporada</h3><p>Início de temporada mais tardio desde o começo da era dos satélites, efeito típico do El Niño sobre os ventos.</p></div></div>
       <div class="item"><time datetime="2026-09-21">21 SET</time><div><h3>IRI: todos os 22 modelos preveem El Niño “muito forte”</h3><p>Niño 3.4 atinge +3,0 °C. Probabilidade de 100% até fevereiro de 2027.</p></div></div>
@@ -432,111 +431,111 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-06T05:30:00+02:00",
- "manchete": "chuva forte põe Belo Horizonte em alerta vermelho, tufão Nolo cruza a linha da data e Catalunha segue buscando desaparecido",
+ "atualizado": "2026-10-06T11:40:00+02:00",
+ "manchete": "novo dia de chuva torrencial na Catalunha, Belo Horizonte segue em alerta geológico e três tufões se aproximam do Japão",
  "eventos": [
-  {
-   "id": "bh",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Chuva põe Belo Horizonte em alerta vermelho",
-   "local": "Belo Horizonte e Sudeste, Brasil",
-   "data": "2026-10-05",
-   "lat": -19.92,
-   "lon": -43.94,
-   "resumo": "A Defesa Civil de Belo Horizonte decretou alerta vermelho para deslizamentos e desabamentos em quatro regionais. Em cinco dias, três regionais já superaram a chuva esperada para outubro inteiro.",
-   "pontos": [
-    "Alerta vermelho no Barreiro, Oeste, Centro-Sul e Noroeste até quarta (07/10).",
-    "A regional Oeste somou 133,6 mm, 121% da média de outubro (110,1 mm).",
-    "No fim de semana, Vitória teve 108,8 mm e bairros do Rio passaram de 160 mm.",
-    "Alertas de temporais em MG, RJ e SP, principalmente na segunda (05/10) e terça (06/10)."
-   ],
-   "fonte": "Defesa Civil de BH via Hoje em Dia / O Tempo / CNN Brasil",
-   "url": "https://www.hojeemdia.com.br/minas/bh-entra-em-alerta-vermelho-para-deslizamentos-e-desabamentos-apos-chuva-forte-1.1135675",
-   "rotulo": "Alerta BH",
-   "lado": "r"
-  },
   {
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Catalunha retoma busca por desaparecido após temporal",
+   "titulo": "Catalunha tem novo dia de chuva torrencial",
    "local": "Catalunha, Espanha",
-   "data": "2026-10-05",
-   "lat": 41.4,
-   "lon": 2.1,
-   "resumo": "O temporal na Catalunha deixou dois mortos, em Tordera e em Montornès del Vallès, e um desaparecido em Pineda de Mar. As equipes de emergência seguem com a busca nesta segunda (05/10).",
+   "data": "2026-10-06",
+   "lat": 41.5,
+   "lon": 2.3,
+   "resumo": "O Meteocat colocou a Catalunha em perigo nível 4 de 6 por chuva torrencial nesta terça (06/10), poucos dias depois do temporal que matou duas pessoas e deixou duas desaparecidas. O plano Inuncat segue ativo pelo menos até quinta.",
    "pontos": [
-    "O Raval, em Barcelona, recebeu 193 mm em seis horas; Vilassar de Mar acumulou 288 mm.",
-    "O rio Besòs chegou a 936 m³/s e 3,60 m, nível comparável a cheias de 60 anos atrás.",
-    "Cerca de 8 mil chamadas de emergência; a Cruz Vermelha atendeu 4.036 pessoas.",
-    "Água entrou em hospitais como o Vall d'Hebron; várias escolas seguem fechadas."
+    "Previsão de pancadas acima de 40 mm em 30 minutos e até 60 mm em três horas no litoral e no pré-litoral.",
+    "Madrugada no Baix Camp, Tarragonès e Baix Penedès; à tarde e à noite o maior risco vai para o Maresme, Selva, Gironès e Baix Empordà.",
+    "Granollers já acumulou 346,3 mm desde sábado; vários pontos do litoral passaram de 200 mm.",
+    "A Generalitat aprovou 75 milhões de euros em ajudas; segue a busca por um jovem em Pineda de Mar e por um menino de 12 anos em Granollers."
    ],
-   "fonte": "Bombers / Generalitat via aldia.cat e NacióDigital",
-   "url": "https://www.aldia.cat/gent/noticia-els-bombers-reprenen-recerca-jove-desaparegut-pineda-mar-barcelona-20261005102940.html",
-   "rotulo": "Mortes Catalunha",
+   "fonte": "Meteocat / Protecció Civil via betevé e laciutat.cat",
+   "url": "https://beteve.cat/medi-ambient/tempestes-pluja-episodi-octubre-inuncat-2026/",
+   "rotulo": "Catalunha",
    "lado": "t"
+  },
+  {
+   "id": "bh",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Cinco regionais de BH seguem em alerta geológico",
+   "local": "Belo Horizonte e Sudeste, Brasil",
+   "data": "2026-10-06",
+   "lat": -19.92,
+   "lon": -43.94,
+   "resumo": "A Defesa Civil de Belo Horizonte mantém alerta de risco geológico forte em cinco regionais até quarta (07/10). A chuva perde força nesta terça, mas o solo encharcado mantém o risco de deslizamentos.",
+   "pontos": [
+    "Alerta no Barreiro, Oeste, Centro-Sul, Noroeste e Nordeste até 07/10.",
+    "A regional Oeste somou 133,6 mm, 121% da média de todo o mês de outubro (110,1 mm).",
+    "Para terça, o Inmet prevê pancadas isoladas de manhã e à tarde, com 16 °C a 29 °C.",
+    "O aviso sonoro da Defesa Civil disparado no domingo assustou moradores da capital."
+   ],
+   "fonte": "Defesa Civil de BH e Inmet via Estado de Minas / O Tempo",
+   "url": "https://www.em.com.br/gerais/2026/10/7515412-mais-um-dia-de-chuva-veja-previsao-para-bh-nesta-terca-6.html",
+   "rotulo": "Alerta BH",
+   "lado": "r"
   },
   {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Sul do Brasil terá semana de chuva extrema",
+   "titulo": "Sul do Brasil entra em semana de chuva extrema",
    "local": "Rio Grande do Sul, Brasil",
-   "data": "2026-10-05",
+   "data": "2026-10-06",
    "lat": -30.03,
    "lon": -51.23,
-   "resumo": "A semana segue com previsão de chuva volumosa no Sul do Brasil, com risco de enchentes repentinas e deslizamentos. No Rio Grande do Sul, os dias mais críticos devem ser de quinta a sábado.",
+   "resumo": "Nova rodada de chuva forte e temporais atinge o Centro e o Sul do Brasil nesta semana, com risco de enchentes repentinas e deslizamentos. No Rio Grande do Sul, os dias mais críticos devem ser de quinta a sábado.",
    "pontos": [
-    "A MetSul prevê de 100 a 200 mm em 72 horas em partes do Sul; em alguns locais, até o dobro da média de outubro.",
-    "Na segunda (05/10), alerta de chuva forte e temporais isolados no RS, SC, PR e MS, com mais risco de granizo no Paraná.",
-    "Guaíba no Cais Mauá: 2,14 m às 8h de 05/10, 71% da cota de inundação (3 m), em leve descida.",
+    "A MetSul prevê de 100 a 200 mm em 72 horas em partes do Sul, o dobro da média de outubro em alguns locais.",
+    "O alerta de outubro da MetSul chega a falar em 500 mm ou mais no acumulado do mês.",
+    "Guaíba no Cais Mauá: 2,14 m às 8h de 05/10, 71% da cota de inundação de 3 m, em leve descida.",
     "As chuvas recentes já afetaram 70,3 mil pessoas em 136 cidades gaúchas, com 6.395 desalojados."
    ],
-   "fonte": "MetSul / nivelguaiba.com.br",
+   "fonte": "MetSul Meteorologia / nivelguaiba.com.br",
    "url": "https://metsul.com/nova-rodada-de-chuva-forte-e-temporais-atingira-o-centro-e-o-sul-do-brasil/",
-   "rotulo": "Chuva extrema Sul",
+   "rotulo": "Chuva Sul",
    "lado": "l"
   },
   {
-   "id": "calor-br",
+   "id": "frente-fria",
    "tipo": "outro",
    "gravidade": "alto",
    "titulo": "Frente fria deixa mortos em SP e estragos no PR e em SC",
-   "local": "São Paulo e Paraná, Brasil",
+   "local": "São Paulo, Paraná e Santa Catarina, Brasil",
    "data": "2026-10-05",
-   "lat": -22.5,
+   "lat": -23.5,
    "lon": -50.5,
-   "resumo": "Temporais da frente fria mataram duas pessoas no interior de São Paulo no domingo (04/10). No Paraná e em Santa Catarina, vendavais derrubaram árvores e deixaram centenas de milhares sem luz.",
+   "resumo": "Temporais da frente fria mataram duas pessoas no interior de São Paulo no domingo (04/10). No Paraná e em Santa Catarina, vendavais derrubaram árvores e deixaram centenas de milhares de imóveis sem luz.",
    "pontos": [
     "Em Araçatuba (SP), o teto de um prédio comercial desabou e matou uma pessoa; em Jaboticabal, uma árvore caiu sobre um carro.",
-    "Rajadas de 112 km/h em Araçatuba; bombeiros atenderam 276 ocorrências em SP.",
-    "No Paraná, rajadas de 140 km/h em Nova Prata do Iguaçu; pico de 325 mil imóveis sem energia.",
+    "Rajadas de 112 km/h em Araçatuba; os bombeiros atenderam 276 ocorrências em São Paulo.",
+    "No Paraná, rajadas de 140 km/h em Nova Prata do Iguaçu e pico de 325 mil imóveis sem energia.",
     "Em Chapecó (SC), ventos de 97 km/h deixaram 48 mil unidades sem luz e 66 casas danificadas."
    ],
-   "fonte": "O Tempo / Copel / ND+",
+   "fonte": "MetSul / Copel / ND+",
    "url": "https://ndmais.com.br/tempo/chapeco-enfrenta-temporal-com-ventos-de-quase-100-km-h-e-48-mil-unidades-sem-luz-em-meio-ao-super-el-nino/",
-   "rotulo": "Temporais SP/PR/SC",
+   "rotulo": "Vendavais Sul",
    "lado": "r"
   },
   {
-   "id": "bangkok",
+   "id": "tailandia",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Enchentes na Tailândia matam 40 e atingem 3,26 milhões",
-   "local": "Bangkok e bacia do Chao Phraya, Tailândia",
-   "data": "2026-10-05",
+   "titulo": "Enchentes na Tailândia atingem 3,5 milhões de pessoas",
+   "local": "Bangkok e planície central, Tailândia",
+   "data": "2026-10-06",
    "lat": 14.35,
    "lon": 100.55,
-   "resumo": "As enchentes na Tailândia já deixaram 40 mortos e afetam 3,26 milhões de pessoas em 27 províncias e Bangkok. A água baixa no norte, mas o centro segue em alerta com nova chuva prevista.",
+   "resumo": "As enchentes na Tailândia seguem em 26 províncias e em Bangkok e já afetam cerca de 3,52 milhões de pessoas. Na capital a água baixou, mas novas chuvas são previstas para a segunda semana de outubro.",
    "pontos": [
-    "40 mortos segundo o Ministério da Saúde; o Ministério do Interior conta 31 (05/10).",
-    "1,17 milhão de domicílios e 8.790 vilas afetados, segundo o DDPM (04/10).",
-    "A barragem do Chao Phraya libera 2.500 m³/s; o RID diz que os diques de Bangkok aguentam essa vazão.",
-    "Chuva forte prevista no sul em 08 e 09/10 e no centro em 10 e 11/10."
+    "Balanços variam: 40 mortos pelo Ministério da Saúde e 31 pelo Ministério do Interior.",
+    "Em Bangkok, cerca de 329 mil famílias afetadas e quatro mortes confirmadas.",
+    "A água baixa no norte e no nordeste, mas segue subindo em províncias do centro.",
+    "O instituto de meteorologia prevê aumento da chuva no centro, leste e sul entre 08 e 13/10."
    ],
-   "fonte": "DDPM via The Nation / Bangkok Post",
-   "url": "https://www.nationthailand.com/news/general/40071861",
+   "fonte": "DDPM via Thailand News / Bangkok Post / The Nation",
+   "url": "https://thailandnews.co/2026/10/floods-persist-across-26-provinces-and-bangkok-affecting-3-5-million/",
    "rotulo": "Chuva Tailândia",
    "lado": "b"
   },
@@ -544,20 +543,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "nolo",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tufão Nolo cruza a linha da data rumo ao oeste",
-   "local": "Pacífico Norte, oeste do Havaí",
+   "titulo": "Tufão Nolo avança para oeste rumo ao Japão",
+   "local": "Pacífico Norte, a nordeste da ilha Wake",
    "data": "2026-10-06",
-   "lat": 23.9,
-   "lon": 179.9,
-   "resumo": "O Nolo cruzou a linha internacional da data e agora é um tufão, com ventos de 185 km/h. Deve enfraquecer no meio da semana e pode ganhar força de novo na sexta (09/10).",
+   "lat": 24.8,
+   "lon": 173.6,
+   "resumo": "O Nolo, que cruzou a linha internacional da data e virou tufão, tem ventos de 177 km/h e segue para oeste. A previsão é que chegue às águas a leste do Japão por volta de 10/10.",
    "pontos": [
-    "Às 03h UTC de 06/10: 635 km a oés-sudoeste da ilha Lisianski e 2.330 km a oés-noroeste de Honolulu.",
-    "Ventos de 185 km/h; move-se para oeste a 27 km/h.",
-    "Formado em 13/09, é o ciclone mais longo da temporada.",
-    "Os modelos indicam curva para nordeste antes de chegar ao Japão; ondas de até 14 m perto do centro."
+    "Boletim de 03h UTC de 06/10: ventos de 177 km/h e pressão de 965 hPa.",
+    "Está a cerca de 970 km a nordeste da ilha Wake, movendo-se para oeste a 28 km/h.",
+    "Ondas de até 13,4 m perto do centro; o pico foi em 28/09, com 250 km/h.",
+    "A confiança da previsão é baixa: os modelos divergem sobre trajetória e intensidade."
    ],
-   "fonte": "JTWC via Hawaii News Now / Stars and Stripes",
-   "url": "https://www.hawaiinewsnow.com/2026/10/05/nolo-still-going-strong-now-typhoon-western-north-pacific/",
+   "fonte": "JTWC via Zoom Earth / The Japan Times",
+   "url": "https://zoom.earth/storms/nolo-2026/",
    "rotulo": "Tufão Nolo",
    "lado": "l"
   },
@@ -566,81 +565,81 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "tipo": "ciclone",
    "gravidade": "moderado",
    "titulo": "Choi-wan enfraquece e vira ciclone extratropical",
-   "local": "Mar a leste das ilhas Ogasawara, Japão",
+   "local": "Mar a nordeste de Iwo To, Japão",
    "data": "2026-10-06",
    "lat": 29.3,
-   "lon": 146.7,
-   "resumo": "O tufão Choi-wan continua perdendo força e já tem ventos de 175 km/h. Ele sobe para o norte em mar aberto e deve virar ciclone extratropical sem atingir terra.",
+   "lon": 146.0,
+   "resumo": "O tufão Choi-wan continua perdendo força e tem ventos de 175 km/h. Ele sobe para o norte em mar aberto e deve virar ciclone extratropical em 07/10, sem atingir terra.",
    "pontos": [
-    "Às 00h UTC de 06/10: 711 km a nordeste de Iwo To, ventos de 175 km/h e 945 hPa.",
-    "Move-se para o norte a 26 km/h; o pico foi de 260 km/h em 04/10.",
-    "Na terça à noite deve passar a cerca de 720 km a leste do aeroporto de Narita, sem ameaça a terra.",
-    "Mar agitado em Ogasawara e na costa do Kanto ao Tohoku em 06 e 07/10."
+    "Boletim de 00h UTC de 06/10: 711 km a nordeste de Iwo To, 175 km/h e 945 hPa.",
+    "Move-se para o norte a 26 km/h; o pico foi de 260 km/h e 914 hPa em 04/10.",
+    "A previsão indica queda para 120 km/h até as 12h UTC de 07/10.",
+    "Mar agitado em Ogasawara e na costa do Kanto, com ondas de até 12,8 m perto do centro."
    ],
-   "fonte": "JTWC via Zoom Earth / Stars and Stripes",
+   "fonte": "JTWC via Zoom Earth / The Japan Times",
    "url": "https://zoom.earth/storms/choi-wan-2026/",
    "rotulo": "Tufão Choi-wan",
-   "lado": "l"
+   "lado": "b"
+  },
+  {
+   "id": "koguma",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Koguma deve virar tufão forte até sábado",
+   "local": "Pacífico oeste, ao norte de Kwajalein",
+   "data": "2026-10-06",
+   "lat": 12.9,
+   "lon": 167.0,
+   "resumo": "A tempestade tropical Koguma tem ventos de 83 km/h e segue para noroeste a cerca de 475 km ao norte de Kwajalein. O JTWC prevê que chegue a 204 km/h até 10/10.",
+   "pontos": [
+    "Boletim de 03h UTC de 06/10: 12,9° N e 167,0° L, 83 km/h e 995 hPa.",
+    "Move-se para noroeste a 17 km/h, com fortalecimento firme nas próximas 36 horas.",
+    "Deve passar perto de Minamitorishima, a ilha mais oriental do Japão, entre 09 e 10/10.",
+    "A previsão leva o centro a 24,7° N e 147,5° L em 11/10."
+   ],
+   "fonte": "JTWC via Cyclocane / Zoom Earth",
+   "url": "https://zoom.earth/storms/koguma-2026/",
+   "rotulo": "Koguma",
+   "lado": "r"
   },
   {
    "id": "rachel",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Furacão Rachel segue para oeste, longe do México",
-   "local": "Pacífico, costa oeste do México",
+   "titulo": "Furacão Rachel enfraquece longe do México",
+   "local": "Pacífico, a oeste da Baixa Califórnia",
    "data": "2026-10-06",
-   "lat": 20.4,
-   "lon": -117.9,
-   "resumo": "O furacão Rachel tem ventos de 150 km/h e segue para oeste, longe do México. Não há avisos para a costa, mas as ondas geram ressaca perigosa na Baixa Califórnia.",
+   "lat": 20.3,
+   "lon": -118.6,
+   "resumo": "O furacão Rachel tem ventos de 137 km/h e segue para oeste, sem avisos para a costa mexicana. O olho já se desorganizou e o sistema deve enfraquecer nos próximos dois dias.",
    "pontos": [
-    "Boletim 36 do NHC (03h UTC de 06/10): 20,4° N e 117,9° O, 973 hPa.",
-    "Fica a cerca de 870 km a sudoeste da ponta sul da Baixa Califórnia.",
-    "Move-se para oeste a 15 km/h; deve virar tempestade tropical por volta de 09 e 10/10.",
-    "Ventos de furacão até 65 km do centro e de tempestade tropical até 225 km."
+    "Boletim 37 do NHC (09h UTC de 06/10): 20,3° N e 118,6° O, 976 hPa.",
+    "Fica a cerca de 940 km a oés-sudoeste da ponta sul da Baixa Califórnia.",
+    "Move-se para oeste a 13 km/h; deve cair para 65 km/h até 10/10 e virar pós-tropical.",
+    "As ondas geram ressaca e correntes perigosas na Baixa Califórnia e no sul da Califórnia."
    ],
-   "fonte": "NHC (boletim 36)",
-   "url": "https://www.nhc.noaa.gov/archive/2026/ep18/ep182026.public.036.shtml",
+   "fonte": "NHC (boletim público 37)",
+   "url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
    "rotulo": "Furacão Rachel",
    "lado": "b"
-  },
-  {
-   "id": "leste-espanha",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Temporal no leste da Espanha mata uma pessoa em Albacete",
-   "local": "Castellón, Valência e Albacete, Espanha",
-   "data": "2026-10-03",
-   "lat": 39.3,
-   "lon": -0.3,
-   "resumo": "Uma mulher de 102 anos morreu em Madrigueras, na província de Albacete, depois que a água passou de um metro dentro de casa. A Aemet segue com aviso especial e alerta vermelho de chuva no litoral de Castellón.",
-   "pontos": [
-    "Madrigueras teve mais de 140 mm em cerca de duas horas na noite de 02/10; cerca de 90 pessoas foram resgatadas.",
-    "Quatro casas desabaram e mais de 150 veículos foram retirados na cidade.",
-    "Castella-La Mancha mantém o plano Meteocam em situação operacional 1 e vai pedir declaração de área de catástrofe.",
-    "Na Comunidade Valenciana o aviso especial segue no domingo (04/10), com pancadas localmente fortes de madrugada que perdem força ao longo do dia."
-   ],
-   "fonte": "Aemet / Protecção Civil de Castela-La Mancha via The Watchers e Moncloa.com",
-   "url": "https://watchers.news/2026/10/03/flash-flooding-kills-one-prompts-around-90-rescues-in-madrigueras-spain/",
-   "rotulo": "Temporal Albacete",
-   "lado": "l"
   },
   {
    "id": "calor-california",
    "tipo": "calor",
    "gravidade": "alto",
-   "titulo": "Onda de calor fora de época atinge a Califórnia",
+   "titulo": "Onda de calor recorde segue na Califórnia",
    "local": "Califórnia, EUA",
-   "data": "2026-10-05",
+   "data": "2026-10-06",
    "lat": 34.05,
    "lon": -118.25,
-   "resumo": "A onda de calor de outubro continua na Califórnia, com até 43 °C no Vale da Morte e 41 °C nos vales de Los Angeles. Os alertas seguem até 07 e 08/10.",
+   "resumo": "A onda de calor fora de época continua na Califórnia, com alertas que cobrem do sul do estado ao vale de Sacramento. Mais de 35 milhões de pessoas estão sob aviso de temperatura perigosa.",
    "pontos": [
-    "Temperaturas de 6 a 14 °C acima do normal até o meio da semana.",
-    "Vales de Los Angeles e Ventura com 41 °C; Baía de São Francisco entre 35 e 39 °C.",
-    "No Vale da Morte, o alerta de calor extremo vai até 09/10.",
-    "Alívio esperado no fim da semana com a chegada de um cavado do Pacífico."
+    "Máximas de 8 a 14 °C acima da média no interior do estado.",
+    "Até 43 °C no Vale da Morte e 41 °C nos vales de Los Angeles e Ventura.",
+    "A maioria dos avisos vale até 07 ou 08/10; no Vale da Morte, até 09/10.",
+    "As mínimas noturnas seguem altas, o que reduz o alívio entre um dia e outro."
    ],
-   "fonte": "NWS via The Watchers",
+   "fonte": "NWS via The Watchers / ABC News",
    "url": "https://watchers.news/2026/10/05/extreme-heat-warnings-and-heat-advisories-cover-much-of-california-as-october-heat-wave-persists/",
    "rotulo": "Calor Califórnia",
    "lado": "l"
@@ -649,43 +648,22 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "bouquet",
    "tipo": "incendio",
    "gravidade": "moderado",
-   "titulo": "Incêndio Bouquet força retiradas perto de Santa Clarita",
+   "titulo": "Incêndio Bouquet avança em contenção perto de Santa Clarita",
    "local": "Floresta Nacional Angeles, Califórnia, EUA",
    "data": "2026-10-05",
    "lat": 34.55,
    "lon": -118.4,
-   "resumo": "O incêndio Bouquet queimou cerca de 424 hectares na Floresta Nacional Angeles, perto de Santa Clarita. Três zonas seguem com ordem de retirada.",
+   "resumo": "O incêndio Bouquet queimou cerca de 424 hectares na Floresta Nacional Angeles, perto de Santa Clarita, e já está 48% contido. Algumas zonas seguem com ordem de retirada.",
    "pontos": [
     "Começou por volta das 15h de 03/10 na Bouquet Canyon Road.",
     "1.048 acres (424 ha) queimados e 48% de contenção em 05/10.",
-    "Ordens de retirada em 3 zonas e alertas em outras 9; abrigo no Castaic Sports Complex.",
-    "Calor de até 41 °C nos vales ajuda o fogo; a causa segue sob investigação."
+    "Ordens de retirada em três zonas e alertas em outras nove; abrigo no Castaic Sports Complex.",
+    "Poucas construções ameaçadas pelo isolamento da área; a causa segue sob investigação."
    ],
    "fonte": "ABC7 / The Watchers",
-   "url": "https://abc7.com/story/bouquet-fire-updates-fast-growing-brush-triggers-evacuation-warnings-angeles-national-forest-santa-clarita/19905530",
+   "url": "https://abc7.com/story/bouquet-fire-updates-fast-growing-brush-triggers-evacuation-warnings-angeles-national-forest-santa-clarita/19905530/",
    "rotulo": "Incêndio Bouquet",
    "lado": "t"
-  },
-  {
-   "id": "koguma",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Koguma se organiza devagar perto das ilhas Marshall",
-   "local": "Pacífico oeste, perto das ilhas Marshall",
-   "data": "2026-10-06",
-   "lat": 10.8,
-   "lon": 168.0,
-   "resumo": "A depressão tropical Koguma (27W) tem ventos de 55 km/h a cerca de 200 km ao norte de Kwajalein. O JTWC prevê que ela vire um tufão forte, com ventos de 195 km/h, até 10/10.",
-   "pontos": [
-    "Move-se para nordeste a 17 km/h; deve virar para noroeste nos próximos dias.",
-    "Fortalecimento lento nas próximas 60 horas e mais rápido depois.",
-    "Previsão de chegar perto de 22,6° N e 151,0° L em 10/10, com 195 km/h.",
-    "Por ora não ameaça terra; os modelos indicam curva para nordeste."
-   ],
-   "fonte": "JTWC via Zoom Earth / Cyclocane",
-   "url": "https://zoom.earth/storms/koguma-2026/",
-   "rotulo": "Koguma (27W)",
-   "lado": "r"
   }
  ]
 }
@@ -1023,6 +1001,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
+
 
 </body>
 </html>
