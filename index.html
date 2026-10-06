@@ -20,8 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -432,27 +430,27 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-06T17:30:00+02:00",
- "manchete": "chuva torrencial volta à Catalunha, sistema no Golfo do México deve virar depressão tropical e três tufões seguem no Pacífico",
+ "atualizado": "2026-10-06T23:30:00+02:00",
+ "manchete": "chuva torrencial põe a Catalunha em alerta 5 de 6, sistema no Golfo do México está prestes a virar depressão tropical e enchentes deixam mortos no Senegal",
  "eventos": [
   {
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Catalunha tem novo dia de chuva torrencial",
+   "titulo": "Catalunha sob alerta 5 de 6 por chuva torrencial",
    "local": "Catalunha, Espanha",
    "data": "2026-10-06",
    "lat": 41.5,
    "lon": 2.3,
-   "resumo": "O Meteocat mantém perigo nível 4 de 6 por chuva torrencial em 10 comarcas da Catalunha nesta terça (06/10), poucos dias depois do temporal que matou duas pessoas e deixou duas desaparecidas. O plano Inuncat segue ativo pelo menos até quinta.",
+   "resumo": "A Proteção Civil enviou um ES-Alert por chuva torrencial no litoral da Catalunha até a madrugada de quarta (07/10), com perigo de nível 5 de 6. O temporal fechou estradas, parou o aeroporto de Barcelona e exigiu 21 resgates.",
    "pontos": [
-    "Desde as 14h o risco está no sul (Montsià, Baix Ebre, Terra Alta, Ribera d'Ebre, Priorat e Baix Camp), com mais de 40 mm em 30 minutos.",
-    "Entre 20h e 2h o perigo passa ao nordeste: Maresme, Selva, Gironès e Baix Empordà.",
-    "Cases d'Alcanar e l'Ametlla de Mar somam quase 300 mm no episódio; Granollers já passou de 346 mm desde sábado.",
-    "A Generalitat aprovou 75 milhões de euros em ajudas; segue a busca por um jovem em Pineda de Mar e por um menino de 12 anos em Granollers."
+    "O Meteocat prevê pancadas de mais de 40 mm em 30 minutos em pontos do litoral.",
+    "Até as 22h, o 112 recebeu mais de 360 chamadas; os bombeiros fizeram 21 resgates de pessoas presas em carros, a maioria na C-12 em Xerta.",
+    "Maiores acumulados do dia: Aldover 83,5 mm, Tarragona 72,3 mm e Viladecans 54,2 mm.",
+    "O aeroporto de Barcelona suspendeu pousos e decolagens; voos foram desviados para Girona e Valência."
    ],
-   "fonte": "Meteocat / Protecció Civil via 3Cat e betevé",
-   "url": "https://www.3cat.cat/3catinfo/el-risc-alt-de-pluja-intensa-torna-aquest-dimarts-a-la-tarda-i-nit-en-deu-comarques/noticia/3432542/",
+   "fonte": "Meteocat / Protecció Civil via ElNacional.cat",
+   "url": "https://www.elnacional.cat/ca/temps-avui/alerta-pluges-torrencials-catalunya-directe-ultima-hora-temporal-avui_13300_126.html",
    "rotulo": "Catalunha",
    "lado": "t"
   },
@@ -541,22 +539,43 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "b"
   },
   {
+   "id": "senegal",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Chuva forte deixa mortos no Senegal",
+   "local": "Dakar, Kaolack, Touba e Matam, Senegal",
+   "data": "2026-10-05",
+   "lat": 14.7,
+   "lon": -17.45,
+   "resumo": "Dois dias de chuva forte provocaram enchentes e desabamentos no Senegal e deixaram pelo menos sete mortos no fim de semana. O governo alerta para alta probabilidade de mais chuva nesta semana.",
+   "pontos": [
+    "Rufisque e Ranérou (Matam) receberam 142 mm em 24 horas; Yoff, em Dakar, 138 mm.",
+    "Em Parcelles Assainies (Dakar), um muro caiu, a casa inundou e um pai e o filho de 4 anos morreram afogados.",
+    "Houve mortes por desabamentos em Kaolack, Touba e Matam e por eletrocussão em Yeumbeul.",
+    "A chuva preocupa para os Jogos Olímpicos da Juventude, marcados para começar em Dakar em 31/10."
+   ],
+   "fonte": "Governo do Senegal via AP / Seneweb",
+   "url": "https://www.seneweb.com/en/news/Societe/week-end-macabre-sept-morts-entre-kaolack-touba-matam-et-dakar_n_506105.html",
+   "rotulo": "Chuva Senegal",
+   "lado": "l"
+  },
+  {
    "id": "golfo-92l",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Sistema no Golfo do México deve virar depressão tropical",
+   "titulo": "Sistema no Golfo do México está prestes a virar depressão tropical",
    "local": "Sudoeste do Golfo do México",
    "data": "2026-10-06",
    "lat": 21.0,
    "lon": -94.0,
-   "resumo": "O NHC dá 90% de chance de formação de uma depressão tropical no sudoeste do Golfo do México nas próximas 48 horas. O sistema pode passar pela península de Yucatán e depois subir rumo à costa do Golfo dos EUA no fim da semana.",
+   "resumo": "O NHC elevou para quase 100% a chance de formação de um ciclone tropical no sudoeste do Golfo do México. Os avisos devem começar ainda nesta terça à noite, e o sistema pode subir rumo à costa do Golfo dos EUA no fim da semana.",
    "pontos": [
-    "Panorama das 8h EDT de 06/10: 90% de chance em 48 horas e em 7 dias (era 60% e 80% na véspera).",
-    "Um avião de reconhecimento da NOAA deve investigar a área ainda nesta terça.",
-    "Moradores do Panhandle da Flórida até a Louisiana devem acompanhar; há risco de chuva forte e enchentes repentinas na sexta e no sábado.",
-    "Se ganhar força, recebe o nome Isaias; o Golfo está com a água mais quente desde 1982."
+    "Panorama das 14h EDT de 06/10: chance perto de 100% em 48 horas e em 7 dias (era 90% de manhã).",
+    "As tempestades estão mais organizadas e a pressão está caindo; o jato Gulfstream da NOAA sobrevoou a área à tarde.",
+    "Aviões da Força Aérea e da NOAA devem investigar o sistema na quarta (07/10).",
+    "Deve ir primeiro para leste, perto de Yucatán, e depois virar para norte ou nordeste; do Panhandle da Flórida à Louisiana, acompanhar."
    ],
-   "fonte": "NHC (panorama tropical) / FOX Weather",
+   "fonte": "NHC (panorama tropical, 14h EDT)",
    "url": "https://www.nhc.noaa.gov/text/MIATWOAT.shtml",
    "rotulo": "Golfo (92L)",
    "lado": "b"
@@ -586,19 +605,19 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "choi-wan",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Choi-wan perde força e vira ciclone extratropical",
-   "local": "Mar a lés-sudeste de Tóquio, Japão",
+   "titulo": "Choi-wan acelera e vira ciclone extratropical",
+   "local": "Pacífico, a lés-sudeste de Misawa, Japão",
    "data": "2026-10-06",
-   "lat": 32.5,
-   "lon": 147.3,
-   "resumo": "O tufão Choi-wan tem ventos de 155 km/h e acelera para nordeste em mar aberto, longe da costa do Japão. Ele deve virar ciclone extratropical completo em cerca de 36 horas.",
+   "lat": 37.8,
+   "lon": 150.5,
+   "resumo": "O tufão Choi-wan tem ventos de 140 km/h e corre para nordeste em mar aberto, longe da costa do Japão. A transição para ciclone extratropical deve terminar em cerca de 12 horas.",
    "pontos": [
-    "Boletim de 09h UTC de 06/10: 745 km a lés-sudeste de Yokosuka, 155 km/h e 953 hPa.",
-    "Move-se para nor-nordeste a 33 km/h; o pico foi de 260 km/h em 04/10.",
-    "Mesmo em transição, deve manter ventos de tufão por mais um dia.",
-    "Mar agitado em Ogasawara e na costa do Kanto, com ondas de até 12,8 m perto do centro."
+    "Boletim de 21h UTC de 06/10: 854 km a lés-sudeste de Misawa, 140 km/h e 959 hPa.",
+    "Move-se para nordeste a 56 km/h; o pico foi de 260 km/h em 04/10.",
+    "Deve manter ventos de tufão durante a transição.",
+    "Não há ameaça direta a terra firme."
    ],
-   "fonte": "JTWC via Zoom Earth / The Japan Times",
+   "fonte": "JTWC via Zoom Earth",
    "url": "https://zoom.earth/storms/choi-wan-2026/",
    "rotulo": "Tufão Choi-wan",
    "lado": "b"
@@ -665,27 +684,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "url": "https://watchers.news/2026/10/05/extreme-heat-warnings-and-heat-advisories-cover-much-of-california-as-october-heat-wave-persists/",
    "rotulo": "Calor Califórnia",
    "lado": "l"
-  },
-  {
-   "id": "bouquet",
-   "tipo": "incendio",
-   "gravidade": "moderado",
-   "titulo": "Incêndio Bouquet avança em contenção perto de Santa Clarita",
-   "local": "Floresta Nacional Angeles, Califórnia, EUA",
-   "data": "2026-10-05",
-   "lat": 34.55,
-   "lon": -118.4,
-   "resumo": "O incêndio Bouquet queimou cerca de 424 hectares na Floresta Nacional Angeles, perto de Santa Clarita, e chegou a 63% de contenção. Ordens e alertas de retirada seguem em vigor.",
-   "pontos": [
-    "Começou por volta das 15h de 03/10 na Bouquet Canyon Road.",
-    "1.048 acres (424 ha) queimados; contenção subiu de 40% para 63% entre domingo e segunda (05/10).",
-    "Ordens de retirada em três zonas e alertas em outras nove; abrigo no Castaic Sports Complex.",
-    "Poucas construções ameaçadas pelo isolamento da área; a causa segue sob investigação."
-   ],
-   "fonte": "ABC7 / Daily Dispatch",
-   "url": "https://dailydispatch.com/fire-news/wildland/bouquet-fire-in-southern-california-reaches-63-containment-evacs-remain-in-place/",
-   "rotulo": "Incêndio Bouquet",
-   "lado": "t"
   }
  ]
 }
@@ -1023,8 +1021,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
-
 
 </body>
 </html>
