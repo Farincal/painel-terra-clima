@@ -20,6 +20,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
+
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -430,29 +434,71 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-06T23:30:00+02:00",
- "manchete": "chuva torrencial põe a Catalunha em alerta 5 de 6, sistema no Golfo do México está prestes a virar depressão tropical e enchentes deixam mortos no Senegal",
+ "atualizado": "2026-10-07T05:27:00+02:00",
+ "manchete": "depressão tropical no Golfo do México deve virar furacão rumo aos EUA, Sul do Brasil se prepara para chuva excessiva e calor recorde segue na Califórnia",
  "eventos": [
+  {
+   "id": "td-nove",
+   "tipo": "ciclone",
+   "gravidade": "critico",
+   "titulo": "Depressão Tropical Nove se forma no Golfo e deve virar furacão",
+   "local": "Sudoeste do Golfo do México",
+   "data": "2026-10-06",
+   "lat": 22.1,
+   "lon": -95.0,
+   "resumo": "A Depressão Tropical Nove se formou no sudoeste do Golfo do México e deve virar tempestade tropical nesta quarta (07/10) e furacão na quinta. A previsão do NHC leva o sistema à costa norte do Golfo dos EUA na sexta (09/10).",
+   "pontos": [
+    "Aviso 2 do NHC (22h CDT de 06/10): 22,1° N e 95,0° O, ventos de 55 km/h e 1005 hPa.",
+    "Move-se para leste a 8 km/h; deve passar ao norte de Yucatán na quinta e virar para nordeste na sexta.",
+    "Chuva de 75 a 150 mm, com até 250 mm em pontos, na costa central do Golfo de sexta ao fim de semana.",
+    "A Flórida decretou estado de emergência em 25 condados do Panhandle e do norte do estado."
+   ],
+   "fonte": "NHC (avisos 1 e 2) / Fox 35 Orlando",
+   "url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
+   "rotulo": "Depressão Nove",
+   "lado": "b"
+  },
   {
    "id": "catalunha",
    "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Catalunha sob alerta 5 de 6 por chuva torrencial",
+   "gravidade": "alto",
+   "titulo": "Catalunha faz balanço da chuva torrencial",
    "local": "Catalunha, Espanha",
    "data": "2026-10-06",
    "lat": 41.5,
    "lon": 2.3,
-   "resumo": "A Proteção Civil enviou um ES-Alert por chuva torrencial no litoral da Catalunha até a madrugada de quarta (07/10), com perigo de nível 5 de 6. O temporal fechou estradas, parou o aeroporto de Barcelona e exigiu 21 resgates.",
+   "resumo": "A chuva torrencial de terça (06/10) exigiu 21 resgates de pessoas presas em carros no sul da Catalunha e parou o aeroporto de Barcelona. Nesta quarta o tempo fica mais calmo, mas na quinta chega ar frio com risco de granizo.",
    "pontos": [
-    "O Meteocat prevê pancadas de mais de 40 mm em 30 minutos em pontos do litoral.",
-    "Até as 22h, o 112 recebeu mais de 360 chamadas; os bombeiros fizeram 21 resgates de pessoas presas em carros, a maioria na C-12 em Xerta.",
-    "Maiores acumulados do dia: Aldover 83,5 mm, Tarragona 72,3 mm e Viladecans 54,2 mm.",
-    "O aeroporto de Barcelona suspendeu pousos e decolagens; voos foram desviados para Girona e Valência."
+    "Maiores acumulados de terça: Aldover 83,6 mm, Tarragona 72,3 mm e Viladecans 54,2 mm.",
+    "O 112 recebeu mais de 360 chamadas; cinco estradas foram fechadas por alagamentos e deslizamentos.",
+    "Árvores caídas pararam linhas da Rodalies (R2 Sud e R13 a R17) perto de Vilanova i la Geltrú.",
+    "Três sistemas seguidos deixaram de 200 a 300 mm em pontos do litoral, recorde para outubro; na quinta pode nevar acima de 1.900 m."
    ],
    "fonte": "Meteocat / Protecció Civil via ElNacional.cat",
-   "url": "https://www.elnacional.cat/ca/temps-avui/alerta-pluges-torrencials-catalunya-directe-ultima-hora-temporal-avui_13300_126.html",
+   "url": "https://elnacional.cat/es/tiempo-hoy/alerta-por-lluvias-torrenciales-en-catalunya-directo-ultima-hora-temporal-hoy_13300_126.html",
    "rotulo": "Catalunha",
    "lado": "t"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "critico",
+   "titulo": "Sul do Brasil terá chuva excessiva e novas enchentes",
+   "local": "Rio Grande do Sul, Brasil",
+   "data": "2026-10-07",
+   "lat": -30.03,
+   "lon": -51.23,
+   "resumo": "A MetSul prevê chuva excessiva e novas enchentes no Rio Grande do Sul, em Santa Catarina e no Paraná de 07 a 12/10. Os dias mais críticos devem ser de quinta (08/10) a sábado.",
+   "pontos": [
+    "Mais de 100 mm na maior parte da região e até 300 mm ou mais em pontos, o dobro da média de outubro.",
+    "Na quinta, o noroeste gaúcho pode ter de 100 a 150 mm, com risco de tornado de madrugada no Oeste e nas Missões.",
+    "Guaíba a 2,11 m em 06/10, há sete dias acima da cota de cheia de 2 m; a de inundação é 3 m.",
+    "Jacuí, Uruguai e Iguaçu estão entre os rios com risco de enchente."
+   ],
+   "fonte": "MetSul Meteorologia / Agora RS",
+   "url": "https://metsul.com/sul-do-brasil-tera-chuva-excessiva-e-mais-enchentes-nos-proximos-dias/",
+   "rotulo": "Chuva Sul",
+   "lado": "l"
   },
   {
    "id": "bh",
@@ -474,27 +520,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "url": "https://www.em.com.br/gerais/2026/10/7515412-mais-um-dia-de-chuva-veja-previsao-para-bh-nesta-terca-6.html",
    "rotulo": "Alerta BH",
    "lado": "r"
-  },
-  {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Sul do Brasil entra em semana de chuva extrema",
-   "local": "Rio Grande do Sul, Brasil",
-   "data": "2026-10-06",
-   "lat": -30.03,
-   "lon": -51.23,
-   "resumo": "Nova rodada de chuva forte e temporais atinge o Centro e o Sul do Brasil nesta semana, com risco de enchentes repentinas e deslizamentos. No Rio Grande do Sul, os dias mais críticos devem ser de quinta a sábado.",
-   "pontos": [
-    "A MetSul prevê de 100 a 200 mm em 72 horas em partes do Sul, o dobro da média de outubro em alguns locais.",
-    "O alerta de outubro da MetSul chega a falar em 500 mm ou mais no acumulado do mês.",
-    "Guaíba no Cais Mauá: 2,14 m às 8h de 05/10, 71% da cota de inundação de 3 m, em leve descida.",
-    "As chuvas recentes já afetaram 70,3 mil pessoas em 136 cidades gaúchas, com 6.395 desalojados."
-   ],
-   "fonte": "MetSul Meteorologia / nivelguaiba.com.br",
-   "url": "https://metsul.com/nova-rodada-de-chuva-forte-e-temporais-atingira-o-centro-e-o-sul-do-brasil/",
-   "rotulo": "Chuva Sul",
-   "lado": "l"
   },
   {
    "id": "frente-fria",
@@ -560,27 +585,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "l"
   },
   {
-   "id": "golfo-92l",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Sistema no Golfo do México está prestes a virar depressão tropical",
-   "local": "Sudoeste do Golfo do México",
-   "data": "2026-10-06",
-   "lat": 21.0,
-   "lon": -94.0,
-   "resumo": "O NHC elevou para quase 100% a chance de formação de um ciclone tropical no sudoeste do Golfo do México. Os avisos devem começar ainda nesta terça à noite, e o sistema pode subir rumo à costa do Golfo dos EUA no fim da semana.",
-   "pontos": [
-    "Panorama das 14h EDT de 06/10: chance perto de 100% em 48 horas e em 7 dias (era 90% de manhã).",
-    "As tempestades estão mais organizadas e a pressão está caindo; o jato Gulfstream da NOAA sobrevoou a área à tarde.",
-    "Aviões da Força Aérea e da NOAA devem investigar o sistema na quarta (07/10).",
-    "Deve ir primeiro para leste, perto de Yucatán, e depois virar para norte ou nordeste; do Panhandle da Flórida à Louisiana, acompanhar."
-   ],
-   "fonte": "NHC (panorama tropical, 14h EDT)",
-   "url": "https://www.nhc.noaa.gov/text/MIATWOAT.shtml",
-   "rotulo": "Golfo (92L)",
-   "lado": "b"
-  },
-  {
    "id": "nolo",
    "tipo": "ciclone",
    "gravidade": "alto",
@@ -600,27 +604,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "url": "https://zoom.earth/storms/nolo-2026/",
    "rotulo": "Tufão Nolo",
    "lado": "l"
-  },
-  {
-   "id": "choi-wan",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Choi-wan acelera e vira ciclone extratropical",
-   "local": "Pacífico, a lés-sudeste de Misawa, Japão",
-   "data": "2026-10-06",
-   "lat": 37.8,
-   "lon": 150.5,
-   "resumo": "O tufão Choi-wan tem ventos de 140 km/h e corre para nordeste em mar aberto, longe da costa do Japão. A transição para ciclone extratropical deve terminar em cerca de 12 horas.",
-   "pontos": [
-    "Boletim de 21h UTC de 06/10: 854 km a lés-sudeste de Misawa, 140 km/h e 959 hPa.",
-    "Move-se para nordeste a 56 km/h; o pico foi de 260 km/h em 04/10.",
-    "Deve manter ventos de tufão durante a transição.",
-    "Não há ameaça direta a terra firme."
-   ],
-   "fonte": "JTWC via Zoom Earth",
-   "url": "https://zoom.earth/storms/choi-wan-2026/",
-   "rotulo": "Tufão Choi-wan",
-   "lado": "b"
   },
   {
    "id": "koguma",
@@ -650,17 +633,17 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "titulo": "Furacão Rachel enfraquece longe do México",
    "local": "Pacífico, a oeste da Baixa Califórnia",
    "data": "2026-10-06",
-   "lat": 20.5,
-   "lon": -119.5,
-   "resumo": "O furacão Rachel tem ventos de 140 km/h e segue para oeste, sem avisos para a costa mexicana. Vento cortante, ar seco e mar mais frio devem enfraquecê-lo nos próximos dias.",
+   "lat": 20.4,
+   "lon": -120.4,
+   "resumo": "O furacão Rachel tem ventos de 130 km/h e segue lento para oés-noroeste, sem avisos para a costa mexicana. Vento cortante, ar seco e mar mais frio devem enfraquecê-lo nos próximos dias.",
    "pontos": [
-    "Discussão 38 do NHC (15h UTC de 06/10): 20,5° N e 119,5° O, ventos de 75 nós (140 km/h).",
-    "A previsão indica 100 km/h em 48 horas e 85 km/h em 72 horas.",
-    "Deve virar ciclone pós-tropical em cerca de quatro dias, sobre água abaixo de 26 °C.",
+    "Aviso 40 do NHC (20h PDT de 06/10): 20,4° N e 120,4° O, ventos de 130 km/h e 979 hPa.",
+    "Move-se para oés-noroeste a 10 km/h; o NHC diz que o furacão se mantém estável.",
+    "Pela discussão 38, deve virar ciclone pós-tropical sobre água abaixo de 26 °C.",
     "As ondas geram ressaca e correntes perigosas na Baixa Califórnia e no sul da Califórnia."
    ],
-   "fonte": "NHC (discussão 38) via Cape Weather",
-   "url": "https://capeweather.com/hurricane-rachel-forecast-discussion-number-38/",
+   "fonte": "NHC (aviso 40 e discussão 38)",
+   "url": "https://www.nhc.noaa.gov/",
    "rotulo": "Furacão Rachel",
    "lado": "b"
   },
@@ -668,22 +651,43 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "calor-california",
    "tipo": "calor",
    "gravidade": "alto",
-   "titulo": "Onda de calor recorde segue na Califórnia",
-   "local": "Califórnia, EUA",
+   "titulo": "Calor recorde de outubro segue no sul da Califórnia",
+   "local": "Sul da Califórnia, EUA",
    "data": "2026-10-06",
    "lat": 34.05,
    "lon": -118.25,
-   "resumo": "A onda de calor fora de época continua na Califórnia, com alertas que cobrem do sul do estado ao vale de Sacramento. Mais de 35 milhões de pessoas estão sob aviso de temperatura perigosa.",
+   "resumo": "A onda de calor recorde segue no sul da Califórnia, com avisos de calor extremo até pelo menos quinta (08/10). O alívio, com temperaturas 6 a 8 °C mais baixas, deve chegar no fim de semana.",
    "pontos": [
-    "Máximas de 8 a 14 °C acima da média no interior do estado.",
-    "Até 43 °C no Vale da Morte e 41 °C nos vales de Los Angeles e Ventura.",
-    "A maioria dos avisos vale até 07 ou 08/10; no Vale da Morte, até 09/10.",
-    "As mínimas noturnas seguem altas, o que reduz o alívio entre um dia e outro."
+    "Los Angeles teve quatro dias seguidos acima de 38 °C (02 a 05/10), algo inédito em outubro.",
+    "Recordes: Vista 42 °C, Santa Ana 42 °C, San Diego 41 °C e centro de Los Angeles 40 °C.",
+    "Temperaturas 8 a 11 °C acima da média e mínimas de 21 a 24 °C à noite em Los Angeles e San Diego.",
+    "Mais de 35 milhões de pessoas ficaram sob aviso de temperatura perigosa."
    ],
-   "fonte": "NWS via The Watchers / ABC News",
-   "url": "https://watchers.news/2026/10/05/extreme-heat-warnings-and-heat-advisories-cover-much-of-california-as-october-heat-wave-persists/",
+   "fonte": "NWS via weather.com / ABC News",
+   "url": "https://weather.com/2026/10/06/forecast/october-heat-wave-west-relief-weekend",
    "rotulo": "Calor Califórnia",
    "lado": "l"
+  },
+  {
+   "id": "nepal",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Nepal encerra buscas após enchente que matou 1.455",
+   "local": "Nepal, fronteira com o Tibete",
+   "data": "2026-10-06",
+   "lat": 28.0,
+   "lon": 85.9,
+   "resumo": "O Nepal encerrou as buscas por vítimas da enchente de 26/08, que desceu da fronteira com o Tibete, e passou à fase de reconstrução. O desastre deixou pelo menos 1.455 mortos e 5.285 desaparecidos.",
+   "pontos": [
+    "13.795 pessoas foram resgatadas.",
+    "A enchente destruiu 12 hidrelétricas, além de estradas, pontes e lavouras.",
+    "A recuperação inicial deve custar cerca de US$ 7 bilhões.",
+    "O país planeja drenar quatro lagos glaciais, obra que pode levar até seis anos."
+   ],
+   "fonte": "Centro Nacional de Emergências do Nepal via ABC News (Austrália)",
+   "url": "https://www.abc.net.au/news/2026-10-06/nepal-ends-search-rescue-after-floods-rehabilitation/107232148",
+   "rotulo": "Nepal",
+   "lado": "t"
   }
  ]
 }
@@ -1021,6 +1025,10 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
+
+
+
+
 
 </body>
 </html>
