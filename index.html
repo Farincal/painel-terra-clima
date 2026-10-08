@@ -29,6 +29,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -349,12 +350,12 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <article class="panel bull">
       <header><h3>Boletim de previsão</h3><span class="sev r">Muito forte</span></header>
       <div class="kv">
-        <span>“Muito forte” out 26–fev 27</span><b class="h">&gt;90%</b>
-        <span>Recorde desde 1950 (out–dez)</span><b class="h">75%</b>
+        <span>Forte a muito forte até jan–mar 27</span><b class="h">≥83%</b>
+        <span>Recorde desde 1950 (out–dez)</span><b class="h">83%</b>
         <span>Modelos “muito forte”</span><b class="h">22/22</b>
         <span>El Niño em mai–jul 2027</span><b class="w">61%</b>
       </div>
-      <p>NOAA CPC (set/2026) e IRI (21/09/2026).</p>
+      <p>NOAA CPC (08/10/2026) e IRI (21/09/2026).</p>
     </article>
     <article class="panel bull">
       <header><h3>Oceano Índico</h3><span class="sev b">IOD positivo</span></header>
@@ -415,6 +416,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   <section id="noticias" class="panel card" aria-label="Notícias">
     <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Set–out 2026</span></div>
     <div class="feed">
+      <div class="item"><time datetime="2026-10-08">08 OUT</time><div><h3>NOAA eleva para 83% a chance de El Niño recorde</h3><p>Niño 3.4 de setembro ficou em +2,1 °C (era +1,8 °C em agosto). Chance de superar todos os eventos desde 1950 em out–dez subiu de 75% para 83%.</p></div></div>
       <div class="item"><time datetime="2026-10-05">05 OUT</time><div><h3>NOAA: Niño 3 e Niño 1+2 em níveis recordes</h3><p>Atualização semanal de 05/10: Niño 3.4 a +2,3 °C, Niño 3 a +3,3 °C e Niño 1+2 a +4,5 °C.</p></div></div>
       <div class="item"><time datetime="2026-09-28">28 SET</time><div><h3>Niño 3.4 chega a +3,1 °C, recorde da série</h3><p>Semana de 23/09 é a mais quente desde 1981. Alta de 0,5 °C em quatro semanas.</p></div></div>
       <div class="item"><time datetime="2026-09-22">22 SET</time><div><h3>Atlântico sem nenhum furacão até o pico da temporada</h3><p>Início de temporada mais tardio desde o começo da era dos satélites, efeito típico do El Niño sobre os ventos.</p></div></div>
@@ -439,26 +441,26 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-08T11:30:00+02:00",
- "manchete": "isaias vira furacão a caminho da costa do Golfo, simon ganha força rumo ao México e o Sul do Brasil começa dias de chuva excessiva",
+ "atualizado": "2026-10-08T17:30:00+02:00",
+ "manchete": "isaias se fortalece rumo à costa do Golfo, simon deve virar grande furacão e a chuva excessiva começa no Rio Grande do Sul",
  "eventos": [
   {
    "id": "isaias",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Isaias vira o 1º furacão do Atlântico e vai à costa do Golfo",
+   "titulo": "Isaias ganha força e mira a costa do Golfo dos EUA",
    "local": "Golfo do México, a noroeste de Yucatán",
    "data": "2026-10-08",
-   "lat": 23.3,
-   "lon": -91.2,
-   "resumo": "Isaias virou furacão e é o primeiro da temporada 2026 no Atlântico. Deve chegar forte à costa norte do Golfo dos EUA entre a noite de sexta (09/10) e a madrugada de sábado.",
+   "lat": 23.7,
+   "lon": -90.2,
+   "resumo": "O furacão Isaias segue se fortalecendo no Golfo do México rumo à costa norte do Golfo dos EUA. Deve tocar terra entre o Mississippi e o Panhandle da Flórida no fim da sexta (09/10) ou na madrugada de sábado.",
    "pontos": [
-    "Aviso 7 do NHC (4h CDT de 08/10): ventos de 130 km/h e 979 hPa, a 270 km a noroeste de Progreso (México).",
-    "Alerta de furacão de Ocean Springs (MS) até a divisa Bay/Gulf (FL); maré de tempestade de 1,5 a 2,1 m até Indian Pass e na baía de Mobile.",
-    "Chuva de 75 a 180 mm, com até 250 mm em pontos, do sudeste da Louisiana ao Panhandle da Flórida.",
-    "Deve se fortalecer até sexta; há risco de tornados no litoral do Alabama e no Panhandle na noite de sexta."
+    "Aviso 8 do NHC (10h CDT de 08/10): ventos de 140 km/h e 975 hPa, a 270 km ao norte de Progreso (México).",
+    "Alerta de furacão de Ocean Springs (MS) até a divisa Bay/Gulf (FL); alerta de maré de tempestade da foz do Mississippi até o rio Suwannee.",
+    "Maré de tempestade de 1,5 a 2,1 m de Ocean Springs a Indian Pass e na baía de Mobile.",
+    "Chuva de 75 a 180 mm, com até 380 mm em pontos do Panhandle e do Big Bend da Flórida."
    ],
-   "fonte": "NHC (aviso 7)",
+   "fonte": "NHC (aviso 8)",
    "url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
    "rotulo": "Isaias",
    "lado": "b"
@@ -467,20 +469,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Sul do Brasil entra em período de chuva excessiva",
+   "titulo": "Chuva excessiva começa e rios do RS voltam a subir",
    "local": "Rio Grande do Sul, Brasil",
    "data": "2026-10-08",
    "lat": -30.03,
    "lon": -51.23,
-   "resumo": "Uma sequência de dias de chuva excessiva e temporais começa nesta quinta (08/10) no Rio Grande do Sul e depois atinge os três estados do Sul. Rios gaúchos já estão em cheia, o que aumenta o risco de novas enchentes.",
+   "resumo": "A chuva forte já chegou ao Oeste do Rio Grande do Sul e a MetSul alerta para chuva excessiva a extrema até segunda (12/10). Os rios Uruguai e Ibirapuitã devem ter cheias agravadas.",
    "pontos": [
-    "A MetSul prevê de 100 a 150 mm em poucas horas no Noroeste gaúcho nesta quinta; muitas cidades devem passar de 200 mm, com pontos acima de 300 mm.",
-    "Sexta (09/10) terá os maiores volumes no Norte do RS; de domingo a segunda a chuva se concentra em SC e no PR.",
-    "Rios acima da cota de cheia em 07/10: Uruguai em São Borja (9,99 m), Ibirapuitã em Alegrete (10,14 m) e Jacuí em Cachoeira do Sul (10,02 m).",
-    "A bacia do Iguaçu, no Paraná, é a que mais preocupa a MetSul."
+    "Até a manhã de 08/10: 103 mm em São Borja, 93 mm em Jaguari e 83 mm em Alegrete.",
+    "Até sábado à noite, 100 a 200 mm em vários pontos e mais de 200 mm em alguns, sobretudo no Noroeste, Missões e Alto Jacuí.",
+    "A Defesa Civil marca risco de inundação nos rios Uruguai, Caí, Taquari, Ibicuí, Ibirapuitã e Jacuí.",
+    "O Inmet tem alerta laranja para tempestades no RS e no oeste de SC, com rajadas acima de 90 km/h e granizo."
    ],
-   "fonte": "MetSul / Defesa Civil RS via O Timoneiro",
-   "url": "https://metsul.com/sul-do-brasil-tera-chuva-excessiva-e-mais-enchentes-nos-proximos-dias/",
+   "fonte": "MetSul / Defesa Civil RS e Inmet via Metrópoles",
+   "url": "https://metsul.com/metsul-reforca-preocupacao-sobre-chuva-excessiva-no-rio-grande-do-sul/",
    "rotulo": "Chuva Sul",
    "lado": "l"
   },
@@ -488,20 +490,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Temporal na Catalunha chega a três mortos e dois desaparecidos",
+   "titulo": "Catalunha deve rebaixar emergência; dois seguem desaparecidos",
    "local": "Barcelona e Tarragona, Catalunha, Espanha",
-   "data": "2026-10-07",
+   "data": "2026-10-08",
    "lat": 41.6,
    "lon": 2.3,
-   "resumo": "Um terceiro morto foi achado num carro no túnel alagado da Ronda Nord, em Les Franqueses del Vallès, e o temporal na Catalunha já soma três mortes. Duas pessoas seguem desaparecidas, em Pineda de Mar e em Granollers.",
+   "resumo": "A Generalitat prevê rebaixar nesta quinta (08/10) o plano de inundações da Catalunha de emergência para alerta. O temporal deixou três mortos e duas pessoas seguem desaparecidas, entre elas um menino de 12 anos.",
    "pontos": [
-    "As outras mortes foram em Tordera e Montornès del Vallès, no domingo (04/10).",
-    "O Es-Alert foi ativado em seis zonas, entre elas Vallès, Maresme e Barcelonès.",
-    "Quase 4.000 intervenções de emergência, 45 resgates nas últimas horas e cerca de 5.300 imóveis sem luz.",
-    "A AEMET pôs a Catalunha em aviso laranja nesta quinta (08/10) por rajadas de até 90 km/h em Tarragona e ondas de 3 a 4 m no Empordà."
+    "Os bombeiros receberam 4.082 chamados ligados ao temporal; Granollers é uma das áreas mais atingidas.",
+    "O serviço médico atendeu 439 pessoas e levou 80 a hospitais, nenhuma em estado grave.",
+    "O túnel da C-352 em Les Franqueses del Vallès segue fechado; há desvios por deslizamentos na GI-682 e na C-1415c.",
+    "Ainda há previsão de chuva forte, com mais de 20 mm em meia hora, e rajadas acima de 90 km/h no Empordà e no Ebro."
    ],
-   "fonte": "Protecció Civil via Moncloa.com / AEMET via Infobae",
-   "url": "https://www.moncloa.com/2026/10/07/temporal-catalunya-muertos-es-alert-3444038",
+   "fonte": "Protecció Civil via EFE (Infobae)",
+   "url": "https://www.infobae.com/espana/agencias/2026/10/08/cataluna-preve-rebajar-hoy-la-emergencia-por-el-temporal-que-ha-causado-tres-muertos/",
    "rotulo": "Catalunha",
    "lado": "t"
   },
@@ -514,15 +516,15 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "data": "2026-10-08",
    "lat": 15.4,
    "lon": -103.1,
-   "resumo": "A tempestade tropical Simon deve se intensificar rápido e virar grande furacão entre sexta (09/10) e sábado. Ela se aproxima da costa sudoeste do México no sábado, com risco de enchentes e deslizamentos.",
+   "resumo": "A tempestade tropical Simon deve virar furacão nesta quinta (08/10) e chegar à categoria 3 no sábado. O SMN prevê categoria 4 a cerca de 140 km de Manzanillo, com risco de enchentes e deslizamentos.",
    "pontos": [
-    "Aviso 4 do NHC (3h CST de 08/10): ventos de 85 km/h e 1000 hPa.",
-    "Está a 305 km a sul-sudoeste de Lázaro Cárdenas e 420 km a sul-sudeste de Manzanillo.",
-    "Alerta de tempestade tropical de Punta San Telmo a Manzanillo.",
-    "Chuva de 200 a 300 mm no sudoeste do México, com até 380 a 635 mm em Colima e Michoacán até domingo."
+    "Conagua (6h de 08/10): ventos de 85 km/h, a 310 km a sul-sudoeste de Lázaro Cárdenas, indo para noroeste a 11 km/h.",
+    "Alerta de tempestade tropical do NHC de Punta San Telmo a Manzanillo.",
+    "Chuva torrencial na costa de Guerrero; NHC prevê até 380 a 635 mm em Colima e Michoacán até domingo.",
+    "Ondas de 3 a 4 m nas costas de Colima, Michoacán e Guerrero."
    ],
-   "fonte": "NHC (aviso 4)",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
+   "fonte": "Conagua/SMN via Posta e TV Azteca / NHC",
+   "url": "https://www.tvazteca.com/aztecanoticias/tormenta-tropical-simon-huracan-isaias-hoy-jueves-8-octubre-ubicacion-trayectoria-lluvias",
    "rotulo": "Simon",
    "lado": "l"
   },
@@ -530,20 +532,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "koguma",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Koguma deve se intensificar rápido e virar supertufão",
+   "titulo": "Koguma ganha força e deve virar supertufão",
    "local": "Pacífico oeste, a sudoeste da ilha Wake",
-   "data": "2026-10-07",
-   "lat": 16.8,
-   "lon": 162.0,
-   "resumo": "A tempestade tropical Koguma tem ventos de 100 km/h a cerca de 2.320 km a lés-sudeste de Iwo To, no Japão. O JTWC prevê intensificação rápida até 220 km/h nas próximas 60 horas.",
+   "data": "2026-10-08",
+   "lat": 17.0,
+   "lon": 161.2,
+   "resumo": "Koguma virou tempestade tropical severa, com ventos de cerca de 108 km/h, a sudoeste da ilha Wake. O JTWC prevê intensificação rápida até 220 km/h nos próximos dias, longe de terra.",
    "pontos": [
-    "Atualização das 21h UTC de 07/10: ventos de 100 km/h e 992 hPa; ondas de até 7 m.",
-    "Move-se para oés-noroeste a 15 km/h; depois de 60 horas deve virar para noroeste e desacelerar.",
+    "Dado de 08/10: ventos de 108 km/h e 990 hPa, perto de 17,0° N e 161,2° E.",
+    "Move-se para oés-noroeste; depois deve virar para noroeste e desacelerar.",
     "O vento cortante mais fraco favorece o pico de 220 km/h; após três dias deve enfraquecer.",
     "As trajetórias divergem depois de três dias por causa da interação com o sistema Nolo."
    ],
-   "fonte": "JTWC via Zoom Earth",
-   "url": "https://zoom.earth/storms/koguma-2026/",
+   "fonte": "JTWC via Zoom Earth / StormAtlas",
+   "url": "https://stormatlasx.com/storms/koguma-2026",
    "rotulo": "Koguma",
    "lado": "r"
   },
@@ -614,20 +616,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "rachel",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Rachel enfraquece e deve virar rumo à Baixa Califórnia",
+   "titulo": "Rachel deve virar e se aproximar do norte da Baixa Califórnia",
    "local": "Pacífico, a oeste da Baixa Califórnia",
    "data": "2026-10-08",
-   "lat": 21.8,
-   "lon": -123.9,
-   "resumo": "Rachel perdeu força e voltou a ser tempestade tropical, com ventos de 110 km/h. Deve fazer uma curva brusca para nordeste em cerca de 24 horas e enfraquecer aos poucos.",
+   "lat": 22.1,
+   "lon": -124.2,
+   "resumo": "A tempestade tropical Rachel deve fazer uma curva brusca para nordeste e chegar perto do norte da Baixa Califórnia no fim do sábado (10/10). O NHC diz que podem ser emitidos alertas para o norte da Baixa Califórnia e o sul da Califórnia.",
    "pontos": [
-    "Aviso 45 do NHC (2h PDT de 08/10): ventos de 110 km/h e 985 hPa.",
-    "Está a 1.445 km a oeste do sul da Baixa Califórnia, indo para oés-noroeste a 13 km/h.",
-    "O pico foi em 02/10, com 193 km/h (categoria 3).",
-    "Não há alertas, mas as ondas devem causar ressaca e correntes perigosas no sul da Califórnia e norte da Baixa Califórnia até o fim de semana."
+    "Aviso 46 do NHC (8h PDT de 08/10): ventos de 110 km/h e 985 hPa.",
+    "Está a 1.470 km a oeste do sul da Baixa Califórnia, indo para oés-noroeste a 11 km/h.",
+    "Deve enfraquecer aos poucos, mas ainda como tempestade tropical ao se aproximar da costa.",
+    "As ondas devem causar ressaca e correntes perigosas no sul da Califórnia e na Baixa Califórnia no fim de semana."
    ],
-   "fonte": "NHC (aviso 45)",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
+   "fonte": "NHC (aviso 46)",
+   "url": "https://www.nhc.noaa.gov/archive/2026/ep18/ep182026.public.046.shtml",
    "rotulo": "Rachel",
    "lado": "b"
   },
@@ -1030,6 +1032,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
+
 
 
 
