@@ -1,0 +1,197 @@
+<title>Painéis sob medida · FarincalTec</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#07121B; --panel:#0D1C28; --panel2:#112434; --line:#1D3446; --ink:#E3EDF3; --muted:#8EA4B4;
+  --hot:#FF5A36; --warm:#FFA43A; --cool:#3FB6E8; --ok:#46C28E;
+  --cond:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);padding-inline:16px;padding-block:0 56px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;gap:56px}
+h1,h2,h3{font-family:var(--cond);margin:0;line-height:1.08;text-wrap:balance}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);text-transform:uppercase;letter-spacing:.04em}
+h3{font-size:1.3rem}
+p{margin:0;max-width:65ch}
+a{color:var(--cool)}
+:focus-visible{outline:2px solid var(--warm);outline-offset:2px}
+.lbl{font:500 .72rem/1.2 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line)}
+.brand{font:700 1.3rem/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--hot)}
+.lang{display:flex;gap:6px}
+.lang button{font:600 .85rem/1 var(--cond);letter-spacing:.08em;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 12px;cursor:pointer}
+.lang button[aria-pressed="true"]{color:var(--bg);background:var(--ink);border-color:var(--ink)}
+.hero{display:grid;gap:18px;padding-top:24px}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.4rem);font-weight:700;text-transform:uppercase;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--hot)}
+.hero p{font-size:1.15rem;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;padding-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 1rem/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:6px;padding:14px 18px;border:1px solid var(--line);color:var(--ink);background:var(--panel2)}
+.btn.main{background:var(--hot);border-color:var(--hot);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:10px;align-content:start}
+.card p{font-size:.98rem;color:var(--muted)}
+.card .tag{font:700 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--c,var(--cool))}
+section{display:grid;gap:20px}
+.list{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px}
+.list li{padding-left:18px;border-left:2px solid var(--hot);font-size:1rem}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:s}
+@media (max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+.step{border-top:3px solid var(--line);padding-top:12px;display:grid;gap:6px}
+.step b{font:700 .8rem/1 var(--mono);color:var(--hot)}
+.step p{font-size:.95rem;color:var(--muted)}
+.contact{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:24px;display:grid;gap:14px}
+.contact .items{display:flex;flex-wrap:wrap;gap:10px}
+.also{font-size:.98rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:18px;font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="./">Painel Terra e Clima <span>·</span> FarincalTec</a>
+    <div class="lang" role="group" aria-label="Idioma / Idioma">
+      <button type="button" id="lg-pt" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" id="lg-es" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+
+  <main lang="pt" data-l="pt" class="wrap" style="gap:56px">
+    <header class="hero">
+      <div class="lbl">Para prefeituras, agro e empresas</div>
+      <h1>Seu painel de clima e riscos, <em>atualizado sozinho</em></h1>
+      <p>O Painel Terra e Clima é um exemplo do que a FarincalTec constrói: dados oficiais num mapa interativo, um plantão escrito e atualizado por IA a cada poucas horas e segurança pensada desde o primeiro dia.</p>
+      <div class="cta"><a class="btn main" href="#contato">Quero um painel assim</a><a class="btn" href="./">Ver o painel ao vivo</a></div>
+    </header>
+
+    <section>
+      <div class="lbl">Para quem</div>
+      <h2>Quem usa um painel assim</h2>
+      <div class="grid">
+        <div class="card" style="--c:var(--hot)"><span class="tag">Setor público</span><h3>Prefeituras e Defesa Civil</h3><p>Alertas de chuva forte, calor e enchentes da sua cidade, com base no INMET, na AEMET e na Defesa Civil, num endereço que a população pode abrir.</p></div>
+        <div class="card" style="--c:var(--ok)"><span class="tag">Agro</span><h3>Cooperativas e produtores</h3><p>Chuva, seca e efeitos do El Niño por região, para planejar plantio, colheita e logística.</p></div>
+        <div class="card" style="--c:var(--warm)"><span class="tag">Serviços</span><h3>Turismo, seguros e imobiliárias</h3><p>Riscos climáticos por destino, imóvel ou carteira de clientes, em linguagem simples.</p></div>
+        <div class="card" style="--c:var(--cool)"><span class="tag">Interno</span><h3>Empresas e escolas</h3><p>Um painel para a equipe ou para a tela da recepção, com a sua marca.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lbl">O que está incluído</div>
+      <h2>Tudo pronto para funcionar</h2>
+      <ul class="list">
+        <li>Mapa com os seus pontos de interesse: cidades, lavouras, imóveis, rotas.</li>
+        <li>Plantão atualizado automaticamente, até de hora em hora.</li>
+        <li>Dados ao vivo de fontes oficiais: USGS, NOAA, AEMET, INMET.</li>
+        <li>Resumo pronto para WhatsApp, Telegram ou e-mail.</li>
+        <li>Seu domínio, sua marca e textos em português ou espanhol.</li>
+        <li>Segurança: política de conteúdo restrita, sem cookies de rastreamento e sem coletar dados pessoais.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="lbl">Como funciona</div>
+      <h2>Do primeiro contato ao ar</h2>
+      <div class="steps">
+        <div class="step"><b>1 · Conversa</b><h3>Entender o caso</h3><p>Região, riscos que importam e quem vai usar o painel.</p></div>
+        <div class="step"><b>2 · Protótipo</b><h3>Ver funcionando</h3><p>Uma primeira versão com os seus dados em poucos dias.</p></div>
+        <div class="step"><b>3 · Publicação</b><h3>No seu domínio</h3><p>Ajustes finais, marca e publicação no endereço da sua organização.</p></div>
+        <div class="step"><b>4 · Manutenção</b><h3>Sempre atualizado</h3><p>Acompanhamento mensal, novas fontes e melhorias.</p></div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="lbl">Contato</div>
+      <h2>Vamos conversar</h2>
+      <p>Conte em poucas linhas o que você precisa monitorar. A primeira conversa é sem compromisso.</p>
+      <div class="items" data-contato><a class="btn main" href="https://wa.me/34678218084?text=Ol%C3%A1%21%20Vi%20o%20Painel%20Terra%20e%20Clima%20e%20quero%20saber%20mais%20sobre%20um%20painel%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer">WhatsApp +34 678 218 084 ↗</a>
+        <a class="btn" href="mailto:farincaltec@gmail.com?subject=Painel%20sob%20medida">farincaltec@gmail.com</a>
+        <a class="btn" href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=contato-pt&amp;utm_campaign=servicos" target="_blank" rel="noopener noreferrer">farincaltec.com ↗</a></div>
+      <p class="also">A FarincalTec também cria sites rápidos e seguros, cuida do seu perfil no Google e Google Maps, faz campanhas de anúncios, gestão de redes sociais, design gráfico e automações com n8n e Make.</p>
+    </section>
+  </main>
+
+  <main lang="es" data-l="es" class="wrap" style="gap:56px" hidden>
+    <header class="hero">
+      <div class="lbl">Para ayuntamientos, agro y empresas</div>
+      <h1>Tu panel de clima y riesgos, <em>actualizado solo</em></h1>
+      <p>El Painel Terra e Clima es un ejemplo de lo que construye FarincalTec: datos oficiales en un mapa interactivo, un parte escrito y actualizado por IA cada pocas horas y seguridad pensada desde el primer día.</p>
+      <div class="cta"><a class="btn main" href="#contacto">Quiero un panel así</a><a class="btn" href="./">Ver el panel en directo</a></div>
+    </header>
+
+    <section>
+      <div class="lbl">Para quién</div>
+      <h2>Quién usa un panel así</h2>
+      <div class="grid">
+        <div class="card" style="--c:var(--hot)"><span class="tag">Sector público</span><h3>Ayuntamientos y Protección Civil</h3><p>Avisos de lluvia intensa, calor e inundaciones de tu municipio, con datos de AEMET, Meteocat y Protección Civil, en una dirección que la población puede abrir.</p></div>
+        <div class="card" style="--c:var(--ok)"><span class="tag">Agro</span><h3>Cooperativas y agricultores</h3><p>Lluvia, sequía y efectos de El Niño por zona, para planificar siembra, cosecha y logística.</p></div>
+        <div class="card" style="--c:var(--warm)"><span class="tag">Servicios</span><h3>Turismo, seguros e inmobiliarias</h3><p>Riesgos climáticos por destino, inmueble o cartera de clientes, en lenguaje sencillo.</p></div>
+        <div class="card" style="--c:var(--cool)"><span class="tag">Interno</span><h3>Empresas y escuelas</h3><p>Un panel para el equipo o para la pantalla de recepción, con tu marca.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lbl">Qué incluye</div>
+      <h2>Todo listo para funcionar</h2>
+      <ul class="list">
+        <li>Mapa con tus puntos de interés: municipios, cultivos, inmuebles, rutas.</li>
+        <li>Parte actualizado automáticamente, incluso cada hora.</li>
+        <li>Datos en directo de fuentes oficiales: USGS, NOAA, AEMET, Meteocat.</li>
+        <li>Resumen listo para WhatsApp, Telegram o correo.</li>
+        <li>Tu dominio, tu marca y textos en español o portugués.</li>
+        <li>Seguridad: política de contenido restringida, sin cookies de seguimiento y sin recoger datos personales.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="lbl">Cómo funciona</div>
+      <h2>Del primer contacto a publicado</h2>
+      <div class="steps">
+        <div class="step"><b>1 · Charla</b><h3>Entender el caso</h3><p>Zona, riesgos que importan y quién usará el panel.</p></div>
+        <div class="step"><b>2 · Prototipo</b><h3>Verlo funcionar</h3><p>Una primera versión con tus datos en pocos días.</p></div>
+        <div class="step"><b>3 · Publicación</b><h3>En tu dominio</h3><p>Ajustes finales, marca y publicación en la dirección de tu organización.</p></div>
+        <div class="step"><b>4 · Mantenimiento</b><h3>Siempre al día</h3><p>Seguimiento mensual, nuevas fuentes y mejoras.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="lbl">Contacto</div>
+      <h2>Hablemos</h2>
+      <p>Cuéntame en pocas líneas qué necesitas vigilar. La primera conversación es sin compromiso.</p>
+      <div class="items" data-contato><a class="btn main" href="https://wa.me/34678218084?text=%C2%A1Hola%21%20He%20visto%20el%20Painel%20Terra%20e%20Clima%20y%20quiero%20informaci%C3%B3n%20sobre%20un%20panel%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">WhatsApp +34 678 218 084 ↗</a>
+        <a class="btn" href="mailto:farincaltec@gmail.com?subject=Panel%20a%20medida">farincaltec@gmail.com</a>
+        <a class="btn" href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=contato-es&amp;utm_campaign=servicos" target="_blank" rel="noopener noreferrer">farincaltec.com ↗</a></div>
+      <p class="also">FarincalTec también crea webs rápidas y seguras, gestiona tu ficha de Google y Google Maps, hace campañas de anuncios, gestión de redes sociales, diseño gráfico y automatizaciones con n8n y Make.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 <a href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=rodape&amp;utm_campaign=servicos" target="_blank" rel="noopener noreferrer">FarincalTec</a> · Barcelona · dona do Painel Terra e Clima</span>
+    <span>Sem cookies de rastreamento · Sin cookies de seguimiento</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var btns=document.querySelectorAll(".lang button"),mains=document.querySelectorAll("main[data-l]");
+  function set(l){
+    mains.forEach(function(m){m.hidden=m.dataset.l!==l;});
+    btns.forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.lang===l));});
+    document.documentElement.lang=l==="es"?"es":"pt-BR";
+    try{localStorage.setItem("lang",l);}catch(e){}
+  }
+  btns.forEach(function(b){b.addEventListener("click",function(){set(b.dataset.lang);});});
+  var l=null;
+  if(location.hash==="#es"||location.hash==="#contacto")l="es";
+  else if(location.hash==="#pt"||location.hash==="#contato")l="pt";
+  if(!l){try{l=localStorage.getItem("lang");}catch(e){}}
+  if(l!=="pt"&&l!=="es")l=/^es/i.test(navigator.language||"")?"es":"pt";
+  set(l);
+})();
+</script>

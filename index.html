@@ -20,24 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -216,6 +198,21 @@ a{color:var(--cool)}
 .btn.wa{background:#1F7A4D;border-color:#1F7A4D;color:#fff}
 .btn.tg{background:#1E6FA3;border-color:#1E6FA3;color:#fff}
 #rs-msg{min-height:1.2em;font-size:.82rem;color:var(--ok)}
+/* dono do projeto */
+.owner{display:inline-flex;align-items:center;gap:6px;font:600 .8rem/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 11px}
+.owner b{color:var(--hot);font-weight:700}
+.owner:hover{border-color:var(--hot)}
+.ftc{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:18px 28px;align-items:center;padding:22px;border-left:4px solid var(--hot)}
+@media (max-width:820px){.ftc{grid-template-columns:1fr}}
+.ftc h2{font-size:clamp(1.4rem,3vw,1.9rem);text-transform:none;letter-spacing:.01em}
+.ftc h2 b{color:var(--hot)}
+.ftc p{color:var(--muted);max-width:62ch}
+.ftc ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.ftc li{font:500 .72rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:6px 8px}
+.ftc-cta{display:grid;gap:10px}
+.btn.main{background:var(--hot);border-color:var(--hot);color:#fff}
+.ad{font-size:.8rem;color:var(--muted)}
+.ownerline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;color:var(--ink);font-size:.85rem}
 footer{font-size:.8rem;color:var(--muted);display:grid;gap:8px;border-top:1px solid var(--line);padding-top:18px}
 footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 .sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
@@ -232,6 +229,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     </div>
     <span class="live"><i></i>Ao vivo</span>
     <span class="stamp" id="stamp"></span>
+    <a class="owner" href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=selo-topo&amp;utm_campaign=painel" target="_blank" rel="noopener noreferrer">Um projeto <b>FarincalTec</b> ↗</a>
     <nav aria-label="Seções">
       <a href="#mapa">Mapa</a><a href="#plantao">Plantão</a><a href="#resumo">Compartilhar</a><a href="#sismos">Sismos</a><a href="#boletins">Boletins</a><a href="#previsao">Previsão</a><a href="#imagens">Imagens</a><a href="#noticias">Notícias</a>
     </nav>
@@ -307,6 +305,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
       <div class="chips" role="group" aria-label="Filtrar por tipo" id="chips"></div>
     </div>
     <div class="evs" id="evs"></div>
+  </section>
+
+  <section id="farincaltec" class="panel ftc" aria-label="Sobre o dono do projeto">
+    <div style="display:grid;gap:10px">
+      <div class="lbl">Quem faz este painel</div>
+      <h2>O Painel Terra e Clima é um projeto da <b>FarincalTec</b></h2>
+      <p>Mapa, dados oficiais e atualização automática com IA, tudo com segurança desde o primeiro dia. A FarincalTec, de Barcelona, cria o mesmo para empresas, prefeituras e negócios locais.</p>
+      <ul><li>Sites rápidos e seguros</li><li>Google e Google Maps</li><li>Campanhas de anúncios</li><li>Redes sociais</li><li>Automações</li><li>Painéis sob medida</li></ul>
+    </div>
+    <div class="ftc-cta">
+      <a class="btn main" href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=cartao&amp;utm_campaign=painel" target="_blank" rel="noopener noreferrer">Conhecer a FarincalTec ↗</a>
+      <a class="btn" href="https://farincal.github.io/painel-terra-clima/servicos.html" target="_blank" rel="noopener noreferrer">Quero um painel assim ↗</a>
+      <p class="ad">Quer anunciar ou patrocinar o painel? <a href="https://farincal.github.io/painel-terra-clima/servicos.html#contato" target="_blank" rel="noopener noreferrer">Fale com a gente</a>.</p>
+    </div>
   </section>
 
   <section id="resumo" class="panel card" aria-label="Resumo do dia para compartilhar">
@@ -435,6 +447,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </section>
 
   <footer>
+    <div class="ownerline"><span>© 2026 Painel Terra e Clima · um projeto <a href="https://farincaltec.com/?utm_source=painel-terra-clima&amp;utm_medium=rodape&amp;utm_campaign=painel" target="_blank" rel="noopener noreferrer">FarincalTec</a>, Barcelona</span><a href="https://farincal.github.io/painel-terra-clima/servicos.html" target="_blank" rel="noopener noreferrer">Serviços para empresas</a><a href="https://farincal.github.io/painel-terra-clima/servicos.html#contato" target="_blank" rel="noopener noreferrer">Anuncie aqui</a></div>
     <span class="lbl">Fontes</span>
     <ul>
       <li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" target="_blank" rel="noopener noreferrer">NOAA CPC · ENSO Diagnostic Discussion</a></li>
@@ -1040,11 +1053,5 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
-
-
-
-
-
 </body>
 </html>

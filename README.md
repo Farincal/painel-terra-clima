@@ -1,5 +1,7 @@
 # Painel Terra e Clima
 
+Um projeto da [FarincalTec](https://farincaltec.com) (Barcelona).
+
 Painel em português de monitoramento de fenômenos naturais: ciclones, enchentes, terremotos, vulcões, tsunamis e ondas de calor, com o **El Niño 2026–27** em destaque.
 
 - Mapa-múndi centrado no Pacífico com as regiões Niño e os eventos do dia
@@ -18,6 +20,8 @@ Os eventos ficam no bloco JSON `<script type="application/json" id="dados">` den
 ## Como o site é atualizado
 
 Uma tarefa agendada do Claude roda a cada 6 horas: atualiza o painel publicado no Claude e gera o `index.html` deste repositório com `tools/montar_site.py`, que acrescenta os cabeçalhos de segurança e as tags de `head-extra.html` (canonical, Open Graph, favicon).
+
+A página de serviços (`servicos.html`, PT/ES) é gerada a partir de `fonte/servicos-corpo.html` com `tools/montar_servicos.py`.
 
 Ao trocar de domínio, atualize o endereço em `head-extra.html`, `robots.txt`, `sitemap.xml` e no atributo `data-site` do `index.html`.
 
