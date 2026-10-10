@@ -20,22 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -445,72 +429,73 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-10-10T05:30:00+02:00",
- "manchete": "terremoto de 7,7 abala o panamá, isaias toca terra na flórida e simon pode chegar ao méxico como categoria 4",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-10-10T11:30:00+02:00",
+ "manchete": "simon vira categoria 4 rumo ao méxico, isaias deixa 726 mil sem luz e panamá conta mais de 400 prédios danificados",
  "eventos": [
+  {
+   "id": "simon",
+   "tipo": "ciclone",
+   "gravidade": "critico",
+   "titulo": "Simon chega à categoria 4 a caminho de Jalisco e Colima",
+   "local": "Pacífico, ao sul de Manzanillo, México",
+   "data": "2026-10-10",
+   "lat": 17.0,
+   "lon": -104.6,
+   "resumo": "O furacão Simon chegou à categoria 4, com ventos de 220 km/h, na madrugada de sábado (10/10). O centro deve chegar à costa centro-oeste do México ainda neste sábado ou no domingo (11/10).",
+   "pontos": [
+    "Aviso 11A do NHC (0h CST de 10/10): 220 km/h e 945 hPa, a 225 km ao sul de Manzanillo.",
+    "Move-se para o norte a 7 km/h.",
+    "Alerta de furacão de Punta San Telmo a Punta Mita; vigilância até El Roblito e Islas Marías.",
+    "Chuva de 250 a 500 mm, com até 760 mm em Michoacán, Colima, Jalisco e Nayarit até domingo."
+   ],
+   "fonte": "NHC (aviso 11A)",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/100546.shtml",
+   "rotulo": "Simon",
+   "lado": "l"
+  },
   {
    "id": "panama",
    "tipo": "terremoto",
    "gravidade": "critico",
-   "titulo": "Terremoto de magnitude 7,7 derruba prédios no Panamá",
+   "titulo": "Terremoto de 7,7 danifica mais de 400 prédios no Panamá",
    "local": "Herrera, Los Santos e Veraguas, Panamá",
-   "data": "2026-10-09",
+   "data": "2026-10-10",
    "lat": 7.6,
    "lon": -80.7,
-   "resumo": "Um terremoto de magnitude 7,7 atingiu o sul do Panamá na tarde de sexta (09/10) e derrubou prédios nas províncias centrais. Não há mortes confirmadas, e o presidente José Raúl Mulino falou em \"desastre grande\".",
+   "resumo": "O terremoto de magnitude 7,7 de sexta (09/10) danificou mais de 400 edificações em nove províncias do Panamá. O Sinaproc conta 27 feridos leves e nenhuma morte ou desaparecido.",
    "pontos": [
-    "Abalo às 12h56 locais (17h56 UTC), a 10 km de profundidade, perto de Pitaloza Arriba (USGS); o Panamá mediu 7,2.",
-    "Mais de 80 réplicas, entre elas uma de 6,6; houve evacuações e o aeroporto de Tocumen parou temporariamente.",
-    "Hotel parcialmente desabado e catedral rachada em Penonomé; igreja de San Atanasio, em Los Santos, desabou.",
-    "O alerta de tsunami para o Pacífico leste, com ondas previstas de 1 a 3 m no Panamá, foi suspenso."
+    "Abalo às 12h56 locais (17h56 UTC), a 10 km de profundidade, perto de Tonosí (USGS); o instituto do Panamá mediu 7,5.",
+    "Danos em 142 casas, 188 escolas, 20 unidades de saúde, 13 igrejas e 9 pontes.",
+    "Uma das torres da catedral de Penonomé desabou; cinco comunidades de Los Santos ficaram isoladas.",
+    "Mais de 100 réplicas; cerca de 300 moradores do litoral de Los Santos foram retirados."
    ],
-   "fonte": "USGS, Sinaproc e AFP via Univision",
-   "url": "https://www.univision.com/noticias/america-latina/el-presidente-de-panama-afirma-que-su-pais-vive-un-desastre-grande-tras-potente-terremoto-con-magnitud-de-7-7",
+   "fonte": "Sinaproc via EFE (Infobae)",
+   "url": "https://www.infobae.com/america/agencias/2026/10/10/al-menos-27-heridos-leves-y-mas-de-400-edificaciones-afectadas-por-el-terremoto-en-panama/",
    "rotulo": "Sismo Panamá",
    "lado": "r"
   },
   {
    "id": "isaias",
    "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Isaias toca terra perto de Destin e deixa 600 mil sem luz",
-   "local": "Panhandle da Flórida e sul do Alabama, EUA",
-   "data": "2026-10-09",
-   "lat": 30.6,
-   "lon": -86.7,
-   "resumo": "O furacão Isaias tocou terra perto de Destin, na Flórida, por volta das 21h30 (hora do leste dos EUA) de sexta (09/10), com ventos de 170 km/h. Às 23h ET já tinha caído para categoria 1 e seguia para o norte, rumo ao Alabama.",
+   "gravidade": "alto",
+   "titulo": "Isaias perde força, mas deixa 726 mil sem luz",
+   "local": "Alabama e Geórgia, EUA",
+   "data": "2026-10-10",
+   "lat": 32.0,
+   "lon": -86.3,
+   "resumo": "Isaias virou ciclone pós-tropical na madrugada de sábado (10/10) sobre o sul do Alabama, depois de tocar terra perto de Destin como categoria 2. Mais de 726 mil clientes seguem sem luz na Flórida e no Alabama.",
    "pontos": [
-    "No toque em terra: ventos de 170 km/h e pressão de 971 hPa (NHC).",
-    "Aviso das 23h ET: 145 km/h e 982 hPa, a 70 km a lés-nordeste de Pensacola, rumo norte a 32 km/h.",
-    "Mais de 600 mil clientes sem luz na Flórida, no Alabama e na Geórgia; rajada de 187 km/h em Santa Rosa Sound.",
-    "Maré de tempestade de 1,7 m em Panama City Beach; emergência de enxurrada no condado de Okaloosa."
+    "Aviso das 5h ET de 10/10: ventos de 55 km/h, rumo norte a 23 km/h.",
+    "No toque em terra, na noite de sexta (09/10): ventos de 170 km/h (NHC).",
+    "Ruas alagadas em Destin e destroços em Pensacola; não há mortes relatadas.",
+    "Previsão de 100 a 200 mm de chuva no Sudeste e risco de tornados na Geórgia e nas Carolinas."
    ],
-   "fonte": "NHC via FOX Weather",
-   "url": "https://www.foxweather.com/live-news/live-updates-hurricane-isaias-threatens-the-gulf-coast-with-dangerous-landfall-expected-tonight",
+   "fonte": "NHC via WSB-TV e AP (Click2Houston)",
+   "url": "https://www.wsbtv.com/news/local/hurricane-isaias-live-updates-storm-now-post-tropical-georgia-feeling-impacts-today/Y3NKVTBLMFBSPIPNSRVYS7A7HI/",
    "rotulo": "Isaias",
    "lado": "b"
-  },
-  {
-   "id": "simon",
-   "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Simon se fortalece e pode chegar a Jalisco como categoria 4",
-   "local": "Pacífico, ao sul de Manzanillo, México",
-   "data": "2026-10-09",
-   "lat": 16.4,
-   "lon": -104.6,
-   "resumo": "O furacão Simon chegou a 175 km/h na noite de sexta (09/10) e deve se intensificar rápido antes de chegar à costa centro-oeste do México. O SMN projeta a entrada em terra em Jalisco, perto de Puerto Vallarta, no domingo (11/10).",
-   "pontos": [
-    "Aviso 10A do NHC (18h CST de 09/10): ventos de 175 km/h e 964 hPa, a 305 km ao sul de Manzanillo.",
-    "Quase parado, a 6 km/h para nor-noroeste; deve virar para o norte e acelerar um pouco.",
-    "Alerta de furacão de Punta San Telmo a Punta Mita; Jalisco suspendeu aulas em 22 municípios do litoral.",
-    "Chuva de 250 a 500 mm, com até 760 mm em Michoacán, Colima, Jalisco e Nayarit até domingo."
-   ],
-   "fonte": "NHC (aviso 10A) e SMN via Ámbito",
-   "url": "https://www.ambito.com/mexico/informacion-general/huracan-simon-vivo-sigue-la-trayectoria-tiempo-real-hoy-9-octubre-n6331929",
-   "rotulo": "Simon",
-   "lado": "l"
   },
   {
    "id": "rs",
@@ -521,12 +506,12 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "data": "2026-10-09",
    "lat": -30.03,
    "lon": -51.23,
-   "resumo": "A chuva no Rio Grande do Sul já afeta 11.251 pessoas em 17 municípios, segundo a Defesa Civil nesta sexta (09/10). O rio Uruguai já inunda São Borja, e a MetSul prevê mais de 200 mm em pontos da Metade Norte até sábado.",
+   "resumo": "A chuva no Rio Grande do Sul já afeta 11.251 pessoas em 17 municípios, segundo a Defesa Civil. O rio Uruguai inunda São Borja, e a chuva continua neste sábado (10/10), com 10 a 60 mm previstos.",
    "pontos": [
     "Boletim de 09/10: 193 desalojados e 130 pessoas em abrigos em Alegrete, Cachoeira do Sul e Uruguaiana.",
     "Duas casas destruídas, 24 danificadas e 68 destelhadas; não há mortes nem desaparecidos.",
     "O Inmet tem alerta vermelho no Norte e Noroeste do RS, incluindo Passo Fundo, Erechim, Santo Ângelo e Ijuí.",
-    "Às 21h07 de 09/10, a Defesa Civil elevou para muito alto o risco de inundação do rio Uruguai em São Borja."
+    "Para sábado (10/10), o Inmet tem alerta laranja no norte do RS, com até 50 mm por dia, e amarelo no resto do estado."
    ],
    "fonte": "Defesa Civil RS; MetSul e Inmet",
    "url": "https://defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-jacui-risco-muito-alto-em-dona-francisca-6ac81ffa8c985-6ac9815d5af1a",
@@ -547,7 +532,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     "O rebaixamento saiu por volta das 18h10, por causa da evolução favorável do tempo.",
     "Os bombeiros receberam 4.082 chamados ligados ao temporal; Granollers é uma das áreas mais atingidas.",
     "O serviço médico atendeu 439 pessoas e levou 80 a hospitais, nenhuma em estado grave.",
-    "Aviso de chuva forte até meia-noite no litoral central e norte, e rajadas acima de 90 km/h no Empordà e no Ebro."
+    "As buscas por Rami, de 12 anos, desaparecido em Granollers, continuavam em 09/10, com bombeiros, Mossos e Polícia Nacional."
    ],
    "fonte": "Protecció Civil via EFE (Infobae)",
    "url": "https://www.infobae.com/espana/agencias/2026/10/08/cataluna-rebaja-la-emergencia-por-el-temporal-de-lluvia-que-ha-causado-tres-muertos/",
@@ -558,21 +543,42 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "koguma",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tufão Koguma segue rumo às ilhas Ogasawara",
+   "titulo": "Tufão Koguma fica \"muito forte\" rumo a Ogasawara",
    "local": "Pacífico oeste, perto de Minamitorishima, Japão",
    "data": "2026-10-10",
    "lat": 22.5,
    "lon": 155.0,
-   "resumo": "O tufão Koguma, de força forte, avança perto de Minamitorishima e pode virar \"muito forte\". A agência do Japão prevê que ele chegue perto das ilhas Ogasawara até a tarde de domingo (11/10).",
+   "resumo": "O tufão Koguma passou à categoria \"muito forte\" perto de Minamitorishima, segundo a agência do Japão. Ele deve seguir para o norte perto das ilhas Ogasawara no domingo e na segunda (11 e 12/10).",
    "pontos": [
-    "Dado das 6h (Japão) de 10/10: 960 hPa, ventos de 144 km/h e rajadas de 216 km/h.",
-    "Move-se para noroeste a 25 km/h.",
-    "Deve ficar perto de Ogasawara às 15h de 11/10 e a leste do Japão até 13/10.",
-    "O tufão Noro, mais fraco (994 hPa), passa a leste do Japão e vira ciclone extratropical até 12/10."
+    "Dado das 15h (Japão) de 10/10: 950 hPa, ventos de 162 km/h e rajadas de 234 km/h.",
+    "Move-se para noroeste a 20 km/h.",
+    "Deve virar ciclone extratropical bem a leste do Japão até 14/10.",
+    "O tufão Noro (994 hPa) segue a leste do Japão e vira extratropical em 11/10."
    ],
    "fonte": "JMA via tenki.jp",
    "url": "https://tenki.jp/bousai/typhoon/",
    "rotulo": "Koguma",
+   "lado": "r"
+  },
+  {
+   "id": "marsala",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Tornado atinge escola e casas em Marsala, na Sicília",
+   "local": "Marsala e Petrosino, Sicília, Itália",
+   "data": "2026-10-09",
+   "lat": 37.78,
+   "lon": 12.47,
+   "resumo": "Um tornado atingiu Marsala e Petrosino, no oeste da Sicília, na manhã de sexta (09/10). Uma escola com cerca de 300 alunos foi danificada e nove pessoas foram atendidas no hospital com ferimentos leves.",
+   "pontos": [
+    "O tornado passou por volta das 10h locais, ao longo da rodovia SS115.",
+    "Casas danificadas, postes e árvores derrubados e carros virados; um veículo caiu numa ribanceira.",
+    "O hospital de Marsala atendeu quatro crianças e cinco adultos com cortes e escoriações.",
+    "A ferrovia entre Trapani e Castelvetrano ficou suspensa."
+   ],
+   "fonte": "Proteção Civil da Sicília e ASP Trapani via The Watchers",
+   "url": "https://watchers.news/2026/10/09/powerful-tornado-damages-school-and-homes-in-marsala-disrupts-transport-in-western-sicily-italy/",
+   "rotulo": "Tornado Sicília",
    "lado": "r"
   },
   {
@@ -602,18 +608,18 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "gravidade": "moderado",
    "titulo": "Rachel ganha aviso de tempestade na Baixa Califórnia",
    "local": "Pacífico, a oeste da Baixa Califórnia",
-   "data": "2026-10-09",
+   "data": "2026-10-10",
    "lat": 23.1,
    "lon": -124.5,
-   "resumo": "O governo do México emitiu aviso de tempestade tropical para a costa oeste da Baixa Califórnia por causa de Rachel. O centro deve se aproximar do norte da península entre a noite de sábado (10/10) e a madrugada de domingo.",
+   "resumo": "A tempestade tropical Rachel pode tocar terra na noite deste sábado (10/10) na costa oeste da Baixa Califórnia. Há aviso de tempestade de San José de las Palomas até a fronteira com os EUA.",
    "pontos": [
-    "Aviso das 14h de 09/10: ventos de 75 km/h, a 1.440 km a oeste do extremo sul da Baixa Califórnia, rumo nordeste a 11 km/h.",
-    "Aviso de tempestade de San José de las Palomas até a fronteira; vigilância no sul da Califórnia e de Isla San Luis a Puerto Peñasco.",
-    "Chuva de 25 a 75 mm na Baixa Califórnia; previsão de ventos de até 110 km/h no sul de Ensenada e em San Quintín.",
+    "Último aviso publicado (14h de 09/10): ventos de 75 km/h, a 1.440 km a oeste do extremo sul da Baixa Califórnia.",
+    "Previsão de rajadas de até 110 km/h e ondas de até 7 m no litoral.",
+    "Chuva de 25 a 75 mm em Ensenada, San Quintín, Tijuana, Tecate e Mexicali.",
     "Deve enfraquecer rápido depois de entrar em terra."
    ],
    "fonte": "NHC e SMN via Infobae",
-   "url": "https://www.infobae.com/mexico/2026/10/10/rachel-se-acerca-a-baja-california-zonas-que-tendran-lluvias-y-vientos-fuertes/",
+   "url": "https://www.infobae.com/mexico/2026/10/10/en-vivo-clima-cdmx-y-resto-de-mexico-hoy-sabado-10-de-octubre-simon-amenaza-con-lluvias-extremas-en-colima-michoacan-y-jalisco/",
    "rotulo": "Rachel",
    "lado": "b"
   },
@@ -679,30 +685,10 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "url": "https://www.em.com.br/gerais/2026/10/7516172-tempo-em-bh-confira-a-previsao-na-capital-para-esta-quarta-7-10.html",
    "rotulo": "Alerta BH",
    "lado": "r"
-  },
-  {
-   "id": "calor-california",
-   "tipo": "calor",
-   "gravidade": "moderado",
-   "titulo": "Calor recorde de outubro segue no sul da Califórnia",
-   "local": "Sul da Califórnia, EUA",
-   "data": "2026-10-06",
-   "lat": 34.05,
-   "lon": -118.25,
-   "resumo": "O aviso de calor extremo no sul da Califórnia terminou na noite desta quinta (08/10), após uma onda de calor recorde para outubro. O alívio, com temperaturas 6 a 8 °C mais baixas, deve chegar no fim de semana.",
-   "pontos": [
-    "Los Angeles teve quatro dias seguidos acima de 38 °C (02 a 05/10), algo inédito em outubro.",
-    "Recordes: Vista 42 °C, Santa Ana 42 °C, San Diego 41 °C e centro de Los Angeles 40 °C.",
-    "Mínimas recordes: 26 °C em Anaheim e 23 °C em San Diego, a noite mais quente desde 1875.",
-    "O aviso de calor extremo em Los Angeles e Ventura valeu até as 20h de quinta (08/10)."
-   ],
-   "fonte": "NWS via weather.com / Medical Daily",
-   "url": "https://weather.com/2026/10/06/forecast/october-heat-wave-west-relief-weekend",
-   "rotulo": "Calor Califórnia",
-   "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1036,9 +1022,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
-
-
 
 </body>
 </html>
