@@ -20,6 +20,22 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -429,29 +445,49 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-10-09T23:30:00+02:00",
- "manchete": "isaias deve tocar terra esta noite na flórida, simon deve virar furacão maior a caminho do méxico e o rio uruguai ameaça são borja",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-10-10T05:30:00+02:00",
+ "manchete": "terremoto de 7,7 abala o panamá, isaias toca terra na flórida e simon pode chegar ao méxico como categoria 4",
  "eventos": [
+  {
+   "id": "panama",
+   "tipo": "terremoto",
+   "gravidade": "critico",
+   "titulo": "Terremoto de magnitude 7,7 derruba prédios no Panamá",
+   "local": "Herrera, Los Santos e Veraguas, Panamá",
+   "data": "2026-10-09",
+   "lat": 7.6,
+   "lon": -80.7,
+   "resumo": "Um terremoto de magnitude 7,7 atingiu o sul do Panamá na tarde de sexta (09/10) e derrubou prédios nas províncias centrais. Não há mortes confirmadas, e o presidente José Raúl Mulino falou em \"desastre grande\".",
+   "pontos": [
+    "Abalo às 12h56 locais (17h56 UTC), a 10 km de profundidade, perto de Pitaloza Arriba (USGS); o Panamá mediu 7,2.",
+    "Mais de 80 réplicas, entre elas uma de 6,6; houve evacuações e o aeroporto de Tocumen parou temporariamente.",
+    "Hotel parcialmente desabado e catedral rachada em Penonomé; igreja de San Atanasio, em Los Santos, desabou.",
+    "O alerta de tsunami para o Pacífico leste, com ondas previstas de 1 a 3 m no Panamá, foi suspenso."
+   ],
+   "fonte": "USGS, Sinaproc e AFP via Univision",
+   "url": "https://www.univision.com/noticias/america-latina/el-presidente-de-panama-afirma-que-su-pais-vive-un-desastre-grande-tras-potente-terremoto-con-magnitud-de-7-7",
+   "rotulo": "Sismo Panamá",
+   "lado": "r"
+  },
   {
    "id": "isaias",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Isaias se aproxima da costa e já espalha ventos de tempestade",
-   "local": "Golfo do México, ao sul de Pensacola, Flórida",
+   "titulo": "Isaias toca terra perto de Destin e deixa 600 mil sem luz",
+   "local": "Panhandle da Flórida e sul do Alabama, EUA",
    "data": "2026-10-09",
-   "lat": 28.7,
-   "lon": -87.1,
-   "resumo": "O furacão Isaias, de categoria 3, já leva ventos de tempestade tropical à costa norte do Golfo dos EUA nesta sexta (09/10). Deve tocar terra no oeste do Panhandle da Flórida, a leste de Pensacola, na noite de sexta.",
+   "lat": 30.6,
+   "lon": -86.7,
+   "resumo": "O furacão Isaias tocou terra perto de Destin, na Flórida, por volta das 21h30 (hora do leste dos EUA) de sexta (09/10), com ventos de 170 km/h. Às 23h ET já tinha caído para categoria 1 e seguia para o norte, rumo ao Alabama.",
    "pontos": [
-    "Atualização das 14h CDT do NHC: ventos de 195 km/h e 959 hPa, a 200 km ao sul de Pensacola, rumo norte-nordeste a 28 km/h.",
-    "Rajadas de 93 km/h em Gulf Breeze (FL); um drone marinho da NOAA mediu rajada de 167 km/h perto do olho.",
-    "Maré de tempestade de 1,8 a 2,7 m entre a divisa Alabama/Flórida e Grayton Beach; chuva local de até 380 mm.",
-    "Vigilância de tornado no Panhandle, sudoeste da Geórgia e sudeste do Alabama; ventos de furacão podem ir 160 km terra adentro."
+    "No toque em terra: ventos de 170 km/h e pressão de 971 hPa (NHC).",
+    "Aviso das 23h ET: 145 km/h e 982 hPa, a 70 km a lés-nordeste de Pensacola, rumo norte a 32 km/h.",
+    "Mais de 600 mil clientes sem luz na Flórida, no Alabama e na Geórgia; rajada de 187 km/h em Santa Rosa Sound.",
+    "Maré de tempestade de 1,7 m em Panama City Beach; emergência de enxurrada no condado de Okaloosa."
    ],
-   "fonte": "NHC via weather.com",
-   "url": "https://weather.com/2026/10/09/storms/hurricane/hurricane-isaias-forecast-gulf-coast-louisiana-alabama-florida",
+   "fonte": "NHC via FOX Weather",
+   "url": "https://www.foxweather.com/live-news/live-updates-hurricane-isaias-threatens-the-gulf-coast-with-dangerous-landfall-expected-tonight",
    "rotulo": "Isaias",
    "lado": "b"
   },
@@ -459,20 +495,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "simon",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Simon deve virar furacão maior antes de chegar ao México",
+   "titulo": "Simon se fortalece e pode chegar a Jalisco como categoria 4",
    "local": "Pacífico, ao sul de Manzanillo, México",
    "data": "2026-10-09",
-   "lat": 16.2,
-   "lon": -104.7,
-   "resumo": "O furacão Simon, quase parado ao sul de Manzanillo, deve virar furacão maior na noite desta sexta (09/10). O centro deve passar muito perto ou sobre a costa centro-oeste do México entre o fim de sábado e domingo.",
+   "lat": 16.4,
+   "lon": -104.6,
+   "resumo": "O furacão Simon chegou a 175 km/h na noite de sexta (09/10) e deve se intensificar rápido antes de chegar à costa centro-oeste do México. O SMN projeta a entrada em terra em Jalisco, perto de Puerto Vallarta, no domingo (11/10).",
    "pontos": [
-    "Aviso 10 do NHC (15h CST de 09/10): ventos de 165 km/h e 966 hPa, a 315 km ao sul de Manzanillo.",
-    "Move-se a só 4 km/h para noroeste; deve virar para o norte e acelerar um pouco.",
-    "Alerta de furacão de Punta San Telmo a Punta Mita; vigilância de furacão até El Roblito e nas Islas Marías.",
+    "Aviso 10A do NHC (18h CST de 09/10): ventos de 175 km/h e 964 hPa, a 305 km ao sul de Manzanillo.",
+    "Quase parado, a 6 km/h para nor-noroeste; deve virar para o norte e acelerar um pouco.",
+    "Alerta de furacão de Punta San Telmo a Punta Mita; Jalisco suspendeu aulas em 22 municípios do litoral.",
     "Chuva de 250 a 500 mm, com até 760 mm em Michoacán, Colima, Jalisco e Nayarit até domingo."
    ],
-   "fonte": "NHC (aviso 10)",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP5.shtml",
+   "fonte": "NHC (aviso 10A) e SMN via Ámbito",
+   "url": "https://www.ambito.com/mexico/informacion-general/huracan-simon-vivo-sigue-la-trayectoria-tiempo-real-hoy-9-octubre-n6331929",
    "rotulo": "Simon",
    "lado": "l"
   },
@@ -480,20 +516,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Chuva no RS já afeta 11 mil pessoas, com alerta de mais de 200 mm",
+   "titulo": "Rio Uruguai inunda São Borja; chuva afeta 11 mil no RS",
    "local": "Rio Grande do Sul, Brasil",
    "data": "2026-10-09",
    "lat": -30.03,
    "lon": -51.23,
-   "resumo": "A chuva no Rio Grande do Sul já afeta 11.251 pessoas em 17 municípios, segundo a Defesa Civil nesta sexta (09/10). A MetSul prevê mais de 200 mm em pontos da Metade Norte até sábado, e o rio Uruguai segue em cheia.",
+   "resumo": "A chuva no Rio Grande do Sul já afeta 11.251 pessoas em 17 municípios, segundo a Defesa Civil nesta sexta (09/10). O rio Uruguai já inunda São Borja, e a MetSul prevê mais de 200 mm em pontos da Metade Norte até sábado.",
    "pontos": [
     "Boletim de 09/10: 193 desalojados e 130 pessoas em abrigos em Alegrete, Cachoeira do Sul e Uruguaiana.",
     "Duas casas destruídas, 24 danificadas e 68 destelhadas; não há mortes nem desaparecidos.",
     "O Inmet tem alerta vermelho no Norte e Noroeste do RS, incluindo Passo Fundo, Erechim, Santo Ângelo e Ijuí.",
-    "Às 17h15 de 09/10, a Defesa Civil emitiu risco alto de inundação do rio Uruguai em São Borja, válido até sábado (10/10)."
+    "Às 21h07 de 09/10, a Defesa Civil elevou para muito alto o risco de inundação do rio Uruguai em São Borja."
    ],
-   "fonte": "Defesa Civil RS via Agora RS; MetSul e Inmet",
-   "url": "https://agorars.com/agora-no-tempo/temporais-afetam-112-mil-pessoas-no-rs-130-estao-em-abrigos",
+   "fonte": "Defesa Civil RS; MetSul e Inmet",
+   "url": "https://defesacivil.rs.gov.br/defesa-civil-alerta-inundacao-do-rio-jacui-risco-muito-alto-em-dona-francisca-6ac81ffa8c985-6ac9815d5af1a",
    "rotulo": "Chuva Sul",
    "lado": "l"
   },
@@ -522,20 +558,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "koguma",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tufão Koguma ganha força rumo ao mar de Ogasawara",
+   "titulo": "Tufão Koguma segue rumo às ilhas Ogasawara",
    "local": "Pacífico oeste, perto de Minamitorishima, Japão",
-   "data": "2026-10-09",
+   "data": "2026-10-10",
    "lat": 22.5,
    "lon": 155.0,
-   "resumo": "O tufão Koguma, de força forte, está perto de Minamitorishima e deve virar \"muito forte\" até sábado (10/10). A agência do Japão prevê que ele chegue ao mar perto das ilhas Ogasawara até segunda (12/10).",
+   "resumo": "O tufão Koguma, de força forte, avança perto de Minamitorishima e pode virar \"muito forte\". A agência do Japão prevê que ele chegue perto das ilhas Ogasawara até a tarde de domingo (11/10).",
    "pontos": [
-    "Dado das 9h (Japão) de 09/10: 970 hPa, ventos de 144 km/h e rajadas de 198 km/h.",
-    "Move-se para oés-noroeste a 20 km/h.",
-    "Previsão para 10/10: 955 hPa, ventos de 162 km/h e rajadas de 216 km/h.",
-    "Ogasawara deve ter vento e ondas fortes a partir do fim do feriado prolongado; o tufão Noro, mais fraco, segue ao lado."
+    "Dado das 6h (Japão) de 10/10: 960 hPa, ventos de 144 km/h e rajadas de 216 km/h.",
+    "Move-se para noroeste a 25 km/h.",
+    "Deve ficar perto de Ogasawara às 15h de 11/10 e a leste do Japão até 13/10.",
+    "O tufão Noro, mais fraco (994 hPa), passa a leste do Japão e vira ciclone extratropical até 12/10."
    ],
    "fonte": "JMA via tenki.jp",
-   "url": "https://tenki.jp/forecaster/s_ono/2026/10/09/40910.html",
+   "url": "https://tenki.jp/bousai/typhoon/",
    "rotulo": "Koguma",
    "lado": "r"
   },
@@ -564,20 +600,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "rachel",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Rachel ganha vigilância de tempestade no sul da Califórnia",
+   "titulo": "Rachel ganha aviso de tempestade na Baixa Califórnia",
    "local": "Pacífico, a oeste da Baixa Califórnia",
    "data": "2026-10-09",
    "lat": 23.1,
    "lon": -124.5,
-   "resumo": "Há vigilância de tempestade tropical para o sul da Califórnia e o norte da Baixa Califórnia por causa de Rachel. O centro deve se aproximar da região entre o fim de sábado (10/10) e o domingo.",
+   "resumo": "O governo do México emitiu aviso de tempestade tropical para a costa oeste da Baixa Califórnia por causa de Rachel. O centro deve se aproximar do norte da península entre a noite de sábado (10/10) e a madrugada de domingo.",
    "pontos": [
-    "Aviso 50A do NHC (11h PDT de 09/10): ventos de 85 km/h e 994 hPa, a 1.290 km a sudoeste de San Diego.",
-    "Vigilância da fronteira EUA/México até a divisa San Diego/Orange e em trechos das duas costas da Baixa Califórnia.",
-    "Chuva de 25 a 75 mm na Baixa Califórnia e no sudoeste dos EUA, com até 125 mm em pontos.",
-    "Deve enfraquecer rápido depois de entrar em terra no sudoeste dos EUA."
+    "Aviso das 14h de 09/10: ventos de 75 km/h, a 1.440 km a oeste do extremo sul da Baixa Califórnia, rumo nordeste a 11 km/h.",
+    "Aviso de tempestade de San José de las Palomas até a fronteira; vigilância no sul da Califórnia e de Isla San Luis a Puerto Peñasco.",
+    "Chuva de 25 a 75 mm na Baixa Califórnia; previsão de ventos de até 110 km/h no sul de Ensenada e em San Quintín.",
+    "Deve enfraquecer rápido depois de entrar em terra."
    ],
-   "fonte": "NHC (aviso 50A)",
-   "url": "https://www.nhc.noaa.gov/text/MIATCPEP3.shtml",
+   "fonte": "NHC e SMN via Infobae",
+   "url": "https://www.infobae.com/mexico/2026/10/10/rachel-se-acerca-a-baja-california-zonas-que-tendran-lluvias-y-vientos-fuertes/",
    "rotulo": "Rachel",
    "lado": "b"
   },
@@ -666,8 +702,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "l"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1001,6 +1036,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
+
 
 
 
