@@ -217,6 +217,46 @@ footer{font-size:.8rem;color:var(--muted);display:grid;gap:8px;border-top:1px so
 footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 .sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
 @media (prefers-reduced-motion:reduce){.mk .ring,.live i,.evm .halo{animation:none}}
+
+/* celular */
+@media (max-width:640px){
+  .top{position:static;padding:10px 16px}
+  .top-in{gap:8px 10px}
+  .logo{font-size:1.12rem;gap:8px}.logo svg{width:22px;height:22px}
+  .live{font-size:.62rem;padding:5px 8px}
+  .stamp{font-size:.68rem}
+  .owner{font-size:.72rem;padding:5px 9px}
+  .top nav{margin-left:0;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:16px;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{white-space:nowrap;font-size:.82rem}
+  .head{padding-top:6px}
+  .head h1{font-size:1.45rem;line-height:1.15}
+  .head p{font-size:.9rem}
+  .counts{gap:4px 14px;font-size:.82rem}.counts b{font-size:.95rem}
+  h2{font-size:1.12rem}
+  .mapbar{padding:10px}
+  .layers button{padding:6px 10px;font-size:.74rem}
+  #map{min-width:0}
+  #map .evm .bg{r:19px}
+  #map .evm .halo{r:20px}
+  #map .evm text{font-size:18px}
+  #map .evm text.evlabel{font-size:13px;stroke-width:4px}
+  #map .mk .dot{r:11px}
+  #map .mk .ring{r:12px}
+  #map .nbox text{font-size:15px}
+  .maplegend{font-size:.76rem;gap:4px 12px}
+  .detail{padding:14px}
+  .detail h3{font-size:1.3rem}
+  .card,.bull{padding:14px}
+  .ev{padding:12px 14px}
+  #chart,#section{min-width:0}
+  #chart text{font-size:14.5px}
+  #section text{font-size:13px}
+  .item{grid-template-columns:1fr;gap:4px}
+  .thumb{height:64px}
+  .ftc{padding:16px}
+  #resumo-txt{max-height:260px;font-size:.8rem}
+}
 </style>
 
 </head>
