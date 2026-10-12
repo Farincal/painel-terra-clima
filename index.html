@@ -26,6 +26,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -506,29 +507,28 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-10-11T23:30:00+02:00",
- "manchete": "simon perde força, mas segue na categoria 4 colado a jalisco; rio uruguai sobe em são borja e temporais causam estragos no interior de sp",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-10-12T05:30:00+02:00",
+ "manchete": "simon cai para a categoria 3 e deve tocar terra no méxico na quarta; panamá passa de 300 réplicas e chuva recorde em las vegas",
  "eventos": [
   {
    "id": "simon",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Simon perde força, mas segue na categoria 4 colado a Jalisco",
-   "local": "Pacífico, ao sul de Cabo Corrientes, México",
+   "titulo": "Simon cai para categoria 3 e deve tocar terra na quarta",
+   "local": "Pacífico, a 75 km de Cabo Corrientes, México",
    "data": "2026-10-11",
-   "lat": 19.6,
-   "lon": -105.6,
-   "resumo": "O furacão Simon segue na categoria 4, com ventos de 215 km/h, a 90 km ao sul de Cabo Corrientes, no aviso das 15h (hora do México) de domingo (11/10). Ainda não tocou terra e deve seguir perto da costa na segunda (12/10).",
+   "lat": 19.8,
+   "lon": -106.0,
+   "resumo": "O furacão Simon caiu para a categoria 3, com ventos de 195 km/h, a 75 km a sul-sudoeste de Cabo Corrientes, no aviso das 20h (hora local) de domingo (11/10). Deve voltar para a costa e entrar no oeste do México por volta de quarta (14/10).",
    "pontos": [
-    "Aviso das 15h de 11/10: 215 km/h e 947 hPa; a pressão subia, sinal de enfraquecimento.",
-    "Move-se para o norte-noroeste a 9 km/h; deve se afastar um pouco da costa na segunda e na terça e voltar a ela na quarta (14/10).",
-    "Em Colima há centenas de retirados e estradas bloqueadas por árvores; Nayarit abriu 171 abrigos e a Marinha retirou mais de 270 pessoas.",
-    "Aeroporto de Puerto Vallarta fechado até 8h de segunda (12/10); previsão de mais 200 a 400 mm de chuva, até 760 mm."
+    "Aviso 19 do NHC (03h UTC de 12/10): 195 km/h e 956 hPa; move-se para o noroeste a 7 km/h.",
+    "Alerta de furacão de Playa Pérula a El Roblito e nas Ilhas Marías; deve virar para o nordeste a partir de terça (13/10).",
+    "Jalisco e Colima têm 28 municípios no alerta máximo e outros 93 em alerta alto; Sheinbaum pediu que moradores da costa fiquem em casa.",
+    "Previsão de mais 50 a 100 mm, até 200 mm; o total pode chegar a 760 mm em Michoacán, Colima e Jalisco."
    ],
-   "fonte": "NHC via Vallarta Daily, La Jornada e Rio Times",
-   "url": "https://www.vallartadaily.com/hurricane-simon-puerto-vallarta-live-updates/",
+   "fonte": "NHC e Reuters via ThePrint",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/120246.shtml",
    "rotulo": "Simon",
    "lado": "l"
   },
@@ -538,41 +538,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "gravidade": "critico",
    "titulo": "Panamá decreta emergência após terremoto de 7,7",
    "local": "Herrera, Los Santos e Veraguas, Panamá",
-   "data": "2026-10-10",
+   "data": "2026-10-11",
    "lat": 7.6,
    "lon": -80.7,
    "resumo": "O Panamá está em estado de emergência nacional após o terremoto de 7,7 de sexta (09/10). Há 27 feridos e nenhuma morte confirmada.",
    "pontos": [
     "Abalo de 7,7 (USGS) às 12h56 locais de 09/10, no sul da península de Azuero.",
-    "Já são 170 réplicas; quatro passaram de magnitude 6, a maior de 6,9 (Instituto de Geociências).",
+    "Já são mais de 300 réplicas até domingo (11/10), 46 delas acima de 4,5 (OVSICORI); a maior chegou a 6,9.",
     "426 casas com danos, onde vivem cerca de 2.130 pessoas; 419 escolas, 21 unidades de saúde e 9 pontes afetadas.",
     "Governo liberou até US$ 100 milhões; os EUA anunciaram US$ 5 milhões em ajuda."
    ],
-   "fonte": "Governo do Panamá e IGC via Acento",
+   "fonte": "Governo do Panamá, IGC e OVSICORI via Acento e Prensa Mercosur",
    "url": "https://acentotv.acento.com.do/atv-directo/terremoto-en-panama-170-replicas-y-emergencia-nacional-60433.html",
    "rotulo": "Sismo Panamá",
    "lado": "r"
-  },
-  {
-   "id": "nepal",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Cheia no Nepal deixa ao menos 5 desaparecidos",
-   "local": "Gorkha, Nepal central",
-   "data": "2026-10-11",
-   "lat": 28.3,
-   "lon": 84.85,
-   "resumo": "Uma enxurrada no rio Budhi Gandaki, no distrito de Gorkha, no Nepal, deixou pelo menos cinco desaparecidos no domingo (11/10), segundo a autoridade nacional de desastres. Cerca de uma dúzia de casas e três pontes foram levadas.",
-   "pontos": [
-    "Desaparecidos: duas mulheres e três homens, segundo a NDRRMA; não há mortes confirmadas.",
-    "Ao menos 82 pessoas foram resgatadas, entre elas nove estrangeiros.",
-    "Foram levadas duas pontes suspensas e a ponte da rodovia entre Gorkha e Dhading; o canteiro de uma hidrelétrica foi danificado.",
-    "Causa: um deslizamento bloqueou o rio no sábado (10/10) e a água represada desceu de uma vez."
-   ],
-   "fonte": "NDRRMA via Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses",
-   "rotulo": "Cheia Nepal",
-   "lado": "t"
   },
   {
    "id": "rs",
@@ -604,15 +583,15 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "data": "2026-10-11",
    "lat": -22.9,
    "lon": -47.06,
-   "resumo": "Temporais causaram estragos em várias cidades do interior paulista neste domingo (11/10), sob alerta laranja do Inmet. A Defesa Civil de SP emitiu 22 alertas até as 17h e não há mortes.",
+   "resumo": "Temporais causaram estragos em várias cidades do interior paulista neste domingo (11/10), sob alerta laranja do Inmet. A Defesa Civil de SP emitiu 29 alertas até as 18h35 e não há mortes.",
    "pontos": [
-    "Cesário Lange: 71 quedas de árvores, telhados danificados e falta de luz em 10 bairros.",
-    "Cruzeiro: cerca de 50 casas alagadas; Franca, Serra Azul, Tambaú e Altinópolis também tiveram danos.",
+    "Cesário Lange: 71 quedas de árvores, telhados danificados e falta de luz em 10 bairros; uma família desalojada.",
+    "Cruzeiro: cerca de 50 casas alagadas; Tambaú, Cosmópolis, Franca e Santa Cruz da Conceição também tiveram danos.",
     "O alerta laranja do Inmet cobre SP, RJ, MG, PR, SC, MS e GO: 30 a 60 mm por hora e rajadas de até 100 km/h.",
-    "O CGE prevê pancadas fortes também na segunda (12/10), feriado, com risco de alagamentos na capital."
+    "A instabilidade continua na segunda (12/10), feriado, com risco de alagamentos e rajadas à tarde."
    ],
    "fonte": "Defesa Civil SP via Fato Paulista e Inmet via CNN Brasil",
-   "url": "https://fatopaulista.com.br/defesa-civil-emite-alertas-chuvas-sao-paulo",
+   "url": "https://fatopaulista.com.br/chuvas-fortes-defesa-civil-alertas-sao-paulo/",
    "rotulo": "Temporais SP",
    "lado": "r"
   },
@@ -620,17 +599,17 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "koguma",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tufão Koguma, \"muito forte\", passa por Ogasawara",
+   "titulo": "Tufão Koguma, \"muito forte\", sobe rumo ao leste do Japão",
    "local": "Mar perto das ilhas Ogasawara, Japão",
-   "data": "2026-10-11",
-   "lat": 26.0,
-   "lon": 146.5,
-   "resumo": "O tufão Koguma segue \"muito forte\" no mar perto das ilhas Ogasawara neste domingo (11/10). Deve chegar a leste do Japão na terça (13/10) e virar ciclone extratropical.",
+   "data": "2026-10-12",
+   "lat": 27.5,
+   "lon": 143.0,
+   "resumo": "O tufão Koguma segue \"muito forte\" perto das ilhas Ogasawara nesta segunda (12/10) e avança para o norte. Deve estar a leste do Japão na terça (13/10) e depois virar ciclone extratropical.",
    "pontos": [
-    "Dado das 18h (Japão) de 11/10: 950 hPa, ventos de 162 km/h e rajadas de 234 km/h.",
-    "Move-se para o norte-noroeste a 15 km/h; deve estar a leste do Japão às 15h de 13/10.",
-    "Deve virar extratropical e chegar bem a leste do Japão até 14/10.",
-    "O tufão Noro enfraqueceu e virou depressão tropical às 15h de 11/10."
+    "Dado das 6h (Japão) de 12/10: 950 hPa, ventos de 162 km/h e rajadas de 216 km/h.",
+    "Move-se para o norte a 20 km/h; deve estar a leste do Japão às 3h de 13/10.",
+    "Deve chegar bem a leste do Japão até 14/10 e então virar extratropical.",
+    "A JMA pede atenção a ventos fortes, chuva e mar muito agitado na rota."
    ],
    "fonte": "JMA via tenki.jp",
    "url": "https://tenki.jp/bousai/typhoon/",
@@ -638,67 +617,25 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "r"
   },
   {
-   "id": "rachel",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Restos de Rachel levam chuva forte ao Sudoeste dos EUA",
-   "local": "Sul da Califórnia, Nevada e Arizona, EUA",
-   "data": "2026-10-11",
-   "lat": 35.8,
-   "lon": -114.6,
-   "resumo": "Os restos de Rachel estão perto de Las Vegas e levam chuva forte e vento ao Sudoeste dos EUA neste domingo (11/10). Há risco de enchentes repentinas até segunda ou terça.",
-   "pontos": [
-    "Último aviso do NHC (8h MST de 11/10): ventos de 55 km/h, rumo norte-nordeste a 47 km/h.",
-    "Risco nível 3 de 4 de enchentes no sul de Nevada (Las Vegas), sudoeste de Utah e noroeste do Arizona.",
-    "Alerta de alagamento costeiro em Malibu, praias de Los Angeles e San Diego; mar até 45 cm acima do previsto.",
-    "Previsão de 25 a 127 mm de chuva; rajadas de 70 a 105 km/h no deserto."
-   ],
-   "fonte": "NHC e CNN via KESQ",
-   "url": "https://kesq.com/cnn-weather-environment/2026/10/11/san-diego-under-rare-tropical-storm-watch-with-rachel-set-to-bring-coastal-flooding-heavy-rain-and-strong-winds/",
-   "rotulo": "Rachel",
-   "lado": "t"
-  },
-  {
-   "id": "isaias",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Isaias perde força após deixar 4 mortos",
-   "local": "Sudeste e vale do Tennessee, EUA",
-   "data": "2026-10-11",
-   "lat": 35.4,
-   "lon": -85.9,
-   "resumo": "Isaias virou ciclone pós-tropical e deve se dissipar na noite de domingo (11/10) sobre a Virgínia Ocidental. A tempestade deixou quatro mortos na Flórida e no Alabama.",
-   "pontos": [
-    "Aviso final 19 do NHC (4h CDT de 11/10): ventos de 40 km/h, no Tennessee, rumo nordeste a 37 km/h.",
-    "Mortes: queda de árvores em Escambia (FL) e Birmingham (AL), um homem por gerador em garagem (FL) e um acidente em Barbour (AL).",
-    "Mais de 835 mil clientes ficaram sem luz no sábado (10/10); às 8h de domingo ainda eram cerca de 395 mil na Flórida e no Alabama.",
-    "Maior chuva medida: 205 mm em Niceville (FL); tornados confirmados na Geórgia e na Carolina do Sul."
-   ],
-   "fonte": "NHC e AP via AccuWeather",
-   "url": "https://www.accuweather.com/en/hurricane/live-news/live-hurricane-isaias-makes-landfall-power-outages-surge-along-gulf-coast/1943589",
-   "rotulo": "Isaias",
-   "lado": "b"
-  },
-  {
-   "id": "chile",
+   "id": "nepal",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Aluvião em Las Condes deixa 384 desabrigados no Chile",
-   "local": "Las Condes, Santiago, Chile",
-   "data": "2026-10-10",
-   "lat": -33.41,
-   "lon": -70.52,
-   "resumo": "Um aluvião de lama atingiu Las Condes, em Santiago, na tarde de quinta (08/10), durante um sistema frontal. O Senapred conta 384 desabrigados e mais de 1.200 resgates, sem mortes.",
+   "titulo": "Cheia no Nepal deixa ao menos 5 desaparecidos",
+   "local": "Gorkha, Nepal central",
+   "data": "2026-10-11",
+   "lat": 28.3,
+   "lon": 84.85,
+   "resumo": "Uma enxurrada no rio Budhi Gandaki, no distrito de Gorkha, no Nepal, deixou pelo menos cinco desaparecidos no domingo (11/10), segundo a autoridade nacional de desastres. Cerca de uma dúzia de casas e três pontes foram levadas.",
    "pontos": [
-    "56 casas destruídas, 40 com danos graves e cerca de 1.960 com danos leves.",
-    "Las Condes segue em zona de catástrofe; dez comunas da Região Metropolitana estão em alerta vermelho.",
-    "Mais afetados: Camino El Alba, Quebrada Honda Sur e Vital Apoquindo.",
-    "O Exército enviou 170 militares e máquinas; não há desaparecidos."
+    "Desaparecidos: duas mulheres e três homens, segundo a NDRRMA; não há mortes confirmadas.",
+    "Ao menos 82 pessoas foram resgatadas, entre elas nove estrangeiros.",
+    "Foram levadas duas pontes suspensas e a ponte da rodovia entre Gorkha e Dhading; o canteiro de uma hidrelétrica foi danificado.",
+    "Causa: um deslizamento bloqueou o rio no sábado (10/10) e a água represada desceu de uma vez."
    ],
-   "fonte": "Senapred via Radio Universidad de Chile",
-   "url": "https://radio.uchile.cl/2026/10/10/balance-senapred-384-los-damnificados-y-reporta-mas-de-mil-rescates-tras-aluvion-en-las-condes/",
-   "rotulo": "Aluvião Chile",
-   "lado": "l"
+   "fonte": "NDRRMA via Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses",
+   "rotulo": "Cheia Nepal",
+   "lado": "t"
   },
   {
    "id": "catalunha",
@@ -722,6 +659,27 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "t"
   },
   {
+   "id": "chile",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Aluvião em Las Condes deixa 384 desabrigados no Chile",
+   "local": "Las Condes, Santiago, Chile",
+   "data": "2026-10-10",
+   "lat": -33.41,
+   "lon": -70.52,
+   "resumo": "Um aluvião de lama atingiu Las Condes, em Santiago, na tarde de quinta (08/10), durante um sistema frontal. O Senapred conta 384 desabrigados e mais de 1.200 resgates, sem mortes.",
+   "pontos": [
+    "56 casas destruídas, 40 com danos graves e cerca de 1.960 com danos leves.",
+    "Las Condes segue em zona de catástrofe; dez comunas da Região Metropolitana estão em alerta vermelho.",
+    "Mais afetados: Camino El Alba, Quebrada Honda Sur e Vital Apoquindo.",
+    "O Exército enviou 170 militares e máquinas; não há desaparecidos."
+   ],
+   "fonte": "Senapred via Radio Universidad de Chile",
+   "url": "https://radio.uchile.cl/2026/10/10/balance-senapred-384-los-damnificados-y-reporta-mas-de-mil-rescates-tras-aluvion-en-las-condes/",
+   "rotulo": "Aluvião Chile",
+   "lado": "l"
+  },
+  {
    "id": "tailandia",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -740,6 +698,48 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "fonte": "Governo da Tailândia via AFP (Manila Times)",
    "url": "https://www.manilatimes.net/2026/10/08/world/asia-oceania/death-toll-from-thailand-floods-rises-to-60-since-mid-september/2440979",
    "rotulo": "Chuva Tailândia",
+   "lado": "b"
+  },
+  {
+   "id": "rachel",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Restos de Rachel trazem chuva recorde a Las Vegas",
+   "local": "Sul da Califórnia, Nevada e Arizona, EUA",
+   "data": "2026-10-11",
+   "lat": 35.8,
+   "lon": -114.6,
+   "resumo": "Os restos de Rachel trouxeram chuva recorde a Las Vegas na madrugada de domingo (11/10), com ruas alagadas. Ainda há alerta de enchente e de vento até a manhã de segunda (12/10).",
+   "pontos": [
+    "Aeroporto de Las Vegas: 27 mm no domingo, recorde para o dia (o anterior era 20 mm, de 2012).",
+    "Mais de 25 mm no oeste do vale e cerca de 13 mm no leste; alerta de enchente repentina até 8h30 de domingo.",
+    "Último aviso do NHC (8h MST de 11/10): ventos de 55 km/h, rumo norte-nordeste a 47 km/h.",
+    "Segunda (12/10): 40% de chance de pancadas; tempo seco e mais frio a partir de terça."
+   ],
+   "fonte": "NWS via KTNV",
+   "url": "https://www.ktnv.com/weather/tropical-storm-rachels-remnants-bring-record-rainfall-to-las-vegas-valley",
+   "rotulo": "Rachel",
+   "lado": "t"
+  },
+  {
+   "id": "isaias",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Isaias perde força após deixar 4 mortos",
+   "local": "Sudeste e vale do Tennessee, EUA",
+   "data": "2026-10-11",
+   "lat": 35.4,
+   "lon": -85.9,
+   "resumo": "Isaias virou ciclone pós-tropical e deve se dissipar na noite de domingo (11/10) sobre a Virgínia Ocidental. A tempestade deixou quatro mortos na Flórida e no Alabama.",
+   "pontos": [
+    "Aviso final 19 do NHC (4h CDT de 11/10): ventos de 40 km/h, no Tennessee, rumo nordeste a 37 km/h.",
+    "Mortes: queda de árvores em Escambia (FL) e Birmingham (AL), um homem por gerador em garagem (FL) e um acidente em Barbour (AL).",
+    "Mais de 835 mil clientes ficaram sem luz no sábado (10/10); às 8h de domingo ainda eram cerca de 395 mil na Flórida e no Alabama.",
+    "Maior chuva medida: 205 mm em Niceville (FL); tornados confirmados na Geórgia e na Carolina do Sul."
+   ],
+   "fonte": "NHC e AP via AccuWeather",
+   "url": "https://www.accuweather.com/en/hurricane/live-news/live-hurricane-isaias-makes-landfall-power-outages-surge-along-gulf-coast/1943589",
+   "rotulo": "Isaias",
    "lado": "b"
   },
   {
@@ -764,8 +764,7 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "b"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1099,11 +1098,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
-
-
-
-
 
 </body>
 </html>
