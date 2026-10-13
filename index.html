@@ -20,6 +20,20 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -502,29 +516,50 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-13T17:30:00+02:00",
- "manchete": "simon fica quase parado na costa do méxico; alerta laranja de tempestade no sul do brasil e rio uruguai volta a subir",
+ "atualizado": "2026-10-13T23:30:00+02:00",
+ "manchete": "simon segue parado na costa do méxico e nova depressão no pacífico deve virar furacão forte; rio uruguai sobe em itaqui e uruguaiana",
  "eventos": [
   {
    "id": "simon",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Simon quase parado a oeste de Cabo Corrientes",
+   "titulo": "Simon segue quase parado na costa do México",
    "local": "Pacífico, a oeste de Cabo Corrientes, México",
    "data": "2026-10-13",
-   "lat": 20.3,
-   "lon": -107.3,
-   "resumo": "O furacão Simon segue na categoria 1, com ventos de 150 km/h, quase parado a 165 km a oeste de Cabo Corrientes, no México. O NHC prevê que ele ande devagar por um ou dois dias e vire para o norte no fim da semana.",
+   "lat": 20.2,
+   "lon": -107.4,
+   "resumo": "O furacão Simon segue na categoria 1, com ventos de 150 km/h, quase parado a 180 km a oeste de Cabo Corrientes, no México. O NHC prevê que ele siga lento por dois dias e vire para o norte no fim da semana.",
    "pontos": [
-    "Aviso 25 do NHC (15h UTC de 13/10): ventos de 150 km/h, pressão de 977 hPa, rumo oeste a 4 km/h; 335 km ao sul-sudoeste de Mazatlán.",
-    "O alerta de furacão nas ilhas Marías virou vigilância; segue a vigilância de furacão do norte de Escuinapa a Bahía Tempehuaya.",
-    "Chuva prevista caiu para 25 a 50 mm, com até 75 mm em Baja California Sur, Nayarit e Sinaloa até sexta (16/10).",
-    "Em Guerrero, um homem de 71 anos morreu na queda de um muro em Chilpancingo; o aeroporto de Puerto Vallarta fechou até terça (13/10)."
+    "Aviso 25A do NHC (18h UTC de 13/10): ventos de 150 km/h, pressão de 977 hPa, rumo oés-sudoeste a 4 km/h.",
+    "Vigilância de furacão nas ilhas Marías e do norte de Escuinapa a Bahía Tempehuaya; vigilância de tempestade tropical de Cabo Corrientes a Escuinapa.",
+    "Condições de furacão são possíveis nas ilhas Marías na quarta (14/10) e no continente na quinta (15/10).",
+    "Chuva de 25 a 50 mm, com até 75 mm em Baja California Sur, Nayarit e Sinaloa até sexta (16/10)."
    ],
-   "fonte": "NHC e AP",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/131445.shtml",
+   "fonte": "NHC",
+   "url": "https://www.nhc.noaa.gov/archive/2026/ep20/ep202026.public_a.025.shtml",
    "rotulo": "Simon",
    "lado": "l"
+  },
+  {
+   "id": "trudy",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Nova depressão no Pacífico deve virar furacão forte",
+   "local": "Pacífico, ao sul de Oaxaca e Guerrero, México",
+   "data": "2026-10-13",
+   "lat": 9.8,
+   "lon": -96.5,
+   "resumo": "A depressão tropical 21-E se formou no Pacífico, a 870 km ao sul-sudeste de Acapulco, no México. O NHC prevê intensificação rápida, com furacão na noite de quarta (14/10) e furacão maior até sexta (16/10).",
+   "pontos": [
+    "Aviso 1 do NHC (15h UTC de 13/10): ventos de 55 km/h, pressão de 1006 hPa, rumo noroeste a 17 km/h.",
+    "Se ganhar nome, será Trudy, a 19ª tempestade da temporada no Pacífico.",
+    "O SMN prevê categoria 4 entre quinta (15/10) e sábado (17/10), passando a cerca de 200 km da costa de Michoacán.",
+    "Ainda não há alertas na costa; ondulação forte e correntes perigosas no sul do México no fim da semana."
+   ],
+   "fonte": "NHC e SMN via N+",
+   "url": "https://www.nhc.noaa.gov/text/MIATCPEP1.shtml",
+   "rotulo": "Depressão 21-E",
+   "lado": "b"
   },
   {
    "id": "panama",
@@ -551,15 +586,15 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Rio Uruguai segue subindo na fronteira oeste do RS",
+   "titulo": "Rio Uruguai sobe em Itaqui e Uruguaiana",
    "local": "Rio Grande do Sul, Brasil",
    "data": "2026-10-13",
    "lat": -29.75,
    "lon": -57.08,
-   "resumo": "O rio Uruguai voltou a subir em São Borja, Itaqui e Uruguaiana e segue acima da cota de inundação nas três cidades, segundo o boletim desta terça (13/10) do Serviço Geológico do Brasil. Ao menos 484 pessoas estão fora de casa na fronteira oeste.",
+   "resumo": "O rio Uruguai segue acima da cota de inundação em São Borja, Itaqui e Uruguaiana, no Rio Grande do Sul, e ainda sobe nas duas últimas, segundo o Serviço Geológico do Brasil. Ao menos 484 pessoas estão fora de casa na fronteira oeste.",
    "pontos": [
-    "SGB (13/10): São Borja a 10,40 m (cota de 9,00 m), Itaqui a 9,70 m (cota de 8,30 m) e Uruguaiana a 9,85 m (cota de 8,50 m).",
-    "Previsão do SGB: São Borja a 10,50 m, Itaqui a 9,82 m e Uruguaiana a 9,91 m até a madrugada de quarta (14/10).",
+    "SGB (13/10, 16h): São Borja a 10,49 m (cota de 9,00 m), Itaqui a 9,76 m (cota de 8,30 m) e Uruguaiana a 9,88 m (cota de 8,50 m).",
+    "Previsão para quarta (14/10): São Borja em queda para 10,41 m; Itaqui a 9,83 m e Uruguaiana a 9,96 m.",
     "Fora de casa: 207 em Alegrete, 169 em Uruguaiana, 86 em Itaqui e 22 afetados em São Borja.",
     "Em Alegrete o Ibirapuitã está em queda; o Exército vai ajudar as famílias a voltar para casa."
    ],
@@ -572,20 +607,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "temporais-se",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "Alerta laranja de tempestade no Sul, SP e MS",
+   "titulo": "Temporais no Sul; chuva de 100 mm em uma hora em SC",
    "local": "Sul, São Paulo e Mato Grosso do Sul, Brasil",
    "data": "2026-10-13",
    "lat": -24.5,
    "lon": -51.0,
-   "resumo": "O Inmet mantém alerta laranja de tempestade nesta terça (13/10) em 19 regiões do Paraná, de Santa Catarina, do norte gaúcho, de São Paulo e do sudoeste de Mato Grosso do Sul. Há risco de granizo, ventos de até 100 km/h e até 100 mm de chuva no dia.",
+   "resumo": "Santiago do Sul, no oeste de Santa Catarina, teve cerca de 100 mm de chuva em uma hora nesta terça (13/10), com ruas alagadas e pontes encobertas. O Inmet mantém alerta laranja de tempestade no Sul, em SP e em MS, e o Rio de Janeiro entra em alerta laranja na quarta (14/10).",
    "pontos": [
-    "Chuva de 30 a 60 mm por hora ou 50 a 100 mm no dia; ventos de 60 a 100 km/h.",
-    "Regiões em alerta: 10 no Paraná, 4 em Santa Catarina, 2 no RS, 2 em SP e 1 em MS.",
-    "A Defesa Civil de SP alerta para tempestades com granizo até quinta (15/10), com chuva em quase todo o estado na quarta.",
-    "Riscos: queda de árvores, falta de luz, alagamentos e perdas na lavoura."
+    "Santiago do Sul (SC): 100 mm em uma hora, segundo a Defesa Civil; bueiros entupidos e estradas danificadas.",
+    "Alerta laranja do Inmet em 19 regiões do PR, SC, RS, SP e MS: até 100 mm no dia e ventos de até 100 km/h.",
+    "Rio e mais 9 cidades da região metropolitana em alerta laranja na quarta (14/10): 30 a 60 mm por hora e ventos de até 100 km/h.",
+    "A Defesa Civil de SP alerta para tempestades com granizo até quinta (15/10)."
    ],
-   "fonte": "Inmet e Defesa Civil SP",
-   "url": "https://oantagonista.com.br/clima/inmet-emite-alerta-de-tempestade-para-19-regioes-com-ventos-de-ate-100-km-h-e-risco-de-granizo-na-3feira-13/",
+   "fonte": "Defesa Civil e Inmet",
+   "url": "https://mixvale.com.br/2026/10/13/chuva-de-100-mm-em-uma-hora-alaga-ruas-e-encobre-pontes-em-santiago-do-sul",
    "rotulo": "Tempestades Sul",
    "lado": "r"
   },
@@ -1071,7 +1106,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
 
 </body>
 </html>
