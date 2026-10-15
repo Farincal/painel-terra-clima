@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P+T4rtqsJjQmd5vshHxq57fhZTeRLuh/dPygWU5NYbs=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI=' 'sha256-Nv6tEHheWRPaCoFVjiGXJ0345Blo+qQqpGApU/TNXuA=' 'sha256-VqWoH4FzieN9EGBY40f6B7uYNeJFfc5bpIPuLAnA228='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://earthquake.usgs.gov; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P+T4rtqsJjQmd5vshHxq57fhZTeRLuh/dPygWU5NYbs=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI=' 'sha256-Nv6tEHheWRPaCoFVjiGXJ0345Blo+qQqpGApU/TNXuA=' 'sha256-VqWoH4FzieN9EGBY40f6B7uYNeJFfc5bpIPuLAnA228=' 'sha256-lj7bXTHOBup0G9AGaskaboVAc9Bdr04QDdKEcpNUWX8='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://earthquake.usgs.gov; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Plantão de fenômenos naturais e monitoramento do El Niño 2026–27, em português.">
 <link rel="canonical" href="https://farincal.github.io/painel-terra-clima/">
@@ -20,10 +20,31 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 :root{
   color-scheme:dark;
@@ -258,6 +279,158 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   #resumo-txt{max-height:260px;font-size:.8rem}
 }
 </style>
+<style>
+/* ===== visual 2026: centro de controle neon (sobrepõe o estilo base) ===== */
+:root{
+  --bg:#050816; --panel:rgba(18,26,58,.62); --panel2:rgba(28,38,84,.7); --line:rgba(120,150,255,.2); --ink:#EEF3FF; --muted:#9AA8D6;
+  --hot:#FF4D2E; --hot2:#E0263F; --warm:#FFB020; --cool:#2FD6F5; --ok:#3EE6A0; --storm:#B07CFF; --quake:#FFD43B; --volc:#FF7A59;
+  --land:#18224A; --landline:#33427F;
+  --neon:linear-gradient(100deg,#2FD6F5 0%,#6C7CFF 40%,#B07CFF 65%,#FF4D9A 85%,#FF8A3D 100%);
+  --cond:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+html{scroll-behavior:smooth}
+body{background:
+  radial-gradient(60% 40% at 85% 0%,rgba(108,124,255,.22),transparent 70%),
+  radial-gradient(50% 35% at 0% 10%,rgba(47,214,245,.14),transparent 70%),
+  radial-gradient(60% 40% at 50% 100%,rgba(255,77,46,.10),transparent 70%),
+  var(--bg);background-attachment:fixed;font-size:16px}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.55;
+  background-image:radial-gradient(1px 1px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 80px,#cfe,transparent),radial-gradient(1.5px 1.5px at 200px 160px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#bcd,transparent),radial-gradient(1px 1px at 380px 210px,#fff,transparent);
+  background-size:420px 260px;animation:stars 120s linear infinite}
+@keyframes stars{to{background-position:420px 260px}}
+h1,h2,h3{letter-spacing:-.015em}
+h2{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:800;text-transform:none;letter-spacing:-.02em;
+  background:var(--neon);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lbl{color:#8FA0D8}
+
+/* topo */
+.top{background:rgba(5,8,22,.72);backdrop-filter:blur(16px) saturate(170%);border-bottom:1px solid var(--line)}
+.top::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--neon);opacity:.7}
+.logo{font:800 1.5rem/1 var(--cond);letter-spacing:-.01em;text-transform:none}
+.logo svg{width:32px;height:32px;filter:drop-shadow(0 0 10px rgba(47,214,245,.7))}
+.live{background:linear-gradient(135deg,#FF2D55,#FF4D2E);border-radius:999px;box-shadow:0 0 18px rgba(255,45,85,.6)}
+.top nav a{font:600 .95rem/1 var(--body);text-transform:none;letter-spacing:0;padding:6px 2px;border-bottom:2px solid transparent}
+.top nav a:hover{color:#fff;border-color:var(--cool)}
+.owner{font:700 .85rem/1 var(--body);text-transform:none;letter-spacing:0;background:rgba(255,255,255,.06)}
+.owner b{background:var(--neon);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* abertura com globo 3D */
+.head{position:relative;grid-template-columns:minmax(0,1fr);gap:14px;padding:46px 0 18px;align-items:center}
+@media(min-width:1000px){.head{grid-template-columns:minmax(0,1fr) 380px;column-gap:40px}.head>*:not(.globe){grid-column:1}.globe{grid-column:2;grid-row:1/span 4}}
+.head .lbl{display:inline-flex;justify-self:start;gap:8px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:#C9D3FF}
+.head h1{font-size:clamp(2.1rem,4.6vw,3.9rem);font-weight:800;line-height:1.02;text-shadow:0 8px 40px rgba(5,8,22,.8)}
+.head h1 #headline{background:var(--neon);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite alternate}
+@keyframes sheen{to{background-position:100% 0}}
+.head p{font-size:1.05rem;color:#B9C4EC}
+.counts{gap:10px}
+.counts span,.counts>*{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:10px 14px;color:#C9D3FF}
+.counts b{font:800 1.5rem/1 var(--cond);background:var(--neon);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.globe{position:relative;width:min(380px,80vw);aspect-ratio:1;justify-self:center;perspective:900px}
+.g-sphere{position:absolute;inset:8%;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(120,200,255,.55),rgba(40,70,190,.35) 35%,rgba(10,16,48,.95) 70%),#0A1236;
+  box-shadow:inset -30px -40px 80px rgba(0,0,0,.75),inset 10px 10px 40px rgba(47,214,245,.25),0 0 80px rgba(47,214,245,.35),0 0 160px rgba(108,124,255,.25)}
+.g-hot{position:absolute;left:24%;top:42%;width:38%;height:22%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(255,90,46,.95),rgba(255,140,40,.55) 50%,transparent);filter:blur(6px);animation:hot 3.5s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes hot{50%{transform:scale(1.15);opacity:.8}}
+.g-wire{position:absolute;inset:8%;transform-style:preserve-3d;animation:spin 26s linear infinite;transform:rotateX(-14deg)}
+@keyframes spin{from{transform:rotateX(-14deg) rotateY(0)}to{transform:rotateX(-14deg) rotateY(360deg)}}
+.g-wire i{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(47,214,245,.45);box-shadow:0 0 8px rgba(47,214,245,.25)}
+.g-wire i:nth-child(1){transform:rotateY(0deg)}.g-wire i:nth-child(2){transform:rotateY(30deg)}.g-wire i:nth-child(3){transform:rotateY(60deg)}
+.g-wire i:nth-child(4){transform:rotateY(90deg)}.g-wire i:nth-child(5){transform:rotateY(120deg)}.g-wire i:nth-child(6){transform:rotateY(150deg)}
+.g-wire b{position:absolute;left:50%;top:50%;border-radius:50%;border:1px solid rgba(176,124,255,.45)}
+.g-wire b:nth-of-type(1){width:100%;height:100%;margin:-50% 0 0 -50%;transform:rotateX(90deg);border-color:rgba(255,120,60,.7);box-shadow:0 0 14px rgba(255,90,46,.6)}
+.g-wire b:nth-of-type(2){width:86%;height:86%;margin:-43% 0 0 -43%;transform:rotateX(90deg) translateZ(25%)}
+.g-wire b:nth-of-type(3){width:86%;height:86%;margin:-43% 0 0 -43%;transform:rotateX(90deg) translateZ(-25%)}
+.g-wire b:nth-of-type(4){width:50%;height:50%;margin:-25% 0 0 -25%;transform:rotateX(90deg) translateZ(43%)}
+.g-wire b:nth-of-type(5){width:50%;height:50%;margin:-25% 0 0 -25%;transform:rotateX(90deg) translateZ(-43%)}
+.g-orbit{position:absolute;inset:-2%;border-radius:50%;border:1.5px dashed rgba(255,255,255,.18);transform:rotateX(72deg) rotateZ(-18deg);transform-style:preserve-3d;animation:orb 14s linear infinite}
+@keyframes orb{to{transform:rotateX(72deg) rotateZ(342deg)}}
+.g-orbit::after{content:"";position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#fff;box-shadow:0 0 14px #2FD6F5,0 0 30px #2FD6F5}
+.g-tag{position:absolute;padding:8px 12px;border-radius:12px;background:rgba(10,16,48,.75);border:1px solid var(--line);backdrop-filter:blur(8px);font:700 .82rem/1.2 var(--mono);color:#fff;box-shadow:0 14px 30px -10px rgba(0,0,0,.8);animation:float 6s ease-in-out infinite}
+.g-tag small{display:block;font:500 .7rem/1.3 var(--body);color:var(--muted)}
+.g-tag.t1{left:-4%;top:58%;border-color:rgba(255,77,46,.6);box-shadow:0 0 24px -4px rgba(255,77,46,.6)}
+.g-tag.t1 b{color:#FF7A4D}
+.g-tag.t2{right:-2%;top:14%;animation-delay:-3s;border-color:rgba(47,214,245,.55)}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* painéis em vidro */
+.panel{background:linear-gradient(160deg,rgba(30,42,96,.55),rgba(12,18,44,.55));border:1px solid var(--line);border-radius:20px;
+  backdrop-filter:blur(10px);box-shadow:0 30px 60px -30px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.06)}
+.mapbox{box-shadow:0 0 0 1px rgba(47,214,245,.25),0 30px 80px -30px rgba(47,214,245,.35),0 40px 80px -40px rgba(0,0,0,.9)}
+.mapbar,.maplegend{border-color:var(--line)}
+.layers button,.chips button,.fmt button{font:600 .85rem/1 var(--body);text-transform:none;letter-spacing:0;background:rgba(255,255,255,.04);padding:8px 13px;transition:all .2s}
+.layers button[aria-pressed="true"],.fmt button[aria-pressed="true"]{background:var(--neon);color:#fff;border-color:transparent;box-shadow:0 6px 20px -6px rgba(108,124,255,.8)}
+.chips button[aria-pressed="true"]{background:rgba(255,255,255,.12);color:#fff;border-color:var(--c,#fff);box-shadow:0 0 16px -4px var(--c,#fff)}
+.land{fill:#1A2656;stroke:#3B4E96}
+.grat{stroke:rgba(80,110,220,.18)}
+.detail h3{font-size:1.7rem;font-weight:800}
+.detail .tag{border-radius:999px;padding:6px 11px}
+
+/* cartões do plantão com 3D */
+.evs{gap:18px}
+.ev{background:linear-gradient(165deg,rgba(34,46,104,.6),rgba(12,18,44,.7));border:1px solid var(--line);border-left:0;border-radius:18px;padding:18px 18px 18px 22px;position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+.ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c);box-shadow:0 0 18px var(--c)}
+.ev::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:var(--c);opacity:.10;filter:blur(20px)}
+.ev:hover{box-shadow:0 30px 60px -24px rgba(0,0,0,.9),0 0 0 1px var(--c),0 0 40px -10px var(--c)}
+.ev.sel{box-shadow:0 0 0 2px var(--c),0 0 40px -8px var(--c)}
+.ev h3{font-size:1.25rem;font-weight:800}
+.sv{border-radius:999px!important;padding:4px 9px!important}
+.sv.critico{background:linear-gradient(135deg,#FF2D55,#FF4D2E)!important;box-shadow:0 0 14px rgba(255,45,85,.6)}
+.sv.alto{background:linear-gradient(135deg,#FFC53D,#FF8A3D)!important}
+
+/* boletins */
+.bull{transition:transform .35s cubic-bezier(.22,1,.36,1);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+.bull header h3{font:800 1.15rem/1.1 var(--cond);text-transform:none;letter-spacing:-.01em}
+.kv b{font-size:1.3rem}
+.kv b.h{color:#FF6A3D;text-shadow:0 0 14px rgba(255,77,46,.6)}
+.kv b.w{color:var(--warm);text-shadow:0 0 14px rgba(255,176,32,.5)}
+.kv b.c{color:var(--cool);text-shadow:0 0 14px rgba(47,214,245,.5)}
+.sev{border-radius:999px}
+
+/* FarincalTec */
+.ftc{border-left:0;position:relative;overflow:hidden;background:linear-gradient(125deg,rgba(27,91,216,.55),rgba(106,59,232,.5) 50%,rgba(192,42,142,.45))}
+.ftc::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:36px 36px}
+.ftc h2{color:#fff;background:none;-webkit-background-clip:initial;background-clip:initial}
+.ftc h2 b{color:#FFD43B}
+.ftc p{color:#E2E6FF}
+.ftc li{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);border-radius:999px}
+
+/* botões */
+.btn{font:700 1rem/1 var(--body);text-transform:none;letter-spacing:0;border-radius:14px;padding:14px 18px;transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:linear-gradient(135deg,#FFC53D,#FF8A3D);border:0;color:#1A1030;box-shadow:0 12px 30px -10px rgba(255,170,61,.8)}
+.btn.wa{background:linear-gradient(135deg,#25D366,#128C7E);border:0;box-shadow:0 12px 30px -12px rgba(37,211,102,.8)}
+.btn.tg{background:linear-gradient(135deg,#2AABEE,#1E6FD9);border:0;box-shadow:0 12px 30px -12px rgba(42,171,238,.8)}
+#resumo-txt{background:rgba(5,8,22,.7);border-radius:14px}
+
+/* sismos, satélites, notícias, linha do tempo */
+.eqmag{border-radius:10px;box-shadow:0 0 16px -4px currentColor}
+.sat{transition:transform .3s ease,box-shadow .3s ease}
+.sat:hover{transform:translateY(-6px);box-shadow:0 0 0 1px var(--cool),0 30px 50px -20px rgba(47,214,245,.5)}
+.step .bar{height:10px;box-shadow:0 0 16px var(--c)}
+.item h3{font-weight:800}
+footer{border-top:1px solid var(--line)}
+
+/* revelar ao rolar (só com JS) */
+.js-rv .rv{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.js-rv .rv.in{opacity:1;transform:none}
+
+@media (max-width:999px){.globe{width:min(300px,78vw);margin-top:6px}}
+@media (max-width:640px){
+  .head{padding-top:18px}.head h1{font-size:1.75rem}
+  .counts span,.counts>*{padding:8px 10px}
+  .g-tag{font-size:.72rem;padding:6px 9px}
+}
+@media (prefers-reduced-motion:reduce){
+  body::before,.g-wire,.g-orbit,.g-hot,.g-tag,.head h1 #headline{animation:none!important}
+  .ev,.bull{transform:none!important}
+  .js-rv .rv{opacity:1;transform:none;transition:none}
+}
+</style>
 
 </head>
 <body>
@@ -283,6 +456,14 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     <h1>O planeta hoje: <span id="headline"></span></h1>
     <div class="counts" id="counts"></div>
     <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b id="nino-val" style="color:var(--hot)">+3,1 °C</b> no Pacífico.</p>
+    <div class="globe" aria-hidden="true">
+      <div class="g-sphere"></div>
+      <div class="g-hot"></div>
+      <div class="g-wire"><i></i><i></i><i></i><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b></div>
+      <div class="g-orbit"></div>
+      <div class="g-tag t1"><b>El Niño</b><small>Pacífico aquecido</small></div>
+      <div class="g-tag t2">AO VIVO<small>plantão a cada 6 h</small></div>
+    </div>
   </div>
 
   <section id="mapa" class="mapgrid" aria-label="Mapa de monitoramento">
@@ -501,10 +682,9 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-10-15T11:30:00+02:00",
- "manchete": "trudy vira furacão e deve ficar maior na sexta, rio uruguai segue alto no rs e ventos de santa ana ameaçam a califórnia",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-10-15T17:25:00+02:00",
+ "manchete": "trudy deve virar furacão maior na sexta, enchente mata 3 em istambul e santa ana deixa a califórnia em alerta até sábado",
  "eventos": [
   {
    "id": "trudy",
@@ -518,11 +698,11 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "resumo": "Trudy virou furacão, com ventos de 120 km/h, a 480 km a sul-sudoeste de Acapulco, no México. O NHC prevê fortalecimento rápido, furacão maior na sexta (16/10) e aproximação da costa sudoeste e centro-oeste do México no fim de semana.",
    "pontos": [
     "Aviso 8 do NHC (9h UTC de 15/10): ventos de 120 km/h e pressão de 989 hPa; rumo noroeste a 15 km/h.",
-    "Está a 735 km a sul-sudeste de Manzanillo; vigilâncias devem sair nesta manhã para o sudoeste e centro-oeste do México.",
+    "SMN (6h de 15/10, horário do centro): rajadas de 150 km/h e ondas de 2 a 3 m nas costas de Guerrero e Oaxaca; aulas suspensas em Guerrero.",
     "Chuva de 100 a 200 mm em Colima e Jalisco, com até 300 mm em pontos isolados, até o fim de semana.",
     "Ventos de furacão vão até 35 km do centro; de tempestade tropical, até 185 km."
    ],
-   "fonte": "NHC",
+   "fonte": "NHC e SMN via Expansión",
    "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP1+shtml/150837.shtml",
    "rotulo": "Trudy",
    "lado": "b"
@@ -531,20 +711,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "simon",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Simon fica parado e enfraquece no Pacífico",
+   "titulo": "Simon segue parado e enfraquece no Pacífico",
    "local": "Pacífico, a oeste de Cabo Corrientes, México",
    "data": "2026-10-15",
    "lat": 19.2,
-   "lon": -108.5,
-   "resumo": "A tempestade tropical Simon está parada a 435 km a sul-sudeste de Cabo San Lucas, no México, com ventos de 95 km/h. Não há avisos na costa, e o NHC prevê enfraquecimento gradual até o fim de semana.",
+   "lon": -108.1,
+   "resumo": "A tempestade tropical Simon segue quase parada a 450 km a sul-sudeste de Cabo San Lucas, no México, com ventos de 95 km/h. Não há avisos na costa, e o NHC prevê enfraquecimento gradual até o fim de semana.",
    "pontos": [
-    "Aviso 32 do NHC (9h UTC de 15/10): ventos de 95 km/h e pressão de 996 hPa; sistema estacionário.",
-    "Deve virar para noroeste na sexta (16/10) e perder as características tropicais no fim de semana.",
-    "Chuva de 25 a 50 mm, com até 75 mm, em partes da Baja California Sur até sábado (17/10).",
+    "Aviso 33 do NHC (15h UTC de 15/10): ventos de 95 km/h e pressão de 996 hPa; quase estacionário, a 285 km a oés-sudoeste de Cabo Corrientes.",
+    "Deve virar para noroeste na sexta (16/10) e virar uma baixa remanescente no fim de semana.",
+    "Chuva de 25 a 50 mm, com até 75 mm, em partes da Baja California Sur até a madrugada de sábado (17/10).",
     "As chuvas de Simon mataram um homem de 71 anos em Chilpancingo (Guerrero); em San Blas (Nayarit), uma ponte de pedestres caiu."
    ],
    "fonte": "NHC e La Jornada",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/150831.shtml",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/151442.shtml",
    "rotulo": "Simon",
    "lado": "l"
   },
@@ -583,31 +763,52 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
     "Estados: GO, MG, PR, MT, MS, SP, ES, TO, BA e RJ, além do DF; validade de 0h01 a 23h59 de 15/10.",
     "Inmet: 30 a 60 mm por hora ou até 100 mm no dia, rajadas de 60 a 100 km/h.",
     "Em Minas, o aviso alcança 815 cidades, incluindo Belo Horizonte.",
-    "MetSul: risco maior de chuva forte e temporais isolados em MS, MT, GO, SP, RJ, MG e ES nesta quinta."
+    "Na quarta (14/10), o temporal alagou o túnel do Anhangabaú, em São Paulo, e causou 148 atrasos e 6 cancelamentos em Congonhas."
    ],
-   "fonte": "Inmet via Metrópoles e MetSul",
+   "fonte": "Inmet via Metrópoles e O Tempo; Diário de SP",
    "url": "https://www.metropoles.com/brasil/inmet-emite-alerta-laranja-de-tempestades-para-13-estados-e-o-df",
    "rotulo": "Temporais Brasil",
+   "lado": "r"
+  },
+  {
+   "id": "istambul",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Enchente em Istambul deixa 3 mortos",
+   "local": "Istambul, Turquia",
+   "data": "2026-10-15",
+   "lat": 41.01,
+   "lon": 28.98,
+   "resumo": "Chuvas fortes alagaram Istambul, na Turquia, e deixaram três mortos e quatro desaparecidos, segundo o governo da província. Algumas áreas tiveram a maior chuva desde 1985, segundo a prefeitura.",
+   "pontos": [
+    "Um adolescente de 14 anos morreu eletrocutado num parque em Fatih.",
+    "Mais de 2.700 pessoas ilhadas foram retiradas, disse o ministro do Interior.",
+    "Escolas fechadas até sexta (16/10); motos proibidas de circular.",
+    "Em Sakarya, a 150 km, uma casa de dois andares no leito de um rio desabou; mais chuva é prevista."
+   ],
+   "fonte": "Governo de Istambul via AP",
+   "url": "https://www.ksat.com/business/2026/10/15/heavy-rain-shuts-down-istanbul-causing-flooding-and-3-deaths/",
+   "rotulo": "Enchente Istambul",
    "lado": "r"
   },
   {
    "id": "panama",
    "tipo": "terremoto",
    "gravidade": "critico",
-   "titulo": "Panamá sente novo sismo de 6,1 após terremoto de 7,7",
+   "titulo": "Terremoto no Panamá tem 1ª morte e 13,6 mil afetados",
    "local": "Herrera, Los Santos e Veraguas, Panamá",
-   "data": "2026-10-13",
+   "data": "2026-10-15",
    "lat": 7.6,
    "lon": -80.7,
-   "resumo": "O Panamá soma 11.527 pessoas afetadas pelo terremoto de sexta (09/10), segundo o Sinaproc. Na segunda (12/10), um novo sismo de 6,1 atingiu o sul do país, sem relato de vítimas.",
+   "resumo": "O Panamá registrou a primeira morte oficial pelo terremoto de sexta (09/10): uma mulher de 68 anos que estava gravemente ferida. O COE soma 13.623 pessoas afetadas.",
    "pontos": [
-    "Sinaproc: 3.390 casas afetadas, 727 com perda total em Herrera e Los Santos.",
-    "35 escolas desabaram e 619 estão em avaliação; três hospitais de Colón tiveram danos parciais.",
-    "2.841 pessoas em 33 abrigos; 20 pontes precisam de reparo.",
-    "Sismo de 6,1 (USGS) às 18h20 locais de 12/10, a 18 km de Río Grande e 10 km de profundidade."
+    "Balanço 12 do COE: 879 famílias perderam a casa; 926 casas com danos moderados e 1.577 com danos parciais.",
+    "45 abrigos recebem 3.696 pessoas.",
+    "Meduca: cerca de 619 escolas com danos no país.",
+    "Emergência nacional desde 10/10, com até US$ 100 milhões para os afetados."
    ],
-   "fonte": "Sinaproc via Infobae e USGS via AP",
-   "url": "https://www.infobae.com/panama/2026/10/14/panama-facilita-la-reconstruccion-tras-el-terremoto-con-exoneraciones-en-obras-publicas-y-privadas/",
+   "fonte": "COE e Sinaproc via La Prensa",
+   "url": "https://www.prensa.com/sociedad/sinaproc-reporta-mas-de-13-mil-personas-afectadas-por-el-terremoto/",
    "rotulo": "Sismo Panamá",
    "lado": "r"
   },
@@ -654,27 +855,6 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "lado": "t"
   },
   {
-   "id": "chile",
-   "tipo": "outro",
-   "gravidade": "alto",
-   "titulo": "Tornado e granizo atingem Santiago do Chile",
-   "local": "Região Metropolitana de Santiago, Chile",
-   "data": "2026-10-14",
-   "lat": -33.45,
-   "lon": -70.67,
-   "resumo": "Uma tempestade com granizo e um tornado atingiram Santiago do Chile na terça (13/10) e deixaram mais de 36 mil casas sem luz. O Senapred suspendeu nesta quarta (14/10) o alerta vermelho, mas dez comunas seguem em alerta amarelo por risco de deslizamentos.",
-   "pontos": [
-    "SEC: mais de 36 mil casas ficaram sem energia; estações do metrô alagaram.",
-    "O tornado, o segundo registrado na história de Santiago, arrancou telhados em Estación Central.",
-    "Não houve feridos relatados; aulas foram suspensas e ruas e garagens ficaram alagadas.",
-    "Desde meados do ano, os temporais ligados ao El Niño deixaram ao menos 16 mortos no Chile."
-   ],
-   "fonte": "Senapred e SEC via EFE e Infobae",
-   "url": "https://www.yucatan.com.mx/mundo/2026/10/14/suspenden-la-alerta-roja-en-santiago-de-chile-por-las-lluvias-tras-fuerte-temporal.html",
-   "rotulo": "Tornado Santiago",
-   "lado": "l"
-  },
-  {
    "id": "tailandia",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -699,20 +879,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Catalunha: buscas por menino chegam ao 10º dia",
+   "titulo": "Catalunha: corpo de menino é achado no mar",
    "local": "Barcelona e Tarragona, Catalunha, Espanha",
-   "data": "2026-10-14",
-   "lat": 41.6,
-   "lon": 2.3,
-   "resumo": "As buscas por Rami, menino de 12 anos desaparecido em Granollers no temporal de 4 de outubro, chegaram ao décimo dia sem pistas. Os bombeiros vasculham a bacia do rio Besòs a partir de Montcada i Reixac, e os Mossos usam drones térmicos nas áreas urbanas.",
+   "data": "2026-10-15",
+   "lat": 41.3,
+   "lon": 1.9,
+   "resumo": "O corpo de Rami, menino de 12 anos desaparecido em Granollers no temporal de 4 de outubro, foi achado no mar entre Castelldefels e Sitges. A AEMET prevê uma dana com chuva forte no litoral mediterrâneo no fim de semana.",
    "pontos": [
-    "Participam 48 bombeiros, com equipes de cães, mergulhadores, montanha (GRAE) e drones.",
-    "Na terça (13/10), os bombeiros revisaram 6 km de margens do Besòs.",
-    "O temporal de outubro deixou três mortos na Catalunha.",
-    "AEMET: uma dana traz chuva e tempestades a partir de sábado (17/10); domingo (18/10) deve ser o dia mais difícil no Mediterrâneo e nas Baleares."
+    "Um pescador viu o corpo boiando na tarde de quarta (14/10); os Mossos o recuperaram de barco.",
+    "O instituto forense confirmou a identidade; as buscas duraram dez dias e mobilizaram até 50 bombeiros.",
+    "AEMET: a mudança começa no sábado (17/10), com pico no domingo (18/10).",
+    "Mais chuva e tempestades com raios no litoral da Catalunha e das Baleares; queda forte de temperatura."
    ],
-   "fonte": "EFE via Infobae e AEMET via Euronews",
-   "url": "https://www.infobae.com/espana/agencias/2026/10/14/prosigue-por-decimo-dia-la-busqueda-del-nino-desaparecido-en-granollers-durante-tormentas/",
+   "fonte": "EFE via Última Hora e AEMET via CatalunyaPress",
+   "url": "https://www.ultimahora.es/sucesos/ultimas/2026/10/15/2729183/hallan-vida-mar-rami-nino-granollers-desaparecido-durante-lluvias.html",
    "rotulo": "Catalunha",
    "lado": "t"
   },
@@ -745,20 +925,20 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
    "data": "2026-10-15",
    "lat": 34.2,
    "lon": -118.5,
-   "resumo": "O sul da Califórnia está sob alerta vermelho de incêndio nesta quinta e sexta (15 e 16/10) por causa dos ventos de Santa Ana. O Serviço Nacional de Meteorologia diz que qualquer foco pode se espalhar de forma extrema.",
+   "resumo": "Partes dos condados de Los Angeles e Ventura estão sob alerta vermelho de incêndio até sábado (17/10) por causa dos ventos de Santa Ana. Há ainda aviso de calor no mesmo período.",
    "pontos": [
-    "Rajadas de mais de 110 km/h nas montanhas; ventos de 30 a 65 km/h no interior.",
-    "O pico dos ventos deve ser na sexta (16/10).",
-    "A Southern California Edison avalia cortar a luz de 224.500 clientes em Los Angeles e Ventura."
+    "Validade: das 6h de quinta (15/10) às 20h de sábado (17/10), horário local.",
+    "Ventos de 30 a 65 km/h, com rajadas de 80 a 110 km/h; umidade de 8% a 20%.",
+    "A Southern California Edison avalia cortar a luz de cerca de 224.500 clientes em Los Angeles e Ventura.",
+    "Até a manhã de quinta, não havia incêndios ativos relatados."
    ],
-   "fonte": "NWS via CBS Los Angeles",
-   "url": "https://cbsnews.com/losangeles/news/southern-california-red-flag-santa-ana-winds-october-14",
+   "fonte": "NWS e Edison via ABC7",
+   "url": "https://abc7.com/post/red-flag-warnings-take-effect-socal-strong-santa-ana-winds-raise-fire-concerns/19939252/",
    "rotulo": "Santa Ana",
    "lado": "t"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1092,8 +1272,27 @@ footer ul{margin:0;padding-left:18px;display:grid;gap:3px}
   upd();
 })();
 </script>
-
-
+<script>
+(function(){
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var fine=window.matchMedia("(pointer:fine)").matches;
+  if(fine&&!reduce){
+    document.addEventListener("pointermove",function(e){
+      var el=e.target.closest&&e.target.closest(".ev,.bull");
+      document.querySelectorAll(".ev,.bull").forEach(function(c){ if(c!==el){c.style.removeProperty("--rx");c.style.removeProperty("--ry");} });
+      if(!el)return;
+      var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      el.style.setProperty("--ry",(x*10).toFixed(2)+"deg");el.style.setProperty("--rx",(-y*10).toFixed(2)+"deg");
+    });
+  }
+  if(!reduce&&"IntersectionObserver" in window){
+    document.documentElement.classList.add("js-rv");
+    var els=document.querySelectorAll(".bull,#previsao .card,.sat,#noticias,.ftc,#resumo,#sismos");
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});},{threshold:.1});
+    els.forEach(function(el){el.classList.add("rv");io.observe(el);});
+  }
+})();
+</script>
 
 </body>
 </html>
