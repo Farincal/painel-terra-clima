@@ -20,33 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -688,70 +661,71 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-10-16T23:30:00+02:00",
- "manchete": "trudy perde força mas méxico amplia alerta de furacão, guam entra em alerta de tufão e catalunha tem alerta vermelho de chuva",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-10-17T05:30:00+02:00",
+ "manchete": "tufão champi ameaça guam, trudy se aproxima do méxico e catalunha tem alerta vermelho de chuva",
  "eventos": [
+  {
+   "id": "champi",
+   "tipo": "ciclone",
+   "gravidade": "critico",
+   "titulo": "Champi deve passar sobre o sul de Guam como tufão categoria 3",
+   "local": "Pacífico oeste, a leste de Guam e das Marianas",
+   "data": "2026-10-17",
+   "lat": 11.9,
+   "lon": 150.2,
+   "resumo": "Guam e Rota estão sob alerta de tufão pela tempestade Champi, que deve virar tufão em poucas horas. A previsão é que passe pelo sul de Guam como categoria 3 por volta das 7h de domingo (18/10), hora local.",
+   "pontos": [
+    "NWS (4h de 17/10, hora local): a 610 km a lés-sudeste de Guam, ventos de 110 km/h, rumo oeste a 24 km/h.",
+    "Guam: ventos de 170 a 195 km/h com rajadas de 250 km/h, 300 a 500 mm de chuva e ondas de até 10,7 m.",
+    "Maré de tempestade de 1,5 a 2 m no litoral de Guam; Rota pode ter até 380 mm de chuva.",
+    "Saipan e Tinian: alerta de tempestade tropical e vigilância de tufão; vigilância de enchente em todas as ilhas."
+   ],
+   "fonte": "NWS Guam via Isla Public Media",
+   "url": "https://www.islapublic.org/news/2026-10-17/champi-forecast-to-pass-over-or-near-southern-guam-as-a-cat-3-sunday-morning",
+   "rotulo": "Champi",
+   "lado": "r"
+  },
   {
    "id": "trudy",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Trudy perde força, mas alerta de furacão no México aumenta",
+   "titulo": "Trudy se aproxima do México sob alerta de furacão",
    "local": "Pacífico, ao sul de Oaxaca e Guerrero, México",
-   "data": "2026-10-16",
-   "lat": 14.8,
-   "lon": -102.5,
-   "resumo": "O furacão Trudy enfraqueceu para categoria 1, com ventos de 140 km/h, mas o México ampliou o alerta de furacão até Cabo Corrientes. O NHC prevê que o centro passe perto da costa entre a noite de sábado (17/10) e domingo (18/10).",
+   "data": "2026-10-17",
+   "lat": 15.0,
+   "lon": -102.6,
+   "resumo": "O furacão Trudy, de categoria 1, avança em direção ao sudoeste do México com ventos de 140 km/h. O NHC prevê que o centro passe perto da costa entre a noite de sábado (17/10) e domingo (18/10), com chance de leve fortalecimento.",
    "pontos": [
-    "NHC (aviso 14, 21h UTC de 16/10): ventos de 140 km/h, pressão de 982 hPa, rumo norte-noroeste a 7 km/h.",
-    "Centro a 365 km a sudoeste de Acapulco e 505 km a sul-sudeste de Manzanillo.",
+    "NHC (aviso 14A, 0h UTC de 17/10): ventos de 140 km/h, pressão de 982 hPa, rumo norte-noroeste a 9 km/h.",
+    "Centro a 355 km a sudoeste de Acapulco e 480 km a sul-sudeste de Manzanillo.",
     "Alerta de furacão de Manzanillo a Cabo Corrientes; alerta de tempestade tropical de Manzanillo a Zihuatanejo.",
     "Chuva de 100 a 200 mm, com até 380 mm, em Michoacán, Colima e Jalisco; risco de enchentes e deslizamentos."
    ],
-   "fonte": "NHC (aviso público 14)",
-   "url": "https://www.nhc.noaa.gov/mobile/text/refresh/MIATCPEP1+html/151739.shtml",
+   "fonte": "NHC (aviso intermediário 14A) via Cyclocane",
+   "url": "https://www.cyclocane.com/trudy-storm-tracker/",
    "rotulo": "Trudy",
    "lado": "b"
-  },
-  {
-   "id": "champi",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Guam e Rota sob alerta de tufão com a chegada de Champi",
-   "local": "Pacífico oeste, a leste de Guam e das Marianas",
-   "data": "2026-10-16",
-   "lat": 11.6,
-   "lon": 150.8,
-   "resumo": "Guam e Rota estão sob alerta de tufão pela tempestade tropical Champi, que já tem ventos de 110 km/h. Ela deve virar tufão no sábado (17/10) e passar perto ou sobre Guam no domingo (18/10).",
-   "pontos": [
-    "NWS (1h de 17/10, hora local): a 675 km a lés-sudeste de Guam, com ventos de 110 km/h.",
-    "Rumo oeste a 24 km/h.",
-    "Saipan e Tinian: alerta de tempestade tropical e vigilância de tufão; vigilância de enchente em todas as ilhas.",
-    "Guam em Condição de Prontidão 2; previsão de 150 a 300 mm de chuva e ondas de 4,5 a 6 m."
-   ],
-   "fonte": "NWS Guam via DefconLevel; Defesa Civil de Guam (GHS/OCD)",
-   "url": "https://www.defconlevel.com/alert/2026-10-16-nws-noaa-weather-typhoon-watch-issued-october-17-at-3-03am-chst-by-nws-tiyan-gu",
-   "rotulo": "Champi",
-   "lado": "r"
   },
   {
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Alerta vermelho de chuva em 3 comarcas da Catalunha",
+   "titulo": "Catalunha em alerta vermelho de chuva neste sábado",
    "local": "Maresme, Vallès Oriental e Selva, Catalunha, Espanha",
-   "data": "2026-10-16",
+   "data": "2026-10-17",
    "lat": 41.6,
    "lon": 2.45,
-   "resumo": "O Meteocat emitiu alerta vermelho de chuva intensa para Vallès Oriental, Maresme e Selva no sábado (17/10). O plano Inuncat da Proteção Civil está em fase de alerta.",
+   "resumo": "O Meteocat mantém alerta vermelho de chuva intensa para Vallès Oriental, Maresme e Selva neste sábado (17/10). A Proteção Civil mantém o plano Inuncat em fase de alerta até a manhã de domingo.",
    "pontos": [
-    "Perigo 5 de 6 por chuva de mais de 40 mm em 30 minutos.",
-    "Até 90 mm em 3 horas nas três comarcas; Barcelona em perigo 4 de 6.",
-    "Pico das tempestades do meio-dia de sábado à madrugada de domingo.",
-    "O episódio pode durar de 3 a 4 dias, com nova dana possível na segunda (19/10)."
+    "Perigo 5 de 6 por chuva de mais de 40 mm em 30 minutos, com granizo e tempestades estacionárias.",
+    "Meteocat: 50 a 100 mm em pontos do litoral, do pré-litoral e da Catalunha Central; Barcelona em perigo 4 de 6.",
+    "Chuva mais forte à tarde no Maresme; à noite as tempestades descem para Garraf, Baix Penedès e Tarragonès.",
+    "Renfe avisa que o temporal pode afetar a Rodalies."
    ],
-   "fonte": "Meteocat e Proteção Civil via betevé",
-   "url": "https://beteve.cat/medi-ambient/avis-vermell-meteocat-pluges-tempestes-intenses-17-octubre-2026/",
+   "fonte": "Meteocat e Proteção Civil via betevé e Diari de Tarragona",
+   "url": "https://www.diaridetarragona.com/el-tiempo/273310/catalunya-mantiene-alerta-lluvias-torrenciales-llegaran-sabado-noche-tarragona.html",
    "rotulo": "Catalunha",
    "lado": "t"
   },
@@ -761,18 +735,18 @@ footer{border-top:1px solid var(--line)}
    "gravidade": "alto",
    "titulo": "Dana Adam pode trazer 300 mm a Valência e Alicante",
    "local": "Litoral de Valência e Alicante, Espanha",
-   "data": "2026-10-16",
+   "data": "2026-10-17",
    "lat": 38.84,
    "lon": 0.11,
-   "resumo": "A AEMET emitiu aviso especial pela dana Adam, com chuva forte no leste da Espanha até ao menos segunda (19/10). Há aviso laranja no litoral de Valência e no norte de Alicante, e o vermelho pode ser ativado.",
+   "resumo": "A AEMET emitiu aviso especial pela dana Adam, com chuva forte no leste da Espanha até ao menos segunda (19/10). Toda a Comunidade Valenciana fica em aviso amarelo neste sábado, e o domingo tem aviso laranja com risco de mais de 300 mm.",
    "pontos": [
-    "Previsão de até 60 mm em 1 hora e 300 mm em 24 horas.",
-    "Domingo (18/10) e segunda (19/10) devem ser os dias mais adversos.",
-    "Maior chuva perto do cabo de La Nao e de Dénia.",
-    "Risco de enchentes locais e cheias repentinas em córregos e ramblas."
+    "Sábado (17/10): aviso amarelo por 30 mm/h, começando às 8h no sul de Alicante.",
+    "Domingo (18/10): laranja no norte de Alicante e no sul de Valência, com 60 mm/h e 150 mm em 12 horas.",
+    "Em 24 horas podem passar de 300 mm em alguns pontos; o aviso vermelho começa em 180 mm em 12 horas.",
+    "Rajadas de mais de 70 km/h no litoral sul de Valência no domingo."
    ],
    "fonte": "AEMET via El Debate",
-   "url": "https://eldebate.com/espana/comunidad-valenciana/20261016/aviso-especial-dana-adam-valencia-aemet-senala-donde-esperan-lluvias-300-litros_470471.html",
+   "url": "https://www.eldebate.com/espana/comunidad-valenciana/20261016/aemet-eleva-alerta-anticipa-aviso-rojo-dana-valencia-ante-lluvias-300-litros-algunos-puntos_470368.html",
    "rotulo": "Dana Adam",
    "lado": "b"
   },
@@ -798,27 +772,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "temporais-se",
-   "tipo": "outro",
-   "gravidade": "alto",
-   "titulo": "Temporal alaga Grande SP; ciclone se forma no litoral",
-   "local": "Centro-Oeste e Minas Gerais, Brasil",
-   "data": "2026-10-16",
-   "lat": -23.55,
-   "lon": -46.63,
-   "resumo": "Um temporal na madrugada desta sexta (16/10) alagou ruas em Diadema, São Bernardo e na zona sul de São Paulo. Um ciclone extratropical se forma perto do litoral do Sul e do Sudeste, ligado a uma frente fria.",
-   "pontos": [
-    "Zona sul de SP: ao menos 29 veículos atingidos pela água perto da avenida Cupecê.",
-    "Defesa Civil de SP emitiu 15 alertas na madrugada; Inmet prevê ventos de até 100 km/h e granizo.",
-    "Inmet: alerta laranja de tempestade em 619 cidades de Minas Gerais nesta sexta.",
-    "MetSul: o ciclone deve se aprofundar a 987 hPa até sábado e trazer frio abaixo da média."
-   ],
-   "fonte": "Diário do Grande ABC; Defesa Civil via Metrópoles; Inmet; MetSul",
-   "url": "https://www.dgabc.com.br/Noticia/4353062/temporal-alaga-vias-em-diadema-e-sao-bernardo-e-afeta-transporte-no-abc",
-   "rotulo": "Temporal SP",
-   "lado": "r"
-  },
-  {
    "id": "istambul",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -831,7 +784,7 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "Governo de Istambul: quatro desaparecidos; uma das vítimas foi achada junto ao córrego de Kağıthane.",
     "Chuva de 273 mm em Beykoz, 208 mm em Sarıyer e 203 mm em Eyüpsultan.",
-    "Ministro do Interior: 2.727 pessoas ilhadas foram retiradas com segurança.",
+    "Governador: mais de 3 mil pessoas resgatadas; ninguém mais aguarda resgate.",
     "Escolas fechadas; previsão de até 60 mm de chuva no dia seguinte."
    ],
    "fonte": "Governo de Istambul e Ministério do Interior via TRT Haber",
@@ -882,25 +835,25 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   },
   {
-   "id": "kamchatka",
-   "tipo": "terremoto",
+   "id": "frio-sul",
+   "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Terremoto de magnitude 6,9 atinge Kamchatka",
-   "local": "Península de Kamchatka, Rússia",
-   "data": "2026-10-16",
-   "lat": 52.07,
-   "lon": 157.16,
-   "resumo": "Um terremoto de magnitude 6,9 atingiu o leste da península de Kamchatka, na Rússia, nesta sexta (16/10). Não houve alerta de tsunami nem relatos imediatos de vítimas ou danos.",
+   "titulo": "Ciclone traz ventania e frio ao Sul do Brasil",
+   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "data": "2026-10-17",
+   "lat": -30.5,
+   "lon": -51.0,
+   "resumo": "Um ciclone extratropical no mar e uma massa de ar frio derrubam as temperaturas no Sul do Brasil neste fim de semana. O ciclone fica longe da costa, mas traz rajadas fortes e mar agitado.",
    "pontos": [
-    "Hora: 3h35 UTC de 16/10.",
-    "Profundidade de 129 a 152 km, segundo GFZ e NCS.",
-    "Cerca de 146 km a sul-sudoeste de Petropavlovsk-Kamchatsky (EMSC).",
-    "NOAA: sem ameaça de tsunami."
+    "Sábado (17/10): rajadas de até 70 km/h no litoral do RS e sul de SC e até 90 km/h na serra.",
+    "Domingo (18/10): mínimas de até 2 °C no RS e abaixo de 5 °C nas áreas altas de SC e PR.",
+    "Possível geada na segunda (19/10) nas serras e no sul do Paraná.",
+    "Ressaca e ondas altas no litoral do RS e de SC no domingo."
    ],
-   "fonte": "EMSC, GFZ e NOAA via NewsDrum",
-   "url": "https://www.newsdrum.in/international/russias-kamchatka-peninsula-hit-by-magnitude-7-earthquake-no-tsunami-threat-issued-12680846",
-   "rotulo": "Sismo Kamchatka",
-   "lado": "l"
+   "fonte": "Agência GBC",
+   "url": "https://agenciagbc.com/2026/10/16/frio-volta-com-forca-ao-sul-e-temperaturas-podem-chegar-a-2c-ciclone-traz-ventos-de-ate-90-km-h",
+   "rotulo": "Frio no Sul",
+   "lado": "r"
   },
   {
    "id": "tailandia",
@@ -943,9 +896,31 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.infobae.com/america/agencias/2026/10/14/mueren-cuatro-personas-en-la-capital-de-libia-tripoli-a-causa-de-las-fuertes-lluvias/",
    "rotulo": "Enchente Líbia",
    "lado": "t"
+  },
+  {
+   "id": "kamchatka",
+   "tipo": "terremoto",
+   "gravidade": "moderado",
+   "titulo": "Terremoto de magnitude 6,9 atinge Kamchatka",
+   "local": "Península de Kamchatka, Rússia",
+   "data": "2026-10-16",
+   "lat": 52.07,
+   "lon": 157.16,
+   "resumo": "Um terremoto de magnitude 6,9 atingiu o leste da península de Kamchatka, na Rússia, nesta sexta (16/10). Não houve alerta de tsunami nem relatos imediatos de vítimas ou danos.",
+   "pontos": [
+    "Hora: 3h35 UTC de 16/10.",
+    "Profundidade de 129 a 152 km, segundo GFZ e NCS.",
+    "Cerca de 146 km a sul-sudoeste de Petropavlovsk-Kamchatsky (EMSC).",
+    "NOAA: sem ameaça de tsunami."
+   ],
+   "fonte": "EMSC, GFZ e NOAA via NewsDrum",
+   "url": "https://www.newsdrum.in/international/russias-kamchatka-peninsula-hit-by-magnitude-7-earthquake-no-tsunami-threat-issued-12680846",
+   "rotulo": "Sismo Kamchatka",
+   "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1300,7 +1275,6 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
 
 </body>
 </html>
