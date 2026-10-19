@@ -20,7 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -664,48 +663,27 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-19T05:30:00+02:00",
- "manchete": "tufão champi avança para as filipinas, dana adam despeja mais de 300 mm no litoral valenciano e a catalunha espera nova chuva forte",
+ "atualizado": "2026-10-19T11:30:00+02:00",
+ "manchete": "dana adam força o confinamento de duas comarcas valencianas, a catalunha se prepara para chuva torrencial e o tufão champi ruma às filipinas",
  "eventos": [
-  {
-   "id": "champi",
-   "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Champi ruma às Filipinas e pode voltar a ser supertufão",
-   "local": "Mar das Filipinas, a oeste de Guam",
-   "data": "2026-10-19",
-   "lat": 13.7,
-   "lon": 140.9,
-   "resumo": "O tufão Champi avança pelo mar das Filipinas com ventos de 225 km/h e deve entrar na área das Filipinas na terça (20/10). A PAGASA prevê que ele volte à força de supertufão antes de seguir rumo a Taiwan.",
-   "pontos": [
-    "NWS Guam (1h de 19/10, hora local): centro em 13,7°N 140,9°E, cerca de 420 km a oeste de Guam, com ventos de 225 km/h.",
-    "PAGASA (23h de 18/10): ventos de 175 km/h e rajadas de 215 km/h, a 1.830 km a leste do sudeste de Luzon, rumo oeste-noroeste a 15 km/h.",
-    "Sinal de vento nº 3 ou 4 é possível no norte e leste de Luzon e em partes de Bicol a partir da noite de segunda (19/10).",
-    "Taiwan: alerta marítimo pode sair na quarta (21/10); maior impacto previsto para sexta e sábado (23 e 24/10)."
-   ],
-   "fonte": "NWS Guam; PAGASA via Philstar; CWA via Taipei Times",
-   "url": "https://www.philstar.com/headlines/weather/2026/10/19/2564255/champi-may-re-intensify-super-typhoon-enter-par-tuesday",
-   "rotulo": "Champi",
-   "lado": "r"
-  },
   {
    "id": "dana-adam",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Dana Adam passa de 300 mm no sul de Valência",
-   "local": "Valência, Alicante, Baleares e Andaluzia, Espanha",
+   "titulo": "Dana Adam passa de 500 mm e leva ao confinamento na Safor e Marina Alta",
+   "local": "Safor e Marina Alta (Valência e Alicante), Baleares, Espanha",
    "data": "2026-10-19",
-   "lat": 38.84,
-   "lon": 0.11,
-   "resumo": "A dana Adam despejou mais de 300 mm no litoral sul de Valência no domingo (18/10), com alerta vermelho até as 10h desta segunda (19/10). Uma mulher que sumiu ao nadar em Sagunto foi achada morta numa praia de Canet d'en Berenguer.",
+   "lat": 38.88,
+   "lon": -0.1,
+   "resumo": "A Generalitat Valenciana declarou emergência nível 2 e ordenou o confinamento de toda a população da Safor e da Marina Alta nesta segunda (19/10). A dana Adam já despejou mais de 500 mm, com moradores à espera de resgate nos telhados.",
    "pontos": [
-    "El Periòdic: Barx passou de 350 mm; Rafelcofer e Gandia superaram 300 mm e Xàbia chegou a cerca de 270 mm.",
-    "Alerta vermelho da AEMET na Ribera Alta, Ribera Baixa, Safor, Comtat e Marina Alta; alerta laranja em Ibiza, Formentera, Maiorca, Múrcia e Almería.",
-    "Aulas suspensas na segunda em Gandia, Oliva, Dénia, Cullera, Sueca, Calp e nas Baleares; Cercanías C1 e C2 parados até as 10h.",
-    "As Baleares acionaram o ES-Alert e pediram ajuda da UME (Unidade Militar de Emergências)."
+    "Mais de 600 mm em pontos de Alicante (Forna e Pego) e quase 550 mm na província de Valência em 24 horas.",
+    "Rios Girona e Serpis transbordaram; há inundações em Pego, Oliva, Gandia, Els Poblets e Miramar.",
+    "Cerca de 2.000 pessoas de sete campings de Oliva foram retiradas; UME e helicópteros fazem resgates. O 112 atendeu 781 ocorrências.",
+    "Mais de 102.000 alunos sem aula; Ibiza teve 122 mm no aeroporto. Uma mulher que sumiu no mar em Sagunto foi achada morta."
    ],
-   "fonte": "El Periòdic; AEMET via Moncloa.com",
-   "url": "https://www.elperiodic.com/dana-adam-deja-litros-valencia-obliga-cortar-trenes-suspender-clases_1098149",
+   "fonte": "Generalitat Valenciana via NoticiasCV; Infobae; AEMET via Última Hora",
+   "url": "https://noticiascv.com/la-generalitat-confina-a-la-poblacion-en-la-safor-y-la-marina-alta-por-el-colapso-por-el-temporal/",
    "rotulo": "Dana Adam",
    "lado": "b"
   },
@@ -713,22 +691,43 @@ footer{border-top:1px solid var(--line)}
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Catalunha tem nova chuva forte após morte em Cabrera de Mar",
+   "titulo": "Catalunha em alerta para chuva torrencial nesta segunda",
    "local": "Barcelona, Maresme, Vallès e Selva, Catalunha, Espanha",
    "data": "2026-10-19",
    "lat": 41.39,
    "lon": 2.17,
-   "resumo": "A Catalunha terá nesta segunda (19/10) um novo episódio de chuva forte, com perigo alto em 14 comarcas a partir do meio-dia. No domingo, os bombeiros acharam no mar o corpo da mulher de 35 anos levada por uma riera em Cabrera de Mar.",
+   "resumo": "A Catalunha tem perigo alto de chuva intensa em 14 comarcas a partir do meio-dia desta segunda (19/10), e o plano Inuncat segue em alerta. No sábado, uma mulher de 35 anos levada por uma riera em Cabrera de Mar foi achada morta no mar.",
    "pontos": [
-    "Meteocat: perigo alto no Maresme, Barcelonès, Vallès, Baix Llobregat, Garraf, Tarragonès e mais 8 comarcas.",
-    "Pode chover mais de 40 mm em 30 minutos, 60 mm em 3 horas e 100 mm em 24 horas.",
-    "Na madrugada de terça (20/10) o perigo alto passa para Girona, Selva e Empordà.",
-    "No fim de semana, Sant Pere de Ribes teve 87 mm e os Bombers fizeram 117 atendimentos."
+    "Meteocat: perigo alto no Maresme, Barcelonès, Vallès, Baix Llobregat, Bages, Anoia, Penedès, Garraf, Tarragonès, Alt Camp e Baix Camp.",
+    "Pode chover mais de 40 mm em 30 minutos e mais de 60 mm em 3 horas no litoral e pré-litoral.",
+    "Na madrugada de terça (20/10) as tempestades passam para Selva, Gironès, Pla de l'Estany e Empordà.",
+    "Protecció Civil pede para não atravessar nem se aproximar de rieras e torrentes; o presidente Illa pediu máxima prudência."
    ],
-   "fonte": "Meteocat via Aldia; Bombers via Metrópoli Abierta",
-   "url": "https://www.aldia.cat/gent/noticia-meteocat-amplia-14-comarques-lavis-perill-alt-per-intensitat-pluja-aquest-dilluns-20261018193754.html",
+   "fonte": "Meteocat e Protecció Civil via Crónica Global; Infobae",
+   "url": "https://www.cronicaglobal.cat/vida/20261019/pluges-catalunya-lalerta-meteocat-precaucio-tempestes-dilluns/1003742803941_0.html",
    "rotulo": "Catalunha",
    "lado": "t"
+  },
+  {
+   "id": "champi",
+   "tipo": "ciclone",
+   "gravidade": "critico",
+   "titulo": "Champi deve voltar a supertufão e entrar nas Filipinas",
+   "local": "Mar das Filipinas, a leste de Luzon",
+   "data": "2026-10-19",
+   "lat": 14.5,
+   "lon": 138.5,
+   "resumo": "O tufão Champi segue pelo mar das Filipinas e deve entrar na área de responsabilidade filipina na terça (20/10), quando passará a se chamar Rosal. A PAGASA prevê que ele volte a ser supertufão ainda nesta segunda (19/10).",
+   "pontos": [
+    "PAGASA (11h de 19/10, hora local): cerca de 1.600 km a leste do sudeste de Luzon, rumo oeste-noroeste a 20 km/h.",
+    "Ventos de 175 km/h e rajadas de 215 km/h; ventos fortes a de tufão se estendem por até 720 km do centro.",
+    "Sinal nº 3 ou 4 possível no norte e leste de Luzon e em partes de Bicol a partir da noite de 19/10 ou manhã de 20/10.",
+    "Deve enfraquecer aos poucos a partir de quarta (21/10) e seguir rumo a Taiwan; maior impacto lá previsto para 23 e 24/10."
+   ],
+   "fonte": "PAGASA via Manila Times; CWA via Taipei Times",
+   "url": "https://www.manilatimes.net/2026/10/19/news/national/champi-to-re-intensify-into-super-typhoon-as-it-enters-par-pagasa/2448318",
+   "rotulo": "Champi",
+   "lado": "r"
   },
   {
    "id": "rs",
@@ -1276,6 +1275,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
