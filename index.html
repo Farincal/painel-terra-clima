@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P+T4rtqsJjQmd5vshHxq57fhZTeRLuh/dPygWU5NYbs=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI=' 'sha256-Nv6tEHheWRPaCoFVjiGXJ0345Blo+qQqpGApU/TNXuA=' 'sha256-VqWoH4FzieN9EGBY40f6B7uYNeJFfc5bpIPuLAnA228=' 'sha256-lj7bXTHOBup0G9AGaskaboVAc9Bdr04QDdKEcpNUWX8='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://earthquake.usgs.gov; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-gkitXBh9o96FloIhKIFY4RWcT4/GuvuwPXRO0LlD0iQ=' 'sha256-yEPZyrOIFlTsnQ5JrR9Ow21C0UA7kMKWX9lO+lGlMFI=' 'sha256-Nv6tEHheWRPaCoFVjiGXJ0345Blo+qQqpGApU/TNXuA=' 'sha256-VqWoH4FzieN9EGBY40f6B7uYNeJFfc5bpIPuLAnA228=' 'sha256-lj7bXTHOBup0G9AGaskaboVAc9Bdr04QDdKEcpNUWX8='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://earthquake.usgs.gov; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="Plantão de fenômenos naturais e monitoramento do El Niño 2026–27, em português.">
 <link rel="canonical" href="https://farincal.github.io/painel-terra-clima/">
@@ -20,6 +20,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
 
 
 
@@ -440,7 +441,7 @@ footer{border-top:1px solid var(--line)}
     <div class="lbl">Monitoramento de fenômenos naturais · plantão a cada 6 horas · sismos ao vivo</div>
     <h1>O planeta hoje: <span id="headline"></span></h1>
     <div class="counts" id="counts"></div>
-    <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b id="nino-val" style="color:var(--hot)">+3,1 °C</b> no Pacífico.</p>
+    <p>Clique nos ícones do mapa ou nos cartões do plantão para ver os detalhes. Os pontos redondos mostram os impactos previstos do El Niño 2026–27, que está a <b id="nino-val" style="color:var(--hot)">+3,3 °C</b> no Pacífico.</p>
     <div class="globe" aria-hidden="true">
       <div class="g-sphere"></div>
       <div class="g-hot"></div>
@@ -560,7 +561,7 @@ footer{border-top:1px solid var(--line)}
         <span>Niño 3.4 · CPC, boletim 19/10</span><b class="h">+2,4°</b>
         <span>Niño 3 · CPC, boletim 19/10</span><b class="h">+3,5°</b>
         <span>Niño 1+2 · CPC, boletim 19/10</span><b class="h">+4,4°</b>
-        <span>Niño 3.4 · IRI, semana 23/09</span><b class="h">+3,1°</b>
+        <span>Niño 3.4 · IRI, semana 14/10</span><b class="h">+3,3°</b>
       </div>
       <p>Anomalias em °C sobre a média 1991–2020. A NOAA CPC e o IRI usam produtos de temperatura do mar diferentes, por isso os valores do Niño 3.4 divergem.</p>
     </article>
@@ -578,10 +579,10 @@ footer{border-top:1px solid var(--line)}
       <div class="kv">
         <span>Forte a muito forte até jan–mar 27</span><b class="h">≥83%</b>
         <span>Recorde desde 1950 (out–dez)</span><b class="h">83%</b>
-        <span>Modelos “muito forte”</span><b class="h">22/22</b>
-        <span>El Niño em mai–jul 2027</span><b class="w">61%</b>
+        <span>Média de 27 modelos (out–dez)</span><b class="h">+3,5°</b>
+        <span>El Niño em mai–jul 2027</span><b class="w">60%</b>
       </div>
-      <p>NOAA CPC (08/10/2026) e IRI (21/09/2026).</p>
+      <p>NOAA CPC (08/10/2026) e IRI (19/10/2026).</p>
     </article>
     <article class="panel bull">
       <header><h3>Oceano Índico</h3><span class="sev b">IOD positivo</span></header>
@@ -596,9 +597,9 @@ footer{border-top:1px solid var(--line)}
 
   <section id="previsao" class="two" aria-label="Previsão">
     <article class="panel card">
-      <div class="sechead"><h2>Probabilidade de El Niño</h2><span class="lbl">IRI · 21/09/2026</span></div>
-      <div class="chart"><svg id="chart" viewBox="0 0 620 260" role="img" aria-label="Probabilidade de El Niño: 100% de set-nov 2026 a fev-abr 2027, 99% mar-mai, 90% abr-jun, 61% mai-jul 2027"></svg></div>
-      <p class="note">Média de 22 modelos. La Niña: 0% em todo o período. Cinza = neutro.</p>
+      <div class="sechead"><h2>Probabilidade de El Niño</h2><span class="lbl">IRI · 19/10/2026</span></div>
+      <div class="chart"><svg id="chart" viewBox="0 0 620 260" role="img" aria-label="Probabilidade de El Niño: 100% de out-dez 2026 a mar-mai 2027, 92% abr-jun, 60% mai-jul, 37% jun-ago 2027"></svg></div>
+      <p class="note">Previsão objetiva do IRI, com 27 modelos. Cinza = neutro ou La Niña; em jun–ago, neutro é o mais provável (51%).</p>
     </article>
     <article class="panel card">
       <div class="sechead"><h2>Calor sob a superfície</h2><span class="lbl">Corte no equador</span></div>
@@ -610,10 +611,10 @@ footer{border-top:1px solid var(--line)}
   <section class="panel card" aria-label="Linha do tempo">
     <div class="sechead"><h2>Daqui para a frente</h2><span class="lbl">Evolução esperada</span></div>
     <div class="tl">
-      <div class="step" style="--c:var(--hot)"><div class="bar"></div><span class="when">SET – DEZ 2026</span><h3>Intensificação</h3><p>Maioria dos modelos leva o Niño 3.4 a +3 °C ou mais. IOD fortemente positivo.</p></div>
+      <div class="step" style="--c:var(--hot)"><div class="bar"></div><span class="when">SET – DEZ 2026</span><h3>Intensificação</h3><p>A média dos 27 modelos do IRI leva o Niño 3.4 a cerca de +3,5 °C em out–dez e nov–jan. IOD fortemente positivo.</p></div>
       <div class="step" style="--c:var(--hot2)"><div class="bar"></div><span class="when">DEZ 2026 – FEV 2027</span><h3>Pico dos impactos</h3><p>100% de chance. Época em que chuva e temperatura mais mudam pelo mundo.</p></div>
-      <div class="step" style="--c:var(--warm)"><div class="bar"></div><span class="when">MAR – JUN 2027</span><h3>Enfraquecimento</h3><p>De forte para moderado. 99% em mar–mai, 90% em abr–jun.</p></div>
-      <div class="step" style="--c:var(--muted)"><div class="bar"></div><span class="when">MEADOS DE 2027</span><h3>Transição</h3><p>61% em mai–jul. 2027 tende a ser recorde de calor global.</p></div>
+      <div class="step" style="--c:var(--warm)"><div class="bar"></div><span class="when">MAR – JUN 2027</span><h3>Enfraquecimento</h3><p>De forte para moderado. 100% em mar–mai, 92% em abr–jun.</p></div>
+      <div class="step" style="--c:var(--muted)"><div class="bar"></div><span class="when">MEADOS DE 2027</span><h3>Transição</h3><p>60% em mai–jul e 37% em jun–ago. 2027 tende a ser recorde de calor global.</p></div>
     </div>
   </section>
 
@@ -642,6 +643,7 @@ footer{border-top:1px solid var(--line)}
   <section id="noticias" class="panel card" aria-label="Notícias">
     <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Set–out 2026</span></div>
     <div class="feed">
+      <div class="item"><time datetime="2026-10-19">19 OUT</time><div><h3>IRI: média de 27 modelos chega a +3,5 °C</h3><p>Previsão do IRI de 19/10: El Niño com 100% de chance até mar–mai 2027, 92% em abr–jun e 60% em mai–jul. O Niño 3.4 semanal do IRI ficou em +3,3 °C na semana de 14/10.</p></div></div>
       <div class="item"><time datetime="2026-10-19">19 OUT</time><div><h3>Niño 3.4 se mantém em +2,4 °C; Niño 3 sobe a +3,5 °C</h3><p>Atualização semanal do CPC de 19/10: Niño 3.4 estável em +2,4 °C, Niño 3 a +3,5 °C e Niño 1+2 a +4,4 °C. Niño 4 fica em −0,1 °C.</p></div></div>
       <div class="item"><time datetime="2026-10-13">13 OUT</time><div><h3>Niño 3.4 sobe para +2,4 °C na medição da NOAA</h3><p>Atualização semanal do CPC de 13/10: Niño 3.4 a +2,4 °C, Niño 3 a +3,4 °C e Niño 1+2 a +4,4 °C. Niño 4 segue perto do normal, a +0,2 °C.</p></div></div>
       <div class="item"><time datetime="2026-10-08">08 OUT</time><div><h3>NOAA eleva para 83% a chance de El Niño recorde</h3><p>Niño 3.4 de setembro ficou em +2,1 °C (era +1,8 °C em agosto). Chance de superar todos os eventos desde 1950 em out–dez subiu de 75% para 83%.</p></div></div>
@@ -659,7 +661,7 @@ footer{border-top:1px solid var(--line)}
     <span class="lbl">Fontes</span>
     <ul>
       <li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" target="_blank" rel="noopener noreferrer">NOAA CPC · ENSO Diagnostic Discussion</a></li>
-      <li><a href="https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/" target="_blank" rel="noopener noreferrer">IRI Columbia · ENSO Forecast (21/09/2026)</a></li>
+      <li><a href="https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/" target="_blank" rel="noopener noreferrer">IRI Columbia · ENSO Forecast (19/10/2026)</a></li>
       <li><a href="https://donporque.com/super-el-nino-2026-efectos-en-espana/" target="_blank" rel="noopener noreferrer">Previsão estacional AEMET set–nov 2026</a> · <a href="https://www.eltiempo.es/noticias/el-nino-2026-27-que-tiempo-traera-a-espana-en-otono-e-invierno" target="_blank" rel="noopener noreferrer">Eltiempo.es</a></li>
       <li><a href="https://portal.inmet.gov.br/noticias/el-ni%C3%B1o-2026-saiba-detalhes-sobre-o-monitoramento-previs%C3%B5es-e-os-poss%C3%ADveis-impactos-do-fen%C3%B4meno-no-brasil" target="_blank" rel="noopener noreferrer">INMET</a> · <a href="https://www.greenpeace.org/brasil/blog/super-el-nino-2026/" target="_blank" rel="noopener noreferrer">Greenpeace Brasil / CEMADEN</a></li>
       <li><a href="https://en.wikipedia.org/wiki/2026%E2%80%932027_El_Ni%C3%B1o_event" target="_blank" rel="noopener noreferrer">Wikipedia · 2026–27 El Niño event</a> · <a href="https://abcnews.com/US/potentially-historic-el-nino-takes-shape-reaching-us/story?id=135615867" target="_blank" rel="noopener noreferrer">ABC News</a></li>
@@ -668,10 +670,9 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-10-20T11:30:00+02:00",
- "manchete": "o supertufão rosal leva alerta ao norte das filipinas, a dana adam perde força na espanha e uma depressão se forma ao sul do méxico",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-10-20T17:30:00+02:00",
+ "manchete": "o supertufão rosal avança rumo ao norte das filipinas, um nor'easter castiga a costa leste dos eua e a espanha investiga novas mortes da dana adam",
  "eventos": [
   {
    "id": "champi",
@@ -687,9 +688,9 @@ footer{border-top:1px solid var(--line)}
     "PAGASA (17h de 20/10, hora local): cerca de 1.270 km a leste do centro de Luzon, rumo oeste-noroeste a 25 km/h.",
     "Ventos de 195 km/h e rajadas de 240 km/h; pode se intensificar mais no mar.",
     "Sinal nº 1 em Batanes, ilhas Babuyan, Cagayan, Isabela e Catanduanes; ondas de até 4 m na costa leste.",
-    "Deve virar para noroeste na quarta e para norte depois de 23/10, saindo da área filipina entre sexta e sábado."
+    "PAGASA prevê o centro a 485 km a leste de Basco na quinta (22/10) e a 360 km a nordeste de Itbayat na sexta (23/10); sinais nº 2 ou 3 podem ser erguidos."
    ],
-   "fonte": "PAGASA via PTV News e Manila Bulletin",
+   "fonte": "PAGASA via PTV News, Manila Bulletin e Inquirer",
    "url": "https://ptvnews.ph/rosal-slightly-intensifies-as-signal-no-1-prevails-over-certain-areas-in-luzon/",
    "rotulo": "Rosal (Champi)",
    "lado": "r"
@@ -698,20 +699,20 @@ footer{border-top:1px solid var(--line)}
    "id": "dana-adam",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Dana Adam deixa cinco mortos; Oliva e Pego seguem isoladas",
+   "titulo": "Dana Adam: cinco mortos e duas mortes sob investigação",
    "local": "Safor e Marina Alta (Valência e Alicante), Baleares, Espanha",
    "data": "2026-10-20",
    "lat": 38.88,
    "lon": -0.1,
-   "resumo": "A dana Adam já deixou cinco mortos na Espanha, três deles na Comunidade Valenciana. A chuva perde força de sul a norte nesta terça (20/10), mas ainda há avisos nas Baleares e na Catalunha.",
+   "resumo": "A dana Adam deixou cinco mortos confirmados na Espanha, três deles na Comunidade Valenciana. Nesta terça (20/10), um agricultor foi achado morto no marjal de Pego-Oliva, e a Guarda Civil investiga se a morte tem relação com a chuva.",
    "pontos": [
     "AVAMET (48 h): 720 mm em La Forna, 693 mm em Pego e 643 mm em Oliva.",
-    "Três mortes na Comunidade Valenciana (duas em Oliva e uma em Sagunto), uma em Cabrera de Mar (Catalunha) e uma em Benaoján (Málaga).",
-    "Quase 500 resgates, mais de 2.000 evacuados (sobretudo em Oliva) e 1.513 ocorrências na Comunidade Valenciana.",
-    "AEMET mantém avisos de chuva e tormenta em Mallorca, Ibiza, Formentera, Barcelona e Girona nesta terça (20/10); estradas e aeroportos das Baleares operam normalmente."
+    "Mortes confirmadas: duas em Oliva, uma em Sagunto, uma em Cabrera de Mar (Catalunha) e uma em Benaoján (Málaga).",
+    "Em Menorca, um corpo achado na segunda (19/10) em Cala en Brut (Ciutadella) também é investigado.",
+    "A UME atua em Oliva, Pego e Ibiza; 24 estradas seguiam cortadas em seis províncias, e as Baleares somam 388 ocorrências desde sábado."
    ],
-   "fonte": "Generalitat Valenciana, AVAMET e AEMET via El Español e La Gaceta de Salamanca",
-   "url": "https://www.elespanol.com/valencia/comunitat/20261020/valencia-revive-horror-anos-despues-dana-adam-muertos-pueblos-confinados-rescates/1003744426386_0.html",
+   "fonte": "Guarda Civil, AVAMET e serviços de emergência via Voz Pópuli e elDiario.es",
+   "url": "https://vozpopuli.com/espana/el-paso-de-la-dana-adam-deja-ya-siete-victimas-mortales-tras-el-hallazgo-de-un-cadaver-en-la-costa-de-menorca.html",
    "rotulo": "Dana Adam",
    "lado": "b"
   },
@@ -756,6 +757,27 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.sgb.gov.br/sace/uruguai/ultimo_boletim.php",
    "rotulo": "Rio Uruguai",
    "lado": "l"
+  },
+  {
+   "id": "noreaster",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Nor'easter castiga costa leste dos EUA com ressaca e inundação",
+   "local": "Costa leste dos EUA, das Carolinas à Nova Inglaterra",
+   "data": "2026-10-20",
+   "lat": 35.3,
+   "lon": -75.5,
+   "resumo": "Um nor'easter parado na costa atlântica dos EUA traz vento forte, ressaca e inundação costeira das Carolinas à Nova Inglaterra. O NHC monitora o sistema, que pode virar a tempestade Josephine nesta semana.",
+   "pontos": [
+    "Outer Banks (Carolina do Norte): rajadas de até 64 km/h e ondas de até 4,3 m.",
+    "Alerta de inundação costeira na Carolina do Norte, com água de 0,3 a 1,2 m acima do solo; até 0,3 m da Virgínia a Nova Jersey.",
+    "NHC (19/10): 40% de chance de virar ciclone subtropical em 7 dias.",
+    "Deve chegar à costa de Massachusetts na quinta (22/10) e sair para o mar até sexta (23/10)."
+   ],
+   "fonte": "Weather.com; NHC",
+   "url": "https://weather.com/2026/10/20/forecast/regional/coastal-storm-southeast-mid-atlantic",
+   "rotulo": "Nor'easter EUA",
+   "lado": "r"
   },
   {
    "id": "panama",
@@ -803,20 +825,20 @@ footer{border-top:1px solid var(--line)}
    "id": "tailandia",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Enchentes na Tailândia chegam a 71 mortos",
+   "titulo": "Enchentes na Tailândia chegam a 80 mortos",
    "local": "Bangkok e planície central, Tailândia",
-   "data": "2026-10-17",
+   "data": "2026-10-20",
    "lat": 14.35,
    "lon": 100.55,
-   "resumo": "As enchentes na Tailândia já deixaram 71 mortos desde 16 de setembro, segundo o Ministério do Interior. A água baixa em todas as áreas, mas ainda afeta 2,15 milhões de pessoas em 20 províncias e em Bangkok.",
+   "resumo": "As enchentes na Tailândia já deixaram 80 mortos desde meados de setembro, segundo o Bangkok Post. A água ainda cobre Bangkok e 21 províncias.",
    "pontos": [
+    "Bangkok Post: 80 mortos, com enchentes persistentes em Bangkok e 21 províncias.",
     "DDPM (6h de 17/10): 2.148.896 pessoas e 704.699 famílias afetadas em 89 distritos.",
-    "Ministério do Interior (12/10): 71 mortos desde 16/09.",
     "Pathum Thani tem 216.276 famílias afetadas; em Bangkok, 196.008 famílias em 3 distritos.",
     "TMD (20/10, 7º aviso): chuva forte a muito forte em Bangkok, no Centro, no Leste e no alto Sul de 21 a 25/10, com risco de enxurradas."
    ],
-   "fonte": "DDPM via The Star e Ministério do Interior",
-   "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/17/over-21-million-people-across-20-provinces-and-bangkok-remain-affected-by-floods",
+   "fonte": "Bangkok Post; DDPM via The Star; TMD",
+   "url": "https://www.bangkokpost.com/thailand/general/3339258/flooding-persists-in-bangkok-21-provinces-death-toll-80",
    "rotulo": "Chuva Tailândia",
    "lado": "b"
   },
@@ -845,20 +867,20 @@ footer{border-top:1px solid var(--line)}
    "id": "ilheus",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Temporais atingem Bahia, Espírito Santo e Pernambuco",
-   "local": "Ilhéus (BA); norte do Espírito Santo; Petrolina (PE), Brasil",
-   "data": "2026-10-19",
+   "titulo": "ZCAS leva chuva forte a 14 estados; alerta laranja no sul da Bahia",
+   "local": "Sul da Bahia e Jequitinhonha (MG); Norte e Centro-Oeste, Brasil",
+   "data": "2026-10-20",
    "lat": -14.79,
    "lon": -39.05,
-   "resumo": "Temporais alagaram ruas e destelharam casas no sul da Bahia, no norte do Espírito Santo e em Petrolina (PE). Em Petrolina, um jovem morreu durante o temporal, possivelmente eletrocutado.",
+   "resumo": "A Zona de Convergência do Atlântico Sul mantém chuva forte em 14 estados nesta terça (20/10), com alerta laranja do Inmet no sul da Bahia e no Jequitinhonha (MG). No fim de semana, temporais já tinham alagado Ilhéus e destelhado casas no norte do Espírito Santo.",
    "pontos": [
+    "Inmet (alerta laranja): até 100 mm até o fim de terça no sul e centro-sul da Bahia, no Jequitinhonha e no Mucuri, com risco de alagamentos e deslizamentos.",
+    "Alerta amarelo em AM, AC, RR, RO, PA, MT, TO, MA, PI e oeste da BA: até 50 mm por dia e ventos de 40 a 60 km/h.",
     "Defesa Civil de Ilhéus: 125 mm entre a madrugada e as 10h de domingo (18/10).",
-    "Nova Venécia (ES): cerca de 300 casas atingidas por granizo e vento; Águia Branca teve 75 mm em menos de 30 minutos.",
-    "Petrolina (PE): 46 mm na segunda (19/10), cerca de 360% acima da média de outubro, segundo a Apac.",
-    "Inmet: alerta de chuva intensa para a Bahia e o ES até as 10h de terça (20/10)."
+    "Nova Venécia (ES): cerca de 300 casas atingidas por granizo e vento; em Petrolina (PE), um jovem morreu no temporal de segunda (19/10)."
    ],
-   "fonte": "Defesa Civil, Apac e Inmet via Correio, A Gazeta e CBN Recife",
-   "url": "https://agazeta.com.br/es/cotidiano/temporal-causa-destruicao-e-falta-de-energia-no-note-e-noroeste-do-es-1026",
+   "fonte": "Inmet via ND Mais; Defesa Civil e Apac via A Gazeta e CBN Recife",
+   "url": "https://ndmais.com.br/tempo/zcas-chuva-intensa-14-estados-terca-20-acumulados-100-mm/",
    "rotulo": "Chuva Ilhéus",
    "lado": "r"
   },
@@ -866,42 +888,21 @@ footer{border-top:1px solid var(--line)}
    "id": "frio-sul",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Ar frio derruba temperaturas no Sul do Brasil",
+   "titulo": "Depois do frio, novo ciclone deve trazer chuva ao Sul",
    "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-10-19",
+   "data": "2026-10-20",
    "lat": -30.5,
    "lon": -51.0,
-   "resumo": "Uma massa de ar frio empurrada por um ciclone extratropical derruba as temperaturas no Sul do Brasil. O Inmet prevê mínima de 1 °C em São Joaquim e Bom Jardim da Serra (SC).",
+   "resumo": "Depois da massa de ar frio que derrubou as temperaturas no Sul do Brasil, a chuva volta na quarta (21/10) ao oeste do Paraná, de Santa Catarina e ao noroeste do RS. Um novo ciclone extratropical deve se formar e levar instabilidade aos três estados na quinta (22/10).",
    "pontos": [
-    "Inmet: 3 °C em Bom Jesus (RS) e Lages (SC); 4 °C em Cambará do Sul (RS).",
-    "MetSul: segunda (19/10) terá as menores mínimas, abaixo de 5 °C em várias cidades do RS e de SC.",
-    "Temperatura abaixo de zero provável em São José dos Ausentes (RS) e São Joaquim (SC).",
-    "Geada isolada nas áreas altas do RS, de SC e no Planalto de Palmas (PR); Porto Alegre deve ter de 10 a 12 °C."
+    "Inmet previa mínima de 1 °C em São Joaquim e Bom Jardim da Serra (SC) e 3 °C em Bom Jesus (RS) e Lages (SC).",
+    "MetSul: segunda (19/10) teve as menores mínimas, abaixo de 5 °C em várias cidades do RS e de SC.",
+    "Inmet: alerta amarelo de tempestade no oeste do PR, oeste de SC e noroeste do RS a partir de quarta (21/10).",
+    "Na quinta (22/10), a instabilidade chega aos três estados do Sul, com pancadas possíveis em SP e MS."
    ],
-   "fonte": "Inmet via O Tempo; MetSul",
-   "url": "https://www.otempo.com.br/tempo/2026/10/17/onda-de-frio-derruba-termometros-e-leva-minima-a-1c-em-13-estados",
-   "rotulo": "Frio no Sul",
-   "lado": "r"
-  },
-  {
-   "id": "paquistao",
-   "tipo": "terremoto",
-   "gravidade": "moderado",
-   "titulo": "Terremoto no Paquistão deixa um morto no Baluchistão",
-   "local": "Distrito de Khuzdar, Baluchistão, Paquistão",
-   "data": "2026-10-17",
-   "lat": 28.0,
-   "lon": 66.2,
-   "resumo": "Um terremoto de magnitude 5,7 atingiu o distrito de Khuzdar, no Baluchistão, Paquistão, no sábado (17/10). Uma pessoa morreu atingida por uma pedra que rolou de uma montanha.",
-   "pontos": [
-    "USGS: M5,7 às 5h07 UTC de 17/10, a 48 km a oeste-noroeste de Khuzdar, a 10 km de profundidade.",
-    "O serviço sismológico do Paquistão mediu M5,9 a 25 km de profundidade.",
-    "A vítima morreu em Anari, na área de Naal, atingida por uma rocha.",
-    "Várias casas tradicionais de barro ficaram muito danificadas; o USGS deu alerta amarelo."
-   ],
-   "fonte": "USGS; PMD via IANS",
-   "url": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040",
-   "rotulo": "Sismo Paquistão",
+   "fonte": "Inmet via ND Mais e O Tempo; MetSul",
+   "url": "https://ndmais.com.br/tempo/zcas-chuva-intensa-14-estados-terca-20-acumulados-100-mm/",
+   "rotulo": "Sul do Brasil",
    "lado": "r"
   },
   {
@@ -926,8 +927,7 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1003,7 +1003,7 @@ footer{border-top:1px solid var(--line)}
   });
 
   /* probability chart */
-  var data=[["set–nov","2026",100],["out–dez","2026",100],["nov–jan","26/27",100],["dez–fev","26/27",100],["jan–mar","2027",100],["fev–abr","2027",100],["mar–mai","2027",99],["abr–jun","2027",90],["mai–jul","2027",61]];
+  var data=[["out–dez","2026",100],["nov–jan","26/27",100],["dez–fev","26/27",100],["jan–mar","2027",100],["fev–abr","2027",100],["mar–mai","2027",100],["abr–jun","2027",92],["mai–jul","2027",60],["jun–ago","2027",37]];
   var cs=document.getElementById("chart"),L=42,R=8,T=22,B=44,W=620,H=260,ph=H-T-B,slot=(W-L-R)/data.length,bw=slot*.6;
   [0,50,100].forEach(function(v){var y=T+ph-v/100*ph;el(cs,"line",{x1:L,x2:W-R,y1:y,y2:y,stroke:"#1D3446"});el(cs,"text",{x:L-8,y:y+4,"text-anchor":"end","font-size":11,"font-family":"JetBrains Mono, monospace",fill:"#8EA4B4"},v+"%");});
   data.forEach(function(d,i){
@@ -1282,6 +1282,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
