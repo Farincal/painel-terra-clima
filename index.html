@@ -25,6 +25,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -669,9 +670,30 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-20T05:30:00+02:00",
- "manchete": "champi entra nas filipinas como rosal, a dana adam deixa cinco mortos na espanha e trudy se desfaz no pacífico",
+ "atualizado": "2026-10-20T11:30:00+02:00",
+ "manchete": "o supertufão rosal leva alerta ao norte das filipinas, a dana adam perde força na espanha e uma depressão se forma ao sul do méxico",
  "eventos": [
+  {
+   "id": "champi",
+   "tipo": "ciclone",
+   "gravidade": "critico",
+   "titulo": "Supertufão Rosal (Champi) leva sinal nº 1 a cinco áreas de Luzon",
+   "local": "Mar das Filipinas, a leste de Luzon",
+   "data": "2026-10-20",
+   "lat": 16.0,
+   "lon": 133.5,
+   "resumo": "O supertufão Champi entrou na área filipina nesta terça (20/10) com o nome Rosal, e a PAGASA ergueu o sinal nº 1 em cinco áreas de Luzon. Não deve tocar terra, mas trará vento forte e chuva ao passar perto de Batanes na sexta (23/10).",
+   "pontos": [
+    "PAGASA (17h de 20/10, hora local): cerca de 1.270 km a leste do centro de Luzon, rumo oeste-noroeste a 25 km/h.",
+    "Ventos de 195 km/h e rajadas de 240 km/h; pode se intensificar mais no mar.",
+    "Sinal nº 1 em Batanes, ilhas Babuyan, Cagayan, Isabela e Catanduanes; ondas de até 4 m na costa leste.",
+    "Deve virar para noroeste na quarta e para norte depois de 23/10, saindo da área filipina entre sexta e sábado."
+   ],
+   "fonte": "PAGASA via PTV News e Manila Bulletin",
+   "url": "https://ptvnews.ph/rosal-slightly-intensifies-as-signal-no-1-prevails-over-certain-areas-in-luzon/",
+   "rotulo": "Rosal (Champi)",
+   "lado": "r"
+  },
   {
    "id": "dana-adam",
    "tipo": "enchente",
@@ -681,14 +703,14 @@ footer{border-top:1px solid var(--line)}
    "data": "2026-10-20",
    "lat": 38.88,
    "lon": -0.1,
-   "resumo": "A dana Adam já deixou cinco mortos na Espanha, três deles na Comunidade Valenciana. Oito municípios ficaram confinados até a noite de segunda, e a água baixa devagar nas áreas planas.",
+   "resumo": "A dana Adam já deixou cinco mortos na Espanha, três deles na Comunidade Valenciana. A chuva perde força de sul a norte nesta terça (20/10), mas ainda há avisos nas Baleares e na Catalunha.",
    "pontos": [
     "AVAMET (48 h): 720 mm em La Forna, 693 mm em Pego e 643 mm em Oliva.",
     "Três mortes na Comunidade Valenciana (duas em Oliva e uma em Sagunto), uma em Cabrera de Mar (Catalunha) e uma em Benaoján (Málaga).",
     "Quase 500 resgates, mais de 2.000 evacuados (sobretudo em Oliva) e 1.513 ocorrências na Comunidade Valenciana.",
-    "Cerca de 102 mil alunos ficaram sem aula na segunda; na terça (20/10), seis municípios mantêm as aulas suspensas."
+    "AEMET mantém avisos de chuva e tormenta em Mallorca, Ibiza, Formentera, Barcelona e Girona nesta terça (20/10); estradas e aeroportos das Baleares operam normalmente."
    ],
-   "fonte": "Generalitat Valenciana e AVAMET via El Español, Al Jazeera e Infobae",
+   "fonte": "Generalitat Valenciana, AVAMET e AEMET via El Español e La Gaceta de Salamanca",
    "url": "https://www.elespanol.com/valencia/comunitat/20261020/valencia-revive-horror-anos-despues-dana-adam-muertos-pueblos-confinados-rescates/1003744426386_0.html",
    "rotulo": "Dana Adam",
    "lado": "b"
@@ -713,27 +735,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dimarts-20-octubre-traca-final-dana-adam-temporal-pluges-catalunya-tempestes-violentes_1711747_102.html",
    "rotulo": "Catalunha",
    "lado": "t"
-  },
-  {
-   "id": "champi",
-   "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Supertufão Champi entra nas Filipinas como Rosal",
-   "local": "Mar das Filipinas, a leste de Luzon",
-   "data": "2026-10-20",
-   "lat": 15.4,
-   "lon": 136.3,
-   "resumo": "O supertufão Champi entra na área filipina nesta terça (20/10) e passa a se chamar Rosal. A PAGASA descarta a chegada à terra, mas prevê vento forte e chuva ao passar perto de Batanes na sexta (23/10).",
-   "pontos": [
-    "PAGASA (3h de 20/10, hora local): cerca de 1.605 km a leste do centro de Luzon, rumo oeste-noroeste a 20 km/h.",
-    "Ventos de 195 km/h e rajadas de 240 km/h.",
-    "O sinal mais alto previsto é o nº 2 ou 3, no norte e leste de Luzon e em partes de Bicol; o sinal nº 4 saiu do cenário.",
-    "Deve enfraquecer a partir de quinta (22/10) e sair da área filipina no sábado (24/10)."
-   ],
-   "fonte": "PAGASA via Astig.ph e Philstar",
-   "url": "https://astig.ph/super-typhoon-champi-rosal-enters-par-wind-signals-batanes-2026/",
-   "rotulo": "Champi",
-   "lado": "r"
   },
   {
    "id": "rs",
@@ -812,7 +813,7 @@ footer{border-top:1px solid var(--line)}
     "DDPM (6h de 17/10): 2.148.896 pessoas e 704.699 famílias afetadas em 89 distritos.",
     "Ministério do Interior (12/10): 71 mortos desde 16/09.",
     "Pathum Thani tem 216.276 famílias afetadas; em Bangkok, 196.008 famílias em 3 distritos.",
-    "TMD: chuva persistente no Sul e no Leste de 18 a 20/10; de 21 a 25/10 a chuva forte chega a Bangkok e à região central."
+    "TMD (20/10, 7º aviso): chuva forte a muito forte em Bangkok, no Centro, no Leste e no alto Sul de 21 a 25/10, com risco de enxurradas."
    ],
    "fonte": "DDPM via The Star e Ministério do Interior",
    "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/17/over-21-million-people-across-20-provinces-and-bangkok-remain-affected-by-floods",
@@ -823,21 +824,21 @@ footer{border-top:1px solid var(--line)}
    "id": "trudy",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Trudy se desfaz; nova depressão deve se formar no Pacífico",
-   "local": "Pacífico, a sudoeste de Cabo Corrientes, México",
-   "data": "2026-10-19",
-   "lat": 19.5,
-   "lon": -108.0,
-   "resumo": "Trudy virou ciclone pós-tropical a oeste do México, e o NHC emitiu seu último aviso. Ao sul da Guatemala, uma nova área de instabilidade tem 80% de chance de virar depressão tropical em 48 horas.",
+   "titulo": "Depressão tropical deve se formar ao sul do México em um dia",
+   "local": "Pacífico, ao sul do Golfo de Tehuantepec, México",
+   "data": "2026-10-20",
+   "lat": 12.0,
+   "lon": -96.0,
+   "resumo": "Uma área de baixa pressão ao sul do Golfo de Tehuantepec, no México, deve virar depressão tropical em cerca de um dia, segundo o NHC. Trudy, a oeste do México, já se desfez.",
    "pontos": [
-    "NHC (20h MST de 19/10): baixa remanescente em 19,5°N 108,0°W, com ventos de 55 km/h.",
-    "Toda a convecção profunda se dissipou; a circulação deve sumir até 22/10.",
-    "Área EP94, ao sul da Guatemala e de El Salvador: 80% em 48 h e 90% em 7 dias.",
-    "O sistema EP94 segue para oeste-noroeste a cerca de 16 km/h, longe da costa."
+    "NHC (23h PDT de 19/10): sistema EP94 com 90% de chance de formação em 48 h e em 7 dias.",
+    "A circulação está mais definida e as tempestades começam a se concentrar.",
+    "Segue para oeste-noroeste a cerca de 16 km/h, longe da costa do sul do México.",
+    "Trudy virou ciclone pós-tropical, com ventos de 55 km/h; o NHC emitiu o último aviso."
    ],
    "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCDEP1+shtml/200234.shtml",
-   "rotulo": "Trudy (fim)",
+   "url": "https://www.nhc.noaa.gov/text/MIATWOEP.shtml",
+   "rotulo": "EP94",
    "lado": "b"
   },
   {
@@ -1281,6 +1282,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
