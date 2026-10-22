@@ -32,6 +32,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -677,27 +678,27 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-21T23:30:00+02:00",
- "manchete": "o champi começa a enfraquecer perto das filipinas, o nor'easter dos eua vira a tempestade josephine e nasce a tempestade vance ao sul do méxico",
+ "atualizado": "2026-10-22T05:30:00+02:00",
+ "manchete": "o supertufão champi passa perto do norte das filipinas, vance ganha força rumo a furacão e josephine se afasta dos eua",
  "eventos": [
   {
    "id": "champi",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Champi enfraquece um pouco, mas mantém sinal nº 2 em Batanes",
+   "titulo": "Champi se aproxima de Batanes; PAGASA o declara o ciclone mais forte de 2026",
    "local": "Mar das Filipinas, a leste de Luzon",
-   "data": "2026-10-21",
-   "lat": 19.3,
-   "lon": 127.9,
-   "resumo": "O supertufão Rosal (Champi) começou a enfraquecer, mas segue como categoria 5 e mantém o sinal nº 2 em Batanes, no extremo norte das Filipinas. Ele passa perto da costa entre a tarde de quinta (22/10) e a manhã de sexta (23/10), sem tocar terra.",
+   "data": "2026-10-22",
+   "lat": 20.2,
+   "lon": 126.7,
+   "resumo": "O supertufão Rosal (Champi) estava a 495 km a leste de Basco, em Batanes, às 4h desta quinta (22/10), com ventos de 195 km/h. Ele passa mais perto do extremo norte de Luzon entre a tarde de quinta e a manhã de sexta (23/10), sem previsão de tocar terra.",
    "pontos": [
-    "JTWC (15h UTC de 21/10): ventos de 269 km/h e pressão de 911 hPa, rumo noroeste a cerca de 20 km/h; o pico foi de cerca de 298 km/h em 20/10.",
-    "PAGASA (17h de 21/10): 725 km a leste de Aparri, ventos de 205 km/h e rajadas de 250 km/h; o sinal pode chegar ao nº 3.",
-    "Sinal nº 1 em Cagayan e ilhas Babuyan, leste de Isabela, Ilocos Norte, Apayao e nordeste de Catanduanes.",
-    "JTWC prevê passagem a leste de Taiwan na sexta (23/10) e chegada perto do sul do Japão como sistema extratropical até 26/10."
+    "PAGASA (4h de 22/10): ventos de 195 km/h, rajadas de 240 km/h e pressão de 915 hPa, rumo noroeste a 20 km/h.",
+    "Sinal nº 2 em Batanes e no nordeste das ilhas Babuyan; sinal nº 1 no resto das Babuyan, em Cagayan, no leste de Isabela, em Ilocos Norte e Apayao.",
+    "O PAGASA declarou o Rosal o ciclone mais forte de 2026; o sinal nº 3 ainda é possível em Batanes.",
+    "Deve sair da área filipina entre a noite de sexta (23/10) e a madrugada de sábado (24/10), enfraquecendo para tufão."
    ],
-   "fonte": "JTWC via Weather Underground; PAGASA via Philstar",
-   "url": "https://www.philstar.com/headlines/weather/2026/10/21/2564816/signal-no-2-still-batanes-super-typhoon-rosal-slightly-weakens",
+   "fonte": "PAGASA via Philstar",
+   "url": "https://www.philstar.com/headlines/weather/2026/10/22/2564976/rosal-weakens-slightly-batanes-babuyan-islands-under-signal-no-2",
    "rotulo": "Rosal (Champi)",
    "lado": "r"
   },
@@ -723,23 +724,44 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
+   "id": "vance",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Vance ganha força e deve virar furacão ainda nesta quinta",
+   "local": "Pacífico, ao sul do Golfo de Tehuantepec, México",
+   "data": "2026-10-22",
+   "lat": 9.6,
+   "lon": -100.7,
+   "resumo": "A tempestade tropical Vance ganhou força no Pacífico, ao sul do México, com ventos de 75 km/h. O NHC prevê que ela vire furacão até a noite de quinta (22/10) e chegue a cerca de 195 km/h no sábado (24/10).",
+   "pontos": [
+    "NHC (aviso nº 3, 3h UTC de 22/10): ventos de 75 km/h, rajadas de 95 km/h e pressão de 1000 hPa.",
+    "Segue para oés-noroeste a 7 km/h; no aviso anterior estava a 835 km ao sul de Acapulco.",
+    "Previsão: 130 km/h em 24 horas e pico de cerca de 195 km/h (categoria 3) em 60 horas.",
+    "Nenhum alerta em terra; a ondulação deve chegar ao sul e sudoeste do México no fim de semana."
+   ],
+   "fonte": "NHC",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCMEP2+shtml/220256.shtml",
+   "rotulo": "Vance",
+   "lado": "b"
+  },
+  {
    "id": "noreaster",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Nor'easter vira a tempestade subtropical Josephine; NC 12 segue fechada",
+   "titulo": "Josephine ganha força longe da costa dos EUA",
    "local": "Costa leste dos EUA, das Carolinas à Nova Inglaterra",
-   "data": "2026-10-21",
-   "lat": 35.3,
-   "lon": -75.5,
-   "resumo": "O nor'easter da costa leste dos EUA virou a tempestade subtropical Josephine, segundo o NHC nesta quarta (21/10). A NC 12 continua fechada entre a ponte Marc Basnight e Rodanthe, sem previsão de reabertura.",
+   "data": "2026-10-22",
+   "lat": 37.7,
+   "lon": -69.4,
+   "resumo": "A tempestade subtropical Josephine está a 390 km ao sul de Nantucket, nos EUA, com ventos de 100 km/h, segundo o NHC. Ela deve se afastar para nordeste e leste, mas ainda causa ressaca e inundação costeira na costa leste.",
    "pontos": [
-    "NHC (aviso nº 1, 21h UTC de 21/10): ventos de 100 km/h e pressão de 990 hPa, 425 km ao sul de Nantucket.",
-    "Josephine deve seguir para nordeste, longe dos EUA, e virar pós-tropical com ventos de furacão na quinta (22/10).",
-    "Cerca de 240 m de asfalto danificados e 550 m de dunas perdidos perto do centro de visitantes de Pea Island.",
-    "Balsa de emergência entre Rodanthe e Stumpy Point pode começar na quinta (22/10); visitantes seguem proibidos em Hatteras."
+    "NHC (aviso nº 2, 3h UTC de 22/10): ventos de 100 km/h e pressão de 988 hPa, rumo norte-nordeste a 9 km/h.",
+    "Ventos de tempestade se estendem até 665 km do centro; pode virar pós-tropical com ventos de furacão.",
+    "Inundação costeira leve a moderada na maré alta no meio-Atlântico; ondas perigosas até o Canadá atlântico.",
+    "A NC 12 seguia fechada na quarta (21/10) entre a ponte Marc Basnight e Rodanthe, com dunas destruídas em Pea Island."
    ],
    "fonte": "NHC; Island Free Press",
-   "url": "https://islandfreepress.org/outer-banks-news/update-noreaster-becomes-subtropical-storm-josephine-as-overwash-continues-on-pea-island-emergency-ferry-service-planned/",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT5+shtml/220254.shtml",
    "rotulo": "Josephine (EUA)",
    "lado": "r"
   },
@@ -763,6 +785,48 @@ footer{border-top:1px solid var(--line)}
    "url": "https://ua.news/en/dovkolo-svitu/poveni-v-tayilandi-trivaiut-u-bangkoku-ta-19-provintsiiakh-zaginuli-82-liudini-bangkok-post",
    "rotulo": "Chuva Tailândia",
    "lado": "b"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Rio Uruguai baixa, mas nova chuva forte chega ao RS na sexta",
+   "local": "Rio Grande do Sul, Brasil",
+   "data": "2026-10-21",
+   "lat": -29.75,
+   "lon": -57.08,
+   "resumo": "O rio Uruguai segue em queda no oeste do Rio Grande do Sul, mas a Defesa Civil alerta para nova chuva forte até sexta (23/10). Em Uruguaiana, 217 pessoas ainda estão fora de casa.",
+   "pontos": [
+    "Uruguaiana: 9,34 m às 15h30 de 20/10, 84 cm acima da cota de 8,50 m; o pico foi de 9,77 m em 19/10.",
+    "Aviso da Defesa Civil (21/10): chuva acima de 150 mm em pontos das Missões, Noroeste e Norte entre quarta (21) e sexta (23).",
+    "Sexta (23/10) deve ser o dia mais chuvoso, com rajadas acima de 80 km/h e nova elevação moderada do rio Uruguai.",
+    "Uruguaiana: 41 desabrigados em abrigos públicos e 176 desalojados em casas de parentes."
+   ],
+   "fonte": "Defesa Civil do RS via Mix Vale",
+   "url": "https://www.mixvale.com.br/2026/10/21/defesa-civil-alerta-para-cheias-no-rs-ate-sexta-feira-23/",
+   "rotulo": "Rio Uruguai",
+   "lado": "l"
+  },
+  {
+   "id": "frio-sul",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Sul do Brasil em alerta de tempestade; ciclone deve se formar no sábado",
+   "local": "Rio Grande do Sul, Santa Catarina, Paraná e Mato Grosso do Sul, Brasil",
+   "data": "2026-10-21",
+   "lat": -30.5,
+   "lon": -51.0,
+   "resumo": "O Inmet pôs 623 cidades do Sul do Brasil em alerta amarelo para tempestades na quarta (21/10). Um ciclone deve se formar na costa do Sul na madrugada de sábado (24/10), com chuva forte no RS, em SC, no PR e em SP.",
+   "pontos": [
+    "Inmet: chuva de 20 a 30 mm/h ou até 50 mm/dia, ventos de 40 a 60 km/h e granizo no oeste do RS, de SC e no centro-oeste do PR.",
+    "Em Santa Catarina, 122 municípios estão no alerta, sobretudo no Oeste e no Norte.",
+    "Sexta (23/10): chuva forte nos três estados do Sul pela manhã; à tarde a instabilidade chega a MS, SP, MG e RJ.",
+    "Mato Grosso do Sul: alerta do Inmet chega aos 79 municípios na quinta (22/10) e na sexta (23/10), com granizo possível."
+   ],
+   "fonte": "Inmet e Defesa Civil de SC via ND Mais",
+   "url": "https://ndmais.com.br/tempo/chuvas-voltam-ao-sul-nesta-quarta-21-alerta-para-tempestades/",
+   "rotulo": "Sul do Brasil",
+   "lado": "r"
   },
   {
    "id": "istambul",
@@ -807,67 +871,25 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio Uruguai baixa, mas nova chuva forte chega ao RS na sexta",
-   "local": "Rio Grande do Sul, Brasil",
-   "data": "2026-10-21",
-   "lat": -29.75,
-   "lon": -57.08,
-   "resumo": "O rio Uruguai segue em queda no oeste do Rio Grande do Sul, mas a Defesa Civil alerta para nova chuva forte até sexta (23/10). Em Uruguaiana, 217 pessoas ainda estão fora de casa.",
-   "pontos": [
-    "Uruguaiana: 9,34 m às 15h30 de 20/10, 84 cm acima da cota de 8,50 m; o pico foi de 9,77 m em 19/10.",
-    "Aviso da Defesa Civil (21/10): chuva acima de 150 mm em pontos das Missões, Noroeste e Norte entre quarta (21) e sexta (23).",
-    "Sexta (23/10) deve ser o dia mais chuvoso, com rajadas acima de 80 km/h e nova elevação moderada do rio Uruguai.",
-    "Uruguaiana: 41 desabrigados em abrigos públicos e 176 desalojados em casas de parentes."
-   ],
-   "fonte": "Defesa Civil do RS via Mix Vale",
-   "url": "https://www.mixvale.com.br/2026/10/21/defesa-civil-alerta-para-cheias-no-rs-ate-sexta-feira-23/",
-   "rotulo": "Rio Uruguai",
-   "lado": "l"
-  },
-  {
    "id": "catalunha",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Meteocat alerta para aguaceiros em Barcelona e no Maresme",
+   "titulo": "Meteocat mantém alerta de aguaceiros no litoral até as 8h",
    "local": "Barcelona, Maresme, Vallès e Selva, Catalunha, Espanha",
-   "data": "2026-10-21",
+   "data": "2026-10-22",
    "lat": 41.39,
    "lon": 2.17,
-   "resumo": "O Meteocat pôs Baix Llobregat, Barcelonès e Maresme em alerta por chuva intensa nesta quarta (21/10). Os aguaceiros devem chegar ao litoral central no fim do dia, depois de uma manhã de céu limpo.",
+   "resumo": "O Meteocat manteve Baix Llobregat, Barcelonès e Maresme em alerta amarelo por chuva intensa até as 8h desta quinta (22/10). Depois, os aguaceiros diminuem e o dia fica mais fresco em Barcelona.",
    "pontos": [
-    "Alerta do Meteocat por intensidade de chuva em três comarcas: Baix Llobregat, Barcelonès e Maresme.",
-    "Aguaceiros no fim do dia podem deixar quantidades abundantes de água em pontos do litoral.",
-    "Máximas sobem de 2 a 4 °C: 23 a 24 °C no litoral; neve nos Pirineus acima de 2.400 m.",
+    "Alerta do Meteocat (perigo 1 de 6): até 20 mm em 30 minutos na madrugada.",
+    "Barcelona: máximas de 17 a 19 °C na maioria dos bairros, pouco acima de 20 °C no máximo.",
+    "Novos aguaceiros possíveis entre a noite de sexta (23/10) e o sábado (24/10).",
     "A dana Adam já deixou uma morta em Cabrera de Mar (Maresme); o solo segue encharcado."
    ],
-   "fonte": "Meteocat via NacióDigital",
-   "url": "https://naciodigital.cat/impacte/terra/el-temps-del-dimecres-21-doctubre-tres-comarques-en-alerta-per-pluges-intenses.html",
+   "fonte": "Meteocat via NacióDigital; betevé",
+   "url": "https://naciodigital.cat/impacte/terra/el-temps-daquest-dijous-22-doctubre.html",
    "rotulo": "Catalunha",
    "lado": "t"
-  },
-  {
-   "id": "vance",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Tempestade tropical Vance se forma ao sul do México",
-   "local": "Pacífico, ao sul do Golfo de Tehuantepec, México",
-   "data": "2026-10-21",
-   "lat": 9.4,
-   "lon": -99.8,
-   "resumo": "A depressão 22-E virou a tempestade tropical Vance no Pacífico, a 835 km ao sul de Acapulco, no México. O NHC prevê intensificação rápida e um furacão já na sexta (23/10).",
-   "pontos": [
-    "NHC (aviso nº 2, 15h CST de 21/10): ventos de 65 km/h e pressão de 1003 hPa.",
-    "Segue para oeste a 11 km/h; deve virar para noroeste e norte-noroeste, mais devagar.",
-    "Ventos de tempestade tropical até 110 km do centro; nenhum alerta em terra por enquanto.",
-    "Ondulação deve chegar ao sul e sudoeste do México no fim de semana, com ressaca e correntes perigosas."
-   ],
-   "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP2+shtml/212032.shtml",
-   "rotulo": "Vance",
-   "lado": "b"
   },
   {
    "id": "ilheus",
@@ -891,44 +913,23 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "frio-sul",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Alerta de tempestade no Sul e em MS; ciclone reforça chuva na quinta",
-   "local": "Rio Grande do Sul, Santa Catarina, Paraná e Mato Grosso do Sul, Brasil",
-   "data": "2026-10-21",
-   "lat": -30.5,
-   "lon": -51.0,
-   "resumo": "O Inmet pôs 623 cidades do Sul do Brasil em alerta amarelo para tempestades nesta quarta (21/10). Um ciclone extratropical deve intensificar a instabilidade na quinta (22/10).",
-   "pontos": [
-    "Inmet: chuva de 20 a 30 mm/h ou até 50 mm/dia, ventos de 40 a 60 km/h e granizo no oeste do RS, de SC e no centro-oeste do PR.",
-    "Em Santa Catarina, 122 municípios estão no alerta, sobretudo no Oeste e no Norte.",
-    "Sexta (23/10) e sábado (24/10): frente fria deve espalhar temporais por todas as regiões de SC.",
-    "Mato Grosso do Sul: alerta do Inmet chega aos 79 municípios na quinta (22/10) e na sexta (23/10), com granizo possível."
-   ],
-   "fonte": "Inmet e Defesa Civil de SC via ND Mais",
-   "url": "https://ndmais.com.br/tempo/chuvas-voltam-ao-sul-nesta-quarta-21-alerta-para-tempestades/",
-   "rotulo": "Sul do Brasil",
-   "lado": "r"
-  },
-  {
    "id": "kilauea",
    "tipo": "vulcao",
    "gravidade": "moderado",
    "titulo": "Kīlauea faz pausa após fontes de lava de 220 m",
    "local": "Cume do Kīlauea, Ilha Grande do Havaí, EUA",
-   "data": "2026-10-20",
+   "data": "2026-10-21",
    "lat": 19.41,
    "lon": -155.28,
-   "resumo": "A erupção do Kīlauea, no Havaí, está em pausa desde o fim do episódio 55, no sábado (17/10). O USGS prevê o episódio 56 entre 27 de outubro e 6 de novembro.",
+   "resumo": "A erupção do Kīlauea, no Havaí, está em pausa desde o fim do episódio 55, no sábado (17/10). O USGS prevê o episódio 56 entre 28 de outubro e 5 de novembro.",
    "pontos": [
     "Episódio 55 (17/10): 5 h 44 min, com fonte de 220 m e coluna de cerca de 7.500 m.",
-    "Desde então, o cume voltou a inflar: 8,6 microrradianos no inclinômetro de Uēkahuna.",
-    "Alerta em nível Advisory e código de aviação amarelo; 8 sismos no cume em 24 horas.",
+    "O cume recuperou 9,8 microrradianos de inflação desde então; a inflação se estabilizou na manhã de 21/10.",
+    "Alerta em nível Advisory e código de aviação amarelo; 2 sismos no cume em 24 horas.",
     "Previsão do episódio 56 é incerta porque o 55 fugiu do padrão habitual."
    ],
    "fonte": "USGS HVO",
-   "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-10-20T18:46:06+00:00",
+   "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-10-21T17:29:30+00:00",
    "rotulo": "Kīlauea",
    "lado": "r"
   }
@@ -1289,6 +1290,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
