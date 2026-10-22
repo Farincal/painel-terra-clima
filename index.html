@@ -35,6 +35,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -680,8 +681,8 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-22T17:30:00+02:00",
- "manchete": "o rosal (champi) deixa de ser supertufão perto de batanes, vance deve virar furacão e um ciclone leva temporais ao centro-sul do brasil",
+ "atualizado": "2026-10-22T23:30:00+02:00",
+ "manchete": "um terremoto de magnitude 7,0 atinge o tibete, vance está perto de virar furacão e josephine vira ciclone extratropical",
  "eventos": [
   {
    "id": "champi",
@@ -705,22 +706,43 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
+   "id": "tibete",
+   "tipo": "terremoto",
+   "gravidade": "alto",
+   "titulo": "Terremoto de magnitude 7,0 atinge o Tibete",
+   "local": "Condado de Baqen, Nagqu, Tibete, China",
+   "data": "2026-10-22",
+   "lat": 32.4,
+   "lon": 93.79,
+   "resumo": "Um terremoto de magnitude 7,0 atingiu o Tibete, na China, às 22h33 (hora local) desta quinta (22/10). Até agora não há relatos de vítimas, e a extensão dos danos ainda é incerta.",
+   "pontos": [
+    "CENC: magnitude 7,0 e profundidade de 10 km, segundo a Xinhua.",
+    "Epicentro no condado de Baqen, em Nagqu (32,40° N, 93,79° E).",
+    "USGS: magnitude 7,0, a 183 km a leste-nordeste de Nagqu.",
+    "Região de grande altitude e pouco povoada; o balanço de danos ainda está em andamento."
+   ],
+   "fonte": "CENC/Xinhua via Outlook India; USGS via CNN",
+   "url": "https://www.outlookindia.com/international/7-0-magnitude-earthquake-hits-tibet",
+   "rotulo": "Sismo Tibete",
+   "lado": "t"
+  },
+  {
    "id": "dana-adam",
    "tipo": "enchente",
    "gravidade": "critico",
    "titulo": "Dana Adam: seis mortos e zona de desastre em Valência",
-   "local": "Safor e Marina Alta (Valência e Alicante), Baleares, Espanha",
+   "local": "Safor e Marina Alta (Valência e Alicante), Catalunha, Menorca e Málaga, Espanha",
    "data": "2026-10-21",
    "lat": 38.88,
    "lon": -0.1,
    "resumo": "A dana Adam já deixou seis mortos na Espanha, segundo o balanço da imprensa espanhola nesta quarta (21/10). O governo vai declarar zona gravemente afetada os municípios atingidos em Safor (Valência) e Marina Alta (Alicante).",
    "pontos": [
-    "Seis mortos: quatro na Comunidade Valenciana, um na Catalunha e um nas Baleares; a Antena 3 fala em sete, sem confirmação.",
+    "Seis mortos: três na Comunidade Valenciana (Sagunto e dois em Oliva), um na Catalunha, um em Menorca e um em Málaga.",
     "Cerca de 1.000 resgates e 2.100 evacuações na tempestade.",
     "Comunidade Valenciana: 1.876 ocorrências no 112, sendo 759 só em Oliva.",
     "Chuva acima de 700 mm no litoral sul de Valência e norte de Alicante; a medida libera ajudas diretas e isenções fiscais."
    ],
-   "fonte": "The Local Spain; Governo da Espanha via Moncloa.com; Emergencias 112",
+   "fonte": "The Local Spain; Nueva Radio; Governo da Espanha via Moncloa.com; Emergencias 112",
    "url": "https://thelocal.es/20261021/today-in-spain-a-roundup-of-the-latest-news-on-wednesday-105",
    "rotulo": "Dana Adam",
    "lado": "b"
@@ -729,43 +751,22 @@ footer{border-top:1px solid var(--line)}
    "id": "vance",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Vance deve virar furacão esta noite",
-   "local": "Pacífico, ao sul do Golfo de Tehuantepec, México",
+   "titulo": "Vance chega a 100 km/h e deve virar furacão esta noite",
+   "local": "Pacífico, ao sul de Acapulco, México",
    "data": "2026-10-22",
-   "lat": 9.7,
-   "lon": -101.0,
-   "resumo": "A tempestade tropical Vance está a 810 km ao sul de Acapulco, no México, com ventos de 95 km/h. O NHC prevê que ela vire furacão nesta noite e possa chegar a grande furacão no fim de semana.",
+   "lat": 10.0,
+   "lon": -101.5,
+   "resumo": "A tempestade tropical Vance está a 785 km ao sul-sudoeste de Acapulco, no México, com ventos de 100 km/h. O NHC prevê que ela vire furacão nesta noite e possa chegar a grande furacão no fim de semana.",
    "pontos": [
-    "NHC (aviso nº 5, 15h UTC de 22/10): ventos de 95 km/h e pressão de 997 hPa.",
-    "Quase parada: segue para noroeste a 6 km/h, movimento lento previsto para os próximos dias.",
+    "NHC (aviso nº 6, 21h UTC de 22/10): ventos de 100 km/h e pressão de 994 hPa.",
+    "Quase parada: segue para oés-noroeste a 7 km/h, com movimento lento para noroeste nos próximos dias.",
     "Ventos de tempestade se estendem até 150 km do centro.",
     "Nenhum alerta em terra; a ondulação chega ao sul e sudoeste do México no fim de semana, com risco de correntes perigosas."
    ],
    "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP2+shtml/221446.shtml",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPEP2+shtml/222036.shtml",
    "rotulo": "Vance",
    "lado": "b"
-  },
-  {
-   "id": "noreaster",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Josephine começa a virar ciclone extratropical",
-   "local": "Costa leste dos EUA, das Carolinas à Nova Inglaterra",
-   "data": "2026-10-22",
-   "lat": 39.2,
-   "lon": -67.3,
-   "resumo": "A tempestade subtropical Josephine está a 320 km a sudeste de Nantucket, nos EUA, com ventos de 100 km/h, segundo o NHC. Ela começou a virar ciclone extratropical e deve ganhar ventos de furacão entre esta noite e a sexta (23/10).",
-   "pontos": [
-    "NHC (aviso nº 4, 15h UTC de 22/10): ventos de 100 km/h e pressão de 988 hPa, rumo nordeste a 19 km/h.",
-    "Ventos de tempestade se estendem até 665 km do centro; deve virar para leste e passar ao sul da Nova Escócia e da Terra Nova.",
-    "Inundação costeira leve a moderada na maré alta no meio-Atlântico durante a semana; nenhum alerta costeiro em vigor.",
-    "Ondulação forte causa ressaca e correntes perigosas na costa leste dos EUA e no Canadá atlântico."
-   ],
-   "fonte": "NHC",
-   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT5+shtml/221435.shtml",
-   "rotulo": "Josephine (EUA)",
-   "lado": "r"
   },
   {
    "id": "tailandia",
@@ -792,20 +793,20 @@ footer{border-top:1px solid var(--line)}
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Rio Uruguai baixa, mas temporais voltam ao RS nesta quinta",
+   "titulo": "Rio Uruguai deve sair da cota de inundação; temporais no RS",
    "local": "Rio Grande do Sul, Brasil",
    "data": "2026-10-22",
    "lat": -29.75,
    "lon": -57.08,
-   "resumo": "O rio Uruguai segue em queda, mas ainda acima da cota de inundação em Uruguaiana. A Defesa Civil prevê temporais com granizo grande a partir desta quinta (22/10), e a MetSul alerta que o rio pode voltar a subir.",
+   "resumo": "O rio Uruguai segue em queda em Uruguaiana e deve ficar abaixo da cota de inundação na manhã de sexta (23/10), segundo o Serviço Geológico do Brasil. Ao mesmo tempo, a Defesa Civil alerta para temporais com granizo grande até sábado (24/10).",
    "pontos": [
-    "Uruguaiana: 9,34 m às 15h30 de 20/10, 84 cm acima da cota de 8,50 m; o pico foi de 9,77 m em 19/10.",
-    "Defesa Civil: chuva acima de 150 mm em três dias no Norte, nas Missões e no Noroeste.",
+    "SGB: Uruguaiana a 8,86 m às 9h de 22/10, 36 cm acima da cota de 8,50 m; o pico foi de 9,77 m em 19/10.",
+    "Defesa Civil: chuva acima de 150 mm entre quarta (21/10) e sexta (23/10) no Norte, nas Missões e no Noroeste.",
     "Sexta (23/10) é o dia de maior risco, com rajadas acima de 80 km/h e granizo de grande porte.",
-    "Uruguaiana: 41 desabrigados em abrigos públicos e 176 desalojados em casas de parentes."
+    "Uruguaiana: 41 desabrigados em abrigos públicos e 176 desalojados em casas de parentes (balanço de 20/10)."
    ],
-   "fonte": "Defesa Civil do RS e MetSul via Rádio Liberdade; Mix Vale",
-   "url": "https://www.rdliberdade.com.br/temporais-devem-atingir-grande-parte-do-rs-a-partir-desta-quinta-feira/",
+   "fonte": "SGB (SACE Uruguai); Defesa Civil do RS via Agência GBC; Mix Vale",
+   "url": "https://sgb.gov.br/sace/uruguai/ultimo_boletim.php",
    "rotulo": "Rio Uruguai",
    "lado": "l"
   },
@@ -828,6 +829,27 @@ footer{border-top:1px solid var(--line)}
    "fonte": "CNN Brasil (Nottus); MetSul; Inmet",
    "url": "https://www.cnnbrasil.com.br/nacional/brasil/ciclone-e-calor-como-fica-o-tempo-no-fim-de-semana-de-segundo-turno/",
    "rotulo": "Ciclone Centro-Sul",
+   "lado": "r"
+  },
+  {
+   "id": "noreaster",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Josephine vira ciclone extratropical potente",
+   "local": "Costa leste dos EUA, das Carolinas à Nova Inglaterra",
+   "data": "2026-10-22",
+   "lat": 40.0,
+   "lon": -65.8,
+   "resumo": "Josephine deixou de ser tempestade subtropical e virou um ciclone extratropical potente a 380 km a leste-sudeste de Nantucket, nos EUA, segundo o NHC. Ela deve ganhar ventos de furacão entre esta noite e a sexta (23/10), longe da costa.",
+   "pontos": [
+    "NHC (último aviso, nº 5, 21h UTC de 22/10): ventos de 100 km/h e pressão de 988 hPa, rumo nordeste a 28 km/h.",
+    "Ventos de tempestade se estendem até 665 km do centro; deve virar para leste e passar ao sul da Nova Escócia e da Terra Nova.",
+    "Inundação costeira leve a moderada na maré alta no meio-Atlântico dos EUA durante a semana.",
+    "Ondulação forte causa ressaca e correntes perigosas na costa leste dos EUA e no Canadá atlântico."
+   ],
+   "fonte": "NHC",
+   "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT5+shtml/222037.shtml",
+   "rotulo": "Josephine (EUA)",
    "lado": "r"
   },
   {
@@ -912,27 +934,6 @@ footer{border-top:1px solid var(--line)}
    "fonte": "Inmet via CNN Brasil; O Tempo",
    "url": "https://www.otempo.com.br/tempo/2026/10/21/bolha-de-calor-tem-data-para-castigar-15-estados-e-o-df-ate-segunda-26",
    "rotulo": "Calor Nordeste",
-   "lado": "r"
-  },
-  {
-   "id": "kilauea",
-   "tipo": "vulcao",
-   "gravidade": "moderado",
-   "titulo": "Kīlauea faz pausa após fontes de lava de 220 m",
-   "local": "Cume do Kīlauea, Ilha Grande do Havaí, EUA",
-   "data": "2026-10-21",
-   "lat": 19.41,
-   "lon": -155.28,
-   "resumo": "A erupção do Kīlauea, no Havaí, está em pausa desde o fim do episódio 55, no sábado (17/10). O USGS prevê o episódio 56 entre 28 de outubro e 5 de novembro.",
-   "pontos": [
-    "Episódio 55 (17/10): 5 h 44 min, com fonte de 220 m e coluna de cerca de 7.500 m.",
-    "O cume recuperou 9,8 microrradianos de inflação desde então; a inflação se estabilizou na manhã de 21/10.",
-    "Alerta em nível Advisory e código de aviação amarelo; 2 sismos no cume em 24 horas.",
-    "Previsão do episódio 56 é incerta porque o 55 fugiu do padrão habitual."
-   ],
-   "fonte": "USGS HVO",
-   "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-10-21T17:29:30+00:00",
-   "rotulo": "Kīlauea",
    "lado": "r"
   }
  ]
@@ -1292,6 +1293,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
