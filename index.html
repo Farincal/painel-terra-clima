@@ -20,6 +20,31 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -665,9 +690,51 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-10-24T23:30:00+02:00",
- "manchete": "curitiba tem a maior chuva do ano sob alerta vermelho no sul do brasil, o furacão vance perde força no pacífico e um sismo de 6,9 em vanuatu gera alerta de tsunami",
+ "atualizado": "2026-10-25T04:30:00+01:00",
+ "manchete": "um ciclone se forma na baía de bengala rumo à índia, o paraná bate recordes de chuva e são paulo tem alerta laranja para temporais no domingo de eleição",
  "eventos": [
+  {
+   "id": "arnab",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Depressão na Baía de Bengala deve virar ciclone Arnab",
+   "local": "Baía de Bengala, rumo a Andhra Pradesh e Odisha, Índia",
+   "data": "2026-10-24",
+   "lat": 15.4,
+   "lon": 90.7,
+   "resumo": "Uma depressão se formou na Baía de Bengala e deve virar o ciclone Arnab até segunda (26/10), segundo o departamento meteorológico da Índia (IMD). A previsão é que chegue ao litoral de Andhra Pradesh na manhã de quarta (28/10) como ciclone muito forte.",
+   "pontos": [
+    "IMD (17h30 de 24/10): centro a 820 km a lés-sudeste de Visakhapatnam.",
+    "Previsão de ventos de 115 a 125 km/h na chegada à costa, com rajadas de até 140 km/h.",
+    "Toque em terra previsto entre Bapatla e Visakhapatnam na manhã de 28/10.",
+    "Odisha: aviso vermelho para chuva muito forte no litoral sul de 25 a 27/10; escolas fechadas em 5 distritos em 28 e 29/10."
+   ],
+   "fonte": "IMD via Sambad English; The Week",
+   "url": "https://sambadenglish.com/latest-news/cyclone-arnab-depression-forms-over-bay-of-bengal-likely-to-cross-andhra-coast-as-very-severe-cyclonic-storm-12747168",
+   "rotulo": "Arnab",
+   "lado": "b"
+  },
+  {
+   "id": "champi",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Champi deixa 1 morto e mais de 500 feridos e ruma ao Japão",
+   "local": "Mar da China Oriental, ao norte de Taiwan",
+   "data": "2026-10-24",
+   "lat": 26.7,
+   "lon": 123.2,
+   "resumo": "A tempestade Champi deixou um morto e mais de 500 feridos em Taiwan e agora segue para o Japão. A agência meteorológica japonesa prevê que ela se aproxime de Kyushu na segunda (26/10).",
+   "pontos": [
+    "JMA (15h de 24/10): a 250 km ao norte de Yonaguni, 985 hPa e ventos de até 108 km/h, indo para nor-nordeste a 20 km/h.",
+    "Taiwan: 1 morto, mais de 500 feridos e 56 mil casas ainda sem luz no sábado; Yilan acumulou 650 mm desde quinta.",
+    "Xangai retirou 62.400 pessoas; mais de 100 voos cancelados no leste da China e 72 linhas de barco suspensas em Zhoushan.",
+    "Okinawa: 2 feridos; Iriomote teve 567 mm em 48 horas, recorde no local."
+   ],
+   "fonte": "JMA via Jiji/Nippon.com; AP via Manila Times; Bastille Post",
+   "url": "https://www.nippon.com/en/news/yjj2026102400388/typhoon-champi-could-approach-kyushu-region-mon.html",
+   "rotulo": "Champi",
+   "lado": "r"
+  },
   {
    "id": "vance",
    "tipo": "ciclone",
@@ -690,24 +757,45 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
-   "id": "champi",
-   "tipo": "ciclone",
+   "id": "rs",
+   "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Champi deixa 1 morto e mais de 600 feridos em Taiwan",
-   "local": "Mar da China Oriental, ao norte de Taiwan",
+   "titulo": "Paraná bate recordes de chuva e tem rodovias bloqueadas",
+   "local": "Paraná, Santa Catarina e Noroeste do Rio Grande do Sul, Brasil",
    "data": "2026-10-24",
-   "lat": 26.7,
-   "lon": 123.2,
-   "resumo": "A tempestade Champi deixou um morto e mais de 600 feridos em Taiwan desde quinta (22/10) e agora segue para o norte. A agência meteorológica do Japão prevê que ela se aproxime de Kyushu na segunda (26/10).",
+   "lat": -25.9,
+   "lon": -52.4,
+   "resumo": "Guaraqueçaba e Pato Branco tiveram neste sábado (24/10) as maiores chuvas em um dia de suas séries, segundo o Simepar. Rodovias federais e estaduais foram bloqueadas por alagamentos e quedas de barreira no Paraná.",
    "pontos": [
-    "Taiwan: 1 morto, mais de 600 feridos, 5 mil retirados e 340 mil casas sem luz; Yilan teve pelo menos 650 mm de chuva.",
-    "JTWC: rebaixado a tempestade tropical, com ventos de 102 km/h; chegou perto de 300 km/h como supertufão.",
-    "Okinawa: 2 feridos; Iriomote teve 567 mm em 48 horas, recorde no local.",
-    "Chuva forte prevista em Jiangsu, Xangai e Zhejiang, na China; dezenas de milhares retirados em Xangai."
+    "Simepar (0h às 18h de 24/10): Guaraqueçaba 280 mm, Pato Branco 201,4 mm e Francisco Beltrão 162,4 mm.",
+    "Curitiba teve 96,8 mm até as 15h15, a maior chuva em um dia de 2026.",
+    "BR-153 (Irati) e BR-376 (Ortigueira) totalmente interditadas por alagamento; PR-281, PR-170 e PR-364 fechadas.",
+    "Chuva deve parar no Oeste e Sudoeste na manhã de domingo (25/10) e no resto do estado até o início da tarde."
    ],
-   "fonte": "Dawn; Jiji Press",
-   "url": "https://ripr.trade/news/dawn/tropical-storm-champi-nears-china-after-battering-taiwan-japan",
-   "rotulo": "Champi",
+   "fonte": "Simepar e PRF via Portal A Nativa; Bem Paraná",
+   "url": "https://www.portalanativa.com.br/2026/10/25/chuva-interdita-rodovias-no-parana-veja-os-trechos-bloqueados/",
+   "rotulo": "Chuva Paraná",
+   "lado": "l"
+  },
+  {
+   "id": "frio-sul",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "SP em alerta laranja para temporais; frio chega ao Sul",
+   "local": "São Paulo, Rio de Janeiro e estados do Sul, Brasil",
+   "data": "2026-10-25",
+   "lat": -23.55,
+   "lon": -46.63,
+   "resumo": "A Defesa Civil de São Paulo colocou o estado em alerta laranja para temporais neste domingo (25/10), dia do segundo turno. Atrás da frente fria, uma massa de ar frio deve levar temperaturas perto de 0 °C ao Sul na terça (27/10).",
+   "pontos": [
+    "Alerta laranja (3º de 4 níveis) com tempestades intensas na Grande SP, no litoral e no Vale do Ribeira.",
+    "MetSul: risco alto de chuva forte a torrencial em SP e no RJ; no RJ, a Costa Verde é a área mais exposta.",
+    "Possibilidade de granizo e rajadas fortes em todo o estado de SP, segundo a Defesa Civil.",
+    "Mínimas abaixo de 5 °C na segunda e na terça na Campanha gaúcha e no Planalto Sul Catarinense; geada isolada."
+   ],
+   "fonte": "Defesa Civil SP via Agência Brasil; MetSul",
+   "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/domingo-de-eleicoes-devera-ser-chuvoso-no-estado-de-sp",
+   "rotulo": "Temporais SP",
    "lado": "r"
   },
   {
@@ -732,27 +820,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   },
   {
-   "id": "vanuatu",
-   "tipo": "terremoto",
-   "gravidade": "moderado",
-   "titulo": "Sismo de 6,9 em Vanuatu gera alerta de tsunami, depois suspenso",
-   "local": "Mar a noroeste de Espiritu Santo, Vanuatu",
-   "data": "2026-10-24",
-   "lat": -14.06,
-   "lon": 165.55,
-   "resumo": "Um terremoto de magnitude 6,9 atingiu o mar ao norte de Vanuatu neste sábado (24/10) e gerou alerta de tsunami, depois suspenso. Não há relatos de danos ou vítimas.",
-   "pontos": [
-    "USGS: M6,9 às 02h31 UTC, a 197 km a oés-noroeste de Port-Olry, com 10 km de profundidade.",
-    "Quatro minutos depois veio um tremor de 6,3; houve vários outros abalos de 4,5 a 5,2.",
-    "Estimativa inicial era 7,2; o Centro de Alerta de Tsunami do Pacífico revisou para 6,9 e suspendeu o alerta.",
-    "O serviço geológico de Vanuatu chegou a pedir que moradores do litoral fossem para áreas altas."
-   ],
-   "fonte": "USGS; Business Recorder; PMN",
-   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4j2",
-   "rotulo": "Sismo Vanuatu",
-   "lado": "r"
-  },
-  {
    "id": "dana-adam",
    "tipo": "enchente",
    "gravidade": "critico",
@@ -766,7 +833,7 @@ footer{border-top:1px solid var(--line)}
     "Seis mortos: três na Comunidade Valenciana (Sagunto e dois em Oliva), um na Catalunha, um em Menorca e um em Málaga.",
     "O Consórcio de Compensação de Seguros já recebeu 6.528 pedidos de indenização; 2.760 vêm de Oliva.",
     "Comunidade Valenciana: 1.876 ocorrências no 112, sendo 759 só em Oliva.",
-    "Chuva acima de 700 mm no litoral sul de Valência e norte de Alicante; a medida libera ajudas diretas e isenções fiscais."
+    "A Generalitat Valenciana aprovou um primeiro pacote de 23,5 milhões de euros em ajudas imediatas; houve mais de 700 mm no litoral sul de Valência."
    ],
    "fonte": "The Local Spain; Moncloa.com; Emergencias 112",
    "url": "https://thelocal.es/20261021/today-in-spain-a-roundup-of-the-latest-news-on-wednesday-105",
@@ -774,65 +841,23 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Curitiba tem a maior chuva do ano sob alerta vermelho",
-   "local": "Paraná, Santa Catarina e Noroeste do Rio Grande do Sul, Brasil",
-   "data": "2026-10-24",
-   "lat": -25.9,
-   "lon": -52.4,
-   "resumo": "Curitiba registrou 96,8 mm até as 15h15 deste sábado (24/10), a maior chuva em um só dia de 2026, segundo o Simepar. A Defesa Civil do Paraná mantém alerta vermelho para tempestades no norte e no oeste até a madrugada de domingo (25/10).",
-   "pontos": [
-    "Inmet: alerta vermelho de grande perigo no Sul, com chuva acima de 100 mm/dia, ventos acima de 100 km/h e granizo.",
-    "Recordes de outubro: Cruzeiro do Iguaçu 523,2 mm e Foz do Iguaçu 491 mm; 44 de 47 estações do Simepar já passaram da média do mês.",
-    "Deslizamento atingiu a PR-466 no km 228, entre Palmeirinha e Turvo; outro trecho foi interditado no Oeste.",
-    "Pato Branco e Francisco Beltrão já tinham cerca de 100 mm na manhã de sábado; o sul do estado pode passar de 200 mm em 24 horas."
-   ],
-   "fonte": "Simepar via Bem Paraná; Defesa Civil via Tribuna PR; Inmet",
-   "url": "https://www.bemparana.com.br/noticias/parana/curitiba-bate-recorde-de-chuva-em-2026-e-cidades-do-parana-registram-volumes-historicos/",
-   "rotulo": "Chuva Paraná",
-   "lado": "l"
-  },
-  {
-   "id": "frio-sul",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Ciclone leva temporais do Sul a SP, MS e RJ no fim de semana",
-   "local": "Rio Grande do Sul, Santa Catarina, Paraná e Mato Grosso do Sul, Brasil",
-   "data": "2026-10-24",
-   "lat": -30.5,
-   "lon": -51.0,
-   "resumo": "Um ciclone extratropical reforça os temporais no Centro-Sul do Brasil neste fim de semana, com chuva forte, granizo e ventania. No sábado (24/10), o maior risco fica no Paraná, em São Paulo e no sul de Mato Grosso do Sul.",
-   "pontos": [
-    "Climatempo: rajadas de até 90 km/h no oeste do PR e de SC, em SP, no sul de MG e no sul de MS no sábado (24/10).",
-    "Domingo (25/10): chuva intensa em São Paulo desde a madrugada, com risco de granizo na capital, no litoral e no interior.",
-    "Domingo também tem chuva forte no RJ, no sul de MG, no centro-sul do ES, em MS e no sul de GO.",
-    "MetSul: até 200 mm em sete dias em partes de SP e do PR."
-   ],
-   "fonte": "Climatempo; MetSul",
-   "url": "https://www.climatempo.com.br/noticia/fim-de-semana/previsao-fim-de-semana-24-e-26-10-temporais-chuva-volumosa-e-ventania-no-centro-sul-do-pais",
-   "rotulo": "Ciclone Centro-Sul",
-   "lado": "r"
-  },
-  {
    "id": "four-corners",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Enchente histórica no sudoeste dos EUA tem mais de 60 resgates",
+   "titulo": "Enchente histórica no sudoeste dos EUA atinge 2 mil pessoas",
    "local": "Farmington (Novo México), sul do Colorado, Utah e Arizona, EUA",
-   "data": "2026-10-23",
+   "data": "2026-10-24",
    "lat": 36.73,
    "lon": -108.2,
-   "resumo": "Enchentes históricas atingem a região de Four Corners, no sudoeste dos EUA, com cerca de 1.500 residências retiradas no condado de San Juan. Em Farmington, no Novo México, o rio San Juan passou o recorde de 1909.",
+   "resumo": "Enchentes históricas atingem cerca de 2 mil pessoas em Farmington e arredores, no Novo México, segundo a Associated Press. Centenas de casas seguem esvaziadas e sem luz, e mais chuva é esperada no fim de semana.",
    "pontos": [
-    "Cerca de 60 resgates e 1.500 residências retiradas no condado de San Juan (Novo México) até sexta (23/10).",
-    "Rio San Juan em Shiprock a 7,06 m, acima da cota de cheia grave de 6,25 m; em Farmington, 60 cm acima do recorde de 1909.",
-    "O governador do Colorado declarou emergência em 11 condados; não há mortos relatados.",
-    "Tempestades e chuva forte seguem até sábado (24/10); domingo (25/10) deve ser mais calmo no oeste do Novo México."
+    "Pelo menos 200 pessoas resgatadas; helicópteros da Guarda Nacional fizeram 11 resgates com guincho.",
+    "Rio San Juan em Pagosa Springs (Colorado) no maior nível em mais de um século; em Farmington, 60 cm acima do recorde de 1909.",
+    "Trecho de 3,2 km da US-64 a oeste de Shiprock fechado; o Colorado incluiu o condado de Conejos na lista de ajuda.",
+    "Chuva passou de 130 mm em alguns pontos; não há mortos relatados."
    ],
-   "fonte": "Albuquerque Journal; Santa Fe New Mexican",
-   "url": "https://www.abqjournal.com/news/it-really-is-this-bad-flooding-triggers-evacuations-rescues-across-san-juan-county/3148013",
+   "fonte": "AP via KUNM; Albuquerque Journal",
+   "url": "https://www.kunm.org/local-news/2026-10-24/rain-evacuations-four-corners-region-flooding",
    "rotulo": "Enchente EUA",
    "lado": "l"
   },
@@ -871,31 +896,31 @@ footer{border-top:1px solid var(--line)}
     "SNGR (15h de 22/10): 544 ocorrências desde 29/8, em 23 províncias e 117 cantões.",
     "6.167 casas afetadas e 20 destruídas; Esmeraldas tem 17.249 pessoas atingidas e Guayas 6.488.",
     "Três mortos: dois em Azuay e um em El Oro; o rio Tenguel transbordou em Guayaquil na quinta (22/10).",
-    "Alerta vermelho nacional por El Niño desde 29/8; Inamhi prevê tempestades de 23 a 25/10 no Litoral."
+    "Inamhi: chuva alta a muito alta no Litoral até domingo (25/10), com até 90 mm por dia; rios Balao e Lagarto transbordaram em Guayas no sábado (24/10)."
    ],
-   "fonte": "SNGR e Inamhi via Extra (Equador)",
+   "fonte": "SNGR e Inamhi via Extra (Equador); Teleamazonas",
    "url": "https://www.extra.ec/noticia/guayaquil/lluvias-ecuador-28-mil-personas-impactadas-fallecidos-guayas-inamhi-octubre-2026-165673.html",
    "rotulo": "Chuva Equador",
    "lado": "l"
   },
   {
    "id": "catalunha",
-   "tipo": "enchente",
+   "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Catalunha tem aguaceiros pontuais e domingo de sol",
+   "titulo": "Catalunha tem domingo de sol e temperatura em alta",
    "local": "Barcelona e litoral da Catalunha, Espanha",
-   "data": "2026-10-24",
+   "data": "2026-10-25",
    "lat": 41.39,
    "lon": 2.17,
-   "resumo": "Barcelona pode ter aguaceiros pontuais, alguns intensos, na madrugada e na manhã deste sábado (24/10). O domingo (25/10) deve ter muito sol e temperatura em alta.",
+   "resumo": "Barcelona deve ter um domingo (25/10) de mais sol e calor ao meio-dia, depois dos aguaceiros de sábado. Não há avisos meteorológicos.",
    "pontos": [
-    "Sábado: aguaceiros dispersos perto da costa e no mar até a manhã.",
-    "Céu muito nublado até o meio-dia; abre à tarde e a noite fica calma.",
-    "Máxima perto de 20 °C em Barcelona, sem avisos meteorológicos.",
-    "Início da semana com vento de sudoeste (garbí) e máximas perto de 25 °C."
+    "Domingo: máxima de 22 °C e mínima de 14 °C em Barcelona.",
+    "Sábado (24/10) teve aguaceiros pontuais de manhã e máxima de 19 °C.",
+    "Início da semana com vento de sudoeste (garbí) e máximas perto de 25 °C.",
+    "AEMET prevê alta das temperaturas em boa parte da Espanha, com até 25 °C."
    ],
-   "fonte": "betevé",
-   "url": "https://beteve.cat/medi-ambient/temps-barcelona-dissabte-24-octubre-risc-xafecs/",
+   "fonte": "betevé; AEMET via Infobae",
+   "url": "https://beteve.cat/temps-barcelona/",
    "rotulo": "Catalunha",
    "lado": "t"
   },
@@ -1300,5 +1325,6 @@ footer{border-top:1px solid var(--line)}
 
 
 
+</body></html>
 </body>
 </html>
