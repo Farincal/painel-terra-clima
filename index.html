@@ -20,51 +20,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -709,30 +664,52 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-10-30T04:30:00+01:00",
- "manchete": "o supertufão in-fa chega às marianas do norte, o vance se desfaz no méxico e a chuva segue no centro-sul do brasil",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-10-30T10:30:00+01:00",
+ "manchete": "o vulcão mayon entra em erupção nas filipinas, o tufão in-fa chega às marianas do norte e a chuva segue no centro-sul do brasil",
  "eventos": [
   {
    "id": "in-fa",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Supertufão In-fa chega às Marianas do Norte",
+   "titulo": "Tufão In-fa chega às Marianas do Norte",
    "local": "Pacífico Oeste, a leste das Ilhas Marianas do Norte",
    "data": "2026-10-30",
    "lat": 16.8,
    "lon": 149.8,
-   "resumo": "O supertufão In-fa, com ventos de 240 km/h, chega nesta sexta (30/10) às ilhas de Agrihan, Pagan e Alamagan, que estão sob aviso de tufão. O centro deve passar perto de Agrihan no fim da tarde ou à noite, hora local.",
+   "resumo": "O tufão In-fa, de categoria 4 com ventos de 225 km/h, chega nesta sexta (30/10) às ilhas de Agrihan, Pagan e Alamagan, que estão sob aviso de tufão. O olho deve passar a cerca de 13 km de Agrihan por volta das 20h locais.",
    "pontos": [
-    "21h UTC de 29/10: cerca de 467 km a leste-nordeste de Saipan, andando a 30 km/h para oeste-noroeste.",
-    "Pressão de 938 hPa e ondas de até 19,2 m, segundo o Zoom Earth com dados do JTWC.",
-    "Previsão de 150 a 250 mm de chuva e inundação costeira de 0,9 a 1,8 m nas ilhas do norte.",
-    "Ondas de 3,7 a 5,5 m em Saipan e Tinian até sábado (31/10); o tufão deve enfraquecer aos poucos depois."
+    "Ventos destrutivos de 175 a 210 km/h, com rajadas de até 290 km/h, perto do centro na noite de sexta.",
+    "Agrihan: 200 a 300 mm de chuva, inundação costeira de 0,9 a 1,8 m e ondas de 4 a 5,8 m nos recifes.",
+    "Pagan e Alamagan: ventos de 130 a 160 km/h e 150 a 250 mm de chuva.",
+    "Aviso de ressaca em Saipan e Tinian, com ondas de 3,7 a 5,5 m; deve cair à categoria 3 no sábado à noite (31/10)."
    ],
-   "fonte": "NWS Guam; JTWC via Zoom Earth; EM Network",
-   "url": "https://zoom.earth/storms/in-fa-2026/",
+   "fonte": "NWS Guam via Weatherboy; JTWC via Zoom Earth",
+   "url": "https://weatherboy.com/category-4-typhoon-in-fa-takes-aim-at-remote-northern-mariana-islands/",
    "rotulo": "Tufão In-fa",
    "lado": "t"
+  },
+  {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Vulcão Mayon entra em erupção; alerta sobe ao nível 3",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-10-30",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O vulcão Mayon, nas Filipinas, teve uma erupção moderadamente explosiva às 11h53 locais desta sexta (30/10), e o Phivolcs subiu o alerta do nível 2 para o 3. Moradores num raio de 6 km da cratera receberam ordem de saída.",
+   "pontos": [
+    "A coluna de cinzas subiu cerca de 3.000 m acima da cratera e seguiu para oés-sudoeste.",
+    "Cerca de 1.133 famílias de oito cidades devem ir para abrigos; até as 14h, 205 famílias saíram em Camalig e 152 em Tabaco.",
+    "Caiu cinza em Camalig, Guinobatan e na parte alta de Legazpi; 4.000 máscaras foram distribuídas.",
+    "Aulas suspensas em Albay nesta sexta (30/10)."
+   ],
+   "fonte": "Phivolcs via Daily Tribune e GMA News",
+   "url": "https://tribune.net.ph/2026/10/30/mayon-eruption-triggers-mandatory-evacuations-in-albay",
+   "rotulo": "Vulcão Mayon",
+   "lado": "r"
   },
   {
    "id": "arnab",
@@ -903,27 +880,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "california",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Maré recorde alaga a costa sul da Califórnia",
-   "local": "Los Angeles, Orange County e San Diego, Califórnia, EUA",
-   "data": "2026-10-26",
-   "lat": 33.6,
-   "lon": -117.9,
-   "resumo": "A maré alta de segunda (26/10) deu os maiores níveis do mar em mais de um século de registros em San Diego e Los Angeles. O Serviço Meteorológico dos EUA mantém aviso de alagamento costeiro em Orange County até quinta (29/10).",
-   "pontos": [
-    "Pico das marés previsto para terça (27/10) de manhã; em Newport Beach, acima de 1,8 m, podendo passar de 2,4 m.",
-    "Marés podem ficar até 45 cm acima do previsto; Long Beach reforça barreiras de areia.",
-    "Trens da linha Orange County suspensos ao sul de Laguna Niguel de 26 a 30/10.",
-    "Estacionamentos, ciclovias e calçadas de praia de Los Angeles e Ventura podem alagar."
-   ],
-   "fonte": "ABC7; Juan Cole (Informed Comment)",
-   "url": "https://abc7.com/19973916/",
-   "rotulo": "Maré Califórnia",
-   "lado": "l"
-  },
-  {
    "id": "florida",
    "tipo": "outro",
    "gravidade": "moderado",
@@ -966,7 +922,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1321,6 +1278,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 </body>
 </html>
