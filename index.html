@@ -74,6 +74,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -718,28 +719,29 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-01T10:30:00+01:00",
- "manchete": "o tufão in-fa perde força perto de ogasawara, o mayon segue em alerta 3 e uma dana põe canárias em aviso laranja",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-01T16:30:00+01:00",
+ "manchete": "o tufão in-fa enfraquece ao sul de ogasawara, um apagão atinge tenerife sob alerta de chuva e o arizona recebe mais um rio atmosférico",
  "eventos": [
   {
    "id": "in-fa",
    "tipo": "ciclone",
-   "gravidade": "critico",
-   "titulo": "Tufão In-fa enfraquece em laço ao sul de Ogasawara",
+   "gravidade": "alto",
+   "titulo": "Tufão In-fa perde força ao sul de Ogasawara",
    "local": "Oeste do Pacífico, ao sul das ilhas Ogasawara (Japão)",
    "data": "2026-11-01",
-   "lat": 22.8,
-   "lon": 143.5,
-   "resumo": "O tufão In-fa perdeu força e faz um laço lento ao sul das ilhas Ogasawara, no Japão. O JTWC prevê que ele volte para oeste, suba para o norte a partir de 3/11 e vire extratropical até 5/11.",
+   "lat": 22.3,
+   "lon": 144.1,
+   "resumo": "O tufão In-fa segue perdendo força e anda devagar ao sul das ilhas Ogasawara, no Japão. Ele deve voltar para oeste, subir para o norte a partir de 3/11 e virar extratropical até 5/11.",
    "pontos": [
-    "JTWC (18h UTC de 31/10): ventos de 185 km/h e pressão de 960 hPa, a 346 km a sudeste de Iwo To; no aviso anterior eram 204 km/h.",
-    "Movimento lento para leste, a 9 km/h, num pequeno laço; depois deve seguir para oeste e então para o norte.",
-    "JMA: aviso de ventos fortes em Ogasawara, ondas altas até 5/11 e ventos violentos possíveis entre 3 e 5/11, conforme a trajetória.",
-    "Em 5/11, a 30,4° N, deve ter ventos de 120 km/h e virar extratropical."
+    "Às 6h UTC de 1/11: ventos de 167 km/h, rajadas de 192 km/h e pressão de 967 hPa; seis horas antes eram 176 km/h.",
+    "Movimento muito lento, a 4 km/h para sudeste, num pequeno laço sobre águas mais frias.",
+    "Pico foi de 241 km/h e 934 hPa em 28/10.",
+    "JMA: aviso de ventos fortes em Ogasawara e ondas altas até 5/11; JTWC prevê 120 km/h e transição extratropical em 5/11."
    ],
-   "fonte": "JTWC via Zoom Earth e Weather Underground; JMA via Sunny Spot",
-   "url": "https://zoom.earth/storms/in-fa-2026/",
+   "fonte": "RainViewer (dados de 1/11, 6h UTC); JTWC via Zoom Earth; JMA via Sunny Spot",
+   "url": "https://www.rainviewer.com/storm-tracker/typhoons/in-fa-2026.html",
    "rotulo": "Tufão In-fa",
    "lado": "t"
   },
@@ -752,15 +754,15 @@ footer{border-top:1px solid var(--line)}
    "data": "2026-11-01",
    "lat": 13.26,
    "lon": 123.69,
-   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível 3 de alerta depois da erupção de sexta (30/10), e até 785 escolas de Albay foram afetadas. Mais de 2 mil moradores deixaram a zona de perigo de 6 km.",
+   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível 3 de alerta depois da erupção de sexta (30/10), e até 785 escolas de Albay foram afetadas. 420 famílias (1.510 pessoas) passaram o Dia de Todos os Santos em abrigos.",
    "pontos": [
     "Phivolcs (boletim de 24 h até 31/10): 15 sismos vulcânicos e 30 desmoronamentos de rocha; emissão de 988 t/dia de dióxido de enxofre na sexta.",
     "Erupção às 11h53 de 30/10, com coluna de cinzas de 3.000 m sobre a cratera.",
     "DepEd: 48 escolas ficam na zona de perigo de 6 a 8 km; 311.259 alunos, professores e funcionários deslocados.",
-    "APSEMO: 2.041 pessoas (746 famílias) retiradas; Tabaco decretou retirada obrigatória."
+    "APSEMO (31/10, 17h): 420 famílias em abrigos de Tabaco, Ligao e Camalig; antes eram 746 famílias (2.041 pessoas), parte foi para casas de parentes."
    ],
    "fonte": "Phivolcs via Manila Times; DepEd via Philstar; APSEMO via Daily Tribune",
-   "url": "https://www.philstar.com/nation/2026/11/01/2566990/mayon-eruption-affects-785-schools",
+   "url": "https://tribune.net.ph/2026/11/01/420-families-spend-all-saints-day-in-albay-evacuation-centers",
    "rotulo": "Vulcão Mayon",
    "lado": "r"
   },
@@ -773,15 +775,15 @@ footer{border-top:1px solid var(--line)}
    "data": "2026-11-01",
    "lat": 34.5,
    "lon": -111.5,
-   "resumo": "Um rio atmosférico atinge o Arizona já encharcado neste domingo (1/11), com risco nível 3 de 4 de chuva excessiva nos Four Corners. Enxurradas já mataram uma pessoa perto de Las Vegas na sexta (30/10) e duas no Novo México na semana anterior.",
+   "resumo": "Um rio atmosférico, o primeiro da temporada, encharca o Arizona neste domingo (1/11), com alerta de enchente em boa parte do estado, incluindo Phoenix. Enxurradas já mataram uma pessoa perto de Las Vegas na sexta (30/10) e duas no Novo México na semana anterior.",
    "pontos": [
-    "Phoenix (30/10): 25 a 75 mm em três horas em Paradise Valley; ao menos 7 pessoas resgatadas de carros ilhados em Phoenix e Scottsdale.",
-    "Mais de 5 mil clientes ficaram sem luz no pico da tempestade, segundo SRP e APS.",
-    "NWS Flagstaff: 25 a 75 mm até segunda (2/11), com mais de 150 mm nas encostas; Phoenix pode ter 19 a 44 mm.",
-    "Colorado: 540 casas danificadas em 12 condados do sul do estado, até 29/10."
+    "Alerta de enchente (Flood Watch) até a noite de domingo (1/11) em grande parte do Arizona.",
+    "Previsão para domingo: 25 a 50 mm em Phoenix, 50 a 100 mm nas serras e até 150 mm no Mogollon Rim.",
+    "Rios, córregos e leitos secos podem seguir cheios até quarta (4/11); a chuva termina na manhã de segunda (2/11).",
+    "Sexta (30/10): ao menos 7 resgatados de carros ilhados em Phoenix e Scottsdale e mais de 5 mil clientes sem luz."
    ],
-   "fonte": "NWS via Weatherboy; Fox Weather; KTNV; EM Network",
-   "url": "https://weatherboy.com/atmospheric-river-takes-aim-at-waterlogged-arizona-after-friday-flash-floods/",
+   "fonte": "NWS via ABC15 e Weatherboy; Fox Weather; KTNV",
+   "url": "https://www.abc15.com/weather/most-accurate-forecast-soaking-rain-and-flood-watches-across-arizona-sunday",
    "rotulo": "Enchente EUA",
    "lado": "l"
   },
@@ -797,11 +799,11 @@ footer{border-top:1px solid var(--line)}
    "resumo": "O Sul do Brasil tem risco de temporais com granizo neste domingo (1/11), e a Defesa Civil gaúcha prevê tempestades mais fortes de segunda a quarta (2 a 4/11). No Paraná, a chuva recorde de 24/10 deixou 980 desalojados e 119 desabrigados.",
    "pontos": [
     "RS: maior risco no domingo nas Missões, Noroeste, Norte e parte do Oeste, com granizo, rajadas e chuva forte.",
-    "Santa Catarina: alerta amarelo de tempestade para 122 cidades do Oeste e Norte no domingo (1/11).",
+    "Santa Catarina: Defesa Civil prevê temporais isolados com granizo e rajadas no fim da tarde e à noite de domingo e segunda (1 e 2/11), sobretudo perto da divisa com o PR.",
     "Inmet: alerta laranja em Cascavel e Foz do Iguaçu (PR) na segunda (2/11), com rajadas de até 100 km/h.",
     "Paraná: 32 municípios com danos; Guaraqueçaba teve 456 mm em 24 horas em 24/10."
    ],
-   "fonte": "Defesa Civil do RS via Agora RS; Defesa Civil do PR via AEN; Inmet",
+   "fonte": "Defesa Civil do RS via Agora RS; Defesa Civil de SC via Diário de Joinville; Defesa Civil do PR via AEN; Inmet",
    "url": "https://agorars.com/agora-no-tempo/rs-risco-temporais-granizo-novembro-2026/",
    "rotulo": "Temporais Sul",
    "lado": "r"
@@ -831,20 +833,20 @@ footer{border-top:1px solid var(--line)}
    "id": "canarias",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Dana traz aviso laranja de chuva a Canarias",
+   "titulo": "Dana causa apagão e neva no Teide, em Canarias",
    "local": "Tenerife, La Palma e ilhas ocidentais, Canárias, Espanha",
    "data": "2026-11-01",
    "lat": 28.47,
    "lon": -16.25,
-   "resumo": "Uma dana deixa Tenerife e La Palma em aviso laranja de chuva neste domingo (1/11), segundo a Aemet. O governo das Canárias declarou alerta na área metropolitana de Tenerife a partir do meio-dia.",
+   "resumo": "Um apagão deixou cerca de 160 mil clientes sem luz em Tenerife na manhã deste domingo (1/11), em plena alerta por chuva. A dana também trouxe a primeira neve da temporada ao Teide, cujo acesso ao cume foi fechado.",
    "pontos": [
-    "Tenerife pode acumular 30 mm em uma hora; maior risco no nordeste da ilha.",
-    "Aviso laranja em La Palma o dia todo e em Tenerife das 12h à meia-noite; amarelo em Gran Canaria, La Gomera e El Hierro.",
-    "Aviso amarelo de tempestades nas cinco ilhas ocidentais e centrais.",
-    "Segunda (2/11): chuva ainda persistente em La Palma, com novos avisos amarelos nas ilhas montanhosas."
+    "Aemet: aviso laranja em Tenerife e La Palma, com chuva de 30 mm ou mais em uma hora.",
+    "Governo das Canárias: alerta por chuva em Tenerife e La Palma; pré-alerta em El Hierro, La Gomera e Gran Canaria.",
+    "Apagão atribuído a falha da Red Eléctrica; a luz foi voltando ao longo da manhã.",
+    "Santa Cruz de Tenerife suspendeu o Rastro e atividades municipais."
    ],
-   "fonte": "Aemet via Diario de Avisos e Canarias7",
-   "url": "https://diariodeavisos.elespanol.com/2026/10/aemet-lluvias-canarias-domingo-zonas-horarios/",
+   "fonte": "Aemet e Governo das Canárias via Diario de Avisos e elDiario.es",
+   "url": "https://diariodeavisos.elespanol.com/2026/11/apagon-tenerife-domingo-borrasca/",
    "rotulo": "Dana Canárias",
    "lado": "l"
   },
@@ -974,7 +976,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1329,6 +1332,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 </body>
 </html>
