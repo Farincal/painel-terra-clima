@@ -83,6 +83,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -730,29 +731,50 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-03T16:30:00+01:00",
- "manchete": "o ciclone murasu perde força na índia, o mayon solta cinzas a 1,6 km e o sul do brasil espera um ciclone extratropical",
+ "atualizado": "2026-11-03T22:30:00+01:00",
+ "manchete": "o ciclone murasu deixa dois mortos na índia, o sul do brasil entra em alerta vermelho e o mayon segue soltando cinzas",
  "eventos": [
   {
    "id": "murasu",
    "tipo": "ciclone",
    "gravidade": "critico",
-   "titulo": "Ciclone Murasu perde força após tocar a costa da Índia",
+   "titulo": "Ciclone Murasu deixa 2 mortos e enfraquece na Índia",
    "local": "Litoral sul de Andhra Pradesh, perto de Ongole, Índia",
    "data": "2026-11-03",
    "lat": 15.45,
    "lon": 80.25,
-   "resumo": "O ciclone Murasu tocou a costa de Andhra Pradesh, na Índia, perto de Ongole, na madrugada desta terça (3/11), sem mortes relatadas até agora. É o segundo ciclone na região em cerca de uma semana, depois do Arnab.",
+   "resumo": "O ciclone Murasu deixou pelo menos dois mortos em Andhra Pradesh, na Índia, depois de tocar a costa perto de Ongole na madrugada de terça (3/11). Ele já enfraqueceu e deve virar depressão profunda até a meia-noite.",
    "pontos": [
-    "IMD: ventos de 100 a 110 km/h e rajadas de 120 km/h ao tocar a costa; previsão de enfraquecer para tempestade ciclônica e depois depressão profunda.",
-    "Mais de 200 mil pessoas retiradas em Andhra Pradesh e Odisha; a autoridade de desastres do estado diz que não há mortos nem feridos.",
-    "Milhares de árvores e centenas de postes derrubados, barcos destruídos e lavouras alagadas em Prakasam e Bapatla.",
-    "IMD alertou para maré de tempestade de 1,5 a 2 m em Bapatla, Krishna e Prakasam e chuva muito forte em 125 mandals."
+    "Lavouras atingidas: cerca de 52.459 hectares em 132 mandals de 15 distritos; 312 casas afetadas.",
+    "Perda inicial estimada em pelo menos 344 crore de rúpias, segundo a autoridade de desastres do estado.",
+    "12.230 pessoas em abrigos; 2.750 postes de energia danificados, sobretudo em Prakasam e Bapatla.",
+    "Chuva em 24 horas até 8h30 de terça: 22 cm em Bapatla e 20 cm em Narasapur; mais de 35 trens cancelados."
    ],
-   "fonte": "IMD via ETV Bharat; APSDMA via Al Jazeera; The Tribune",
-   "url": "https://www.aljazeera.com/news/2026/11/3/cyclone-murasu-makes-landfall-on-indias-eastern-coast",
+   "fonte": "APSDMA e IMD via National Herald",
+   "url": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares",
    "rotulo": "Ciclone Murasu",
    "lado": "l"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Alerta vermelho no Sul para ciclone nesta quarta",
+   "local": "Paraná, Santa Catarina e Rio Grande do Sul, Brasil",
+   "data": "2026-11-03",
+   "lat": -25.9,
+   "lon": -52.4,
+   "resumo": "O Inmet emitiu alerta vermelho de grande perigo para toda Santa Catarina e partes do Paraná e do Rio Grande do Sul nesta quarta (4/11). Um ciclone extratropical deve trazer mais de 100 mm de chuva por dia e rajadas acima de 100 km/h.",
+   "pontos": [
+    "Inmet: chuva acima de 60 mm por hora ou 100 mm por dia, rajadas acima de 100 km/h e granizo, das 0h às 23h59 de 4/11.",
+    "No RS, o alerta vermelho cobre Noroeste, Nordeste, Sudeste, Centro Oriental, Centro Ocidental e Sudoeste; no PR, Curitiba, Sudoeste, Sudeste e Centro-Sul.",
+    "Simepar: possíveis supercélulas na quarta; na quinta (5/11) as tempestades sobem para o norte do Paraná.",
+    "Paraná: temporais já afetaram cerca de 4 mil pessoas em 21 cidades; Maringá decretou calamidade."
+   ],
+   "fonte": "Inmet e Simepar via ND Mais e Tribuna do Vale",
+   "url": "https://ndmais.com.br/tempo/ciclone-coloca-tres-estados-em-alerta-vermelho-para-tempestades-com-chuva-acima-de-100-mm-e-ventos-superiores-a-100-km-h/",
+   "rotulo": "Alerta no Sul",
+   "lado": "r"
   },
   {
    "id": "four-corners",
@@ -774,27 +796,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://tucson.com/news/state-regional/article_adc3901b-888c-4fbe-b7d5-2b38491e3f8c.html",
    "rotulo": "Enchente Arizona",
    "lado": "l"
-  },
-  {
-   "id": "catalunha",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Catalunha encerra alerta de inundação após 84 mm",
-   "local": "Litoral entre Barcelona e Tarragona, Catalunha, Espanha",
-   "data": "2026-11-03",
-   "lat": 41.2,
-   "lon": 1.7,
-   "resumo": "A Proteção Civil da Catalunha encerrou na manhã desta terça (3/11) o alerta do plano Inuncat, sem incidentes graves. Tarragona somou 84,2 mm em 24 horas.",
-   "pontos": [
-    "Chuva em 24 horas: 84,2 mm em Tarragona, 71,5 mm em Torredembarra e 62,7 mm em Cunit.",
-    "Pico em 30 minutos: 18,7 mm em Tarragona e 18,4 mm em Cunit.",
-    "A C-31 em Sitges teve desvio por alagamento pela manhã; o trânsito já foi normalizado.",
-    "A ACA mantém dois avisos hidrológicos em Garraf e Baix Penedès."
-   ],
-   "fonte": "Proteção Civil via La Ciutat",
-   "url": "https://laciutat.cat/catalunya/pluges-intenses-ja-es-van-retirant-proteccio-civil-dona-acabada-alerta-inuncat_904345_102.html",
-   "rotulo": "Chuva Catalunha",
-   "lado": "t"
   },
   {
    "id": "mayon",
@@ -839,24 +840,24 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Sul do Brasil espera ciclone e mais de 100 mm",
-   "local": "Paraná, Santa Catarina e Rio Grande do Sul, Brasil",
+   "id": "frio-sul",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Chuva mata duas pessoas em Minas Gerais",
+   "local": "Belo Horizonte, Rio de Janeiro e Sudeste do Brasil",
    "data": "2026-11-03",
-   "lat": -25.9,
-   "lon": -52.4,
-   "resumo": "Um ciclone extratropical deve se formar no fim da tarde de quarta (4/11) no litoral entre RS e SC, com mais de 100 mm em 24 horas no oeste de SC e no norte e oeste do RS. No Paraná, temporais já afetaram cerca de 4 mil pessoas em 21 cidades.",
+   "lat": -19.92,
+   "lon": -43.94,
+   "resumo": "A Defesa Civil de Minas Gerais confirmou as duas primeiras mortes por chuva da temporada, uma delas um motociclista arrastado pela enxurrada em Belo Horizonte na segunda (2/11). No estado, cerca de 218 mil pessoas foram afetadas.",
    "pontos": [
-    "Meteored: quarta (4/11) é o dia de maior risco; rajadas de cerca de 70 km/h e granizo possíveis já nesta terça.",
-    "Um segundo ciclone, mais intenso, é previsto para sábado (7/11).",
-    "Paraná: 456 casas danificadas e 28 pessoas em abrigos; Maringá decretou calamidade pública.",
-    "Simepar: rajada de 109,1 km/h em Altônia; mais de 113 mil imóveis ficaram sem luz, segundo a Copel."
+    "Mortes: um homem em Guarará (Zona da Mata) em 30/10 e um motociclista no bairro Camargos, em BH, em 2/11.",
+    "41 ocorrências em 37 cidades; mais de mil desalojados e 64 desabrigados.",
+    "Inmet: alerta de tempestade para 2.474 cidades na segunda (2/11), incluindo BH, São Paulo, Rio e Curitiba.",
+    "BH: o Barreiro já recebeu 283,1 mm em outubro, 257% da média."
    ],
-   "fonte": "Meteored via Notícias Agrícolas; Defesa Civil do PR, Simepar e Copel via TMC",
-   "url": "https://www.noticiasagricolas.com.br/noticias/tempo-e-clima/430723-sul-entra-em-alerta-para-temporais-granizo-e-chuva-acima-de-100-mm-com-formacao-de-ciclone-extratropical.html",
-   "rotulo": "Ciclone no Sul",
+   "fonte": "Defesa Civil de MG via O Tempo; Inmet via O Tempo",
+   "url": "https://www.otempo.com.br/cidades/2026/11/3/apos-morte-de-motociclista-em-bh-defesa-civil-confirma-primeiros-obitos-por-chuva-em-mg",
+   "rotulo": "Chuva em MG",
    "lado": "r"
   },
   {
@@ -884,43 +885,43 @@ footer{border-top:1px solid var(--line)}
    "id": "canarias",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Canárias passam a pré-alerta, mas tempestades seguem",
+   "titulo": "Aviso amarelo de chuva em todas as Canárias",
    "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
    "data": "2026-11-03",
    "lat": 28.68,
    "lon": -17.76,
-   "resumo": "O governo das Canárias passou todo o arquipélago para pré-alerta por chuva às 10h desta terça (3/11). A Aemet ainda prevê chuva de 20 mm por hora ou mais e trovoadas nas ilhas ocidentais e em Gran Canaria.",
+   "resumo": "A Aemet colocou todas as ilhas Canárias em aviso amarelo por chuva forte nesta quarta (4/11), das 11h às 19h59. O arquipélago segue em pré-alerta do governo regional desde terça.",
    "pontos": [
+    "Aemet: até 15 mm em uma hora, sobretudo no interior das ilhas, com trovoadas e possível neve no pico do Teide.",
+    "Lanzarote, Fuerteventura, La Gomera e El Hierro em aviso na ilha inteira; Tenerife, Gran Canaria e La Palma em quase todas as zonas.",
     "Leste de La Palma recebeu 62 mm em uma hora e 138 mm em 12 horas no domingo e segunda.",
-    "Uma linha de transmissão caiu e deixou 50.508 clientes sem luz em La Palma por quase quatro horas.",
-    "Fuerteventura, Lanzarote e La Graciosa: até 15 mm por hora hoje; na quarta (4/11) a chuva pode se concentrar nessas ilhas.",
-    "Acesso ao pico do Teide restrito por gelo e neve."
+    "Uma linha de transmissão caiu e deixou 50.508 clientes sem luz em La Palma por quase quatro horas."
    ],
-   "fonte": "Governo de Canárias e Aemet via elDiario.es; Diario de Avisos; Endesa via Diario de Alicante",
-   "url": "https://www.eldiario.es/canariasahora/lapalmaahora/sociedad/gobierno-regional-pasa-prealerta-alerta-lluvias-canarias_1_13632912.html",
+   "fonte": "Aemet e Governo de Canárias via elDiario.es; Endesa via Diario de Alicante",
+   "url": "https://www.eldiario.es/canariasahora/tiempo-canarias/canarias-aviso-amarillo-aemet_1_13635261.html",
    "rotulo": "La Palma",
    "lado": "l"
   },
   {
-   "id": "frio-sul",
+   "id": "catalunha",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Chuva mata duas pessoas em Minas Gerais",
-   "local": "Belo Horizonte, Rio de Janeiro e Sudeste do Brasil",
+   "titulo": "Catalunha encerra alerta de inundação após 84 mm",
+   "local": "Litoral entre Barcelona e Tarragona, Catalunha, Espanha",
    "data": "2026-11-03",
-   "lat": -19.92,
-   "lon": -43.94,
-   "resumo": "A Defesa Civil de Minas Gerais confirmou as duas primeiras mortes por chuva da temporada, uma delas um motociclista arrastado pela enxurrada em Belo Horizonte na segunda (2/11). No estado, cerca de 218 mil pessoas foram afetadas.",
+   "lat": 41.2,
+   "lon": 1.7,
+   "resumo": "A Proteção Civil da Catalunha encerrou na manhã desta terça (3/11) o alerta do plano Inuncat, sem incidentes graves. Tarragona somou 84,2 mm em 24 horas.",
    "pontos": [
-    "Mortes: um homem em Guarará (Zona da Mata) em 30/10 e um motociclista no bairro Camargos, em BH, em 2/11.",
-    "41 ocorrências em 37 cidades; mais de mil desalojados e 64 desabrigados.",
-    "Inmet: alerta de tempestade para 2.474 cidades na segunda (2/11), incluindo BH, São Paulo, Rio e Curitiba.",
-    "BH: o Barreiro já recebeu 283,1 mm em outubro, 257% da média."
+    "Chuva em 24 horas: 84,2 mm em Tarragona, 71,5 mm em Torredembarra e 62,7 mm em Cunit.",
+    "Pico em 30 minutos: 18,7 mm em Tarragona e 18,4 mm em Cunit.",
+    "A C-31 em Sitges teve desvio por alagamento pela manhã; o trânsito já foi normalizado.",
+    "A ACA mantém dois avisos hidrológicos em Garraf e Baix Penedès."
    ],
-   "fonte": "Defesa Civil de MG via O Tempo; Inmet via O Tempo",
-   "url": "https://www.otempo.com.br/cidades/2026/11/3/apos-morte-de-motociclista-em-bh-defesa-civil-confirma-primeiros-obitos-por-chuva-em-mg",
-   "rotulo": "Chuva em MG",
-   "lado": "r"
+   "fonte": "Proteção Civil via La Ciutat",
+   "url": "https://laciutat.cat/catalunya/pluges-intenses-ja-es-van-retirant-proteccio-civil-dona-acabada-alerta-inuncat_904345_102.html",
+   "rotulo": "Chuva Catalunha",
+   "lado": "t"
   },
   {
    "id": "argentina",
@@ -1320,6 +1321,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
