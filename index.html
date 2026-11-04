@@ -84,6 +84,8 @@
 
 
 
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -731,9 +733,30 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-03T22:30:00+01:00",
- "manchete": "o ciclone murasu deixa dois mortos na índia, o sul do brasil entra em alerta vermelho e o mayon segue soltando cinzas",
+ "atualizado": "2026-11-04T10:30:00+01:00",
+ "manchete": "o sul do brasil segue sob alerta vermelho de ciclone, o sudeste da espanha espera tempestades à noite e o tufão in-fa avança para o norte",
  "eventos": [
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Sul enfrenta dia de ciclone sob alerta vermelho",
+   "local": "Paraná, Santa Catarina e Rio Grande do Sul, Brasil",
+   "data": "2026-11-04",
+   "lat": -25.9,
+   "lon": -52.4,
+   "resumo": "O Sul do Brasil passa esta quarta (4/11) sob alerta vermelho do Inmet para um ciclone extratropical, com chuva acima de 100 mm e rajadas acima de 100 km/h. Na tarde de terça, temporais com granizo já destelharam casas e bloquearam estradas no interior gaúcho.",
+   "pontos": [
+    "Inmet: alerta vermelho para toda Santa Catarina e partes do RS e do PR, das 0h às 23h59 de 4/11.",
+    "MetSul: 50 a 100 mm em muitas cidades do RS, com pontos de 100 a 150 mm no Noroeste, Alto Jacuí, Alto Uruguai, Planalto Médio e Serra.",
+    "Terça (3/11): destelhamentos e árvores caídas em Tapera, Espumoso e Quinze de Novembro; RS-332 bloqueada e granizo por cerca de 10 minutos.",
+    "Paraná: temporais já afetaram cerca de 4 mil pessoas em 21 cidades; Maringá decretou calamidade."
+   ],
+   "fonte": "Inmet e MetSul; Simepar via ND Mais",
+   "url": "https://metsul.com/2026-11-03-tempo-temporal-chuva-vento-granizo-rs/",
+   "rotulo": "Ciclone no Sul",
+   "lado": "r"
+  },
   {
    "id": "murasu",
    "tipo": "ciclone",
@@ -756,44 +779,23 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Alerta vermelho no Sul para ciclone nesta quarta",
-   "local": "Paraná, Santa Catarina e Rio Grande do Sul, Brasil",
-   "data": "2026-11-03",
-   "lat": -25.9,
-   "lon": -52.4,
-   "resumo": "O Inmet emitiu alerta vermelho de grande perigo para toda Santa Catarina e partes do Paraná e do Rio Grande do Sul nesta quarta (4/11). Um ciclone extratropical deve trazer mais de 100 mm de chuva por dia e rajadas acima de 100 km/h.",
-   "pontos": [
-    "Inmet: chuva acima de 60 mm por hora ou 100 mm por dia, rajadas acima de 100 km/h e granizo, das 0h às 23h59 de 4/11.",
-    "No RS, o alerta vermelho cobre Noroeste, Nordeste, Sudeste, Centro Oriental, Centro Ocidental e Sudoeste; no PR, Curitiba, Sudoeste, Sudeste e Centro-Sul.",
-    "Simepar: possíveis supercélulas na quarta; na quinta (5/11) as tempestades sobem para o norte do Paraná.",
-    "Paraná: temporais já afetaram cerca de 4 mil pessoas em 21 cidades; Maringá decretou calamidade."
-   ],
-   "fonte": "Inmet e Simepar via ND Mais e Tribuna do Vale",
-   "url": "https://ndmais.com.br/tempo/ciclone-coloca-tres-estados-em-alerta-vermelho-para-tempestades-com-chuva-acima-de-100-mm-e-ventos-superiores-a-100-km-h/",
-   "rotulo": "Alerta no Sul",
-   "lado": "r"
-  },
-  {
    "id": "four-corners",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Enchentes no Arizona deixam dois mortos em Flagstaff",
-   "local": "Arizona, Novo México, sul do Colorado e Utah, EUA",
+   "titulo": "Enchentes no Sudoeste dos EUA deixam dois mortos",
+   "local": "Arizona, Novo México e sul do Colorado, EUA",
    "data": "2026-11-02",
    "lat": 34.5,
    "lon": -111.5,
    "resumo": "Dois homens foram encontrados mortos em Flagstaff, no Arizona, na manhã de segunda (2/11), após as enchentes. Em Sedona, o Oak Creek teve a maior cheia já vista pelas autoridades locais, e mais de 100 casas foram esvaziadas.",
    "pontos": [
-    "Um homem de 73 anos, de Nova York, caiu na correnteza no domingo (1/11); o segundo foi achado numa área de drenagem. Um homem de 63 anos está desaparecido perto de Castle Hot Springs.",
-    "Oak Creek chegou a cerca de 20 mil pés cúbicos por segundo no domingo; a vazão normal é de 200. Houve seis resgates em telhados em Sedona.",
-    "Ordens de retirada em Camp Verde, Cottonwood, Rim Rock, Clarkdale, Winslow e comunidades do povo White Mountain Apache.",
-    "Mais de 60 resgates no condado de Yavapai; a governadora Katie Hobbs decretou emergência e liberou US$ 200 mil."
+    "Dois homens foram achados mortos em Flagstaff; um homem de 63 anos segue desaparecido perto de Castle Hot Springs.",
+    "Oak Creek chegou a cerca de 20 mil pés cúbicos por segundo no domingo (1/11); a vazão normal é de 200.",
+    "Arizona: emergência estadual (US$ 200 mil) e emergências nos condados de Coconino, Apache e Maricopa e em Sedona; retiradas seguem em Winslow.",
+    "Colorado: o rio San Juan atingiu 16,81 pés em Pagosa Springs, abaixo do recorde de 17,8 pés de 1911."
    ],
-   "fonte": "Polícia de Flagstaff via Arizona Daily Star; KNAU",
-   "url": "https://tucson.com/news/state-regional/article_adc3901b-888c-4fbe-b7d5-2b38491e3f8c.html",
+   "fonte": "Polícia de Flagstaff via Arizona Daily Star; azfamily; Pagosa Springs Sun",
+   "url": "https://www.azfamily.com/2026/11/03/flooding-prompts-state-emergency-declarations-arizona/",
    "rotulo": "Enchente Arizona",
    "lado": "l"
   },
@@ -822,22 +824,43 @@ footer{border-top:1px solid var(--line)}
    "id": "in-fa",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Tufão In-fa segue lento perto de Ogasawara",
-   "local": "Oeste do Pacífico, ao sul das ilhas Ogasawara (Japão)",
+   "titulo": "Tufão In-fa sobe para o norte e deve virar a leste",
+   "local": "Oeste do Pacífico, a oés-sudoeste de Iwo To (Ogasawara, Japão)",
    "data": "2026-11-03",
-   "lat": 22.2,
-   "lon": 141.3,
-   "resumo": "O tufão In-fa segue lento ao sul do Japão e deve se aproximar das ilhas Ogasawara na manhã de quinta (5/11). O mar fica cada vez mais agitado no arquipélago até lá.",
+   "lat": 23.8,
+   "lon": 138.7,
+   "resumo": "O tufão In-fa estava a 285 km a oés-sudoeste de Iwo To, no sul do Japão, às 21h UTC de terça (3/11), andando para o norte. A previsão é que vire para leste e acelere para o nordeste nas próximas 12 horas.",
    "pontos": [
-    "Weathernews (15h no Japão, 3/11): pressão de 975 hPa, ventos de 30 m/s (108 km/h) e rajadas de 45 m/s (162 km/h).",
-    "Chance de ventos de tempestade em Ogasawara nos próximos 5 dias: 14%, segundo a JMA.",
-    "A partir da tarde de 4/11 deve virar para leste e ganhar velocidade, sem tocar a ilha principal.",
-    "Ar úmido e uma frente podem trazer chuva forte a Kanto, Yamanashi e Shizuoka por volta de 5/11."
+    "Ventos de 155 km/h e pressão de 970 hPa; o pico do sistema foi de 235 km/h.",
+    "Deslocamento para o norte a 11 km/h; ondas de até 8,5 m.",
+    "Cisalhamento do vento e mar abaixo de 26 °C devem enfraquecê-lo; deve virar extratropical em cerca de 60 horas.",
+    "Weathernews: ar úmido pode trazer chuva forte a Kanto, Yamanashi e Shizuoka por volta de 5/11."
    ],
-   "fonte": "Weathernews",
-   "url": "https://weathernews.jp/news/202611/030161/",
+   "fonte": "JTWC via Zoom Earth; Weathernews",
+   "url": "https://zoom.earth/storms/in-fa-2026/",
    "rotulo": "Tufão In-fa",
    "lado": "t"
+  },
+  {
+   "id": "chaparral",
+   "tipo": "terremoto",
+   "gravidade": "moderado",
+   "titulo": "Sismo de 5,6 danifica casas em Chaparral, Colômbia",
+   "local": "Chaparral, Tolima, Colômbia",
+   "data": "2026-11-03",
+   "lat": 3.72,
+   "lon": -75.48,
+   "resumo": "Um terremoto de magnitude 5,6 atingiu Chaparral, no Tolima, às 4h13 de terça (3/11), e deixou uma mulher ferida. Uma casa foi destruída na zona rural e outras ficaram danificadas.",
+   "pontos": [
+    "Profundidade menor que 30 km; o SGC recebeu mais de 4.500 relatos de pessoas que sentiram o tremor, sobretudo em Bogotá, Valle del Cauca e Tolima.",
+    "Uma mulher foi atingida por uma parede no bairro Libertador; não houve mortes.",
+    "Em Quimbaya (Quindío), parte da estrutura de uma igreja se desprendeu; em Bogotá houve evacuação de prédios.",
+    "Cinco réplicas de magnitude 2,1 a 3,5 até as 7h25; as escolas do Tolima passaram a aulas virtuais."
+   ],
+   "fonte": "SGC via El Heraldo; Infobae",
+   "url": "https://www.elheraldo.co/colombia/2026/11/03/sismo-de-56-en-chaparral-tolima-una-mujer-herida-y-danos-en-una-iglesia-de-quindio/",
+   "rotulo": "Sismo Colômbia",
+   "lado": "l"
   },
   {
    "id": "frio-sul",
@@ -861,27 +884,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "pagosa",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio San Juan fica abaixo do recorde de 1911",
-   "local": "Pagosa Springs e sudoeste do Colorado, EUA",
-   "data": "2026-11-02",
-   "lat": 37.27,
-   "lon": -107.01,
-   "resumo": "O rio San Juan atingiu o pico de 16,81 pés (5,1 m) em Pagosa Springs, no Colorado, por volta das 23h de domingo (1/11). Ficou cerca de 3 pés abaixo do pior cenário e não superou os 17,8 pés de 1911.",
-   "pontos": [
-    "A previsão do Serviço Nacional de Meteorologia chegou a ser de cerca de 22 pés (6,7 m).",
-    "A única ponte da cidade corre risco; no condado de La Plata, moradores à beira do rio Animas foram retirados e as estradas fechadas.",
-    "No Novo México houve novas retiradas nos condados de San Juan e Rio Arriba.",
-    "Moradores de Pagosa Springs podem votar na eleição de terça (3/11) em qualquer centro de votação do Colorado."
-   ],
-   "fonte": "Pagosa Springs Sun; AP via Click2Houston",
-   "url": "https://www.pagosasun.com/stories/san-juan-river-crests-at-1681-feet,158404",
-   "rotulo": "Cheia Colorado",
-   "lado": "t"
-  },
-  {
    "id": "canarias",
    "tipo": "enchente",
    "gravidade": "moderado",
@@ -901,6 +903,26 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.eldiario.es/canariasahora/tiempo-canarias/canarias-aviso-amarillo-aemet_1_13635261.html",
    "rotulo": "La Palma",
    "lado": "l"
+  },
+  {
+   "id": "sudeste-espanha",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Sudeste da Espanha espera tempestades à noite",
+   "local": "Múrcia, Almería e Alicante, Espanha",
+   "data": "2026-11-04",
+   "lat": 37.6,
+   "lon": -1.3,
+   "resumo": "A Aemet emitiu aviso de perigo importante por chuva forte em Múrcia e no leste de Almería para a noite desta quarta (4/11). Pode chover até 30 mm em uma hora, com trovoadas.",
+   "pontos": [
+    "Campo de Cartagena, Mazarrón, Lorca, Águilas e Levante almeriense: aviso importante das 19h às 23h59, até 30 mm/h.",
+    "Litoral norte de Alicante e sul de Valência: aviso baixo até 14h59, com até 60 mm em 12 horas.",
+    "Mallorca teve avisos de madrugada, com até 20 mm/h no norte e no sul da ilha."
+   ],
+   "fonte": "Aemet via El Cronista",
+   "url": "https://www.cronista.com/espana/actualidad-es/se-aproximan-fuertes-tormentas-el-miercoles-4-de-noviembre-alertan-por-lluvias-intensas-en-murcia-andalucia-y-comunidad-valenciana/",
+   "rotulo": "Chuva Múrcia",
+   "lado": "b"
   },
   {
    "id": "catalunha",
@@ -948,20 +970,20 @@ footer{border-top:1px solid var(--line)}
    "id": "pacifico-central",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Pacífico central pode ter depressão tropical",
+   "titulo": "Baixa EP95 pode virar depressão no Pacífico",
    "local": "Pacífico, bem a lés-sudeste do Havaí",
    "data": "2026-11-03",
    "lat": null,
    "lon": null,
-   "resumo": "O NHC monitora uma área de baixa pressão bem a lés-sudeste do Havaí, com 70% de chance de virar ciclone tropical em 7 dias. Uma depressão tropical deve se formar no meio ou no fim da semana.",
+   "resumo": "O NHC monitora a baixa EP95, bem a lés-sudeste do Havaí, com 70% de chance de virar ciclone tropical em 7 dias. As condições são favoráveis a um desenvolvimento gradual.",
    "pontos": [
-    "Chance de formação: 30% em 48 horas e 70% em 7 dias.",
-    "O sistema se move para oeste ou oés-noroeste a cerca de 16 a 24 km/h.",
-    "No Atlântico, uma baixa a nordeste das Bahamas tem 30% de chance em 7 dias."
+    "Chance de formação: 50% em 48 horas e 70% em 7 dias (boletim das 16h PST de 3/11).",
+    "Ao largo da América Central, um cavado alongado tem 10% em 48 horas e 30% em 7 dias.",
+    "No Atlântico, uma baixa deve se formar a algumas centenas de milhas ao sul das Bermudas: 20% em 48 horas e 40% em 7 dias."
    ],
-   "fonte": "NHC via WeatherNation",
-   "url": "https://www.weathernationtv.com/news/tropics-update-atlantic-system-bears-watching-as-pacific-development-becomes-likely",
-   "rotulo": "Baixa Pacífico",
+   "fonte": "NHC/NOAA",
+   "url": "https://www.nhc.noaa.gov/gtwo.php?basin=cpac&fdays=7",
+   "rotulo": "Baixa EP95",
    "lado": "t"
   }
  ]
@@ -1321,6 +1343,8 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
+
 
 
 
