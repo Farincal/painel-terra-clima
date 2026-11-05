@@ -21,73 +21,6 @@
 <meta property="og:image:alt" content="Painel Terra e Clima: mapa-múndi escuro com o Pacífico aquecido pelo El Niño">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://farincaltec.com/#org","name":"FarincalTec","url":"https://farincaltec.com","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://farincal.github.io/painel-terra-clima/#site","name":"Painel Terra e Clima","url":"https://farincal.github.io/painel-terra-clima/","inLanguage":"pt-BR","description":"Plantão de fenômenos naturais e monitoramento do El Niño 2026–27, em português.","publisher":{"@id":"https://farincaltec.com/#org"}}]}</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -733,31 +666,72 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-04T16:30:00+01:00",
- "manchete": "o sul do brasil conta estragos sob alerta vermelho, almería entra em aviso laranja e enchentes matam duas pessoas na flórida",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-11-05T10:30:00+01:00",
+ "manchete": "o sul do brasil segue sob alerta de temporais, o tufão in-fa perde força no pacífico e o mayon libera mais gás",
  "eventos": [
   {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Ciclone deixa 12,5 mil afetados no RS e alerta vermelho no Sul",
+   "titulo": "Temporais afetam mais de 47 mil no RS; Paraná teve alerta vermelho",
    "local": "Paraná, Santa Catarina e Rio Grande do Sul, Brasil",
-   "data": "2026-11-04",
+   "data": "2026-11-05",
    "lat": -25.9,
    "lon": -52.4,
-   "resumo": "Os temporais do ciclone extratropical afetaram 12.528 pessoas em 62 cidades do Rio Grande do Sul entre a noite de terça (3/11) e a manhã desta quarta (4/11). O Inmet mantém alerta vermelho para todo o estado de Santa Catarina e partes do RS e do PR até o fim do dia.",
+   "resumo": "Os temporais desde domingo (1º/11) já afetaram 47.096 pessoas no Rio Grande do Sul, segundo a Defesa Civil. No Paraná, 78 cidades ficaram em alerta vermelho do Inmet na quarta (4/11), com risco de ventos acima de 100 km/h.",
    "pontos": [
-    "Defesa Civil do RS (11h de 4/11): 64 ocorrências, 926 casas danificadas, 451 destelhadas, 4 feridos e 51 desalojados; nenhuma morte.",
-    "Mais afetadas no RS: Passa Sete (4.132 pessoas), Porto Vera Cruz (1.560) e Passo Fundo (1.360, com 335 casas danificadas por granizo).",
-    "Inmet: alerta vermelho nos 295 municípios de SC, com chuva acima de 100 mm em 24 horas e rajadas acima de 100 km/h.",
-    "Paraná: o Simepar confirmou tornado F2 em Maringá na segunda (2/11), com ventos de 180 a 250 km/h."
+    "Defesa Civil do RS (fim da tarde de 4/11): danos em 102 municípios, 24 feridos e nenhuma morte; 93 desabrigados e 234 desalojados.",
+    "Casas: 6.373 danificadas, 2.079 destelhadas e 10 destruídas; em Nova Prata, cerca de 2.700 casas foram danificadas pelo granizo.",
+    "Rio Jacuí: a Defesa Civil emitiu alerta de inundação com risco muito alto em Dona Francisca às 21h35 de 4/11.",
+    "Inmet: alerta laranja nesta quinta (5/11) no PR, em SP e no MS, com até 100 mm no dia, ventos de 100 km/h e granizo."
    ],
-   "fonte": "Defesa Civil do RS via Rádio Progresso; Inmet e Simepar via SBT News",
-   "url": "https://radioprogresso.com.br/defesa-civil-registra-64-ocorrencias-em-62-municipios-apos-temporal-no-estado/",
-   "rotulo": "Ciclone no Sul",
+   "fonte": "Defesa Civil do RS via Agora RS e Mixvale; Inmet via CNN Brasil",
+   "url": "https://agorars.com/agora-no-tempo/chega-a-47-mil-numero-de-pessoas-afetadas-pelos-temporais-no-rs/",
+   "rotulo": "Temporais no Sul",
    "lado": "r"
+  },
+  {
+   "id": "in-fa",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Tufão In-fa perde força e vira para o nordeste",
+   "local": "Oeste do Pacífico, a oeste de Chichi Jima (Ogasawara, Japão)",
+   "data": "2026-11-04",
+   "lat": 27.0,
+   "lon": 138.5,
+   "resumo": "O tufão In-fa estava a 367 km a oeste de Chichi Jima, no sul do Japão, na noite de quarta (4/11), com ventos de 140 km/h. Ele deve virar para o nordeste, acelerar e virar extratropical em cerca de 36 horas.",
+   "pontos": [
+    "Ventos de 140 km/h e pressão de 978 hPa às 18h UTC de 4/11; o pico do sistema foi de 235 km/h.",
+    "Andou para o norte a 22 km/h nas últimas 6 horas; ondas de até 9,1 m.",
+    "Previsão: 130 km/h às 6h UTC e 120 km/h às 18h UTC de quinta (5/11).",
+    "Pagasa: está a 1.780 km a leste do norte de Luzon e pode não entrar na área filipina."
+   ],
+   "fonte": "JTWC via Zoom Earth; Pagasa via Philstar",
+   "url": "https://zoom.earth/storms/in-fa-2026/",
+   "rotulo": "Tufão In-fa",
+   "lado": "t"
+  },
+  {
+   "id": "sudeste-espanha",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Chuva segue no Levante: avisos em Alicante, Castellón e Ibiza",
+   "local": "Alicante, Castellón, Ibiza e Formentera, Espanha",
+   "data": "2026-11-05",
+   "lat": 38.6,
+   "lon": 0.2,
+   "resumo": "A Aemet mantém avisos amarelos de chuva nesta quinta (5/11) em Alicante, Castellón, Ibiza e Formentera. Na quarta, o Levante almeriense esteve em aviso laranja, com até 30 mm em uma hora.",
+   "pontos": [
+    "Litoral sul de Alicante: aviso amarelo até 5h59, com até 30 mm em uma hora.",
+    "Castellón: aviso amarelo das 6h às 22h; a província de Valência fica sem avisos.",
+    "Ibiza e Formentera: aviso amarelo até 14h59, com até 20 mm em uma hora e possíveis trovoadas.",
+    "A chuva deve diminuir à tarde; sexta deve ser praticamente sem chuva."
+   ],
+   "fonte": "Aemet via El Periódico de Aquí, La Voz de Ibiza e El Debate",
+   "url": "https://www.elperiodicodeaqui.com/tiempo-comunitat-valenciana/tiempo-hara-este-jueves-5-noviembre-en-comunitat-valenciana-avisos-amarillos-por-lluvias-en-alicante-castellon_100123496_102.html",
+   "rotulo": "Chuva Levante",
+   "lado": "b"
   },
   {
    "id": "murasu",
@@ -778,6 +752,27 @@ footer{border-top:1px solid var(--line)}
    "fonte": "IMD e autoridade de desastres de Andhra Pradesh via NetNewsLedger",
    "url": "https://www.netnewsledger.com/2026/11/04/cyclone-murasu-toll-emerges-as-inland-flood-risk-lingers-in-southern-india/",
    "rotulo": "Ciclone Murasu",
+   "lado": "l"
+  },
+  {
+   "id": "four-corners",
+   "tipo": "enchente",
+   "gravidade": "critico",
+   "titulo": "Enchentes no Sudoeste dos EUA deixam dois mortos",
+   "local": "Arizona, Novo México e sul do Colorado, EUA",
+   "data": "2026-11-02",
+   "lat": 34.5,
+   "lon": -111.5,
+   "resumo": "Dois homens foram encontrados mortos em Flagstaff, no Arizona, na manhã de segunda (2/11), após as enchentes. Em Sedona, o Oak Creek teve a maior cheia já vista pelas autoridades locais, e mais de 100 casas foram esvaziadas.",
+   "pontos": [
+    "Dois homens foram achados mortos em Flagstaff; um homem de 63 anos segue desaparecido perto de Castle Hot Springs.",
+    "Oak Creek chegou a cerca de 20 mil pés cúbicos por segundo no domingo (1/11); a vazão normal é de 200.",
+    "Flagstaff teve 131 mm em dois dias, o 1º de novembro mais chuvoso já registrado; Workman Creek somou 185 mm.",
+    "No Novo México, os rios San Juan, Animas e La Plata já atingiram o pico e estão baixando; centenas de retirados voltam para casa."
+   ],
+   "fonte": "Polícia de Flagstaff via Arizona Daily Star; AP via ABC News; azfamily",
+   "url": "https://www.azfamily.com/2026/11/03/flooding-prompts-state-emergency-declarations-arizona/",
+   "rotulo": "Enchente Arizona",
    "lado": "l"
   },
   {
@@ -802,88 +797,46 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "four-corners",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Enchentes no Sudoeste dos EUA deixam dois mortos",
-   "local": "Arizona, Novo México e sul do Colorado, EUA",
-   "data": "2026-11-02",
-   "lat": 34.5,
-   "lon": -111.5,
-   "resumo": "Dois homens foram encontrados mortos em Flagstaff, no Arizona, na manhã de segunda (2/11), após as enchentes. Em Sedona, o Oak Creek teve a maior cheia já vista pelas autoridades locais, e mais de 100 casas foram esvaziadas.",
-   "pontos": [
-    "Dois homens foram achados mortos em Flagstaff; um homem de 63 anos segue desaparecido perto de Castle Hot Springs.",
-    "Oak Creek chegou a cerca de 20 mil pés cúbicos por segundo no domingo (1/11); a vazão normal é de 200.",
-    "Flagstaff teve 131 mm em dois dias, o 1º de novembro mais chuvoso já registrado; Workman Creek somou 185 mm.",
-    "Novo México e Colorado pediram declaração federal de desastre; o rio San Juan pode ter pico no Novo México até quarta (4/11)."
-   ],
-   "fonte": "Polícia de Flagstaff via Arizona Daily Star; AP via PBS; azfamily",
-   "url": "https://www.azfamily.com/2026/11/03/flooding-prompts-state-emergency-declarations-arizona/",
-   "rotulo": "Enchente Arizona",
-   "lado": "l"
-  },
-  {
    "id": "mayon",
    "tipo": "vulcao",
    "gravidade": "alto",
    "titulo": "Phivolcs alerta para erupção mais forte do Mayon",
    "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-03",
+   "data": "2026-11-05",
    "lat": 13.26,
    "lon": 123.69,
    "resumo": "O Phivolcs avisa que o vulcão Mayon, nas Filipinas, pode ter uma erupção mais forte por sinais de magma novo. O alerta segue no nível 3, com cinzas caindo de novo em cidades a sudoeste.",
    "pontos": [
-    "Coluna de fumaça escura de 1.600 m num episódio estromboliano de três minutos na terça (3/11).",
-    "Emissão de dióxido de enxofre: 1.930 toneladas em 24 horas.",
+    "Boletim de 5/11: 17 sismos vulcânicos e 1 desmoronamento em 24 horas; brilho na cratera visível a olho nu.",
+    "Dióxido de enxofre: 2.127 toneladas em 24 horas em 4/11 (eram 1.930 antes); o edifício do vulcão segue inflado.",
     "Cinzas em Daraga, Camalig e Guinobatan; zona de perigo de 6 km segue proibida.",
     "3.903 pessoas de 1.083 famílias estavam em abrigos até o meio-dia de terça."
    ],
-   "fonte": "Phivolcs via GMA News; Daily Tribune",
+   "fonte": "Phivolcs (boletim de 5/11); GMA News; Daily Tribune",
    "url": "https://www.gmanetwork.com/news/topstories/regions/1008182/phivolcs-warns-of-stronger-eruption-by-mayon-volcano/story/",
    "rotulo": "Vulcão Mayon",
    "lado": "r"
   },
   {
-   "id": "in-fa",
+   "id": "pacifico-central",
    "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Tufão In-fa sobe para o norte e deve virar a leste",
-   "local": "Oeste do Pacífico, a oés-sudoeste de Iwo To (Ogasawara, Japão)",
-   "data": "2026-11-03",
-   "lat": 23.8,
-   "lon": 138.7,
-   "resumo": "O tufão In-fa estava a 285 km a oés-sudoeste de Iwo To, no sul do Japão, às 21h UTC de terça (3/11), andando para o norte. A previsão é que vire para leste e acelere para o nordeste nas próximas 12 horas.",
-   "pontos": [
-    "Ventos de 155 km/h e pressão de 970 hPa; o pico do sistema foi de 235 km/h.",
-    "Deslocamento para o norte a 11 km/h; ondas de até 8,5 m, com mar agitado esperado nas ilhas Ogasawara.",
-    "Cisalhamento do vento e mar abaixo de 26 °C devem enfraquecê-lo; deve virar extratropical em cerca de 60 horas.",
-    "Weathernews: ar úmido pode trazer chuva forte a Kanto, Yamanashi e Shizuoka por volta de 5/11."
-   ],
-   "fonte": "JTWC via Zoom Earth; Weathernews",
-   "url": "https://zoom.earth/storms/in-fa-2026/",
-   "rotulo": "Tufão In-fa",
-   "lado": "t"
-  },
-  {
-   "id": "sudeste-espanha",
-   "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Aviso laranja de chuva em Almería e Múrcia à noite",
-   "local": "Múrcia, Almería e Alicante, Espanha",
+   "titulo": "EP95 deve virar depressão; Atlântico pode ter Kyle",
+   "local": "Pacífico, bem a lés-sudeste do Havaí",
    "data": "2026-11-04",
-   "lat": 37.6,
-   "lon": -1.3,
-   "resumo": "A Aemet antecipou para as 16h desta quarta (4/11) o aviso laranja por chuva forte no Levante almeriense, que vai até a meia-noite. Múrcia também tem aviso de perigo importante à noite, com até 30 mm em uma hora.",
+   "lat": null,
+   "lon": null,
+   "resumo": "O NHC dá 70% de chance de a baixa EP95, bem a lés-sudeste do Havaí, virar ciclone tropical em 7 dias. No Atlântico, uma baixa ao sul das Bermudas pode virar a tempestade subtropical Kyle.",
    "pontos": [
-    "Levante almeriense: aviso laranja das 16h às 23h59, com 30 mm em uma hora e até 60 mm em 12 horas.",
-    "Campo de Cartagena, Mazarrón, Lorca e Águilas: aviso importante das 19h às 23h59, até 30 mm/h.",
-    "Poniente almeriense, Almería capital e costa de Granada: aviso amarelo das 15h às 21h, 15 mm/h.",
-    "Estreito de Gibraltar e Ceuta: aviso amarelo por tempestades até 16h59."
+    "EP95: 50% em 48 horas e 70% em 7 dias; anda para oeste-noroeste a 16–24 km/h.",
+    "Ao largo da América Central: chance caiu para 10% em 48 horas e 30% em 7 dias; ainda há risco de chuva forte até o fim de semana.",
+    "Atlântico, a algumas centenas de km ao sul das Bermudas: 20% em 48 horas e 40% em 7 dias.",
+    "NHC (2h55 UTC de 5/11): não há ciclones tropicais ativos no Atlântico nem no Pacífico Leste e Central."
    ],
-   "fonte": "Aemet via El Mira e El Cronista",
-   "url": "https://www.elmira.es/articulo/andalucia/aviso-naranja-almeria-tormentas-estrecho-zonas-andalucia-alerta-lluvia-miercoles/20261104105308626549.html",
-   "rotulo": "Chuva Múrcia",
-   "lado": "b"
+   "fonte": "NHC/NOAA (boletins de 4 e 5/11)",
+   "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7",
+   "rotulo": "Baixa EP95",
+   "lado": "t"
   },
   {
    "id": "chaparral",
@@ -968,30 +921,9 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.infobae.com/politica/2026/11/02/el-nino-yacyreta-mantiene-interrumpido-el-paso-entre-argentina-y-paraguay-y-se-incrementa-la-cantidad-de-auto-evacuados-en-corrientes/",
    "rotulo": "Cheia Argentina",
    "lado": "l"
-  },
-  {
-   "id": "pacifico-central",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "EP95 deve virar depressão; Atlântico pode ter Kyle",
-   "local": "Pacífico, bem a lés-sudeste do Havaí",
-   "data": "2026-11-04",
-   "lat": null,
-   "lon": null,
-   "resumo": "O NHC dá 70% de chance de a baixa EP95, bem a lés-sudeste do Havaí, virar ciclone tropical em 7 dias. No Atlântico, uma baixa ao sul das Bermudas pode virar a tempestade subtropical Kyle.",
-   "pontos": [
-    "EP95: 50% em 48 horas e 70% em 7 dias; anda para oeste a 16–24 km/h.",
-    "Ao largo da América Central: 20% em 48 horas e 40% em 7 dias, com risco de chuva forte na região até o fim de semana.",
-    "Atlântico, ao sul das Bermudas: 20% em 48 horas e 40% em 7 dias; Bermudas podem ter ondas altas e rajadas."
-   ],
-   "fonte": "NHC/NOAA (boletins das 22h PST de 3/11 e 1h EST de 4/11); weather.com",
-   "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7",
-   "rotulo": "Baixa EP95",
-   "lado": "t"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1346,10 +1278,6 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
-
-
-
 
 
 
