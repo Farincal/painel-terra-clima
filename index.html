@@ -25,6 +25,8 @@
 
 
 
+
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -670,11 +672,31 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-05T16:30:00+01:00",
- "manchete": "o sul do brasil soma quase 50 mil afetados por temporais, o tufão in-fa vira extratropical e o nhc vigia três sistemas",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-11-06T04:45:00+01:00",
+ "manchete": "o nhc dá 90% de chance de depressão a sudeste do havaí, o rio uruguai ameaça iraí (rs) e uma borrasca atlântica chega à espanha no sábado",
  "eventos": [
+  {
+   "id": "pacifico-central",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Depressão deve se formar a sudeste do Havaí",
+   "local": "Pacífico, bem a lés-sudeste do Havaí",
+   "data": "2026-11-05",
+   "lat": null,
+   "lon": null,
+   "resumo": "O Centro de Furacões do Pacífico Central dá 90% de chance de a baixa CP95 virar depressão tropical, possivelmente já nesta sexta (6/11). O sistema deve passar bem ao sul do Havaí.",
+   "pontos": [
+    "CP95: 90% em 48 horas e 90% em 7 dias (eram 60% e 70%); anda para oeste a 16–24 km/h.",
+    "Ao largo da América Central: 40% em 48 horas e 40% em 7 dias; chuva forte possível na região até o fim de semana.",
+    "Atlântico, ao sul das Bermudas: baixa com ventos de vendaval; 30% em 48 horas e 40% em 7 dias de virar a tempestade subtropical Kyle.",
+    "Não há ciclones tropicais ativos no Atlântico nem no Pacífico Leste e Central."
+   ],
+   "fonte": "NHC/CPHC (boletins da tarde de 5/11)",
+   "url": "https://www.nhc.noaa.gov/gtwo.php?basin=cpac&fdays=7",
+   "rotulo": "Baixa CP95",
+   "lado": "t"
+  },
   {
    "id": "rs",
    "tipo": "enchente",
@@ -686,57 +708,98 @@ footer{border-top:1px solid var(--line)}
    "lon": -52.4,
    "resumo": "Os temporais desde domingo (1º/11) já afetaram 49.909 pessoas em 123 municípios do Rio Grande do Sul, segundo a Defesa Civil. Há 25 feridos e um desaparecido, sem registro de mortes.",
    "pontos": [
-    "Defesa Civil do RS (9h de 5/11): 93 desabrigados e 235 desalojados; dados ainda em validação.",
-    "Casas: 6.496 danificadas, 2.140 destelhadas, 107 alagadas e 10 destruídas; 87 escolas danificadas.",
-    "Nova Prata concentra 15 feridos e 2.700 casas danificadas; Espumoso tem 15.201 afetados.",
-    "Em Santa Catarina, um tornado atingiu Chapecó na quarta (4/11) e suspendeu voos no aeroporto."
+    "Defesa Civil do RS (9h de 5/11): 93 desabrigados e 235 desalojados; 6.496 casas danificadas e 10 destruídas.",
+    "Rio Uruguai: risco muito alto de inundação em Iraí (alerta das 7h26 de 5/11); Jacuí em risco muito alto em Dona Francisca.",
+    "Previsão: temporais isolados com granizo no extremo norte do RS na tarde de sexta (6/11) e na madrugada de sábado (7/11).",
+    "Em Santa Catarina, tornados em Chapecó e Xanxerê na quarta (4/11); 13 municípios em situação de emergência."
    ],
-   "fonte": "Defesa Civil do RS via Brasil de Fato e Diário RS",
+   "fonte": "Defesa Civil do RS (avisos e boletim de 4–5/11); Brasil de Fato; TV Sim",
    "url": "https://www.brasildefato.com.br/2026/11/05/temporais-deixam-25-feridos-um-desaparecido-e-quase-50-mil-afetados-no-rs/",
    "rotulo": "Temporais no Sul",
    "lado": "r"
   },
   {
-   "id": "in-fa",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Tufão In-fa enfraquece e começa a virar extratropical",
-   "local": "Oeste do Pacífico, a oeste de Chichi Jima (Ogasawara, Japão)",
-   "data": "2026-11-05",
-   "lat": 29.4,
-   "lon": 141.5,
-   "resumo": "O tufão In-fa avança para o norte longe da costa do Japão e começa a perder as características tropicais. A transição para ciclone extratropical deve terminar em cerca de 36 horas.",
-   "pontos": [
-    "Ventos de 140 km/h e pressão de 978 hPa às 18h UTC de 4/11; o pico do sistema foi de 235 km/h.",
-    "Andou para o norte a 22 km/h; ondas de até 9,1 m.",
-    "Previsão: 130 km/h às 6h UTC de 5/11 e 110 km/h às 6h UTC de 6/11, já como extratropical.",
-    "GDACS mantém alerta verde: o sistema segue sobre o mar, sem impacto em terra."
-   ],
-   "fonte": "JTWC via Zoom Earth; GDACS",
-   "url": "https://zoom.earth/storms/in-fa-2026/",
-   "rotulo": "Tufão In-fa",
-   "lado": "t"
-  },
-  {
    "id": "sudeste-espanha",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Chuva perde força no Mediterrâneo; borrasca chega no sábado",
-   "local": "Ilhas Baleares e leste da Espanha",
-   "data": "2026-11-05",
-   "lat": 39.6,
-   "lon": 2.9,
-   "resumo": "Nesta quinta (5/11), a Aemet manteve aviso por chuva só nas Ilhas Baleares, com pancadas fortes também no litoral sudeste. A partir de sábado, uma borrasca atlântica profunda deve levar chuva a quase toda a Espanha até segunda.",
+   "titulo": "Borrasca atlântica traz chuva forte à Espanha",
+   "local": "Oeste e centro da Espanha",
+   "data": "2026-11-06",
+   "lat": 40.4,
+   "lon": -6.0,
+   "resumo": "Uma borrasca atlântica profunda muda o tempo na Espanha a partir de sábado (7/11), com chuva forte e persistente no oeste. Os maiores acumulados devem vir a partir de segunda (9/11).",
    "pontos": [
-    "Aemet: chuva com trovoadas, forte ou localmente muito forte nas Baleares e no litoral sudeste nesta quinta.",
-    "Neve nos Pirineus acima de 1.700 a 1.900 m.",
-    "No fim de semana, as mínimas sobem até 8 °C e as geadas somem.",
-    "Canárias também devem ter chuva abundante com as borrascas do fim de semana."
+    "Sexta (6/11): tempo estável, com chuva à tarde na Galícia e máximas acima de 20 °C no Mediterrâneo.",
+    "Sábado: vento sul e mínimas até 8 °C mais altas no norte; as geadas somem.",
+    "Aemet: chuva forte e persistente na Galícia, norte da Extremadura, sul de Castela e Leão, norte de Madri e oeste da Andaluzia.",
+    "Cantábrico e litoral mediterrâneo, incluindo a Catalunha, devem ficar fora do pior da chuva."
    ],
-   "fonte": "Aemet via elDiario.es",
-   "url": "https://www.eldiario.es/sociedad/el-tiempo/cambio-tiempo-llegada-borrascas-dejaran-lluvias-espana-partir-semana-pm_1_13637975.html",
-   "rotulo": "Baleares",
+   "fonte": "Aemet via Infobae",
+   "url": "https://www.infobae.com/espana/2026/11/05/la-llegada-de-una-borrasca-atlantica-traera-un-nuevo-cambio-de-tiempo-a-espana-la-aemet-preve-lluvias-y-una-subida-de-las-temperaturas/",
+   "rotulo": "Borrasca Espanha",
    "lado": "b"
+  },
+  {
+   "id": "canarias",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Aemet alerta para chuva muito forte nas Canárias",
+   "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
+   "data": "2026-11-06",
+   "lat": 28.68,
+   "lon": -17.76,
+   "resumo": "A Aemet emitiu nota informativa especial por chuva forte ou muito forte e trovoadas nas Canárias a partir desta sexta (6/11). A piora maior deve vir no fim do sábado, nas ilhas ocidentais.",
+   "pontos": [
+    "Sexta: chuva forte no oeste, sobretudo em La Palma; possível em Tenerife, La Gomera e El Hierro.",
+    "Fim do sábado (7/11): pancadas fortes ou muito fortes com trovoadas; temporal no mar até domingo.",
+    "Domingo (8/11): pancadas se espalham por todo o arquipélago; risco de alagamentos em áreas baixas.",
+    "No episódio anterior, o leste de La Palma recebeu 138 mm em 12 horas."
+   ],
+   "fonte": "Aemet via Diario de Avisos",
+   "url": "https://diariodeavisos.elespanol.com/2026/11/aemet-temporal-lluvias-fuertes-tormentas-canarias-noviembre/",
+   "rotulo": "La Palma",
+   "lado": "l"
+  },
+  {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Phivolcs alerta para erupção mais forte do Mayon",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-11-05",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O Phivolcs avisa que o vulcão Mayon, nas Filipinas, pode ter uma erupção mais forte por sinais de magma novo. O alerta segue no nível 3, com cinzas caindo de novo em cidades a sudoeste.",
+   "pontos": [
+    "Boletim de 5/11: 17 sismos vulcânicos e 1 desmoronamento em 24 horas; brilho na cratera visível a olho nu.",
+    "Dióxido de enxofre: 2.127 toneladas em 24 horas em 4/11 (eram 1.930 antes); o edifício do vulcão segue inflado.",
+    "Cinzas em Daraga, Camalig e Guinobatan; zona de perigo de 6 km segue proibida.",
+    "3.903 pessoas de 1.083 famílias estavam em abrigos até o meio-dia de terça."
+   ],
+   "fonte": "Phivolcs (boletim de 5/11); GMA News; Daily Tribune",
+   "url": "https://www.gmanetwork.com/news/topstories/regions/1008182/phivolcs-warns-of-stronger-eruption-by-mayon-volcano/story/",
+   "rotulo": "Vulcão Mayon",
+   "lado": "r"
+  },
+  {
+   "id": "in-fa",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Tufão In-fa vira ciclone extratropical sobre o mar",
+   "local": "Oeste do Pacífico, a oeste de Chichi Jima (Ogasawara, Japão)",
+   "data": "2026-11-06",
+   "lat": 29.4,
+   "lon": 141.5,
+   "resumo": "O In-fa termina a transição para ciclone extratropical longe da costa do Japão. O GDACS encerrou o acompanhamento às 6h UTC de 5/11, sem impacto em terra.",
+   "pontos": [
+    "Previsão do JTWC: ventos de 110 km/h às 6h UTC de 6/11, já como extratropical.",
+    "O pico do sistema foi de cerca de 240 km/h, na categoria 4.",
+    "GDACS: alerta verde e nenhuma pessoa exposta a ventos de categoria 1 ou mais."
+   ],
+   "fonte": "JTWC via Zoom Earth; GDACS",
+   "url": "https://zoom.earth/storms/in-fa-2026/",
+   "rotulo": "Ex-tufão In-fa",
+   "lado": "t"
   },
   {
    "id": "murasu",
@@ -757,27 +820,6 @@ footer{border-top:1px solid var(--line)}
    "fonte": "IMD e autoridade de desastres de Andhra Pradesh via NetNewsLedger",
    "url": "https://www.netnewsledger.com/2026/11/04/cyclone-murasu-toll-emerges-as-inland-flood-risk-lingers-in-southern-india/",
    "rotulo": "Ciclone Murasu",
-   "lado": "l"
-  },
-  {
-   "id": "four-corners",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Enchentes no Sudoeste dos EUA deixam dois mortos",
-   "local": "Arizona, Novo México e sul do Colorado, EUA",
-   "data": "2026-11-02",
-   "lat": 34.5,
-   "lon": -111.5,
-   "resumo": "Dois homens foram encontrados mortos em Flagstaff, no Arizona, na manhã de segunda (2/11), após as enchentes. Em Sedona, o Oak Creek teve a maior cheia já vista pelas autoridades locais, e mais de 100 casas foram esvaziadas.",
-   "pontos": [
-    "Dois homens foram achados mortos em Flagstaff; um homem de 63 anos segue desaparecido perto de Castle Hot Springs.",
-    "Oak Creek chegou a cerca de 20 mil pés cúbicos por segundo no domingo (1/11); a vazão normal é de 200.",
-    "Flagstaff teve 131 mm em dois dias, o 1º de novembro mais chuvoso já registrado; Workman Creek somou 185 mm.",
-    "No Novo México, os rios San Juan, Animas e La Plata já atingiram o pico e estão baixando; centenas de retirados voltam para casa."
-   ],
-   "fonte": "Polícia de Flagstaff via Arizona Daily Star; AP via ABC News; azfamily",
-   "url": "https://www.azfamily.com/2026/11/03/flooding-prompts-state-emergency-declarations-arizona/",
-   "rotulo": "Enchente Arizona",
    "lado": "l"
   },
   {
@@ -802,46 +844,45 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "mayon",
-   "tipo": "vulcao",
+   "id": "nevada",
+   "tipo": "incendio",
    "gravidade": "alto",
-   "titulo": "Phivolcs alerta para erupção mais forte do Mayon",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-05",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O Phivolcs avisa que o vulcão Mayon, nas Filipinas, pode ter uma erupção mais forte por sinais de magma novo. O alerta segue no nível 3, com cinzas caindo de novo em cidades a sudoeste.",
+   "titulo": "Incêndios ao norte de Reno forçam 6 mil a sair",
+   "local": "Norte de Reno, Nevada, EUA",
+   "data": "2026-11-03",
+   "lat": 39.85,
+   "lon": -119.85,
+   "resumo": "Os incêndios Bug e Fred Mountain, ao norte de Reno, em Nevada, já forçaram mais de 6 mil pessoas a deixar suas casas. As chamas ameaçam comunidades da região.",
    "pontos": [
-    "Boletim de 5/11: 17 sismos vulcânicos e 1 desmoronamento em 24 horas; brilho na cratera visível a olho nu.",
-    "Dióxido de enxofre: 2.127 toneladas em 24 horas em 4/11 (eram 1.930 antes); o edifício do vulcão segue inflado.",
-    "Cinzas em Daraga, Camalig e Guinobatan; zona de perigo de 6 km segue proibida.",
-    "3.903 pessoas de 1.083 famílias estavam em abrigos até o meio-dia de terça."
+    "Mais de 6.000 pessoas retiradas.",
+    "Área queimada: 23.458 hectares.",
+    "Contenção de 0% no boletim de 3/11."
    ],
-   "fonte": "Phivolcs (boletim de 5/11); GMA News; Daily Tribune",
-   "url": "https://www.gmanetwork.com/news/topstories/regions/1008182/phivolcs-warns-of-stronger-eruption-by-mayon-volcano/story/",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
+   "fonte": "The Watchers",
+   "url": "https://watchers.news/2026/11/03/more-than-6-000-evacuated-as-bug-and-fred-mountain-fires-threaten-communities-north-of-reno-nevada/",
+   "rotulo": "Fogo em Nevada",
+   "lado": "l"
   },
   {
-   "id": "pacifico-central",
-   "tipo": "ciclone",
+   "id": "frio-sul",
+   "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "EP95 deve virar depressão; Atlântico pode ter Kyle",
-   "local": "Pacífico, bem a lés-sudeste do Havaí",
-   "data": "2026-11-05",
-   "lat": null,
-   "lon": null,
-   "resumo": "O NHC dá 70% de chance de a baixa EP95, bem a sudeste do Havaí, virar ciclone tropical em 7 dias. No Atlântico, a chance de uma baixa ao sul das Bermudas virar a tempestade subtropical Kyle subiu para 50%.",
+   "titulo": "Chuva mata duas pessoas em Minas Gerais",
+   "local": "Belo Horizonte, Rio de Janeiro e Sudeste do Brasil",
+   "data": "2026-11-03",
+   "lat": -19.92,
+   "lon": -43.94,
+   "resumo": "A Defesa Civil de Minas Gerais confirmou as duas primeiras mortes por chuva da temporada, uma delas um motociclista arrastado pela enxurrada em Belo Horizonte na segunda (2/11). No estado, cerca de 218 mil pessoas foram afetadas.",
    "pontos": [
-    "EP95: 60% em 48 horas e 70% em 7 dias; anda para oeste-noroeste a 16–24 km/h.",
-    "Ao largo da América Central: 40% em 48 horas e 60% em 7 dias; pode virar depressão no fim de semana, com chuva forte.",
-    "Atlântico, algumas centenas de km ao sul das Bermudas: 30% em 48 horas e 50% em 7 dias.",
-    "NHC (14h43 UTC de 5/11): não há ciclones tropicais ativos no Atlântico nem no Pacífico Leste e Central."
+    "Mortes: um homem em Guarará (Zona da Mata) em 30/10 e um motociclista no bairro Camargos, em BH, em 2/11.",
+    "41 ocorrências em 37 cidades; mais de mil desalojados e 64 desabrigados.",
+    "Defesa Civil de SP alerta para temporais de 5 a 7/11; o Inmet tem alerta laranja para a capital paulista.",
+    "BH: o Barreiro já recebeu 283,1 mm em outubro, 257% da média."
    ],
-   "fonte": "NHC/NOAA (boletins de 4 e 5/11)",
-   "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7",
-   "rotulo": "Baixa EP95",
-   "lado": "t"
+   "fonte": "Defesa Civil de MG via O Tempo; Defesa Civil de SP e Inmet via TV Sim",
+   "url": "https://www.otempo.com.br/cidades/2026/11/3/apos-morte-de-motociclista-em-bh-defesa-civil-confirma-primeiros-obitos-por-chuva-em-mg",
+   "rotulo": "Chuva em MG",
+   "lado": "r"
   },
   {
    "id": "chaparral",
@@ -862,48 +903,6 @@ footer{border-top:1px solid var(--line)}
    "fonte": "SGC via El Heraldo; Infobae",
    "url": "https://www.elheraldo.co/colombia/2026/11/03/sismo-de-56-en-chaparral-tolima-una-mujer-herida-y-danos-en-una-iglesia-de-quindio/",
    "rotulo": "Sismo Colômbia",
-   "lado": "l"
-  },
-  {
-   "id": "frio-sul",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Chuva mata duas pessoas em Minas Gerais",
-   "local": "Belo Horizonte, Rio de Janeiro e Sudeste do Brasil",
-   "data": "2026-11-03",
-   "lat": -19.92,
-   "lon": -43.94,
-   "resumo": "A Defesa Civil de Minas Gerais confirmou as duas primeiras mortes por chuva da temporada, uma delas um motociclista arrastado pela enxurrada em Belo Horizonte na segunda (2/11). No estado, cerca de 218 mil pessoas foram afetadas.",
-   "pontos": [
-    "Mortes: um homem em Guarará (Zona da Mata) em 30/10 e um motociclista no bairro Camargos, em BH, em 2/11.",
-    "41 ocorrências em 37 cidades; mais de mil desalojados e 64 desabrigados.",
-    "Inmet: alerta de tempestade para 2.474 cidades na segunda (2/11), incluindo BH, São Paulo, Rio e Curitiba.",
-    "BH: o Barreiro já recebeu 283,1 mm em outubro, 257% da média."
-   ],
-   "fonte": "Defesa Civil de MG via O Tempo; Inmet via O Tempo",
-   "url": "https://www.otempo.com.br/cidades/2026/11/3/apos-morte-de-motociclista-em-bh-defesa-civil-confirma-primeiros-obitos-por-chuva-em-mg",
-   "rotulo": "Chuva em MG",
-   "lado": "r"
-  },
-  {
-   "id": "canarias",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Aviso amarelo de chuva em todas as Canárias",
-   "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
-   "data": "2026-11-03",
-   "lat": 28.68,
-   "lon": -17.76,
-   "resumo": "A Aemet colocou todas as ilhas Canárias em aviso amarelo por chuva forte nesta quarta (4/11), das 11h às 19h59. O arquipélago segue em pré-alerta do governo regional desde terça.",
-   "pontos": [
-    "Aemet: até 15 mm em uma hora, sobretudo no interior das ilhas, com trovoadas e possível neve no pico do Teide.",
-    "Cerca de 100 ocorrências desde o início do episódio, coordenadas pelo 112, sobretudo em Tenerife: falta de luz, alagamentos e quedas de pedras.",
-    "Leste de La Palma recebeu 62 mm em uma hora e 138 mm em 12 horas no domingo e segunda.",
-    "Uma linha de transmissão caiu e deixou 50.508 clientes sem luz em La Palma por quase quatro horas."
-   ],
-   "fonte": "Aemet e Governo de Canárias via elDiario.es e Diario de Avisos; Endesa via Diario de Alicante",
-   "url": "https://www.eldiario.es/canariasahora/tiempo-canarias/canarias-aviso-amarillo-aemet_1_13635261.html",
-   "rotulo": "La Palma",
    "lado": "l"
   },
   {
@@ -928,8 +927,7 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1284,10 +1282,5 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
-
-
-
-</body></html>
 </body>
 </html>
