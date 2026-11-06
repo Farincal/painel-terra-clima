@@ -27,6 +27,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -672,9 +673,10 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-06T04:45:00+01:00",
- "manchete": "o nhc dá 90% de chance de depressão a sudeste do havaí, o rio uruguai ameaça iraí (rs) e uma borrasca atlântica chega à espanha no sábado",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-06T10:30:00+01:00",
+ "manchete": "a baixa ao sul do havaí segue perto de virar depressão, o rs espera granizo e rajadas acima de 80 km/h no sábado e a borrasca atlântica chega às canárias e ao oeste da espanha",
  "eventos": [
   {
    "id": "pacifico-central",
@@ -689,10 +691,10 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "CP95: 90% em 48 horas e 90% em 7 dias (eram 60% e 70%); anda para oeste a 16–24 km/h.",
     "Ao largo da América Central: 40% em 48 horas e 40% em 7 dias; chuva forte possível na região até o fim de semana.",
-    "Atlântico, ao sul das Bermudas: baixa com ventos de vendaval; 30% em 48 horas e 40% em 7 dias de virar a tempestade subtropical Kyle.",
+    "Atlântico, ao sul das Bermudas: baixa não tropical com ventos de vendaval; chance caiu para 20% em 48 horas e 30% em 7 dias.",
     "Não há ciclones tropicais ativos no Atlântico nem no Pacífico Leste e Central."
    ],
-   "fonte": "NHC/CPHC (boletins da tarde de 5/11)",
+   "fonte": "NHC/CPHC (boletins de 5/11; Atlântico às 1h EST de 6/11)",
    "url": "https://www.nhc.noaa.gov/gtwo.php?basin=cpac&fdays=7",
    "rotulo": "Baixa CP95",
    "lado": "t"
@@ -710,10 +712,11 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "Defesa Civil do RS (9h de 5/11): 93 desabrigados e 235 desalojados; 6.496 casas danificadas e 10 destruídas.",
     "Rio Uruguai: risco muito alto de inundação em Iraí (alerta das 7h26 de 5/11); Jacuí em risco muito alto em Dona Francisca.",
-    "Previsão: temporais isolados com granizo no extremo norte do RS na tarde de sexta (6/11) e na madrugada de sábado (7/11).",
-    "Em Santa Catarina, tornados em Chapecó e Xanxerê na quarta (4/11); 13 municípios em situação de emergência."
+    "Sábado (7/11) de madrugada: temporais com granizo grande e rajadas acima de 80 km/h em Missões, Centro, Norte e Nordeste; aviso de tempestade do Inmet.",
+    "Em Santa Catarina, tornados em Chapecó e Xanxerê na quarta (4/11); 13 municípios em situação de emergência.",
+    "Chuva de 30 a 70 mm na metade norte no sábado, com pontos de 90 mm no Norte e Nordeste."
    ],
-   "fonte": "Defesa Civil do RS (avisos e boletim de 4–5/11); Brasil de Fato; TV Sim",
+   "fonte": "Defesa Civil do RS (avisos e boletins de 4–5/11); Brasil de Fato; O Alto Uruguai",
    "url": "https://www.brasildefato.com.br/2026/11/05/temporais-deixam-25-feridos-um-desaparecido-e-quase-50-mil-afetados-no-rs/",
    "rotulo": "Temporais no Sul",
    "lado": "r"
@@ -727,14 +730,14 @@ footer{border-top:1px solid var(--line)}
    "data": "2026-11-06",
    "lat": 40.4,
    "lon": -6.0,
-   "resumo": "Uma borrasca atlântica profunda muda o tempo na Espanha a partir de sábado (7/11), com chuva forte e persistente no oeste. Os maiores acumulados devem vir a partir de segunda (9/11).",
+   "resumo": "Uma borrasca atlântica profunda muda o tempo na Espanha a partir de sábado (7/11), com chuva forte e persistente no oeste. Domingo, segunda e terça devem ser os dias mais chuvosos.",
    "pontos": [
     "Sexta (6/11): tempo estável, com chuva à tarde na Galícia e máximas acima de 20 °C no Mediterrâneo.",
-    "Sábado: vento sul e mínimas até 8 °C mais altas no norte; as geadas somem.",
+    "Domingo (8/11): temporal no mar com ondas de até 6 m no oeste da Galícia e quase 4 m no oeste da Andaluzia.",
     "Aemet: chuva forte e persistente na Galícia, norte da Extremadura, sul de Castela e Leão, norte de Madri e oeste da Andaluzia.",
     "Cantábrico e litoral mediterrâneo, incluindo a Catalunha, devem ficar fora do pior da chuva."
    ],
-   "fonte": "Aemet via Infobae",
+   "fonte": "Aemet via Infobae e EFE",
    "url": "https://www.infobae.com/espana/2026/11/05/la-llegada-de-una-borrasca-atlantica-traera-un-nuevo-cambio-de-tiempo-a-espana-la-aemet-preve-lluvias-y-una-subida-de-las-temperaturas/",
    "rotulo": "Borrasca Espanha",
    "lado": "b"
@@ -743,20 +746,20 @@ footer{border-top:1px solid var(--line)}
    "id": "canarias",
    "tipo": "enchente",
    "gravidade": "moderado",
-   "titulo": "Aemet alerta para chuva muito forte nas Canárias",
+   "titulo": "Aemet ativa aviso amarelo por vento nas Canárias",
    "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
    "data": "2026-11-06",
    "lat": 28.68,
    "lon": -17.76,
-   "resumo": "A Aemet emitiu nota informativa especial por chuva forte ou muito forte e trovoadas nas Canárias a partir desta sexta (6/11). A piora maior deve vir no fim do sábado, nas ilhas ocidentais.",
+   "resumo": "A Aemet ativou aviso amarelo por vento em La Palma no sábado (7/11), com rajadas de até 70 km/h, antes da chegada de uma borrasca às Canárias. O domingo (8/11) deve ser o dia mais complicado, com chuva forte e trovoadas em todas as ilhas.",
    "pontos": [
-    "Sexta: chuva forte no oeste, sobretudo em La Palma; possível em Tenerife, La Gomera e El Hierro.",
-    "Fim do sábado (7/11): pancadas fortes ou muito fortes com trovoadas; temporal no mar até domingo.",
-    "Domingo (8/11): pancadas se espalham por todo o arquipélago; risco de alagamentos em áreas baixas.",
-    "No episódio anterior, o leste de La Palma recebeu 138 mm em 12 horas."
+    "Sábado: aviso amarelo das 12h à meia-noite em La Palma; rajadas de até 70 km/h nas cumbres, no noroeste e no litoral leste.",
+    "Fim do sábado: pancadas fortes ou muito fortes com trovoadas no oeste; temporal no mar até domingo.",
+    "Domingo: chuva forte e persistente em todo o arquipélago; risco de alagamentos em áreas baixas.",
+    "A Proteção Civil prevê o episódio até pelo menos terça (10/11); melhora a partir de quarta (11/11)."
    ],
-   "fonte": "Aemet via Diario de Avisos",
-   "url": "https://diariodeavisos.elespanol.com/2026/11/aemet-temporal-lluvias-fuertes-tormentas-canarias-noviembre/",
+   "fonte": "Aemet via Diario de Avisos e Atlántico Hoy (6/11)",
+   "url": "https://diariodeavisos.elespanol.com/canariasenred/la-aemet-avisa-de-que-una-fuerte-borrasca-entrara-en-canarias-y-activa-los-avisos-amarillos/",
    "rotulo": "La Palma",
    "lado": "l"
   },
@@ -844,26 +847,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "nevada",
-   "tipo": "incendio",
-   "gravidade": "alto",
-   "titulo": "Incêndios ao norte de Reno forçam 6 mil a sair",
-   "local": "Norte de Reno, Nevada, EUA",
-   "data": "2026-11-03",
-   "lat": 39.85,
-   "lon": -119.85,
-   "resumo": "Os incêndios Bug e Fred Mountain, ao norte de Reno, em Nevada, já forçaram mais de 6 mil pessoas a deixar suas casas. As chamas ameaçam comunidades da região.",
-   "pontos": [
-    "Mais de 6.000 pessoas retiradas.",
-    "Área queimada: 23.458 hectares.",
-    "Contenção de 0% no boletim de 3/11."
-   ],
-   "fonte": "The Watchers",
-   "url": "https://watchers.news/2026/11/03/more-than-6-000-evacuated-as-bug-and-fred-mountain-fires-threaten-communities-north-of-reno-nevada/",
-   "rotulo": "Fogo em Nevada",
-   "lado": "l"
-  },
-  {
    "id": "frio-sul",
    "tipo": "outro",
    "gravidade": "moderado",
@@ -876,10 +859,10 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "Mortes: um homem em Guarará (Zona da Mata) em 30/10 e um motociclista no bairro Camargos, em BH, em 2/11.",
     "41 ocorrências em 37 cidades; mais de mil desalojados e 64 desabrigados.",
-    "Defesa Civil de SP alerta para temporais de 5 a 7/11; o Inmet tem alerta laranja para a capital paulista.",
+    "Defesa Civil de SP ativou gabinete de crise: risco de temporais com rajadas de até 80 km/h e granizo isolado até sábado (7/11).",
     "BH: o Barreiro já recebeu 283,1 mm em outubro, 257% da média."
    ],
-   "fonte": "Defesa Civil de MG via O Tempo; Defesa Civil de SP e Inmet via TV Sim",
+   "fonte": "Defesa Civil de MG via O Tempo; Defesa Civil de SP via DGABC",
    "url": "https://www.otempo.com.br/cidades/2026/11/3/apos-morte-de-motociclista-em-bh-defesa-civil-confirma-primeiros-obitos-por-chuva-em-mg",
    "rotulo": "Chuva em MG",
    "lado": "r"
@@ -927,7 +910,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1282,5 +1266,13 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
+
+
+
+
+
+
+
 </body>
 </html>
