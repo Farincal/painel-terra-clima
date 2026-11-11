@@ -47,6 +47,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -578,9 +579,9 @@ footer{border-top:1px solid var(--line)}
     <article class="panel bull">
       <header><h3>Boletim oceânico</h3><span class="sev r">Extremo</span></header>
       <div class="kv">
-        <span>Niño 3.4 · CPC, boletim 02/11</span><b class="h">+2,5°</b>
+        <span>Niño 3.4 · CPC, boletim 09/11</span><b class="h">+2,3°</b>
         <span>Niño 3 · CPC, boletim 02/11</span><b class="h">+3,7°</b>
-        <span>Niño 1+2 · CPC, boletim 02/11</span><b class="h">+4,6°</b>
+        <span>Niño 1+2 · CPC, boletim 09/11</span><b class="h">+4,7°</b>
         <span>Niño 3.4 · IRI, semana 14/10</span><b class="h">+3,3°</b>
       </div>
       <p>Anomalias em °C sobre a média 1991–2020. A NOAA CPC e o IRI usam produtos de temperatura do mar diferentes, por isso os valores do Niño 3.4 divergem.</p>
@@ -663,6 +664,7 @@ footer{border-top:1px solid var(--line)}
   <section id="noticias" class="panel card" aria-label="Notícias">
     <div class="sechead"><h2>Notícias do El Niño</h2><span class="lbl">Set–nov 2026</span></div>
     <div class="feed">
+      <div class="item"><time datetime="2026-11-09">09 NOV</time><div><h3>Niño 3.4 recua a +2,3 °C; Niño 1+2 sobe a +4,7 °C</h3><p>Atualização semanal do CPC de 09/11 (índices relativos): Niño 3.4 a +2,3 °C e Niño 1+2 a +4,7 °C. O índice RONI de ago–out chegou a +2,0 °C, um décimo abaixo de 1997–98 no mesmo ponto.</p></div></div>
       <div class="item"><time datetime="2026-11-02">02 NOV</time><div><h3>Niño 1+2 sobe a +4,6 °C; Niño 3 chega a +3,7 °C</h3><p>Atualização semanal do CPC de 02/11: Niño 3.4 estável em +2,5 °C, Niño 3 a +3,7 °C e Niño 1+2 a +4,6 °C. Niño 4 sobe a +0,2 °C.</p></div></div>
       <div class="item"><time datetime="2026-10-26">26 OUT</time><div><h3>Niño 3.4 sobe a +2,5 °C; Niño 3 chega a +3,6 °C</h3><p>Atualização semanal do CPC de 26/10: Niño 3.4 a +2,5 °C, Niño 3 a +3,6 °C e Niño 1+2 estável em +4,4 °C. Niño 4 fica em 0,0 °C.</p></div></div>
       <div class="item"><time datetime="2026-10-19">19 OUT</time><div><h3>IRI: média de 27 modelos chega a +3,5 °C</h3><p>Previsão do IRI de 19/10: El Niño com 100% de chance até mar–mai 2027, 92% em abr–jun e 60% em mai–jul. O Niño 3.4 semanal do IRI ficou em +3,3 °C na semana de 14/10.</p></div></div>
@@ -694,48 +696,27 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-11T04:30:00+01:00",
- "manchete": "a charles chega a portugal e às canárias sob alerta vermelho, piedralaves segue evacuada e a barragem de ituporanga começa a baixar",
+ "atualizado": "2026-11-11T10:30:00+01:00",
+ "manchete": "a charles leva alerta vermelho a portugal, ávila, cáceres e la palma, e o mayon volta a entrar em erupção",
  "eventos": [
-  {
-   "id": "sudeste-espanha",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Piedralaves segue evacuada pelo risco na represa de El Horcajo",
-   "local": "Norte de Cáceres e sul de Ávila; oeste da Espanha",
-   "data": "2026-11-10",
-   "lat": 40.2,
-   "lon": -5.6,
-   "resumo": "Os moradores de Piedralaves, no sul de Ávila, seguem fora de casa pelo risco de a represa de El Horcajo transbordar ou colapsar. A Junta de Castela e Leão mantém o nível 2 de alerta por inundações numa área de 33 municípios.",
-   "pontos": [
-    "Retirada preventiva por ES-Alert na terça (10/11); a imprensa fala em 2.200 a 3.000 moradores, levados ao pavilhão municipal e ao colégio San Juan de la Cruz.",
-    "A liberação de água começou às 9h, mas o nível subiu 60 cm; a represa, de cerca de 0,3 hm³, fica a 1,5 km do povoado.",
-    "A residência de idosos retirou 66 pessoas; a área em alerta nível 2 tem 33 municípios e 49 mil habitantes, e cerca de 20 represas são vigiadas.",
-    "A Aemet previa até 120 l/m² em 12 horas; a borrasca Charles traz mais chuva e vento nesta quarta (11/11)."
-   ],
-   "fonte": "Junta de Castela e Leão e Aemet via Tribuna de Ávila e Infobae (10/11)",
-   "url": "https://www.tribunaavila.com/noticias/465964/piedralaves-evacuado-por-el-riesgo-de-colapso-de-la-presa-del-horcajo",
-   "rotulo": "Retirada em Ávila",
-   "lado": "b"
-  },
   {
    "id": "portugal-charles",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "Portugal amanhece em alerta com aviso vermelho pela Charles",
+   "titulo": "Charles traz alerta vermelho por chuva a Lisboa e ao sul de Portugal",
    "local": "Portugal continental e Madeira",
    "data": "2026-11-11",
    "lat": 38.72,
    "lon": -9.14,
-   "resumo": "Portugal continental está em situação de alerta nesta quarta (11/11) pela depressão Charles, com escolas e serviços públicos não essenciais fechados. Oito distritos estão sob aviso vermelho do IPMA.",
+   "resumo": "Portugal continental está em situação de alerta nesta quarta (11/11) pela depressão Charles, com escolas e serviços públicos não essenciais fechados. Na Madeira, o pior já passou, mas a Proteção Civil soma mais de 200 ocorrências.",
    "pontos": [
-    "Aviso vermelho em Setúbal, Beja e Faro das 9h às 21h; em Leiria, Santarém, Lisboa, Portalegre e Évora do meio-dia às 21h.",
-    "Rajadas de até 140 km/h; o governo pode fechar pontes se o vento chegar a 150 km/h. A APA aponta risco de cheias em 101 municípios.",
-    "Na Madeira, aviso vermelho por chuva das 21h de terça às 6h de quarta; 14 ocorrências ligadas à Charles até as 22h.",
-    "Os bombeiros de Lisboa registraram 131 ocorrências na madrugada de terça, sobretudo inundações, sem feridos."
+    "IPMA: aviso vermelho por chuva em Lisboa, Setúbal e Beja das 9h às 21h; em Faro, chuva e vento com rajadas de até 140 km/h.",
+    "Leiria, Santarém, Castelo Branco e Portalegre em aviso vermelho por chuva das 12h às 18h.",
+    "Continente: 60 ocorrências até as 6h, 49 delas inundações. Madeira: 205 ocorrências às 8h59, sem vítimas; um homem arrastado pela corrente no Funchal foi resgatado vivo.",
+    "Teletrabalho recomendado; transportes com cortes, voos cancelados e o Web Summit suspendeu as atividades do 2º dia."
    ],
-   "fonte": "Governo de Portugal e IPMA via Metrópoles, RTP e DNotícias (10/11)",
-   "url": "https://www.metropoles.com/mundo/tempestade-charles-portugal-decreta-alerta-nacional-e-suspende-aulas",
+   "fonte": "ANEPC, IPMA e Proteção Civil da Madeira via CNN Portugal e Euronews (11/11)",
+   "url": "https://pt.euronews.com/2026/11/11/mau-tempo-portugal-em-alerta-devido-a-passagem-da-depressao-charles",
    "rotulo": "Alerta Portugal",
    "lado": "l"
   },
@@ -743,22 +724,64 @@ footer{border-top:1px solid var(--line)}
    "id": "canarias",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "La Palma enfrenta rajadas de até 140 km/h da Charles",
+   "titulo": "Rajada de 145 km/h em La Palma com a Charles",
    "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
    "data": "2026-11-11",
    "lat": 28.68,
    "lon": -17.76,
-   "resumo": "La Palma está em alerta vermelho da Aemet por vento nesta quarta (11/11), com rajadas de até 140 km/h no leste e no norte da ilha. O governo canário decretou alerta máximo por vento em La Palma e em Tenerife.",
+   "resumo": "A Charles trouxe rajadas de 145 km/h a Santa Cruz de La Palma na madrugada desta quarta (11/11), sob alerta vermelho da Aemet. As Canárias somaram cerca de 20 ocorrências, sem feridos.",
    "pontos": [
-    "Ventos mais fortes durante a madrugada e a manhã de quarta, aliviando a partir das 9h em La Palma.",
-    "Tenerife: rajadas de até 120 km/h no noroeste e cerca de 136 km/h nos cumes e no Teide.",
-    "La Palma pode ter 30 mm em uma hora ou 60 mm em 12 horas; ondas de 3 a 4 m em todo o arquipélago.",
-    "Aulas presenciais suspensas em La Palma e La Graciosa."
+    "Izaña (Tenerife) passou de 130 km/h; La Gomera e o vale de La Orotava, de 100 km/h.",
+    "Às 7h12, 17.622 clientes ficaram sem luz em La Palma; o serviço voltou às 7h34.",
+    "Tenerife teve 12 ocorrências, 7 por queda de árvores; desprendimentos em Santa Cruz de La Palma e na costa de Mogán.",
+    "Ondas de 3 a 4 m; aulas presenciais suspensas em Tenerife, La Palma e La Graciosa. O vento deve perder força à tarde."
    ],
-   "fonte": "Aemet e Governo das Canárias via elDiario.es e COPE (10/11)",
-   "url": "https://www.eldiario.es/canariasahora/tiempo-canarias/alerta-maxima-canarias-vientos-borrasca-charles_1_13652814.html",
+   "fonte": "RTVC e The Objective (11/11)",
+   "url": "https://rtvc.es/viento-lluvia-y-precipitaciones-borrasca-charles-canarias-11-noviembre-2026/",
    "rotulo": "Vento em La Palma",
    "lado": "l"
+  },
+  {
+   "id": "sudeste-espanha",
+   "tipo": "enchente",
+   "gravidade": "critico",
+   "titulo": "Piedralaves segue evacuada e Ávila tem alerta vermelho por chuva",
+   "local": "Norte de Cáceres e sul de Ávila; oeste da Espanha",
+   "data": "2026-11-11",
+   "lat": 40.2,
+   "lon": -5.6,
+   "resumo": "Os moradores de Piedralaves, no sul de Ávila, seguem fora de casa pelo risco na represa de El Horcajo. Nesta quarta (11/11), a Aemet mantém alerta vermelho por chuva em Ávila e Cáceres, com até 150 l/m² previstos na Serra de Gredos.",
+   "pontos": [
+    "Retirada total ordenada às 10h12 de terça (10/11); a imprensa fala em 2.200 a 3.000 moradores, sem feridos.",
+    "A represa, de 0,3 hm³ e com mais de 30 anos, chegou ao máximo e começou a liberar água às 9h; fica a 1,5 km do povoado.",
+    "Cerca de 20 represas da área estão sob vigilância; a residência de idosos retirou 66 pessoas.",
+    "Aemet (11/11): mais de 120 a 150 l/m² em Gredos e rajadas acima de 120 km/h no oeste da Extremadura e no Sistema Central."
+   ],
+   "fonte": "Junta de Castela e Leão via Ávilared (10/11); Aemet via Infobae (11/11)",
+   "url": "https://www.infobae.com/america/agencias/2026/11/11/charles-pone-en-aviso-a-casi-toda-espana-por-lluvia-y-viento-con-nivel-rojo-en-cyl-extremadura-y-canarias/",
+   "rotulo": "Retirada em Ávila",
+   "lado": "b"
+  },
+  {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Mayon tem nova erupção nesta quarta",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-11-11",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O vulcão Mayon, nas Filipinas, teve uma erupção de nível baixo a moderado por volta das 11h56 (hora local) desta quarta (11/11). O alerta segue no nível 3, e o Ministério da Saúde pede máscaras N95 por causa das cinzas.",
+   "pontos": [
+    "O centro de cinzas vulcânicas (VAAC) registrou a erupção às 4h UTC de 11/11.",
+    "O Phivolcs alertou em 5/11 para uma erupção mais forte por sinais de magma novo; o alerta 3 vale desde 30/10.",
+    "Zona de perigo de 6 km segue proibida; quase 4.000 pessoas foram retiradas no início do mês.",
+    "O Ministério da Saúde pede portas e janelas fechadas e atenção a crianças, idosos e pessoas com problemas respiratórios."
+   ],
+   "fonte": "Daily Tribune (11/11); VAAC via VolcanoDiscovery; Phivolcs via GMA News (5/11)",
+   "url": "https://tribune.net.ph/2026/11/11/doh-warns-residents-near-mayon-of-ashfall-health-risks",
+   "rotulo": "Vulcão Mayon",
+   "lado": "r"
   },
   {
    "id": "sc-barragem",
@@ -782,6 +805,27 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
+   "id": "oeste-pacifico",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Tufão Cempaka se afasta das ilhas Ogasawara",
+   "local": "Oeste do Pacífico, ao sul de Chichijima, Japão",
+   "data": "2026-11-11",
+   "lat": 27.33,
+   "lon": 146.33,
+   "resumo": "O tufão Cempaka passou ao sul das ilhas Ogasawara, no Japão, na madrugada desta quarta (11/11) e segue para lés-nordeste, longe do Japão. Ele deve enfraquecer nos próximos dias.",
+   "pontos": [
+    "Última posição estimada (21h JST de 10/11): 100 km ao su-sudoeste de Chichijima, 960 hPa, ventos de 45 m/s (cerca de 160 km/h).",
+    "Previsão para 9h JST de 11/11: perto de 27,3° N e 146,3° E, com 970 hPa e ventos de 40 m/s.",
+    "Anda para lés-nordeste a cerca de 45 km/h; perto de Minamitorishima às 18h JST, com 985 hPa.",
+    "Deve chegar perto das ilhas Midway em 13/11, já com 998 hPa."
+   ],
+   "fonte": "Weathernews/JMA (10/11 21h JST)",
+   "url": "https://weathernews.jp/onebox/typhoon/32/",
+   "rotulo": "Tufão Cempaka",
+   "lado": "t"
+  },
+  {
    "id": "gaza",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -792,7 +836,7 @@ footer{border-top:1px solid var(--line)}
    "lon": 34.35,
    "resumo": "Chuva forte e ventos desde sexta (6/11) alagaram mais de 70 mil barracas de deslocados em Gaza. Cinco pessoas morreram, entre elas três crianças, quando um aterro de areia desabou sobre barracas em Deir el-Balah.",
    "pontos": [
-    "Defesa Civil de Gaza: mais de 2.100 chamados de emergência e mais de 2.000 prédios em risco de desabar.",
+    "Defesa Civil de Gaza: mais de 2.100 chamados de emergência; segundo o CDP, só 10% foram atendidos.",
     "A Al Jazeera fala em quatro crianças entre os cinco mortos.",
     "Quase 400 mil deslocados estão em locais muito vulneráveis a alagamentos, segundo a Al Jazeera.",
     "O escritório de mídia do governo estima danos de US$ 3 milhões; são necessárias pelo menos 300 mil barracas."
@@ -824,25 +868,25 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "oeste-pacifico",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Tufão Cempaka passa ao sul das ilhas Ogasawara",
-   "local": "Oeste do Pacífico, ao sul de Chichijima, Japão",
-   "data": "2026-11-10",
-   "lat": 26.17,
-   "lon": 141.92,
-   "resumo": "O tufão Cempaka estava a cerca de 100 km ao su-sudoeste de Chichijima, nas ilhas Ogasawara do Japão, às 21h (hora do Japão) desta terça (10/11). Ele passa ao sul de Hahajima durante a noite e depois se afasta do Japão para leste.",
+   "id": "florida",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Enchentes históricas deixam 2 mortos na Flórida",
+   "local": "Brevard, Indian River e St. Lucie, Flórida, EUA",
+   "data": "2026-11-09",
+   "lat": 28.03,
+   "lon": -80.59,
+   "resumo": "Chuvas de até cerca de 600 mm causaram enchentes no leste da Flórida entre 1º e 7 de novembro e deixaram 2 mortos em Palm Bay. O rio Peace, em Arcadia, segue acima da cota de inundação.",
    "pontos": [
-    "Weathernews (21h JST de 10/11): 960 hPa, ventos de 45 m/s (cerca de 160 km/h) e rajadas de 60 m/s.",
-    "Anda para lés-nordeste a 35 km/h.",
-    "Previsão: perto de Minamitorishima às 18h JST de 11/11, com 985 hPa, e perto das ilhas Midway em 13/11.",
-    "Previsão para 3h JST de 11/11: 960 hPa e ventos de 40 m/s; depois se afasta do Japão e enfraquece."
+    "Malabar teve até 627 mm; Melbourne registrou 292 mm em 2/11, o dia mais chuvoso desde 1937.",
+    "Rio Peace em Arcadia: 4,45 m às 7h30 de 9/11, após pico de 4,66 m; a cota de inundação é 3,35 m. Deve baixar dela na sexta (13/11).",
+    "Estado de emergência em 14 condados; danos em estradas e pontes de Palm Bay passam de US$ 10 milhões.",
+    "A AccuWeather estima perdas totais de US$ 3 a 5 bilhões."
    ],
-   "fonte": "Weathernews (10/11 21h JST); Zoom Earth",
-   "url": "https://weathernews.jp/onebox/typhoon/32/",
-   "rotulo": "Tufão Cempaka",
-   "lado": "t"
+   "fonte": "NWS (aviso de enchente, 9/11); governo da Flórida e AccuWeather via Wikipédia",
+   "url": "https://en.wikipedia.org/wiki/November_2026_Florida_floods",
+   "rotulo": "Enchente Flórida",
+   "lado": "r"
   },
   {
    "id": "aichi",
@@ -864,27 +908,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://beinsure.com/news/japan-earthquake-2026-magnitude-5-7-quake-injures-24-in-shizuoka/",
    "rotulo": "Sismo Aichi",
    "lado": "b"
-  },
-  {
-   "id": "florida",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Enchentes históricas deixam 2 mortos na Flórida",
-   "local": "Brevard, Indian River e St. Lucie, Flórida, EUA",
-   "data": "2026-11-09",
-   "lat": 28.03,
-   "lon": -80.59,
-   "resumo": "Chuvas de até cerca de 600 mm causaram enchentes no leste da Flórida entre 1º e 7 de novembro e deixaram 2 mortos em Palm Bay. O rio Peace, em Arcadia, segue acima da cota de inundação.",
-   "pontos": [
-    "Malabar teve até 627 mm; Melbourne registrou 292 mm em 2/11, o dia mais chuvoso desde 1937.",
-    "Rio Peace em Arcadia: 4,45 m às 7h30 de 9/11, após pico de 4,66 m; a cota de inundação é 3,35 m. Deve baixar dela na sexta (13/11).",
-    "Estado de emergência em 14 condados; danos em estradas e pontes de Palm Bay passam de US$ 10 milhões.",
-    "A AccuWeather estima perdas totais de US$ 3 a 5 bilhões."
-   ],
-   "fonte": "NWS (aviso de enchente, 9/11); governo da Flórida e AccuWeather via Wikipédia",
-   "url": "https://en.wikipedia.org/wiki/November_2026_Florida_floods",
-   "rotulo": "Enchente Flórida",
-   "lado": "r"
   },
   {
    "id": "ira",
@@ -927,27 +950,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.nhc.noaa.gov/archive/2026/cp04/cp042026.public.018.shtml",
    "rotulo": "T.T. Pena",
    "lado": "t"
-  },
-  {
-   "id": "mayon",
-   "tipo": "vulcao",
-   "gravidade": "alto",
-   "titulo": "Phivolcs alerta para erupção mais forte do Mayon",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-05",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O Phivolcs avisa que o vulcão Mayon, nas Filipinas, pode ter uma erupção mais forte por sinais de magma novo. O alerta segue no nível 3, com cinzas caindo de novo em cidades a sudoeste.",
-   "pontos": [
-    "Boletim de 5/11: 17 sismos vulcânicos e 1 desmoronamento em 24 horas; brilho na cratera visível a olho nu.",
-    "Dióxido de enxofre: 2.127 toneladas em 24 horas em 4/11 (eram 1.930 antes); o edifício do vulcão segue inflado.",
-    "Cinzas em Daraga, Camalig e Guinobatan; zona de perigo de 6 km segue proibida.",
-    "Quase 4.000 pessoas foram retiradas até quarta (4/11); aulas suspensas e máscaras distribuídas."
-   ],
-   "fonte": "Phivolcs (boletim de 5/11); GMA News; Earthweek (6/11)",
-   "url": "https://www.gmanetwork.com/news/topstories/regions/1008182/phivolcs-warns-of-stronger-eruption-by-mayon-volcano/story/",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
   }
  ]
 }
@@ -1306,6 +1308,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
