@@ -53,6 +53,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -702,50 +703,29 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-12T16:30:00+01:00",
- "manchete": "piedralaves volta para casa, a charles mantém alerta laranja no leste da espanha e a noaa reduz para 60% a chance de el niño recorde",
+ "atualizado": "2026-11-12T22:25:00+01:00",
+ "manchete": "charles deixa 112 ocorrências nas baleares, pena se desfaz no pacífico e chuva isola comunidades no centro do vietnã",
  "eventos": [
   {
-   "id": "portugal-charles",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Charles deixa 1.630 ocorrências em Portugal, sem mortes",
-   "local": "Portugal continental e Madeira",
-   "data": "2026-11-11",
-   "lat": 38.72,
-   "lon": -9.14,
-   "resumo": "A depressão Charles provocou 1.630 ocorrências em Portugal continental nesta quarta (11/11), sem mortes, segundo a Proteção Civil. A situação de alerta terminou às 23h59.",
-   "pontos": [
-    "881 das 1.630 ocorrências foram inundações; Grande Lisboa, Península de Setúbal e Algarve foram as áreas mais afetadas.",
-    "Rajada máxima de 123 km/h na serra de Monchique; quatro pessoas retiradas de casa após queda de telhados.",
-    "34 planos municipais de emergência ativados. A tempestade foi mais fraca que o previsto porque mudou de trajetória.",
-    "Madeira: mais de 200 ocorrências até as 8h45, sobretudo inundações e deslizamentos; Funchal, Machico e Câmara de Lobos lideram."
-   ],
-   "fonte": "ANEPC via Correio da Manhã e Viana TV (11/11); Proteção Civil da Madeira via DNoticias (11/11)",
-   "url": "https://www.cmjornal.pt/sociedade/clima/detalhe/protecao-civil-contabiliza-1630-ocorrencias-da-tempestade-charles-rajada-maxima-de-vento-foi-de-123km-h",
-   "rotulo": "Charles Portugal",
-   "lado": "l"
-  },
-  {
-   "id": "canarias",
+   "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "Rajada de 145 km/h em La Palma com a Charles",
-   "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
-   "data": "2026-11-11",
-   "lat": 28.68,
-   "lon": -17.76,
-   "resumo": "A Charles trouxe rajadas de 145 km/h a Santa Cruz de La Palma na madrugada de quarta (11/11), sob alerta vermelho da Aemet. Nesta quinta (12/11), a Aemet dá o episódio por encerrado e prevê tempo seco e estável nas ilhas.",
+   "titulo": "Charles deixa 112 ocorrências nas Baleares",
+   "local": "Leste da Espanha, Baleares e Catalunha",
+   "data": "2026-11-12",
+   "lat": 41.39,
+   "lon": 2.17,
+   "resumo": "A depressão Charles provocou 112 ocorrências nas Baleares nesta quinta (12/11), a maioria quedas de árvores em Maiorca. O vento perde força durante a noite, mas rajadas fortes ainda podem ocorrer até a madrugada de sexta (13/11).",
    "pontos": [
-    "Izaña (Tenerife) passou de 130 km/h; La Gomera e o vale de La Orotava, de 100 km/h.",
-    "Às 7h12, 17.622 clientes ficaram sem luz em La Palma; o serviço voltou às 7h34.",
-    "Tenerife teve 12 ocorrências, 7 por queda de árvores; desprendimentos em Santa Cruz de La Palma e na costa de Mogán.",
-    "Ondas de 3 a 4 m; aulas presenciais suspensas em Tenerife, La Palma e La Graciosa. O vento deve perder força à tarde."
+    "Baleares (0h às 18h): 59 quedas de árvores e 40 desprendimentos; 100 ocorrências em Maiorca, 55 delas em Palma. Rajadas de 60 a 80 km/h, e mais de 100 km/h em picos e cabos.",
+    "Comunidade Valenciana: rajadas de até 85 km/h em Tancat de Mília; alerta laranja por vento em Valência e Castellón.",
+    "Barcelona: mais de 30 l/m² em alguns pontos durante a madrugada e rajadas acima de 60 km/h à tarde; Proteção Civil ativou a pré-alerta VENTCAT.",
+    "Sexta (13/11) com vento mestral e queda de temperatura; nova frente pode trazer pancadas no sábado (14/11)."
    ],
-   "fonte": "RTVC e The Objective (11/11); Aemet via Canarias7 (12/11)",
-   "url": "https://rtvc.es/viento-lluvia-y-precipitaciones-borrasca-charles-canarias-11-noviembre-2026/",
-   "rotulo": "Vento em La Palma",
-   "lado": "l"
+   "fonte": "112 Baleares via Última Hora (12/11); Aemet via ESdiario (12/11); Meteocat via betevé (12/11)",
+   "url": "https://www.ultimahora.es/noticias/local/2026/11/12/2748763/borrasca-charles-deja-112-incidentes-baleares-caidas-arboles-desprendimientos-barcos-peligro.html",
+   "rotulo": "Charles no leste",
+   "lado": "t"
   },
   {
    "id": "sudeste-espanha",
@@ -769,25 +749,88 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
-   "id": "charles-leste",
+   "id": "canarias",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "Charles deixa o leste da Espanha em alerta laranja",
-   "local": "Leste da Espanha, Baleares e Catalunha",
-   "data": "2026-11-12",
-   "lat": 41.39,
-   "lon": 2.17,
-   "resumo": "A depressão Charles mantém 14 comunidades autônomas e Ceuta sob avisos da Aemet nesta quinta (12/11), seis delas e Ceuta em laranja. Na Catalunha, o Meteocat prevê rajadas acima de 72 km/h e ondas de mais de 2,5 m.",
+   "titulo": "Rajada de 145 km/h em La Palma com a Charles",
+   "local": "La Palma, La Gomera, El Hierro e Tenerife, Canárias, Espanha",
+   "data": "2026-11-11",
+   "lat": 28.68,
+   "lon": -17.76,
+   "resumo": "A Charles trouxe rajadas de 145 km/h a Santa Cruz de La Palma na madrugada de quarta (11/11), sob alerta vermelho da Aemet. Nesta quinta (12/11), a Aemet dá o episódio por encerrado e prevê tempo seco e estável nas ilhas.",
    "pontos": [
-    "Laranja por vento em Almería, Teruel, Albacete, Ciudad Real, Toledo, Múrcia, Castellón, Valencia e Ceuta; por ondas em Almería, Maiorca e Menorca.",
-    "Catalunha: 30 a 60 l/m² durante a noite no sul dos Pireneus, no litoral de Barcelona e no Camp de Tarragona; pode passar de 100 l/m² nos Pireneus.",
-    "Neve acima de 2.500 m nos Pireneus. A Proteção Civil pede evitar parques e retirar vasos e toldos das varandas.",
-    "Sexta (13/11) com poucas pancadas; nova frente atlântica pode trazer chuva no sábado (14/11)."
+    "Izaña (Tenerife) passou de 130 km/h; La Gomera e o vale de La Orotava, de 100 km/h.",
+    "Às 7h12, 17.622 clientes ficaram sem luz em La Palma; o serviço voltou às 7h34.",
+    "Tenerife teve 12 ocorrências, 7 por queda de árvores; desprendimentos em Santa Cruz de La Palma e na costa de Mogán.",
+    "Ondas de 3 a 4 m; aulas presenciais suspensas em Tenerife, La Palma e La Graciosa. O vento deve perder força à tarde."
    ],
-   "fonte": "Aemet via EFE/Infobae (12/11); Meteocat e Protecció Civil via Moncloa.com (12/11)",
-   "url": "https://www.infobae.com/america/agencias/2026/11/12/la-borrasca-charles-mantiene-en-aviso-por-lluvias-viento-y-olas-a-casi-todo-el-este-peninsular/",
-   "rotulo": "Charles no leste",
+   "fonte": "RTVC e The Objective (11/11); Aemet via Canarias7 (12/11)",
+   "url": "https://rtvc.es/viento-lluvia-y-precipitaciones-borrasca-charles-canarias-11-noviembre-2026/",
+   "rotulo": "Vento em La Palma",
+   "lado": "l"
+  },
+  {
+   "id": "portugal-charles",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Charles deixa 1.630 ocorrências em Portugal, sem mortes",
+   "local": "Portugal continental e Madeira",
+   "data": "2026-11-11",
+   "lat": 38.72,
+   "lon": -9.14,
+   "resumo": "A depressão Charles provocou 1.630 ocorrências em Portugal continental nesta quarta (11/11), sem mortes, segundo a Proteção Civil. A situação de alerta terminou às 23h59.",
+   "pontos": [
+    "881 das 1.630 ocorrências foram inundações; Grande Lisboa, Península de Setúbal e Algarve foram as áreas mais afetadas.",
+    "Rajada máxima de 123 km/h na serra de Monchique; quatro pessoas retiradas de casa após queda de telhados.",
+    "34 planos municipais de emergência ativados. A tempestade foi mais fraca que o previsto porque mudou de trajetória.",
+    "Madeira: mais de 200 ocorrências até as 8h45, sobretudo inundações e deslizamentos; Funchal, Machico e Câmara de Lobos lideram."
+   ],
+   "fonte": "ANEPC via Correio da Manhã e Viana TV (11/11); Proteção Civil da Madeira via DNoticias (11/11)",
+   "url": "https://www.cmjornal.pt/sociedade/clima/detalhe/protecao-civil-contabiliza-1630-ocorrencias-da-tempestade-charles-rajada-maxima-de-vento-foi-de-123km-h",
+   "rotulo": "Charles Portugal",
+   "lado": "l"
+  },
+  {
+   "id": "pacifico-central",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Pena se desfaz no Pacífico Central",
+   "local": "Pacífico Central, a sudoeste de Honolulu, Havaí",
+   "data": "2026-11-12",
+   "lat": 9.8,
+   "lon": -173.4,
+   "resumo": "Pena se desfez e virou um cavado aberto no Pacífico Central nesta quinta (12/11), sem ameaçar terra. O Centro de Furacões do Pacífico Central emitiu o último aviso sobre o sistema.",
+   "pontos": [
+    "Aviso 24 (15h UTC de 12/11): 9,8° N e 173,4° W, ventos de 55 km/h e 1.006 hPa.",
+    "Os restos andam para oeste a 30 km/h; não se espera nova formação.",
+    "A cerca de 875 km a sul-sudoeste da ilha Johnston e 2.090 km a sudoeste de Honolulu.",
+    "Não há avisos para áreas costeiras."
+   ],
+   "fonte": "NHC/Central Pacific (aviso 24, 12/11 15h UTC) via CapeWeather",
+   "url": "https://capeweather.com/remnants-of-pena-public-advisory-number-24/",
+   "rotulo": "Restos de Pena",
    "lado": "t"
+  },
+  {
+   "id": "vietna-centro",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Chuva causa enchentes e deslizamentos no centro do Vietnã",
+   "local": "Quang Tri, Da Nang, Quang Ngai, Gia Lai e Khanh Hoa, Vietnã",
+   "data": "2026-11-11",
+   "lat": 15.1,
+   "lon": 108.3,
+   "resumo": "Chuvas fortes provocaram enchentes e deslizamentos no centro do Vietnã em 10 e 11 de novembro. Não há registro de mortes.",
+   "pontos": [
+    "Em Phuoc Giang (Quang Ngai), quase 500 famílias ficaram isoladas pela água, com 0,5 a 1,5 m de profundidade.",
+    "Deslizamento de mais de 10 mil m³ soterrou cerca de 100 m da rodovia 9C em Kim Ngan (Quang Tri).",
+    "Cerca de 145 famílias foram retiradas de áreas de risco de deslizamento em Da Nang e Quang Ngai.",
+    "Em Khanh Hoa, a liberação de água de reservatórios ameaça áreas baixas."
+   ],
+   "fonte": "SGGP (12/11)",
+   "url": "https://en.sggp.org.vn/central-region-races-to-recover-from-flooding-landslides-post130939.html",
+   "rotulo": "Chuva no Vietnã",
+   "lado": "l"
   },
   {
    "id": "mayon",
@@ -824,12 +867,33 @@ footer{border-top:1px solid var(--line)}
     "Barragem Oeste (Taió): 72,7%, com as sete comportas abertas; Barragem Norte (José Boiteux): 35,1%.",
     "Em Rio do Sul, o Itajaí do Oeste estava em 5,51 m (alerta) e o Itajaí-Açu em 5,45 m (atenção) na quarta.",
     "Balanço estadual de 10/11: 54 municípios atingidos, 836 casas afetadas, 278 desabrigados e 11 municípios em emergência.",
-    "O governo de SC anuncia nesta quinta (12/11) medidas de apoio às cidades atingidas."
+    "O governador anuncia na sexta (13/11), às 10h, em Florianópolis, medidas de apoio às cidades atingidas."
    ],
-   "fonte": "Defesa Civil de SC via Rádio Mirador (11/11) e ND Mais (10/11); Governo de SC (12/11)",
+   "fonte": "Defesa Civil de SC via Rádio Mirador (11/11) e ND Mais (10/11); Araguaia Brusque (12/11)",
    "url": "https://radiomirador.com.br/barragens-do-alto-vale-estao-com-comportas-abertas-e-niveis-dos-rios-seguem-em-monitoramento/",
    "rotulo": "Chuva em SC",
    "lado": "b"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Temporais afetam mais de 70 mil pessoas no RS",
+   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "data": "2026-11-09",
+   "lat": -29.17,
+   "lon": -51.52,
+   "resumo": "Os temporais desde o início de novembro afetaram 70.491 pessoas em 136 municípios do Rio Grande do Sul, segundo a Defesa Civil. Duas mortes, em Cacique Doble e Sagrada Família, estão sob investigação.",
+   "pontos": [
+    "Balanço da Defesa Civil do RS (dados até 6/11, divulgados em 9/11): 28 feridos, 119 desabrigados e 471 desalojados.",
+    "7.141 casas danificadas; só em Nova Prata são cerca de 2.700.",
+    "Em 11/11, o governo federal reconheceu emergência por vendaval em Caibaté, Eldorado do Sul, Santo Antônio das Missões e Sentinela do Sul.",
+    "Em 7/11, a Defesa Civil confirmou um tornado em Santo Augusto, no Noroeste do RS, com cerca de 50 casas destelhadas."
+   ],
+   "fonte": "Defesa Civil do RS via NC News (9/11); Defesa Civil Nacional via A Crítica (11/11)",
+   "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
+   "rotulo": "Temporais no RS",
+   "lado": "r"
   },
   {
    "id": "gaza",
@@ -853,27 +917,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Temporais afetam mais de 70 mil pessoas no RS",
-   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-11-09",
-   "lat": -29.17,
-   "lon": -51.52,
-   "resumo": "Os temporais desde o início de novembro afetaram 70.491 pessoas em 136 municípios do Rio Grande do Sul, segundo a Defesa Civil. Duas mortes, em Cacique Doble e Sagrada Família, estão sob investigação.",
-   "pontos": [
-    "Balanço da Defesa Civil do RS (dados até 6/11, divulgados em 9/11): 28 feridos, 119 desabrigados e 471 desalojados.",
-    "7.141 casas danificadas; só em Nova Prata são cerca de 2.700.",
-    "Nesta quinta (12/11), temporais avançam pelo RS com rajadas acima de 80 km/h, granizo e até 70 mm em pontos isolados.",
-    "Em 7/11, a Defesa Civil confirmou um tornado em Santo Augusto, no Noroeste do RS, com cerca de 50 casas destelhadas."
-   ],
-   "fonte": "Defesa Civil do RS via NC News (9/11); previsão via Porto Alegre 24 Horas (12/11)",
-   "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
-   "rotulo": "Temporais no RS",
-   "lado": "r"
-  },
-  {
    "id": "florida",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -893,69 +936,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://en.wikipedia.org/wiki/November_2026_Florida_floods",
    "rotulo": "Enchente Flórida",
    "lado": "r"
-  },
-  {
-   "id": "aichi",
-   "tipo": "terremoto",
-   "gravidade": "alto",
-   "titulo": "Sismo M5,7 fere 24 pessoas no centro do Japão",
-   "local": "Oeste de Shizuoka; Aichi e Shizuoka, Japão",
-   "data": "2026-11-08",
-   "lat": 34.9,
-   "lon": 137.7,
-   "resumo": "Um terremoto de magnitude 5,7 deixou pelo menos 24 feridos em Aichi e Shizuoka, no centro do Japão, na madrugada deste domingo (8/11). Foi o tremor mais forte em Aichi em quase 30 anos.",
-   "pontos": [
-    "Por volta de 1h04 (hora local), epicentro no oeste de Shizuoka, a cerca de 41 km de profundidade; o USGS mediu M5,5. Sem risco de tsunami.",
-    "Intensidade 5 forte em Chita, a primeira em Aichi desde março de 1997; 5 fraco em partes de Aichi, Shizuoka, Nagano e Gifu.",
-    "Pelo menos 24 feridos, segundo a imprensa local (número provisório); sem mortes. Falta de água em Higashiura; a usina de Hamaoka não teve anomalias.",
-    "A JMA alerta para tremores fortes por cerca de uma semana, sobretudo nos próximos 2 a 3 dias."
-   ],
-   "fonte": "JMA via Chunichi Shimbun e Tokai TV (Beinsure, 8/11); Al Jazeera",
-   "url": "https://beinsure.com/news/japan-earthquake-2026-magnitude-5-7-quake-injures-24-in-shizuoka/",
-   "rotulo": "Sismo Aichi",
-   "lado": "b"
-  },
-  {
-   "id": "ira",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Enchentes matam quatro pessoas no Irã",
-   "local": "Lorestan e outras províncias, Irã",
-   "data": "2026-11-08",
-   "lat": 33.5,
-   "lon": 48.4,
-   "resumo": "Enchentes e temporais mataram quatro pessoas e feriram 11 no Irã, segundo autoridades neste domingo (8/11). Em Lorestan, 190 vilarejos ficaram isolados.",
-   "pontos": [
-    "4 mortos e 11 feridos no balanço oficial de domingo.",
-    "190 vilarejos sem acesso em Lorestan por causa da chuva forte, segundo a agência Mehr.",
-    "Quedas de árvores e postes, estradas fechadas e prédios danificados.",
-    "Cortes temporários de água, luz e telefone; redes de gás e eletricidade danificadas."
-   ],
-   "fonte": "Iran International (8/11)",
-   "url": "https://www.iranintl.com/en/202611081460",
-   "rotulo": "Enchentes no Irã",
-   "lado": "r"
-  },
-  {
-   "id": "pacifico-central",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Pena vira depressão tropical e deve se dissipar até sexta",
-   "local": "Pacífico Central, a sudoeste de Honolulu, Havaí",
-   "data": "2026-11-12",
-   "lat": 9.8,
-   "lon": -172.0,
-   "resumo": "Pena perdeu força e virou depressão tropical a cerca de 815 km a sul-sudoeste da ilha Johnston, no Pacífico Central. Deve virar uma baixa remanescente no fim desta quinta (12/11) e se dissipar até o fim de sexta (13/11).",
-   "pontos": [
-    "Aviso 23 (9h UTC de 12/11): 9,8° N e 172,0° W, ventos de 55 km/h e 1.009 hPa.",
-    "Anda para oeste a 26 km/h e deve manter esse rumo por cerca de dois dias.",
-    "No boletim anterior (3h UTC), ainda era tempestade tropical, com ventos de 75 km/h.",
-    "Não ameaça terra; não há avisos para áreas costeiras."
-   ],
-   "fonte": "NHC/Central Pacific (aviso 23, 12/11 9h UTC)",
-   "url": "https://www.nhc.noaa.gov/text/refresh/HFOTCPCP4+shtml/091432.shtml",
-   "rotulo": "D.T. Pena",
-   "lado": "t"
   }
  ]
 }
@@ -1314,6 +1294,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
