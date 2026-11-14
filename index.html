@@ -26,6 +26,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -673,30 +674,178 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-14T04:30:00+01:00",
- "manchete": "baixa na baía de bengala ganha força e deve virar depressão em 24 horas, mayon segue com novo domo e sul do brasil tem chuva no fim de semana",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-14T10:30:00+01:00",
+ "manchete": "baixa na baía de bengala deve virar depressão no domingo, rio cheio mata 3 em squamish, no canadá, e mayon segue com novo domo",
  "eventos": [
+  {
+   "id": "bengala-baixa",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Baixa em Bengala deve virar depressão no domingo",
+   "local": "Sudeste da Baía de Bengala, Oceano Índico",
+   "data": "2026-11-14",
+   "lat": 10.0,
+   "lon": 90.0,
+   "resumo": "A baixa pressão no sudeste da Baía de Bengala segue ganhando força neste sábado (14/11) e deve virar depressão no domingo (15/11), segundo o IMD, serviço meteorológico da Índia. Se virar tempestade ciclônica, na noite de segunda (16/11), receberá o nome Akvan.",
+   "pontos": [
+    "IMD (14/11): baixa bem marcada no sudeste da baía, com nuvens mais organizadas em torno do centro.",
+    "Previsão: depressão em 15/11 e tempestade ciclônica na noite de 16/11.",
+    "Trajetória ainda indefinida: pode seguir para a costa de Andhra Pradesh ou, se virar para nordeste, para Bangladesh e Bengala Ocidental; chance baixa de atingir Odisha.",
+    "Odisha: alerta amarelo para chuva a partir de 18/11; distritos costeiros em alerta e pescadores não devem ir ao mar."
+   ],
+   "fonte": "IMD via OTV (14/11, 11h55 IST) e Ommcom News (14/11)",
+   "url": "https://odishatv.in/weather/cyclone-akvan-likely-by-nov-16-odisha-on-alert-as-bay-of-bengal-system-intensifies-12808515",
+   "rotulo": "Possível Akvan",
+   "lado": "l"
+  },
+  {
+   "id": "canada-bc",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Barco vira em rio cheio e 3 morrem em Squamish, no Canadá",
+   "local": "Pemberton, Squamish e vale do Sea to Sky, Colúmbia Britânica, Canadá",
+   "data": "2026-11-13",
+   "lat": 50.32,
+   "lon": -122.8,
+   "resumo": "Três pessoas morreram quando um barco virou no rio Squamish, cheio depois de dias de chuva forte e enchentes no sudoeste da Colúmbia Britânica. As equipes de resgate recuperaram os corpos na sexta (13/11).",
+   "pontos": [
+    "Rio Squamish segue cheio após dias de chuva no corredor Sea to Sky; a polícia (RCMP) chamou as águas de \"implacáveis\".",
+    "Port Mellon somou 306 mm desde terça (10/11); Whistler teve 138 mm e Squamish 134 mm.",
+    "Em 12/11, Pemberton (3.400 habitantes) seguia inteira em alerta de retirada, e moradores do vale Paradise ficaram isolados.",
+    "No pico do vendaval, mais de 135 mil clientes ficaram sem luz; antes, uma pessoa já havia morrido atingida por uma árvore."
+   ],
+   "fonte": "RCMP via CTV News (13/11); The Canadian Press via Lethbridge Herald (12/11); The Weather Network (12/11)",
+   "url": "https://www.ctvnews.ca/vancouver/article/third-body-pulled-from-unforgiving-waters-in-squamish-bc-boat-tragedy-rcmp/",
+   "rotulo": "Mortes no Canadá",
+   "lado": "r"
+  },
+  {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Novo domo de lava aparece na cratera do Mayon",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-11-13",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O Phivolcs avistou um novo domo de lava na cratera do vulcão Mayon, nas Filipinas, na manhã desta sexta (13/11). O alerta segue no nível 3, e a zona de perigo de 6 km continua proibida.",
+   "pontos": [
+    "Satélites já mostravam o chão da cratera inchando de 4 a 12/11, antes de o domo ficar visível.",
+    "8 terremotos vulcânicos em 24 horas; emissão de SO₂ de 2.293 toneladas por dia em 12/11.",
+    "Atividade estromboliana fraca e pluma moderada levada para oeste-sudoeste e sudoeste.",
+    "Na quarta (11/11), uma erupção de nível baixo a moderado lançou cinzas; quase 4.000 pessoas foram retiradas no início do mês."
+   ],
+   "fonte": "Phivolcs via Journal News Online e Headtopics/GMA (13/11); Daily Tribune (11/11)",
+   "url": "https://journalnews.com.ph/bagong-lava-dome-namataan-sa-bunganga-ng-bulkang-mayon-alert-level-3-nananatili/",
+   "rotulo": "Vulcão Mayon",
+   "lado": "r"
+  },
   {
    "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "alto",
-   "titulo": "Charles se afasta; Espanha fica só com avisos amarelos",
+   "titulo": "Charles se afasta; fim de semana ainda tem chuva na Espanha",
    "local": "Leste da Espanha, Baleares e Catalunha",
-   "data": "2026-11-13",
+   "data": "2026-11-14",
    "lat": 41.39,
    "lon": 2.17,
-   "resumo": "Nesta sexta (13/11), a Aemet só mantém avisos amarelos na Espanha, com a Charles se afastando e a Bruna enfraquecendo. Na quinta (12/11), a Charles deixou 112 ocorrências nas Baleares, a maioria quedas de árvores em Maiorca.",
+   "resumo": "A Charles se afasta da Espanha neste sábado (14/11), mas a chuva continua, num cenário menos adverso, segundo a Aemet. Na quinta (12/11), a tempestade deixou 112 ocorrências nas Baleares, a maioria quedas de árvores em Maiorca.",
    "pontos": [
-    "Sexta (13/11): avisos amarelos por vento e mar em Maiorca, Ibiza e Formentera; por mar em Menorca, Barcelona, Girona e Tarragona.",
+    "Fim de semana (14 e 15/11): avisos amarelos por chuva na Catalunha, Galícia, Cantábria e Comunidade Valenciana; neve acima de 2.000 m.",
+    "Catalunha: chuva quase generalizada no sábado; no domingo, os Pirineus estão entre as áreas com mais chuva.",
     "Baleares (0h às 18h de 12/11): 59 quedas de árvores e 40 desprendimentos; 100 ocorrências em Maiorca, 55 delas em Palma.",
-    "Barcelona: 20 a 40 l/m² com a Charles; na primeira quinzena de novembro já caíram mais de 50 l/m² em quase toda a Catalunha.",
-    "Catalunha: vento forte no Camp de Tarragona pela manhã, máximas abaixo de 20 °C e chuvisco fraco no sábado (14/11)."
+    "Barcelona: 20 a 40 l/m² com a Charles; na primeira quinzena de novembro já caíram mais de 50 l/m² em quase toda a Catalunha."
    ],
-   "fonte": "Aemet via Infobae (13/11); 112 Baleares via Última Hora (12/11); El Nacional.cat (12/11)",
-   "url": "https://www.infobae.com/espana/2026/11/13/la-borrasca-bruna-se-debilita-y-charles-se-aleja-pero-no-cesan-las-lluvias-la-aemet-preve-un-fin-de-semana-de-inestabilidad-en-estas-zonas-de-espana/",
+   "fonte": "Aemet via El Español (14/11) e Qué! (13/11); 112 Baleares via Última Hora (12/11); El Nacional.cat (12/11)",
+   "url": "https://www.elespanol.com/ciencia/20261114/meteorologos-avisan-noviembre-ciclon-charles-alejara-espana-lluvias-seguiran-pais/1003744455291_0.html",
    "rotulo": "Charles no leste",
    "lado": "t"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Temporais afetam mais de 70 mil pessoas no RS",
+   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "data": "2026-11-13",
+   "lat": -29.17,
+   "lon": -51.52,
+   "resumo": "Os temporais desde o início de novembro afetaram 70.491 pessoas em 136 municípios do Rio Grande do Sul, segundo a Defesa Civil. Duas mortes, em Cacique Doble e Sagrada Família, estão sob investigação.",
+   "pontos": [
+    "Balanço da Defesa Civil do RS (dados até 6/11, divulgados em 9/11): 28 feridos, 119 desabrigados e 471 desalojados.",
+    "7.141 casas danificadas; só em Nova Prata são cerca de 2.700.",
+    "Em 11/11, o governo federal reconheceu emergência por vendaval em Caibaté, Eldorado do Sul, Santo Antônio das Missões e Sentinela do Sul.",
+    "Fim de semana: instabilidade aumenta no sábado (14/11) e ganha força no domingo (15/11), com chance de temporais isolados, vento forte e granizo; domingo pode ter chuva forte na Grande Porto Alegre, Litoral Norte e Serra (MetSul)."
+   ],
+   "fonte": "Defesa Civil do RS via NC News (9/11); Defesa Civil Nacional via A Crítica (11/11); MetSul (13/11); INMET via Overdrive (11/11)",
+   "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
+   "rotulo": "Temporais no RS",
+   "lado": "r"
+  },
+  {
+   "id": "sc-barragem",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Barragem Sul baixa a 93% com cinco comportas abertas em SC",
+   "local": "Alto Vale do Itajaí, Santa Catarina, Brasil",
+   "data": "2026-11-11",
+   "lat": -27.41,
+   "lon": -49.6,
+   "resumo": "A Barragem Sul, em Ituporanga, caiu para 93,4% da capacidade nesta quarta (11/11), com as cinco comportas abertas, segundo a Defesa Civil de Santa Catarina. Ela chegou a 109% e verteu desde sábado (7/11).",
+   "pontos": [
+    "Barragem Oeste (Taió): 72,7%, com as sete comportas abertas; Barragem Norte (José Boiteux): 35,1%.",
+    "Em Rio do Sul, o Itajaí do Oeste estava em 5,51 m (alerta) e o Itajaí-Açu em 5,45 m (atenção) na quarta.",
+    "Balanço estadual de 10/11: 54 municípios atingidos, 836 casas afetadas, 278 desabrigados e 11 municípios em emergência.",
+    "O governador anuncia na sexta (13/11), às 10h, em Florianópolis, medidas de apoio às cidades atingidas."
+   ],
+   "fonte": "Defesa Civil de SC via Rádio Mirador (11/11) e ND Mais (10/11); Araguaia Brusque (12/11)",
+   "url": "https://radiomirador.com.br/barragens-do-alto-vale-estao-com-comportas-abertas-e-niveis-dos-rios-seguem-em-monitoramento/",
+   "rotulo": "Chuva em SC",
+   "lado": "b"
+  },
+  {
+   "id": "gaza",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Chuva forte afeta 106 mil pessoas em Gaza",
+   "local": "Faixa de Gaza (Cidade de Gaza e Deir el-Balah)",
+   "data": "2026-11-11",
+   "lat": 31.42,
+   "lon": 34.35,
+   "resumo": "Chuva forte e ventos desde sexta (6/11) afetaram diretamente cerca de 106 mil pessoas em Gaza, segundo o UNICEF. Um aterro de areia desabou sobre barracas em Deir el-Balah e matou crianças e adultos; os balanços variam entre quatro e cinco mortos.",
+   "pontos": [
+    "Mais de 70 mil barracas de deslocados alagadas; Defesa Civil de Gaza recebeu mais de 2.100 chamados de emergência.",
+    "OCHA: mais de 26 mil famílias relataram danos a abrigos ou pertences até 8/11.",
+    "Cerca de 1,4 milhão de pessoas (65% da população) viviam em barracas ou abrigos improvisados quando as tempestades chegaram, segundo a ONU.",
+    "Redes de drenagem muito danificadas; municípios sem equipamento para retirar a água."
+   ],
+   "fonte": "Al Jazeera (11/11, com dados de UNICEF, OCHA e ONU); The National (9/11)",
+   "url": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage",
+   "rotulo": "Enchente em Gaza",
+   "lado": "l"
+  },
+  {
+   "id": "vietna-centro",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Enchentes deixam 2.734 casas alagadas no centro do Vietnã",
+   "local": "De Thanh Hoa a Dak Lak, centro do Vietnã",
+   "data": "2026-11-12",
+   "lat": 15.1,
+   "lon": 108.3,
+   "resumo": "Chuvas fortes deixaram 2.734 casas alagadas em Gia Lai e Dak Lak, no centro do Vietnã, até as 17h de quinta (12/11). Não há registro de mortes; duas pessoas ficaram feridas em Hue.",
+   "pontos": [
+    "1.887 famílias retiradas de áreas de risco; 1.195 delas em Dak Lak.",
+    "Dak Lak teve de 80 a 200 mm em 12/11, com pontos acima de 300 mm; de Hue a Khanh Hoa, 40 a 100 mm.",
+    "47 casas destelhadas pelo vento e 41 atingidas por deslizamentos.",
+    "235 hectares de lavouras afetados e 9.850 aves mortas ou arrastadas."
+   ],
+   "fonte": "VNA via Vietnam+ (13/11); SGGP (12/11)",
+   "url": "https://en.vietnamplus.vn/central-region-floods-inundate-over-2700-houses-displace-nearly-1900-households-post355335.vnp",
+   "rotulo": "Chuva no Vietnã",
+   "lado": "l"
   },
   {
    "id": "sudeste-espanha",
@@ -738,153 +887,6 @@ footer{border-top:1px solid var(--line)}
    "fonte": "ANEPC via Correio da Manhã e Viana TV (11/11); Proteção Civil da Madeira via DNoticias (11/11)",
    "url": "https://www.cmjornal.pt/sociedade/clima/detalhe/protecao-civil-contabiliza-1630-ocorrencias-da-tempestade-charles-rajada-maxima-de-vento-foi-de-123km-h",
    "rotulo": "Charles Portugal",
-   "lado": "l"
-  },
-  {
-   "id": "canada-bc",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Chuva cede, mas Pemberton segue em alerta de retirada",
-   "local": "Pemberton, Squamish e vale do Sea to Sky, Colúmbia Britânica, Canadá",
-   "data": "2026-11-12",
-   "lat": 50.32,
-   "lon": -122.8,
-   "resumo": "A chuva perdeu força no sudoeste da Colúmbia Britânica, mas Pemberton, de 3.400 habitantes, segue inteira em alerta de retirada. Moradores do vale Paradise, perto de Squamish, ficaram isolados pelos rios.",
-   "pontos": [
-    "Port Mellon somou 306 mm desde terça (10/11); Whistler teve 138 mm e Squamish 134 mm.",
-    "Rodovia 99 e Pemberton Meadows Road intransitáveis; ordem de retirada no aeroporto regional, base de combate a incêndios e algumas casas.",
-    "A represa de Cheakamus chegou a liberar 735 m³/s, três vezes o previsto; ordens de retirada também na nação Líl̓wat e em Zeballos (cerca de 30 imóveis).",
-    "No pico do vendaval, mais de 135 mil clientes ficaram sem luz; uma pessoa morreu atingida por árvore que caiu sobre um carro."
-   ],
-   "fonte": "The Canadian Press via Lethbridge Herald (12/11); Canadian Inquirer (13/11); The Weather Network (12/11)",
-   "url": "https://lethbridgeherald.com/news/national-news/2026/11/12/deluge-eases-as-b-c-floods-force-some-residents-to-shelter-in-place/",
-   "rotulo": "Enchente no Canadá",
-   "lado": "r"
-  },
-  {
-   "id": "mayon",
-   "tipo": "vulcao",
-   "gravidade": "alto",
-   "titulo": "Novo domo de lava aparece na cratera do Mayon",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-13",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O Phivolcs avistou um novo domo de lava na cratera do vulcão Mayon, nas Filipinas, na manhã desta sexta (13/11). O alerta segue no nível 3, e a zona de perigo de 6 km continua proibida.",
-   "pontos": [
-    "Satélites já mostravam o chão da cratera inchando de 4 a 12/11, antes de o domo ficar visível.",
-    "8 terremotos vulcânicos em 24 horas; emissão de SO₂ de 2.293 toneladas por dia em 12/11.",
-    "Atividade estromboliana fraca e pluma moderada levada para oeste-sudoeste e sudoeste.",
-    "Na quarta (11/11), uma erupção de nível baixo a moderado lançou cinzas; quase 4.000 pessoas foram retiradas no início do mês."
-   ],
-   "fonte": "Phivolcs via Journal News Online e Headtopics/GMA (13/11); Daily Tribune (11/11)",
-   "url": "https://journalnews.com.ph/bagong-lava-dome-namataan-sa-bunganga-ng-bulkang-mayon-alert-level-3-nananatili/",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
-  },
-  {
-   "id": "bengala-baixa",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Baixa em Bengala ganha força e pode virar o ciclone Akvan",
-   "local": "Sudeste da Baía de Bengala, Oceano Índico",
-   "data": "2026-11-14",
-   "lat": 10.0,
-   "lon": 90.0,
-   "resumo": "A baixa pressão no sudeste da Baía de Bengala virou uma baixa bem marcada neste sábado (14/11), segundo o IMD, serviço meteorológico da Índia. Ela deve virar depressão em 24 horas e tempestade ciclônica na noite de segunda (16/11), quando receberia o nome Akvan.",
-   "pontos": [
-    "IMD (14/11): nuvens mais organizadas em torno do centro que no dia anterior, sinal de intensificação gradual.",
-    "Previsão: depressão nas próximas 24 horas e tempestade ciclônica no centro da baía na noite de 16/11.",
-    "Odisha (Índia): alerta amarelo em 13 distritos para 18 e 19/11, com chuva forte e ventos de 30 a 40 km/h em Kendrapara e Jagatsinghpur; pescadores não devem ir ao mar.",
-    "O IMD ainda não indicou onde o sistema deve tocar a costa."
-   ],
-   "fonte": "IMD via Ommcom News (14/11) e Pragativadi (13/11)",
-   "url": "https://ommcomnews.com/odisha-news/well-marked-low-pressure-forms-over-bob-cyclone-formation-likely-in-48-hours/",
-   "rotulo": "Possível Akvan",
-   "lado": "l"
-  },
-  {
-   "id": "vietna-centro",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Enchentes deixam 2.734 casas alagadas no centro do Vietnã",
-   "local": "De Thanh Hoa a Dak Lak, centro do Vietnã",
-   "data": "2026-11-12",
-   "lat": 15.1,
-   "lon": 108.3,
-   "resumo": "Chuvas fortes deixaram 2.734 casas alagadas em Gia Lai e Dak Lak, no centro do Vietnã, até as 17h de quinta (12/11). Não há registro de mortes; duas pessoas ficaram feridas em Hue.",
-   "pontos": [
-    "1.887 famílias retiradas de áreas de risco; 1.195 delas em Dak Lak.",
-    "Dak Lak teve de 80 a 200 mm em 12/11, com pontos acima de 300 mm; de Hue a Khanh Hoa, 40 a 100 mm.",
-    "47 casas destelhadas pelo vento e 41 atingidas por deslizamentos.",
-    "235 hectares de lavouras afetados e 9.850 aves mortas ou arrastadas."
-   ],
-   "fonte": "VNA via Vietnam+ (13/11); SGGP (12/11)",
-   "url": "https://en.vietnamplus.vn/central-region-floods-inundate-over-2700-houses-displace-nearly-1900-households-post355335.vnp",
-   "rotulo": "Chuva no Vietnã",
-   "lado": "l"
-  },
-  {
-   "id": "sc-barragem",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Barragem Sul baixa a 93% com cinco comportas abertas em SC",
-   "local": "Alto Vale do Itajaí, Santa Catarina, Brasil",
-   "data": "2026-11-11",
-   "lat": -27.41,
-   "lon": -49.6,
-   "resumo": "A Barragem Sul, em Ituporanga, caiu para 93,4% da capacidade nesta quarta (11/11), com as cinco comportas abertas, segundo a Defesa Civil de Santa Catarina. Ela chegou a 109% e verteu desde sábado (7/11).",
-   "pontos": [
-    "Barragem Oeste (Taió): 72,7%, com as sete comportas abertas; Barragem Norte (José Boiteux): 35,1%.",
-    "Em Rio do Sul, o Itajaí do Oeste estava em 5,51 m (alerta) e o Itajaí-Açu em 5,45 m (atenção) na quarta.",
-    "Balanço estadual de 10/11: 54 municípios atingidos, 836 casas afetadas, 278 desabrigados e 11 municípios em emergência.",
-    "O governador anuncia na sexta (13/11), às 10h, em Florianópolis, medidas de apoio às cidades atingidas."
-   ],
-   "fonte": "Defesa Civil de SC via Rádio Mirador (11/11) e ND Mais (10/11); Araguaia Brusque (12/11)",
-   "url": "https://radiomirador.com.br/barragens-do-alto-vale-estao-com-comportas-abertas-e-niveis-dos-rios-seguem-em-monitoramento/",
-   "rotulo": "Chuva em SC",
-   "lado": "b"
-  },
-  {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Temporais afetam mais de 70 mil pessoas no RS",
-   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-11-13",
-   "lat": -29.17,
-   "lon": -51.52,
-   "resumo": "Os temporais desde o início de novembro afetaram 70.491 pessoas em 136 municípios do Rio Grande do Sul, segundo a Defesa Civil. Duas mortes, em Cacique Doble e Sagrada Família, estão sob investigação.",
-   "pontos": [
-    "Balanço da Defesa Civil do RS (dados até 6/11, divulgados em 9/11): 28 feridos, 119 desabrigados e 471 desalojados.",
-    "7.141 casas danificadas; só em Nova Prata são cerca de 2.700.",
-    "Em 11/11, o governo federal reconheceu emergência por vendaval em Caibaté, Eldorado do Sul, Santo Antônio das Missões e Sentinela do Sul.",
-    "MetSul (13/11): baixa pressão traz chuva irregular e temporais isolados ao Sul no fim de semana; domingo (15/11) pode ter chuva forte na Grande Porto Alegre, Litoral Norte e Serra."
-   ],
-   "fonte": "Defesa Civil do RS via NC News (9/11); Defesa Civil Nacional via A Crítica (11/11); MetSul (13/11)",
-   "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
-   "rotulo": "Temporais no RS",
-   "lado": "r"
-  },
-  {
-   "id": "gaza",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Chuva forte afeta 106 mil pessoas em Gaza",
-   "local": "Faixa de Gaza (Cidade de Gaza e Deir el-Balah)",
-   "data": "2026-11-11",
-   "lat": 31.42,
-   "lon": 34.35,
-   "resumo": "Chuva forte e ventos desde sexta (6/11) afetaram diretamente cerca de 106 mil pessoas em Gaza, segundo o UNICEF. Um aterro de areia desabou sobre barracas em Deir el-Balah e matou crianças e adultos; os balanços variam entre quatro e cinco mortos.",
-   "pontos": [
-    "Mais de 70 mil barracas de deslocados alagadas; Defesa Civil de Gaza recebeu mais de 2.100 chamados de emergência.",
-    "OCHA: mais de 26 mil famílias relataram danos a abrigos ou pertences até 8/11.",
-    "Cerca de 1,4 milhão de pessoas (65% da população) viviam em barracas ou abrigos improvisados quando as tempestades chegaram, segundo a ONU.",
-    "Redes de drenagem muito danificadas; municípios sem equipamento para retirar a água."
-   ],
-   "fonte": "Al Jazeera (11/11, com dados de UNICEF, OCHA e ONU); The National (9/11)",
-   "url": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage",
-   "rotulo": "Enchente em Gaza",
    "lado": "l"
   },
   {
@@ -930,7 +932,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1285,6 +1288,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
