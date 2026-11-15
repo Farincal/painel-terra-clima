@@ -30,6 +30,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -677,30 +678,29 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-15T04:30:00+01:00",
- "manchete": "baixa na baía de bengala deve virar depressão hoje e ciclone akvan na segunda, sul do brasil segue com temporais isolados e mayon mantém novo domo",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-11-15T10:30:00+01:00",
+ "manchete": "depressão em bengala deve virar ciclone akvan na segunda, temporais no sul e sudeste do brasil e chuva mata 2 no equador",
  "eventos": [
   {
    "id": "bengala-baixa",
    "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Baixa em Bengala deve virar depressão hoje e ciclone Akvan na segunda",
+   "gravidade": "alto",
+   "titulo": "Depressão se forma em Bengala e deve virar ciclone Akvan na segunda",
    "local": "Sudeste da Baía de Bengala, Oceano Índico",
    "data": "2026-11-15",
-   "lat": 10.0,
-   "lon": 90.0,
-   "resumo": "A baixa pressão bem marcada no sudeste da Baía de Bengala deve virar depressão neste domingo (15/11) e tempestade ciclônica Akvan na noite de segunda (16/11), segundo previsão do IMD repassada pelas autoridades de Andhra Pradesh. O ponto de chegada à costa ainda não foi definido.",
+   "lat": 9.3,
+   "lon": 86.9,
+   "resumo": "Uma depressão se formou no sudeste da Baía de Bengala neste domingo (15/11), a cerca de 840 km de Chennai, segundo o IMD. Ela deve virar a tempestade ciclônica Akvan na segunda (16/11) e ganhar força ao seguir para o norte-noroeste.",
    "pontos": [
-    "Previsão: depressão na manhã de 15/11, depressão profunda na manhã de 16/11 e tempestade ciclônica na noite de 16/11.",
-    "Deve virar tempestade ciclônica severa no centro e centro-oeste da baía por volta de 18/11; o IMD (14/11) previa ventos de 85 a 95 km/h e rajadas de até 105 km/h.",
-    "Trajetória incomum; a aproximação do norte da costa de Andhra Pradesh é esperada por volta de 19/11. Alerta laranja do IMD e chuva forte a extremamente forte em 18 e 19/11 em distritos como Kakinada e East Godavari.",
-    "Pescadores devem voltar ao porto até a noite de 15/11; Odisha pode ter chuva forte em 19/11 em Ganjam, Gajapati, Puri e Rayagada."
+    "Posição às 8h30 IST de 15/11: 9,3°N, 86,9°E; 630 km a leste de Trincomalee (Sri Lanka) e 1.010 km a sul-sudeste de Visakhapatnam.",
+    "Previsão do IMD: ciclone em 16/11, ciclone severo em 17/11 (95–105 km/h, rajadas de 115 km/h) e muito severo até 19/11 (120–130 km/h, rajadas de 145 km/h).",
+    "Pré-alerta de ciclone para Andhra Pradesh e sul de Odisha; local de chegada à costa ainda incerto.",
+    "Chuva extremamente forte (21 cm ou mais) prevista no norte de Andhra Pradesh em 19 e 20/11; pescadores devem ficar fora do mar até 16–20/11."
    ],
-   "fonte": "IMD e autoridade de desastres de Andhra Pradesh via The Hans India (15/11, 5h13 IST); IMD via OdishaTV (14/11)",
-   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclone-akvan-likely-to-hit-ap-coast-on-nov-18-1142184",
-   "rotulo": "Possível Akvan",
+   "fonte": "IMD, boletim nacional nº 2 (15/11, 13h30 IST) via Nation Path India",
+   "url": "https://www.nationpathindia.com/environment/bay-of-bengal-depression-imd-pre-cyclone-watch-andhra-odisha-november-2026",
+   "rotulo": "Depressão Bengala",
    "lado": "l"
   },
   {
@@ -725,48 +725,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "mayon",
-   "tipo": "vulcao",
-   "gravidade": "alto",
-   "titulo": "Novo domo de lava aparece na cratera do Mayon",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-13",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O Phivolcs avistou um novo domo de lava na cratera do vulcão Mayon, nas Filipinas, na manhã desta sexta (13/11). O alerta segue no nível 3, e a zona de perigo de 6 km continua proibida.",
-   "pontos": [
-    "Satélites já mostravam o chão da cratera inchando de 4 a 12/11, antes de o domo ficar visível.",
-    "8 terremotos vulcânicos em 24 horas; emissão de SO₂ de 2.293 toneladas por dia em 12/11.",
-    "Atividade estromboliana fraca e pluma moderada levada para oeste-sudoeste e sudoeste.",
-    "Na quarta (11/11), uma erupção de nível baixo a moderado lançou cinzas; quase 4.000 pessoas foram retiradas no início do mês."
-   ],
-   "fonte": "Phivolcs via Journal News Online e Headtopics/GMA (13/11); Daily Tribune (11/11)",
-   "url": "https://journalnews.com.ph/bagong-lava-dome-namataan-sa-bunganga-ng-bulkang-mayon-alert-level-3-nananatili/",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
-  },
-  {
-   "id": "charles-leste",
-   "tipo": "outro",
-   "gravidade": "alto",
-   "titulo": "Charles se afasta; fim de semana ainda tem chuva na Espanha",
-   "local": "Leste da Espanha, Baleares e Catalunha",
-   "data": "2026-11-14",
-   "lat": 41.39,
-   "lon": 2.17,
-   "resumo": "A Charles se afasta da Espanha neste sábado (14/11), mas a chuva continua, num cenário menos adverso, segundo a Aemet. Na quinta (12/11), a tempestade deixou 112 ocorrências nas Baleares, a maioria quedas de árvores em Maiorca.",
-   "pontos": [
-    "Fim de semana (14 e 15/11): avisos amarelos por chuva na Catalunha, Galícia, Cantábria e Comunidade Valenciana; neve acima de 2.000 m.",
-    "Catalunha: chuva quase generalizada no sábado; no domingo, os Pirineus estão entre as áreas com mais chuva.",
-    "Baleares (0h às 18h de 12/11): 59 quedas de árvores e 40 desprendimentos; 100 ocorrências em Maiorca, 55 delas em Palma.",
-    "Barcelona: 20 a 40 l/m² com a Charles; na primeira quinzena de novembro já caíram mais de 50 l/m² em quase toda a Catalunha."
-   ],
-   "fonte": "Aemet via El Español (14/11) e Qué! (13/11); 112 Baleares via Última Hora (12/11); El Nacional.cat (12/11)",
-   "url": "https://www.elespanol.com/ciencia/20261114/meteorologos-avisan-noviembre-ciclon-charles-alejara-espana-lluvias-seguiran-pais/1003744455291_0.html",
-   "rotulo": "Charles no leste",
-   "lado": "t"
-  },
-  {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -785,6 +743,90 @@ footer{border-top:1px solid var(--line)}
    "fonte": "Defesa Civil do RS via NC News (9/11) e Acústica FM (14/11); Defesa Civil Nacional via A Crítica (11/11)",
    "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
    "rotulo": "Temporais no RS",
+   "lado": "r"
+  },
+  {
+   "id": "sp-temporais",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Defesa Civil alerta para temporais em todo o estado de SP",
+   "local": "Estado de São Paulo, Brasil",
+   "data": "2026-11-15",
+   "lat": -22.3,
+   "lon": -48.6,
+   "resumo": "A Defesa Civil de São Paulo alerta para temporais em todo o estado neste domingo (15/11). Leste, noroeste, oeste e norte paulista têm as condições mais favoráveis.",
+   "pontos": [
+    "Pancadas moderadas a fortes, com muitos raios e granizo em pontos isolados.",
+    "Rajadas de até 70 km/h na faixa oeste durante as tempestades.",
+    "Risco de alagamentos, enxurradas, quedas de árvores e deslizamentos em encostas.",
+    "No RS, a Defesa Civil prevê temporais isolados no domingo e volta de chuva forte na terça (17/11)."
+   ],
+   "fonte": "Defesa Civil de SP via Agência SP / Primeira Edição (13/11)",
+   "url": "https://pejornal.com.br/defesa-civil-alerta-para-temporais-em-todo-o-estado-de-sao-paulo-neste-domingo-15-de-novembro/",
+   "rotulo": "Temporais em SP",
+   "lado": "t"
+  },
+  {
+   "id": "equador-guayaquil",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Chuva forte deixa 2 mortos em Guayaquil, no Equador",
+   "local": "Guayas, Bolívar e Los Ríos, Equador",
+   "data": "2026-11-14",
+   "lat": -2.19,
+   "lon": -79.89,
+   "resumo": "Chuvas fortes entre a noite de sexta (13/11) e a manhã de sábado (14/11) deixaram dois mortos em Guayaquil, no Equador. Um pai e um filho seguem desaparecidos.",
+   "pontos": [
+    "A agência de riscos (SNGR) registrou 11 ocorrências: 10 enchentes e 1 afundamento de solo.",
+    "Guayas teve 8 enchentes; Bolívar, 1 enchente e 1 afundamento; Los Ríos, 1 enchente.",
+    "Um taxista morreu dentro do carro numa rua alagada; um adolescente foi arrastado para o canal Estero Salado.",
+    "Ainda não há balanço de casas atingidas nem de pessoas afetadas."
+   ],
+   "fonte": "SNGR e El Universo via The Rio Times (14/11)",
+   "url": "https://www.riotimesonline.com/ecuador-rain-floods-three-provinces-14-november/",
+   "rotulo": "Chuva no Equador",
+   "lado": "l"
+  },
+  {
+   "id": "charles-leste",
+   "tipo": "outro",
+   "gravidade": "alto",
+   "titulo": "Charles se afasta; domingo tem chuva fraca e neve nos Pirineus",
+   "local": "Leste da Espanha, Baleares e Catalunha",
+   "data": "2026-11-15",
+   "lat": 41.39,
+   "lon": 2.17,
+   "resumo": "A Charles já se afastou da Espanha, e o domingo (15/11) tem avisos sobretudo na Galícia e na Cantábria, segundo a Aemet. Na Catalunha, o dia começa limpo e há chuva fraca e dispersa no terço oeste à tarde.",
+   "pontos": [
+    "Domingo (15/11): avisos na Galícia, cordilheira Cantábrica, interior da Cantábria e alto Ebro, com rajadas muito fortes.",
+    "Pirineus: neve a partir de 1.900–2.000 m e geadas fracas nas partes altas.",
+    "Baleares (0h às 18h de 12/11): 112 ocorrências com a Charles, 59 delas quedas de árvores; 100 em Maiorca.",
+    "Barcelona teve 20 a 40 l/m² com a Charles; na 1ª quinzena de novembro, mais de 50 l/m² em quase toda a Catalunha."
+   ],
+   "fonte": "Aemet via Infobae (15/11); 112 Baleares via Última Hora (12/11); El Nacional.cat (12/11)",
+   "url": "https://www.infobae.com/espana/2026/11/15/la-aemet-preve-un-domingo-con-nubes-lluvias-y-viento-en-la-mayor-parte-del-pais-estas-son-las-regiones-con-mayores-precipitaciones/",
+   "rotulo": "Charles no leste",
+   "lado": "t"
+  },
+  {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Novo domo de lava aparece na cratera do Mayon",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-11-13",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O Phivolcs avistou um novo domo de lava na cratera do vulcão Mayon, nas Filipinas, na manhã desta sexta (13/11). O alerta segue no nível 3, e a zona de perigo de 6 km continua proibida.",
+   "pontos": [
+    "Satélites já mostravam o chão da cratera inchando de 4 a 12/11, antes de o domo ficar visível.",
+    "8 terremotos vulcânicos em 24 horas; emissão de SO₂ de 2.293 toneladas por dia em 12/11.",
+    "Atividade estromboliana fraca e pluma moderada levada para oeste-sudoeste e sudoeste.",
+    "Na quarta (11/11), uma erupção de nível baixo a moderado lançou cinzas; quase 4.000 pessoas foram retiradas no início do mês."
+   ],
+   "fonte": "Phivolcs via Journal News Online e Headtopics/GMA (13/11); Daily Tribune (11/11)",
+   "url": "https://journalnews.com.ph/bagong-lava-dome-namataan-sa-bunganga-ng-bulkang-mayon-alert-level-3-nananatili/",
+   "rotulo": "Vulcão Mayon",
    "lado": "r"
   },
   {
@@ -851,27 +893,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "sudeste-espanha",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Moradores de Piedralaves voltam para casa",
-   "local": "Norte de Cáceres e sul de Ávila; oeste da Espanha",
-   "data": "2026-11-12",
-   "lat": 40.2,
-   "lon": -5.6,
-   "resumo": "Os moradores de Piedralaves, no sul de Ávila, foram autorizados a voltar para casa nesta quinta (12/11) depois que o tempo melhorou. O comitê de emergência (Cecopi) suspendeu as restrições impostas por risco de transbordamento da represa de El Horcajo.",
-   "pontos": [
-    "A retirada começou na terça (10/11), sob alerta vermelho de chuva; a imprensa fala em 2.200 a 2.500 moradores, sem feridos.",
-    "O Cecopi se reuniu na manhã de quinta (12/11), suspendeu as restrições e foi dissolvido.",
-    "Aulas voltaram nesta quinta em 31 municípios do sul de Ávila; em Piedralaves, devem voltar na sexta (13/11) ou na segunda (16/11).",
-    "A represa chegou a verter por cima; o nível havia caído 3 m na noite de terça para quarta."
-   ],
-   "fonte": "Junta de Castilla y León via Europa Press (Diario Siglo XXI) e EFE (Infobae), 12/11; Tribuna de Ávila (11/11)",
-   "url": "https://www.infobae.com/espana/agencias/2026/11/12/los-2200-vecinos-de-piedralaves-avila-vuelven-a-sus-casas-tras-mejorar-el-tiempo/",
-   "rotulo": "Volta em Ávila",
-   "lado": "b"
-  },
-  {
    "id": "florida",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -914,8 +935,7 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1270,6 +1290,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
