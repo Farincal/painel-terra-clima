@@ -31,6 +31,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -678,29 +679,30 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-15T10:30:00+01:00",
- "manchete": "depressão em bengala deve virar ciclone akvan na segunda, temporais no sul e sudeste do brasil e chuva mata 2 no equador",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-15T16:30:00+01:00",
+ "manchete": "depressão akvan avança em bengala, temporal alaga hospital no df e chuva deixa 2 mortos no equador",
  "eventos": [
   {
    "id": "bengala-baixa",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Depressão se forma em Bengala e deve virar ciclone Akvan na segunda",
+   "titulo": "Depressão Akvan avança em Bengala e deve virar ciclone na segunda",
    "local": "Sudeste da Baía de Bengala, Oceano Índico",
    "data": "2026-11-15",
-   "lat": 9.3,
-   "lon": 86.9,
-   "resumo": "Uma depressão se formou no sudeste da Baía de Bengala neste domingo (15/11), a cerca de 840 km de Chennai, segundo o IMD. Ela deve virar a tempestade ciclônica Akvan na segunda (16/11) e ganhar força ao seguir para o norte-noroeste.",
+   "lat": 10.0,
+   "lon": 86.8,
+   "resumo": "A depressão Akvan, no sudeste da Baía de Bengala, estava a cerca de 800 km de Chennai neste domingo (15/11), segundo o IMD. Ela deve virar ciclone na segunda (16/11) e seguir rumo à costa de Andhra Pradesh.",
    "pontos": [
-    "Posição às 8h30 IST de 15/11: 9,3°N, 86,9°E; 630 km a leste de Trincomalee (Sri Lanka) e 1.010 km a sul-sudeste de Visakhapatnam.",
+    "Manhã de 15/11: cerca de 800 km a leste-sudeste de Chennai e 960 km a sul-sudeste de Visakhapatnam, andando a 15 km/h para o norte-noroeste.",
     "Previsão do IMD: ciclone em 16/11, ciclone severo em 17/11 (95–105 km/h, rajadas de 115 km/h) e muito severo até 19/11 (120–130 km/h, rajadas de 145 km/h).",
-    "Pré-alerta de ciclone para Andhra Pradesh e sul de Odisha; local de chegada à costa ainda incerto.",
-    "Chuva extremamente forte (21 cm ou mais) prevista no norte de Andhra Pradesh em 19 e 20/11; pescadores devem ficar fora do mar até 16–20/11."
+    "Pré-alerta de ciclone para Andhra Pradesh e sul de Odisha; local de chegada à costa ainda incerto. Tamil Nadu não deve ser atingido diretamente.",
+    "Chuva extremamente forte (21 cm ou mais) prevista no norte de Andhra Pradesh em 19 e 20/11; chuva forte também em Odisha, Bengala Ocidental e ilhas Andaman."
    ],
-   "fonte": "IMD, boletim nacional nº 2 (15/11, 13h30 IST) via Nation Path India",
-   "url": "https://www.nationpathindia.com/environment/bay-of-bengal-depression-imd-pre-cyclone-watch-andhra-odisha-november-2026",
-   "rotulo": "Depressão Bengala",
+   "fonte": "IMD via The Federal (15/11) e Nation Path India (boletim nº 2, 15/11)",
+   "url": "https://thefederal.com/category/news/cyclone-akvan-imd-warns-heavy-rainfall-andhra-odisha-bengal-263029",
+   "rotulo": "Akvan (Bengala)",
    "lado": "l"
   },
   {
@@ -744,6 +746,27 @@ footer{border-top:1px solid var(--line)}
    "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
    "rotulo": "Temporais no RS",
    "lado": "r"
+  },
+  {
+   "id": "df-ceilandia",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Temporal alaga hospital e metrô em Ceilândia (DF)",
+   "local": "Ceilândia, Distrito Federal, Brasil",
+   "data": "2026-11-14",
+   "lat": -15.82,
+   "lon": -48.11,
+   "resumo": "Um temporal no sábado (14/11) alagou o Hospital Regional de Ceilândia, a estação Guariroba do metrô e outros pontos da cidade, no Distrito Federal. A governadora Celina Leão mobilizou Defesa Civil, Bombeiros e Novacap.",
+   "pontos": [
+    "Água nos corredores do hospital e goteiras perto de áreas com pacientes internados.",
+    "Circulação no ramal de Ceilândia do metrô suspensa das 17h40 às 18h; passageiros ficaram ilhados na estação Guariroba.",
+    "Biblioteca de Ceilândia e auditório da Escola Parque Anísio Teixeira atingidos; carros arrastados perto do terminal do P Sul.",
+    "Não há registro de feridos nem balanço consolidado dos prejuízos."
+   ],
+   "fonte": "GDF e Metrô-DF via O Hoje e Misto Brasil (15/11)",
+   "url": "https://ohoje.com/2026/11/15/celina-leao-determina-acao-imediata-do-governo-apos-temporal-atingir-ceilandia/",
+   "rotulo": "Temporal no DF",
+   "lado": "l"
   },
   {
    "id": "sp-temporais",
@@ -893,27 +916,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "florida",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Enchentes históricas deixam 2 mortos na Flórida",
-   "local": "Brevard, Indian River e St. Lucie, Flórida, EUA",
-   "data": "2026-11-09",
-   "lat": 28.03,
-   "lon": -80.59,
-   "resumo": "Chuvas de até cerca de 600 mm causaram enchentes no leste da Flórida entre 1º e 7 de novembro e deixaram 2 mortos em Palm Bay. O rio Peace, em Arcadia, segue acima da cota de inundação.",
-   "pontos": [
-    "Malabar teve até 627 mm; Melbourne registrou 292 mm em 2/11, o dia mais chuvoso desde 1937.",
-    "Rio Peace em Arcadia: 4,45 m às 7h30 de 9/11, após pico de 4,66 m; a cota de inundação é 3,35 m. Deve baixar dela na sexta (13/11).",
-    "Estado de emergência em 14 condados; danos em estradas e pontes de Palm Bay passam de US$ 10 milhões.",
-    "A AccuWeather estima perdas totais de US$ 3 a 5 bilhões."
-   ],
-   "fonte": "NWS (aviso de enchente, 9/11); governo da Flórida e AccuWeather via Wikipédia",
-   "url": "https://en.wikipedia.org/wiki/November_2026_Florida_floods",
-   "rotulo": "Enchente Flórida",
-   "lado": "r"
-  },
-  {
    "id": "indonesia-fogo",
    "tipo": "incendio",
    "gravidade": "moderado",
@@ -935,7 +937,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1290,6 +1293,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
