@@ -37,6 +37,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -686,29 +687,71 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-16T22:30:00+01:00",
- "manchete": "akvan vira ciclone rumo a andhra pradesh, e chuva de mais de 200 mm alaga cidade no interior da bahia",
+ "atualizado": "2026-11-17T04:20:00+01:00",
+ "manchete": "ciclone xavier ganha força nas ilhas cook, akvan ameaça a índia e cheia do rio paraná tira 4,5 mil de casa na argentina",
  "eventos": [
   {
    "id": "bengala-baixa",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Ciclone Akvan se forma e deve chegar à Índia em 20/11",
-   "local": "Sudeste da Baía de Bengala, Oceano Índico",
-   "data": "2026-11-16",
+   "titulo": "Ciclone Akvan para no mar e deve atingir a Índia em 20/11",
+   "local": "Centro-sul da Baía de Bengala, Oceano Índico",
+   "data": "2026-11-17",
    "lat": 12.3,
    "lon": 85.8,
-   "resumo": "A depressão profunda virou o ciclone Akvan na noite desta segunda (16/11), segundo o IMD. Ele estava a 610 km de Chennai e deve cruzar a costa de Andhra Pradesh, entre Nellore e Tuni, por volta do meio-dia de 20/11.",
+   "resumo": "O ciclone Akvan ficou praticamente parado na Baía de Bengala na noite de 16/11, segundo o IMD. A previsão segue de chegada à costa de Andhra Pradesh, entre Nellore e Tuni, por volta do meio-dia de 20/11.",
    "pontos": [
-    "Boletim do IMD das 19h50 (hora da Índia): às 17h30, centro a 610 km a leste de Chennai e 670 km ao sul-sudeste de Visakhapatnam, andando para nor-noroeste a 10 km/h.",
+    "Boletim do IMD das 23h30 (hora da Índia) de 16/11: centro a 670 km ao sul-sudeste de Visakhapatnam e 790 km ao sul de Gopalpur; antes, estava a 610 km a leste de Chennai.",
     "Previsão: ciclone severo na noite de 17/11 e muito severo na manhã de 19/11; ventos de 120–130 km/h, rajadas de 145 km/h, na chegada à costa.",
-    "Alerta laranja de ciclone para Andhra Pradesh e sul de Odisha; ressaca de 1 a 1,5 m pode inundar áreas baixas de 6 distritos de Andhra Pradesh.",
-    "Chuva extremamente forte isolada (21 cm ou mais) no norte da costa de Andhra Pradesh em 19 e 20/11; chuva forte em Tamil Nadu em 18 e 19/11."
+    "Odisha mandou retirar moradores de áreas sujeitas a deslizamento em 6 distritos e deixou 74 equipes de resgate de prontidão.",
+    "Chuva extremamente forte isolada (mais de 204 mm em 24 h) em Andhra Pradesh em 19 e 20/11; chuva forte em Tamil Nadu em 18 e 19/11."
    ],
-   "fonte": "IMD via Ommcom News e Transclew (16/11)",
-   "url": "https://ommcomnews.com/odisha-news/cyclonic-storm-akvan-forms-over-bay-likely-to-intensify-into-very-severe-storm/",
+   "fonte": "IMD via Daily Jagran e India.com (17/11)",
+   "url": "https://www.thedailyjagran.com/india/news/cyclone-akvan-live-tracker-landfall-news-heavy-rain-alert-in-odisha-andhra-pradesh-rescue-evacuations-injury-deaths-imd-latest-updates-10336536",
    "rotulo": "Ciclone Akvan",
    "lado": "l"
+  },
+  {
+   "id": "xavier-cook",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Ciclone Xavier ganha força perto das Ilhas Cook",
+   "local": "Norte das Ilhas Cook, Pacífico Sul",
+   "data": "2026-11-16",
+   "lat": -8.9,
+   "lon": -161.2,
+   "resumo": "O ciclone tropical Xavier chegou à categoria 2 e estava a 170 km ao norte de Manihiki, nas Ilhas Cook, na noite de 16/11 (UTC). A previsão é que vire ciclone severo, com ventos de até 175 km/h, até 17/11.",
+   "pontos": [
+    "RSMC Nadi (10h UTC de 16/11): pressão de 983 hPa, ventos de 95 km/h e rajadas de 130 km/h, andando para sul-sudoeste a 9 km/h.",
+    "Aviso de vendaval para Manihiki e Rakahanga (85 km/h, rajadas de 120 km/h); alerta de ciclone para Pukapuka e Nassau.",
+    "JTWC prevê pico de 95 nós (175 km/h) às 18h UTC de 17/11 e enfraquecimento a partir de 18/11.",
+    "Ainda não há registro de danos; o ciclone deve ficar na área até quinta (19/11)."
+   ],
+   "fonte": "RSMC Nadi, JTWC e MetService via The Watchers (16/11)",
+   "url": "https://watchers.news/2026/11/16/tropical-cyclone-xavier-northern-cook-islands-manihiki-rakahanga-november-2026/",
+   "rotulo": "Ciclone Xavier",
+   "lado": "r"
+  },
+  {
+   "id": "parana-argentina",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Cheia do rio Paraná tira 4,5 mil de casa na Argentina",
+   "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
+   "data": "2026-11-15",
+   "lat": -29.15,
+   "lon": -59.65,
+   "resumo": "A cheia do rio Paraná já obrigou 4.547 pessoas a deixar suas casas em cerca de 25 localidades do litoral argentino. O rio passou da cota de retirada em 10 cidades, e o pico entre Santa Fe e Rosário é esperado em 7 a 15 dias.",
+   "pontos": [
+    "Retirados: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos.",
+    "Santa Fe marcou 5,76 m em 15/11 (cota de retirada: 5,70 m); o INA prevê 5,90 m até 24/11.",
+    "A represa de Yacyretá teve em outubro a maior vazão para o mês desde 1971, 106% acima da média.",
+    "Barranqueras, Isla del Cerrito e Puerto Vilelas, no Chaco, seguem em alerta vermelho."
+   ],
+   "fonte": "INA, Prefeitura Naval e governos provinciais via The Watchers (16/11)",
+   "url": "https://watchers.news/2026/11/16/parana-river-floods-evacuations-santa-fe-corrientes-chaco-el-nino-argentina-november-2026/",
+   "rotulo": "Cheia do Paraná",
+   "lado": "r"
   },
   {
    "id": "equador-guayaquil",
@@ -735,20 +778,20 @@ footer{border-top:1px solid var(--line)}
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Temporais afetam mais de 70 mil pessoas no RS",
+   "titulo": "RS em alerta para temporais com ventos de 90 km/h nesta terça",
    "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-11-15",
+   "data": "2026-11-16",
    "lat": -29.17,
    "lon": -51.52,
-   "resumo": "Os temporais desde o início de novembro afetaram 70.491 pessoas em 136 municípios do Rio Grande do Sul, segundo a Defesa Civil. Duas mortes, em Cacique Doble e Sagrada Família, estão sob investigação.",
+   "resumo": "A Defesa Civil do RS alerta para temporais com granizo e rajadas acima de 90 km/h em todo o estado nesta terça (17/11) e na quarta (18/11). Os temporais desde o início de novembro já afetaram 70.491 pessoas em 136 municípios.",
    "pontos": [
-    "Balanço da Defesa Civil do RS (dados até 6/11, divulgados em 9/11): 28 feridos, 119 desabrigados, 471 desalojados e 7.141 casas danificadas, cerca de 2.700 só em Nova Prata.",
-    "Em 11/11, o governo federal reconheceu emergência por vendaval em Caibaté, Eldorado do Sul, Santo Antônio das Missões e Sentinela do Sul.",
-    "MetSul: segunda (16/11) com calor de até 29 °C na Serra e só pancadas isoladas à tarde e à noite.",
-    "Na terça (17/11), a instabilidade aumenta bastante; há risco de temporais isolados até o feriado de sexta (20/11)."
+    "Terça (17/11): perigo maior da tarde à noite na Região Metropolitana, Costa Doce, Vales e Central.",
+    "Quarta (18/11): temporais isolados e rajadas acima de 80 km/h; mais de 100 mm em pontos do Noroeste.",
+    "Balanço anterior: 28 feridos, 119 desabrigados, 471 desalojados e 7.141 casas danificadas; duas mortes sob investigação.",
+    "Rios entre a normalidade e o alerta; o maior risco é de alagamentos localizados."
    ],
-   "fonte": "Defesa Civil do RS via NC News (9/11) e Acústica FM (14/11); MetSul via Leouve (15/11)",
-   "url": "https://ncnews.com.br/2026/11/09/temporais-rio-grande-sul-feridos-cidades-novembro-2026/",
+   "fonte": "Defesa Civil do RS via Mix Vale (16/11) e NC News (9/11)",
+   "url": "https://www.mixvale.com.br/2026/11/16/alerta-da-defesa-civil-no-rs-preve-tempestades-com-ventos-acima-de-90-km-h-e-queda-de-granizo-entre-terca-e-quarta/",
    "rotulo": "Temporais no RS",
    "lado": "r"
   },
@@ -765,10 +808,10 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "Santo Estêvão: 40 famílias desabrigadas e todos os prédios públicos danificados, incluindo 37 escolas.",
     "Guanambi: mais de 150 mm, alagamentos e deslizamento na BR-030, na Serra dos Brindes.",
-    "Antônio Cardoso: mais de 200 famílias cadastradas para receber ajuda; granizo em pelo menos nove cidades no fim de semana.",
-    "O Inema pôs os 417 municípios baianos em alerta até as 11h de terça (17/11); não há registro de mortes."
+    "Poções: ruas alagadas, árvores e muros caídos e casas destelhadas no domingo (15/11); não há registro de mortes.",
+    "Inmet pôs todas as regiões em alerta de tempestade na segunda (16/11), com alerta laranja (até 100 mm e ventos de 100 km/h) no sul, em cidades como Itabuna e Ilhéus."
    ],
-   "fonte": "Governo da Bahia e prefeituras via InfoSAJ (16/11); Inema via Aratu On (16/11)",
+   "fonte": "Governo da Bahia via InfoSAJ (16/11); Inmet e Inema via O Trombone e Aratu On (16/11)",
    "url": "https://aratuon.com.br/tempo/moradores-usam-barcos-apos-temporal-alagar-casas-no-interior-da-bahia-veja-videos/",
    "rotulo": "Chuva na Bahia",
    "lado": "r"
@@ -793,48 +836,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://ndmais.com.br/tempo/forte-temporal-cidade-de-7-mil-habitantes-emergencia-mais-de-3-mil-imoveis-sem-luz-sc/",
    "rotulo": "Temporais SC/MG",
    "lado": "b"
-  },
-  {
-   "id": "df-ceilandia",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Temporal alaga hospital e metrô em Ceilândia (DF)",
-   "local": "Ceilândia, Distrito Federal, Brasil",
-   "data": "2026-11-14",
-   "lat": -15.82,
-   "lon": -48.11,
-   "resumo": "Um temporal no sábado (14/11) alagou o Hospital Regional de Ceilândia, a estação Guariroba do metrô e outros pontos da cidade, no Distrito Federal. A governadora Celina Leão mobilizou Defesa Civil, Bombeiros e Novacap.",
-   "pontos": [
-    "Água nos corredores do hospital e goteiras perto de áreas com pacientes internados.",
-    "Circulação no ramal de Ceilândia do metrô suspensa das 17h40 às 18h; passageiros ficaram ilhados na estação Guariroba.",
-    "Biblioteca de Ceilândia e auditório da Escola Parque Anísio Teixeira atingidos; carros arrastados perto do terminal do P Sul.",
-    "Não há registro de feridos nem balanço consolidado dos prejuízos."
-   ],
-   "fonte": "GDF e Metrô-DF via O Hoje e Misto Brasil (15/11)",
-   "url": "https://ohoje.com/2026/11/15/celina-leao-determina-acao-imediata-do-governo-apos-temporal-atingir-ceilandia/",
-   "rotulo": "Temporal no DF",
-   "lado": "l"
-  },
-  {
-   "id": "canada-bc",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Barco vira em rio cheio e 3 morrem em Squamish, no Canadá",
-   "local": "Pemberton, Squamish e vale do Sea to Sky, Colúmbia Britânica, Canadá",
-   "data": "2026-11-13",
-   "lat": 50.32,
-   "lon": -122.8,
-   "resumo": "Três pessoas morreram quando um barco virou no rio Squamish, cheio depois de dias de chuva forte e enchentes no sudoeste da Colúmbia Britânica. As equipes de resgate recuperaram os corpos na sexta (13/11).",
-   "pontos": [
-    "Rio Squamish segue cheio após dias de chuva no corredor Sea to Sky; a polícia (RCMP) chamou as águas de \"implacáveis\".",
-    "Port Mellon somou 306 mm desde terça (10/11); Whistler teve 138 mm e Squamish 134 mm.",
-    "Em 13/11, alertas e avisos foram rebaixados na região, mas há mais chuva prevista; em 12/11, Pemberton (3.400 habitantes) estava inteira em alerta de retirada.",
-    "No pico do vendaval, mais de 135 mil clientes ficaram sem luz; antes, uma pessoa já havia morrido atingida por uma árvore."
-   ],
-   "fonte": "RCMP via CTV News (13/11); The Canadian Press via Lethbridge Herald (12/11); The Weather Network (12/11); CBC (13/11)",
-   "url": "https://www.ctvnews.ca/vancouver/article/third-body-pulled-from-unforgiving-waters-in-squamish-bc-boat-tragedy-rcmp/",
-   "rotulo": "Mortes no Canadá",
-   "lado": "r"
   },
   {
    "id": "mayon",
@@ -882,42 +883,63 @@ footer{border-top:1px solid var(--line)}
    "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Espanha tem avisos amarelos por vento na segunda e na terça",
-   "local": "Leste da Espanha, Baleares e Catalunha",
+   "titulo": "Norte da Espanha tem avisos por vento, chuva e ressaca",
+   "local": "Galícia, Astúrias, Cantábria e norte da Espanha",
    "data": "2026-11-16",
-   "lat": 41.6,
-   "lon": -1.5,
-   "resumo": "A Aemet mantém avisos amarelos por vento no sistema Ibérico nesta segunda (16/11) e na terça (17/11), depois da passagem da Charles. A Cantábria espera rajadas muito fortes à tarde.",
+   "lat": 43.2,
+   "lon": -5.5,
+   "resumo": "A Aemet pôs seis comunidades do norte da Espanha em aviso amarelo por vento, chuva e ressaca nesta segunda (16/11), com novas borrascas atlânticas. A Catalunha e o Mediterrâneo seguem mais estáveis.",
    "pontos": [
-    "Burgos e a Comunidade Valenciana (interior) também têm previsão de vento forte nesta segunda.",
-    "Domingo (15/11) teve avisos na Galícia e na Cantábria, e neve nos Pirineus a partir de 1.900–2.000 m.",
-    "Baleares: 112 ocorrências com a Charles em 12/11, 59 delas quedas de árvores.",
+    "Rajadas de até 90 km/h nas Astúrias e na Cantábria, e de 80 km/h na cordilheira Cantábrica em Burgos.",
+    "Galícia: mais de 60 l/m² em 12 horas em pontos da Corunha e de Pontevedra.",
+    "Terça (17/11): chuva na metade oeste da península, mais forte na Galícia; neve só acima de 2.100–2.400 m.",
     "Barcelona teve 20 a 40 l/m² com a Charles; na 1ª quinzena de novembro, mais de 50 l/m² em quase toda a Catalunha."
    ],
-   "fonte": "Aemet via MeteoSojuela, Burgos Conecta e El Debate (15/11); Aemet via Infobae (15/11); 112 Baleares via Última Hora (12/11)",
-   "url": "https://www.burgosconecta.es/provincia/burgos-aviso-aemet-fuertes-rachas-viento-20261115123051-nt.html",
-   "rotulo": "Vento na Espanha",
+   "fonte": "Aemet via Infobae (16/11); Aemet via Infobae (15/11)",
+   "url": "https://www.infobae.com/espana/2026/11/16/la-aemet-lanza-un-aviso-por-nuevas-borrascas-en-seis-comunidades-de-espana-lluvias-y-viento-de-hasta-90-kilometros-por-hora/",
+   "rotulo": "Avisos na Espanha",
    "lado": "t"
   },
   {
-   "id": "indonesia-fogo",
-   "tipo": "incendio",
+   "id": "banda-m66",
+   "tipo": "terremoto",
    "gravidade": "moderado",
-   "titulo": "Incêndios na Indonésia já queimaram 2,9 milhões de hectares",
-   "local": "Papua do Sul e Kalimantan Central, Indonésia",
-   "data": "2026-11-12",
-   "lat": -8.5,
-   "lon": 140.4,
-   "resumo": "Os incêndios florestais na Indonésia queimaram cerca de 2,88 milhões de hectares até o fim de outubro, segundo análise de satélite da Nusantara Atlas. É mais que os 2,63 milhões de hectares de 2019.",
+   "titulo": "Terremoto de magnitude 6,6 no Mar de Banda, Indonésia",
+   "local": "Mar de Banda, a 148 km de Tual, Indonésia",
+   "data": "2026-11-16",
+   "lat": -6.08,
+   "lon": 131.49,
+   "resumo": "Um terremoto de magnitude 6,6 atingiu o Mar de Banda, na Indonésia, às 21h11 UTC de 16/11, segundo o USGS. A agência indonésia BMKG disse que não havia risco de tsunami.",
    "pontos": [
-    "Em 7/11, a agência de desastres (BNPB) contava 2.733 focos de calor, contra 4.737 em 5/11; a chuva ajudou a reduzir.",
-    "Papua do Sul tem mais focos (396), com Merauke como principal centro; Kalimantan Central tem 364.",
-    "A fumaça já chegou a Singapura e à Malásia.",
-    "Com as chuvas, a BNPB alerta para mais risco de enxurradas e erosão nas áreas queimadas."
+    "Profundidade de 68 km pelo USGS; a BMKG calculou magnitude 7,1 e 115 km de profundidade.",
+    "Alerta verde do USGS: baixa chance de vítimas e danos.",
+    "Cerca de 8.100 pessoas sentiram tremor de intensidade 5; em Tual, Saumlaki e Sorong o tremor foi fraco.",
+    "Não há relatos de danos nem de feridos."
    ],
-   "fonte": "Batam News Asia (12/11, com dados da BNPB e Nusantara Atlas)",
-   "url": "https://batamnewsasia.com/2026/11/12/indonesia-wildfire-crisis-nearly-2-9-million-hectares-burned-as-south-papua-fires-persist",
-   "rotulo": "Fogo na Indonésia",
+   "fonte": "USGS e BMKG via The Watchers (17/11)",
+   "url": "https://watchers.news/2026/11/17/m6-6-earthquake-banda-sea-tual-indonesia-november-16-2026/",
+   "rotulo": "Sismo M6,6",
+   "lado": "b"
+  },
+  {
+   "id": "california-ondas",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Ondas de mais de 15 m castigam a costa da Califórnia",
+   "local": "Costa da Califórnia, Estados Unidos",
+   "data": "2026-11-16",
+   "lat": 37.6,
+   "lon": -122.5,
+   "resumo": "Ondas gigantes do Pacífico Norte inundaram ruas e fecharam píeres na Califórnia entre 14 e 16/11. Duas tempestades e um rio atmosférico devem trazer chuva forte e risco de enchentes de terça (17/11) a quinta (19/11).",
+   "pontos": [
+    "Mavericks teve ondas de 15 a 18 m no sábado (14/11); uma boia em Point Reyes mediu 9,5 m, o maior valor desde 2015.",
+    "Pacifica: ondas passaram o muro de contenção e uma placa de concreto se soltou; Santa Cruz teve aviso de retirada perto de Capitola.",
+    "Píeres fechados em Ventura, Manhattan Beach, Hermosa Beach, Huntington Beach e Pacific Beach.",
+    "Não há registro de feridos; nova rodada de ondas grandes é esperada em 19 e 20/11."
+   ],
+   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11)",
+   "url": "https://watchers.news/2026/11/16/huge-waves-pummel-california-coast-el-nino-piers-closed-pacifica-san-diego/",
+   "rotulo": "Ondas Califórnia",
    "lado": "l"
   }
  ]
