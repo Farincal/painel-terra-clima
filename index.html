@@ -45,6 +45,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -693,31 +694,72 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-18T22:25:00+01:00",
- "manchete": "ciclone akvan acelera rumo à índia com chegada prevista na sexta, xavier cai para a categoria 4 no pacífico e a flórida segue sob risco de enxurradas",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-11-19T10:25:00+01:00",
+ "manchete": "ciclone akvan desacelera e deve chegar à índia na sexta, chuva de até 30 cm alaga o sul da flórida e o rs entra em alerta laranja para temporais",
  "eventos": [
   {
    "id": "bengala-baixa",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Ciclone severo Akvan acelera rumo à costa entre Andhra Pradesh e Odisha",
+   "titulo": "Ciclone Akvan desacelera; IMD prevê chegada à costa na sexta",
    "local": "Baía de Bengala, rumo ao norte de Andhra Pradesh e ao sul de Odisha, Índia",
-   "data": "2026-11-18",
-   "lat": 13.8,
+   "data": "2026-11-19",
+   "lat": 13.9,
    "lon": 85.3,
-   "resumo": "O ciclone severo Akvan deve tocar a costa da Índia até o meio-dia de sexta (20/11), entre Narsapur (Andhra Pradesh) e Puri (Odisha), segundo o IMD. Às 20h30 (hora local) de 18/11 ele estava a 480 km de Narsapur e andava para o norte a 10 km/h.",
+   "resumo": "O ciclone severo Akvan deve tocar a costa da Índia até o meio-dia de sexta (20/11), entre Narsapur (Andhra Pradesh) e Puri (Odisha), segundo o IMD. O IMD diz que ele chegou ao pico e não vai mais se intensificar.",
    "pontos": [
-    "Posição às 20h30 (hora local) de 18/11: 13,8°N 85,3°E, a 480 km de Narsapur, 610 km de Gopalpur e 670 km de Puri.",
-    "Ventos de 90 a 100 km/h com rajadas de 110 km/h; deve chegar à costa ainda como ciclone severo.",
-    "Alerta vermelho de chuva extrema em 19/11 para 6 distritos de Odisha, entre eles Puri e Ganjam; ressaca de 0,5 a 1 m prevista no litoral.",
-    "O IMD não descarta uma curva para chegada entre Kalingapatnam e Gopalpur; Odisha retira moradores de Koraput e Malkangiri."
+    "Às 23h30 (hora local) de 18/11: 13,9°N 85,3°E, a 480 km de Narsapur e 600 km de Gopalpur, andando para o norte a só 5 km/h.",
+    "Ventos de 90 a 100 km/h com rajadas de 110 km/h na chegada; deve virar depressão na noite de sexta.",
+    "Chuva de 20 a 30 cm prevista em Ganjam, Gajapati, Khordha e Puri; ressaca de 0,5 a 1 m e ondas acima de 14 m no mar.",
+    "Odisha já retirou cerca de 50 mil pessoas de áreas baixas e fechou escolas em seis distritos por três dias."
    ],
-   "fonte": "IMD via Ommcom News (18/11, 20h30) e The Hans India (19/11)",
-   "url": "https://ommcomnews.com/odisha-news/akvan-update-severe-cyclonic-storm-670-km-from-puri-moving-north-at-10-kmph/",
+   "fonte": "IMD, boletim nº 27 (19/11, 2h30) via The Open Press; Daily Jagran (19/11)",
+   "url": "https://theopenpress.in/article/cyclone-akvan-bulletin-27-no-further-intensification-19-november",
    "rotulo": "Ciclone Akvan",
    "lado": "l"
+  },
+  {
+   "id": "florida-enchente",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Chuva de até 30 cm alaga o sul da Flórida; Broward em emergência",
+   "local": "Broward e costa leste da Flórida, Estados Unidos",
+   "data": "2026-11-18",
+   "lat": 26.1,
+   "lon": -80.2,
+   "resumo": "Até 30 cm de chuva em 24 horas alagaram Broward, no sul da Flórida, que declarou estado de emergência nesta quarta (18/11). O teto de uma sinagoga desabou em Hollywood, sem feridos.",
+   "pontos": [
+    "Fort Lauderdale teve 145 mm, recorde diário (o anterior era 45 mm, de 1959); perto de Plantation, cerca de 300 mm.",
+    "Escolas de Broward fechadas, voos parados no aeroporto de Fort Lauderdale e trechos da I-95 e da Turnpike interditados.",
+    "Até mais 30 cm podem cair na costa atlântica até sexta (20/11); alertas de enchente de Martin a Duval.",
+    "Rio St. Johns perto de Cocoa: 17,2 pés (5,24 m), com previsão de 17,4 pés no sábado, perto do recorde."
+   ],
+   "fonte": "AP via ABC News (18/11); CBS Miami (18/11); WUFT (18/11)",
+   "url": "https://abcnews.com/US/wireStory/rainfall-supercharged-el-nio-causes-road-flooding-collapsed-138258536",
+   "rotulo": "Chuva na Flórida",
+   "lado": "r"
+  },
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "RS em alerta laranja para temporais com granizo até sexta",
+   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "data": "2026-11-19",
+   "lat": -29.17,
+   "lon": -51.52,
+   "resumo": "A Defesa Civil do RS emitiu alerta laranja para tempestades com granizo e rajadas acima de 90 km/h, com piora forte na sexta (20/11). A MetSul prevê nova rodada de temporais no domingo (22/11).",
+   "pontos": [
+    "Chuva pode passar de 120 mm entre 18 e 20/11 em pontos do Noroeste, Norte, Centro, Vales e Nordeste do RS.",
+    "Sexta (20/11): risco de granizo grande no Oeste, Missões, Noroeste, Centro, Serra e Nordeste; rios Uruguai, Caí e Taquari podem chegar à cota de atenção.",
+    "SC e parte do PR também têm risco de chuva forte; a MetSul descarta ciclone na costa no feriadão.",
+    "Os temporais desde o início de novembro já afetaram 70.491 pessoas em 136 municípios gaúchos."
+   ],
+   "fonte": "Defesa Civil do RS via Rádio Fandango (18/11); MetSul (18/11); Mix Vale (17/11)",
+   "url": "https://www.radiofandango.com.br/2026/11/18/tempestades-voltam-a-atingir-o-rio-grande-do-sul-3/",
+   "rotulo": "Temporais no RS",
+   "lado": "r"
   },
   {
    "id": "xavier-cook",
@@ -741,66 +783,24 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Sul do Brasil terá novos temporais na sexta e no domingo",
-   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-11-18",
-   "lat": -29.17,
-   "lon": -51.52,
-   "resumo": "A MetSul prevê risco elevado de chuva forte a intensa e temporais isolados na sexta (20/11) no norte e noroeste do RS, em SC e em parte do PR, com nova piora no domingo (22/11). A MetSul descarta a formação de um ciclone na costa no feriadão.",
-   "pontos": [
-    "Volumes altos a muito altos são esperados em pontos da metade norte do RS e de SC.",
-    "Sábado (21/11) terá menos instabilidade, com sol entre nuvens e pancadas isoladas.",
-    "Terça (17/11): até 63 mm em Porto Xavier e quase 32 mil raios no RS.",
-    "Os temporais desde o início de novembro já afetaram 70.491 pessoas em 136 municípios gaúchos."
-   ],
-   "fonte": "MetSul (17 e 18/11); Defesa Civil do RS via Mix Vale (17/11)",
-   "url": "https://metsul.com/2026-11-18-tempo-ciclone-chuva-temporais/",
-   "rotulo": "Temporais no RS",
-   "lado": "r"
-  },
-  {
    "id": "parana-argentina",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Cheia do rio Paraná tira 4,5 mil de casa na Argentina",
+   "titulo": "Rio Paraná baixa pela 1ª vez em 44 dias, mas segue acima da cota de retirada",
    "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
-   "data": "2026-11-17",
+   "data": "2026-11-18",
    "lat": -29.15,
    "lon": -59.65,
-   "resumo": "A cheia do rio Paraná já obrigou mais de 4,5 mil pessoas a deixar suas casas no litoral argentino. Na manhã de 17/11 o rio estava 13 cm acima da cota de retirada na cidade de Santa Fe.",
+   "resumo": "O rio Paraná recuou em Santa Fe pela primeira vez em 44 dias, para 5,85 m em 18/11, mas segue acima da cota de retirada de 5,70 m. A cheia já tirou mais de 4,5 mil pessoas de casa no litoral argentino.",
    "pontos": [
-    "Retirados: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11).",
-    "Santa Fe: 5,83 m às 6h de 17/11 (cota de retirada 5,70 m), subindo 1 a 2 cm por medição; Diamante a 5,84 m (cota 5,50 m).",
-    "Rosário: 4,90 m (alerta a 5 m); temporal na noite de 16/11 teve rajada de 86 km/h e 52 mm em poucos minutos.",
-    "Os órgãos de controle esperam que o rio siga acima da cota de retirada nas próximas semanas."
+    "Pico em Santa Fe no domingo (15/11); 5,86 m ao meio-dia e 5,85 m às 15h de 18/11 (Prefectura Naval).",
+    "Na cidade de Santa Fe, 275 pessoas estão em dois abrigos, 248 delas em Alto Verde.",
+    "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11).",
+    "Rosário estava a 4,90 m em 17/11, perto do alerta de 5 m."
    ],
-   "fonte": "Prefectura Naval e Prefeitura de Santa Fe via UNO Santa Fe e La Nación (17/11); balanço provincial via Infobae (16/11)",
-   "url": "https://www.lanacion.com.ar/sociedad/el-parana-crece-y-una-tormenta-complico-aun-mas-la-situacion-en-santa-fe-nid17112026/",
+   "fonte": "Prefectura Naval e Prefeitura de Santa Fe via UNO Santa Fe (18/11); La Nación (17/11); Infobae (16/11)",
+   "url": "https://www.unosantafe.com.ar/santa-fe/el-parana-primera-vez-44-dias-santa-fe-pero-sigue-encima-del-nivel-evacuacion-n10292970.html",
    "rotulo": "Cheia do Paraná",
-   "lado": "r"
-  },
-  {
-   "id": "florida-enchente",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Risco de enxurradas na costa leste da Flórida até sábado",
-   "local": "Costa leste da Flórida, Estados Unidos",
-   "data": "2026-11-18",
-   "lat": 28.39,
-   "lon": -80.74,
-   "resumo": "O Serviço Nacional de Meteorologia dos EUA pôs parte da costa leste da Flórida em risco moderado (nível 3 de 4) de enxurradas de quarta (18/11) a sexta (20/11). O rio St. Johns, perto de Cocoa, já está em cheia grave.",
-   "pontos": [
-    "Previsão de 100 a 200 mm na costa até sábado, com pontos acima de 300 mm entre Martin e Duval.",
-    "St. Johns perto de Cocoa: 5,22 m (17,13 pés) na noite de 17/11, 13 cm abaixo do recorde de 1953.",
-    "Alertas de enchente de Duval a Miami-Dade; o solo já está encharcado pela chuva de duas semanas atrás.",
-    "Não há registro de danos nem de retiradas até agora."
-   ],
-   "fonte": "NWS, WPC e FDEM via The Watchers (18/11)",
-   "url": "https://watchers.news/2026/11/18/florida-east-coast-moderate-flash-flood-risk-st-johns-cocoa-major-flood-november-2026/",
-   "rotulo": "Chuva na Flórida",
    "lado": "r"
   },
   {
@@ -825,6 +825,69 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
+   "id": "mayon",
+   "tipo": "vulcao",
+   "gravidade": "alto",
+   "titulo": "Mayon segue em alerta 3 com novo domo de lava",
+   "local": "Albay, ilha de Luzon, Filipinas",
+   "data": "2026-11-19",
+   "lat": 13.26,
+   "lon": 123.69,
+   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível de alerta 3, com novo domo de lava visto na cratera em 13/11. A zona de perigo de 6 km continua proibida, e voos sobre o cume estão vetados.",
+   "pontos": [
+    "Boletim de 19/11: 10 terremotos vulcânicos em 24 horas e emissão de 1.494 toneladas de SO₂.",
+    "O chão da cratera seguiu inchando, com breve desinflação a nordeste.",
+    "O novo domo foi avistado pelo Phivolcs em 13/11, após satélites mostrarem a cratera inchando de 4 a 12/11.",
+    "Quase 4.000 pessoas foram retiradas no início do mês; uma erupção em 11/11 lançou cinzas."
+   ],
+   "fonte": "Phivolcs via Pilipino Star Ngayon (19/11) e Journal News Online (13/11)",
+   "url": "https://www.philstar.com/pilipino-star-ngayon/probinsiya/2026/11/19/2571075/bulkang-mayon-nagtala-ng-10-pagyanig",
+   "rotulo": "Vulcão Mayon",
+   "lado": "r"
+  },
+  {
+   "id": "charles-leste",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Aviso laranja por ondas no norte da Espanha; Catalunha tem aviso por vento",
+   "local": "Galícia, Astúrias, Cantábria e norte da Espanha",
+   "data": "2026-11-19",
+   "lat": 43.2,
+   "lon": -5.5,
+   "resumo": "A Aemet mantém aviso laranja por ressaca nesta quinta (19/11) no litoral da Galícia, Astúrias, Cantábria e País Basco. Onze comunidades têm algum aviso, incluindo a Catalunha, por vento e ondas.",
+   "pontos": [
+    "Cantábria: ondas de 5 a 7 m, com rajadas de até 74 km/h, até o fim de quinta (19/11).",
+    "Barcelona, Girona e Tarragona têm avisos por vento e ondas na quinta; não há aviso por chuva.",
+    "Neve a partir de 1.500 a 1.800 m nas montanhas do norte e queda de mais de 6 °C nas temperaturas em algumas áreas.",
+    "Também há avisos por vento em Valência, Alicante, Baleares, Almería e Jaén."
+   ],
+   "fonte": "Aemet via El Plural (18/11) e Cantabria Press (17/11)",
+   "url": "https://www.elplural.com/sociedad/aemet-activa-avisos-naranja-lluvia-fuerte-oleaje-avanza-nuevo-descenso-temperaturas_804622102",
+   "rotulo": "Avisos na Espanha",
+   "lado": "t"
+  },
+  {
+   "id": "queensland-calor",
+   "tipo": "calor",
+   "gravidade": "moderado",
+   "titulo": "Weipa, na Austrália, soma 41 dias seguidos acima de 36 °C",
+   "local": "Cabo York, Queensland, Austrália",
+   "data": "2026-11-16",
+   "lat": -12.63,
+   "lon": 141.88,
+   "resumo": "A cidade de Weipa, no norte de Queensland, teve 41 dias seguidos acima de 36 °C até 15/11, a sequência mais longa já registrada lá. O aviso de onda de calor severa vale até quinta (19/11).",
+   "pontos": [
+    "Recorde de novembro: 39,9 °C em 10/11; média das máximas de 38,5 °C de 1 a 15/11.",
+    "Previsão de máximas de 38 a 41 °C na península; mínimas entre 23 e 25 °C.",
+    "Comunidades na ponta do Cabo York têm cortes noturnos de água há dois meses.",
+    "Também há aviso de calor severo no distrito de Tiwi, no Território do Norte."
+   ],
+   "fonte": "Bureau of Meteorology via The Watchers (16/11)",
+   "url": "https://watchers.news/2026/11/16/severe-heatwave-far-north-queensland-weipa-record-november-2026/",
+   "rotulo": "Calor em Weipa",
+   "lado": "l"
+  },
+  {
    "id": "california-ondas",
    "tipo": "outro",
    "gravidade": "moderado",
@@ -838,54 +901,12 @@ footer{border-top:1px solid var(--line)}
     "Mavericks teve ondas de 15 a 18 m no sábado (14/11); uma boia em Point Reyes mediu 9,5 m, o maior valor desde 2015.",
     "Pacifica: ondas passaram o muro de contenção e uma placa de concreto se soltou; Santa Cruz teve aviso de retirada perto de Capitola.",
     "Píeres fechados em Ventura, Manhattan Beach, Hermosa Beach, Huntington Beach e Pacific Beach.",
-    "Não há registro de feridos; nova rodada de ondas grandes é esperada em 19 e 20/11."
+    "Não há registro de feridos; até 1,2 m de neve e ventos fortes são previstos na Sierra Nevada até sexta (20/11)."
    ],
-   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11)",
+   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11); AP (18/11)",
    "url": "https://watchers.news/2026/11/16/huge-waves-pummel-california-coast-el-nino-piers-closed-pacifica-san-diego/",
    "rotulo": "Ondas Califórnia",
    "lado": "l"
-  },
-  {
-   "id": "mayon",
-   "tipo": "vulcao",
-   "gravidade": "alto",
-   "titulo": "Novo domo de lava aparece na cratera do Mayon",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-13",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O Phivolcs avistou um novo domo de lava na cratera do vulcão Mayon, nas Filipinas, na manhã desta sexta (13/11). O alerta segue no nível 3, e a zona de perigo de 6 km continua proibida.",
-   "pontos": [
-    "Satélites já mostravam o chão da cratera inchando de 4 a 12/11, antes de o domo ficar visível.",
-    "8 terremotos vulcânicos em 24 horas; emissão de SO₂ de 2.293 toneladas por dia em 12/11.",
-    "Atividade estromboliana fraca e pluma moderada levada para oeste-sudoeste e sudoeste.",
-    "Na quarta (11/11), uma erupção de nível baixo a moderado lançou cinzas; quase 4.000 pessoas foram retiradas no início do mês."
-   ],
-   "fonte": "Phivolcs via Journal News Online e Headtopics/GMA (13/11); Daily Tribune (11/11)",
-   "url": "https://journalnews.com.ph/bagong-lava-dome-namataan-sa-bunganga-ng-bulkang-mayon-alert-level-3-nananatili/",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
-  },
-  {
-   "id": "charles-leste",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Novo frente atlântico traz vento forte e ressaca ao norte da Espanha",
-   "local": "Galícia, Astúrias, Cantábria e norte da Espanha",
-   "data": "2026-11-17",
-   "lat": 43.2,
-   "lon": -5.5,
-   "resumo": "Um novo frente atlântico traz chuva e vento forte ao norte da Espanha nesta terça (17/11), segundo a Aemet. A Cantábria terá aviso laranja por ressaca forte da tarde de quarta (18/11) até o fim de quinta (19/11).",
-   "pontos": [
-    "Cantábria: ondas de 5 a 7 m no aviso laranja, com vento oeste de 50 a 61 km/h e rajadas de até 74 km/h.",
-    "Ondas de 4 a 5 m na costa exposta da Galícia; aviso amarelo por vento no noroeste na quarta (18/11).",
-    "Segunda (16/11): rajadas de até 90 km/h nas Astúrias e na Cantábria e mais de 60 l/m² em 12 horas em pontos da Galícia.",
-    "A Catalunha e o Mediterrâneo seguem mais estáveis; Barcelona teve 20 a 40 l/m² com a Charles."
-   ],
-   "fonte": "Aemet via Cantabria Press (17/11), La 7 TV (17/11) e Infobae (16/11)",
-   "url": "https://www.cantabriapress.com/cantabria/cantabria-estara-el-miercoles-y-jueves-en-aviso-naranja-por-fuerte-temporal-maritimo",
-   "rotulo": "Avisos na Espanha",
-   "lado": "t"
   },
   {
    "id": "bahia-granizo",
@@ -909,27 +930,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
-   "id": "sp-temporais",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Águas Mornas (SC) decreta emergência; Minas segue em alerta",
-   "local": "Santa Catarina, Minas Gerais e São Paulo, Brasil",
-   "data": "2026-11-15",
-   "lat": -27.6,
-   "lon": -48.63,
-   "resumo": "Águas Mornas, na Grande Florianópolis, decretou situação de emergência após o temporal com granizo e vendaval de domingo (15/11). Nesta segunda (16/11), todo o estado de Minas Gerais está em alerta amarelo do Inmet para tempestade com granizo.",
-   "pontos": [
-    "Águas Mornas: 3.481 imóveis ficaram sem luz no domingo, e 820 ainda estavam sem energia na manhã de segunda; cinco vias interditadas.",
-    "Defesa Civil de SC: 10 municípios com ocorrências, incluindo São José, onde parte do telhado de um supermercado cedeu.",
-    "Grande BH: árvore caiu sobre carro na Centro-Sul, casa destelhada em Nova Lima e rodovia alagada em Contagem; Inmet prevê até 50 mm por dia em Minas.",
-    "SP: a Defesa Civil enviou 99 alertas no domingo (15/11); deslizamento interditou em parte a SP-342."
-   ],
-   "fonte": "Defesa Civil de SC via ND Mais (16/11); Inmet via Estado de Minas (16/11); Defesa Civil de SP via NC News (15/11)",
-   "url": "https://ndmais.com.br/tempo/forte-temporal-cidade-de-7-mil-habitantes-emergencia-mais-de-3-mil-imoveis-sem-luz-sc/",
-   "rotulo": "Temporais SC/MG",
-   "lado": "b"
-  },
-  {
    "id": "tailandia-sul",
    "tipo": "enchente",
    "gravidade": "moderado",
@@ -951,8 +951,7 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1307,6 +1306,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 </body>
 </html>
