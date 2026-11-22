@@ -60,6 +60,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -710,47 +711,68 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-22T16:25:00+01:00",
- "manchete": "mortes do temporal em tupanciretã (rs) sobem para cinco e o sul do brasil tem alerta laranja, o ciclone xavier enfraquece perto da samoa americana e o rio paraná segue acima da cota de retirada em santa fe",
+ "atualizado": "2026-11-22T22:30:00+01:00",
+ "manchete": "tupanciretã (rs) tem calamidade reconhecida e temporais danificam 250 casas no paraná, o rio st. johns segue em cheia recorde na flórida e o ciclone xavier se desfaz perto da samoa americana",
  "eventos": [
   {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Mortes do temporal em Tupanciretã (RS) sobem para cinco; 265 feridos",
-   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "titulo": "Tupanciretã (RS) tem calamidade reconhecida; mortes são cinco",
+   "local": "Tupanciretã, Rio Grande do Sul, Brasil",
    "data": "2026-11-22",
    "lat": -29.08,
    "lon": -53.84,
-   "resumo": "Subiu para cinco o número de mortos do temporal que atingiu Tupanciretã, na região central do RS, na madrugada de sexta (20/11). Neste domingo (22/11), o Inmet tem alerta laranja de tempestade para partes do Sul e do Sudeste.",
+   "resumo": "O governo federal reconheceu no sábado (21/11) a calamidade pública em Tupanciretã, na região central do RS, onde o temporal de sexta (20/11) deixou cinco mortos. A prefeitura conta seis mortes, mas a Defesa Civil não inclui um caso de infarto.",
    "pontos": [
-    "Balanço da Defesa Civil (noite de 21/11): 5 mortos e 265 feridos, todos em Tupanciretã; 25.123 pessoas afetadas no estado.",
-    "Em Tupanciretã, 19.780 pessoas estão desalojadas, 40 desabrigadas e 7.796 casas ficaram sem telhado.",
-    "Uma estação do Inmet mediu rajadas de 114 km/h; a Defesa Civil fala em supercélula e não confirmou tornado.",
-    "Alerta laranja do Inmet para 22/11 (oeste e norte de SC, PR, SP, MS, GO e MG): 30 a 60 mm por hora, até 100 mm no dia, ventos de 60 a 100 km/h e granizo."
+    "Balanço da Defesa Civil: 5 mortos e 265 feridos em Tupanciretã; 19.854 desalojados e 7.796 casas com telhado danificado.",
+    "Desde 16/11, mais de 25 mil pessoas foram afetadas no RS; o estado anunciou R$ 7 milhões de apoio emergencial.",
+    "Rajadas chegaram a 114 km/h; a Defesa Civil fala em supercélula, investiga microexplosão e não confirmou tornado.",
+    "A Conab enviou 6,45 toneladas de alimentos e o Ministério da Saúde mandou a Força Nacional do SUS."
    ],
-   "fonte": "Defesa Civil do RS (Cmdec) via ND Mais (21/11, 21h58); alerta do Inmet via Frances News (22/11); Climatempo via N3 News (22/11)",
-   "url": "https://ndmais.com.br/tempo/sobe-para-5-mortes-confirmadas-temporal-rs/",
+   "fonte": "Defesa Civil do RS e prefeitura de Tupanciretã via NC News (22/11, 14h56)",
+   "url": "https://ncnews.com.br/2026/11/22/quem-sao-as-vitimas-do-temporal-em-tupancireta-mortes-chegam-a-cinco-e-prefeitura-diverge-da-defesa-civil/",
    "rotulo": "Tupanciretã (RS)",
    "lado": "r"
+  },
+  {
+   "id": "parana-temporal",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Temporais danificam mais de 250 casas no Paraná",
+   "local": "Oeste, norte e centro do Paraná, Brasil",
+   "data": "2026-11-22",
+   "lat": -24.65,
+   "lon": -51.23,
+   "resumo": "Os temporais desde sexta (20/11) danificaram 250 casas e destruíram 4 imóveis no Paraná, segundo a Defesa Civil estadual. Houve tornado em Manoel Ribas e granizo em São José dos Pinhais.",
+   "pontos": [
+    "Vendavais em 9 cidades, entre elas Cascavel, Foz do Iguaçu, Londrina, Maringá e Verê; 907 pessoas afetadas e 18 desalojadas.",
+    "Mais afetadas: Verê (200 pessoas), Manoel Ribas (180) e Iguatu (156); não há registro de feridos nem mortes.",
+    "A Copel tinha 48.837 clientes sem luz às 16h09 de domingo (22/11), 23.099 deles no oeste.",
+    "Alerta laranja para Maringá e o norte do estado até a madrugada de segunda (23/11), com risco de rajadas fortes e granizo."
+   ],
+   "fonte": "Defesa Civil do Paraná e Copel via Agência Brasil/Aonca (22/11); Defesa Civil via Paraná Portal (22/11)",
+   "url": "https://www.aonca.com.br/tempestades-no-parana-deixam-mais-de-250-casas-danificadas/",
+   "rotulo": "Temporal no PR",
+   "lado": "t"
   },
   {
    "id": "xavier-cook",
    "tipo": "ciclone",
    "gravidade": "alto",
-   "titulo": "Ciclone Xavier enfraquece a 420 km da Samoa Americana",
+   "titulo": "Ciclone Xavier enfraquece a 370 km da Samoa Americana",
    "local": "Norte das Ilhas Cook, Pacífico Sul",
    "data": "2026-11-22",
-   "lat": -11.7,
-   "lon": -167.9,
-   "resumo": "O ciclone Xavier está a cerca de 420 km a nordeste de Pago Pago, na Samoa Americana, com ventos de 75 km/h. A previsão é que vire depressão na segunda (23/11) e se dissipe sobre o mar, ao norte de Samoa.",
+   "lat": -11.6,
+   "lon": -168.2,
+   "resumo": "O ciclone Xavier está a cerca de 370 km a nordeste de Pago Pago, na Samoa Americana, com ventos de 65 km/h. Deve virar para oés-noroeste e se dissipar em cerca de 36 horas.",
    "pontos": [
-    "Às 15h UTC de 22/11, andava para oés-sudoeste a 7 km/h, com pressão de 998 hPa.",
-    "Deve seguir para oés-sudoeste por cerca de 24 horas e depois virar para noroeste.",
-    "Cisalhamento do vento e ar seco devem enfraquecê-lo; vira baixa remanescente por volta de 24/11.",
+    "Às 21h UTC de 22/11, andava para oés-sudoeste a 7 km/h; pressão de 1002 hPa às 18h UTC.",
+    "Ventos quase de tempestade são possíveis sobre a Samoa Americana e a leste dela.",
+    "Alguns modelos indicam leve reforço para 70 km/h; outros, enfraquecimento abaixo de 65 km/h em 12 horas.",
     "No pico, em 17/11, chegou a ventos de 235 km/h; Manihiki teve cais danificado e não há registro de mortes."
    ],
-   "fonte": "Zoom Earth com dados do JTWC (22/11, 15h UTC); PMN News e 1News (18 e 19/11)",
+   "fonte": "Zoom Earth com dados do JTWC (22/11, 21h UTC); PMN News e 1News (18 e 19/11)",
    "url": "https://zoom.earth/storms/xavier-2027/",
    "rotulo": "Ciclone Xavier",
    "lado": "r"
@@ -759,20 +781,20 @@ footer{border-top:1px solid var(--line)}
    "id": "florida-enchente",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Rio St. Johns chega ao pico recorde e mantém cheia na Flórida",
+   "titulo": "Rio St. Johns segue em cheia recorde perto de Cocoa",
    "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
    "data": "2026-11-22",
    "lat": 27.0,
    "lon": -80.6,
-   "resumo": "O rio St. Johns chegou a 18,8 pés (5,73 m) perto de Cocoa na tarde de sábado (21/11), bem acima do recorde de 1953. A previsão é que o nível fique estável até o meio da semana.",
+   "resumo": "O rio St. Johns marcava 18,7 pés (5,70 m) perto de Cocoa às 14h15 deste domingo (22/11), em cheia grave e acima do recorde de 1953. O NWS prevê nível estável até o início da semana e descida lenta só no fim dela.",
    "pontos": [
+    "Pico de 18,8 pés (5,73 m) nas 24 horas até domingo; a cota de inundação é de 16 pés.",
     "Com 17,2 pés a água já entra em casas perto do lago Poinsett, em Silver Pines (Rockledge) e Shakespeare Park (Cocoa).",
     "Chuva de terça a sexta: 616 mm em Cocoa Beach, 571 mm no sul de Titusville e 559 mm em Merritt Island, segundo o NWS.",
-    "Cerca de 120 pessoas foram resgatadas em Brevard e mais de 150 em Volusia; não há registro de mortes.",
-    "Marés altas (king tides) a partir de domingo (22/11) podem elevar a água nos trechos com maré; alguns trechos podem levar meses para baixar."
+    "Cerca de 120 pessoas foram resgatadas em Brevard e mais de 150 em Volusia; não há registro de mortes."
    ],
-   "fonte": "NWS via Space Coast Daily (21/11, 16h EST) e ClickOrlando (20/11); Florida Today/Yahoo (21/11); CBS News (20/11)",
-   "url": "https://spacecoastdaily.com/2026/11/video-shows-record-setting-flooding-in-brevard-reached-18-8-feet-saturday-afternoon/",
+   "fonte": "Aviso de enchente do NWS Melbourne (22/11, 14h46 EST) via DefconLevel; Florida Today/Yahoo (21/11); CBS News (20/11)",
+   "url": "https://www.defconlevel.com/alert/2026-11-22-nws-noaa-weather-flood-warning-issued-november-22-at-2-46pm-est-by-nws-melbourne-fl",
    "rotulo": "Chuva na Flórida",
    "lado": "r"
   },
@@ -785,59 +807,17 @@ footer{border-top:1px solid var(--line)}
    "data": "2026-11-22",
    "lat": -29.15,
    "lon": -59.65,
-   "resumo": "O rio Paraná marcava 5,86 m no porto de Santa Fe neste domingo (22/11), acima da cota de retirada de 5,70 m. Na cidade, 298 pessoas seguem em abrigos.",
+   "resumo": "O rio Paraná marcava 5,85 m no porto de Santa Fe na manhã deste domingo (22/11), um centímetro abaixo da leitura anterior e ainda acima da cota de retirada de 5,70 m. Na cidade, 298 pessoas de 90 famílias seguem em abrigos.",
    "pontos": [
-    "Leituras da Prefectura Naval: 5,88 m na noite de sexta, 5,87 m no sábado e 5,86 m no domingo; o rio Salado marca 2,96 m em Recreo.",
-    "Abrigos de Alto Verde (268 pessoas, 79 famílias) e Colastiné Sur (30 pessoas, 11 famílias); 118 são menores.",
-    "A prefeitura se prepara para uma cheia prolongada e instala bombas preventivas no porto na quarta (25/11).",
+    "Leituras da Prefectura Naval: 5,88 m na sexta, 5,86 m e 5,85 m no fim de semana; o rio Salado marca 2,96 m em Recreo.",
+    "Abrigos de Alto Verde (268 pessoas, 79 famílias) e Colastiné Sur (30 pessoas, 11 famílias); 118 são menores. Não houve novas entradas no sábado.",
+    "A prefeitura prepara um terceiro abrigo, com 40 módulos na primeira etapa, e instala bombas no porto na quarta (25/11).",
     "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11)."
    ],
-   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (22/11, 8h34); Infobae (16/11)",
-   "url": "https://www.unosantafe.com.ar/santa-fe/crecida-del-parana-el-rio-volvio-bajar-586-metros-y-hay-casi-300-personas-alojadas-los-centros-asistencia-n10293574.html",
+   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (22/11, 11h12); Infobae (16/11)",
+   "url": "https://www.unosantafe.com.ar/santa-fe/el-parana-volvio-bajar-santa-fe-registro-585-metros-y-hay-90-familias-alojadas-centros-asistencia-n10293598.html",
    "rotulo": "Cheia do Paraná",
    "lado": "r"
-  },
-  {
-   "id": "bengala-baixa",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Akvan vira depressão e perde força no interior de Odisha",
-   "local": "Sul de Odisha e norte de Andhra Pradesh, Índia",
-   "data": "2026-11-21",
-   "lat": 20.3,
-   "lon": 84.8,
-   "resumo": "O Akvan enfraqueceu para depressão no interior de Odisha, na Índia, a cerca de 70 km do distrito de Angul, e deve virar área de baixa pressão. O governo de Odisha diz que não há mortes nem danos graves.",
-   "pontos": [
-    "Tocou terra perto de Gopalpur na sexta (20/11) com ventos de 70 a 80 km/h e rajadas de 90 km/h.",
-    "Chuva em 24 horas até 8h30 de sexta: 209 mm em Patrapur, 207 mm em Hinjili e 190 mm em Gopalpur.",
-    "Mais de 440 mil pessoas foram levadas para lugares seguros; a East Coast Railway cancelou 45 trens.",
-    "O IMD prevê chuva menos intensa a partir deste sábado (21/11); o governo descarta risco de enchente nos rios."
-   ],
-   "fonte": "IMD e governo de Odisha via PTI/DT Next (21/11, 6h04)",
-   "url": "https://www.dtnext.in/news/national/cyclone-akvan-weakens-into-depression-after-landfall-in-odisha-no-major-damage-flood-threat",
-   "rotulo": "Akvan (Índia)",
-   "lado": "l"
-  },
-  {
-   "id": "fiji-seca",
-   "tipo": "seca",
-   "gravidade": "alto",
-   "titulo": "Fiji declara estado de desastre nacional por seca do El Niño",
-   "local": "Fiji, Pacífico Sul",
-   "data": "2026-11-18",
-   "lat": -17.8,
-   "lon": 178.0,
-   "resumo": "O governo de Fiji declarou estado de desastre em todo o país por causa da seca ligada ao El Niño, nesta quarta (18/11). A medida vale por até 30 dias e pode ser prorrogada.",
-   "pontos": [
-    "Anúncio do primeiro-ministro Sitiveni Rabuka após aval do gabinete e do conselho nacional de riscos.",
-    "Avaliações mostraram que a resposta à seca chegou a níveis de crise.",
-    "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027.",
-    "Ilhas remotas e agricultores são os mais pressionados; a população é orientada a poupar água."
-   ],
-   "fonte": "Governo de Fiji via 1News (18/11)",
-   "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
-   "rotulo": "Seca em Fiji",
-   "lado": "b"
   },
   {
    "id": "mayon",
@@ -861,24 +841,45 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
+   "id": "fiji-seca",
+   "tipo": "seca",
+   "gravidade": "alto",
+   "titulo": "Fiji declara estado de desastre nacional por seca do El Niño",
+   "local": "Fiji, Pacífico Sul",
+   "data": "2026-11-18",
+   "lat": -17.8,
+   "lon": 178.0,
+   "resumo": "O governo de Fiji declarou estado de desastre em todo o país por causa da seca ligada ao El Niño, nesta quarta (18/11). A medida vale por até 30 dias e pode ser prorrogada.",
+   "pontos": [
+    "Anúncio do primeiro-ministro Sitiveni Rabuka após aval do gabinete e do conselho nacional de riscos.",
+    "Avaliações mostraram que a resposta à seca chegou a níveis de crise.",
+    "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027.",
+    "Ilhas remotas e agricultores são os mais pressionados; a população é orientada a poupar água."
+   ],
+   "fonte": "Governo de Fiji via 1News (18/11)",
+   "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
+   "rotulo": "Seca em Fiji",
+   "lado": "b"
+  },
+  {
    "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Vento forte de ponent varre a Catalunha neste domingo",
+   "titulo": "Catalunha terá duas borrascas e neve nesta semana",
    "local": "Catalunha e Pireneus, Espanha",
    "data": "2026-11-22",
    "lat": 41.5,
    "lon": 1.6,
-   "resumo": "A Catalunha tem vento forte de oeste-noroeste neste domingo (22/11), com rajadas que podem passar de 72 km/h de manhã e no meio do dia. O céu fica limpo e não há chuva importante prevista.",
+   "resumo": "Depois do vento forte de domingo (22/11), a Catalunha tem dia calmo e mais frio na segunda (23/11). Uma borrasca traz chuva e neve a partir da tarde de terça (24/11), e outra, mais fraca, passa na quinta (26/11).",
    "pontos": [
-    "Vento mais forte entre Barcelona e Tarragona e no Alt Empordà; deve diminuir à tarde.",
-    "Neve a partir de 2.000 a 2.200 m nos Pireneus ocidentais e centrais.",
-    "Temperaturas parecidas com as de sábado, com queda marcada nos Pireneus ocidentais.",
-    "Orientação: prender objetos em varandas e cuidado com galhos, árvores e mobiliário urbano."
+    "Segunda: céu limpo, mestral com rajadas acima de 60 km/h no litoral sul e tramuntana forte na Costa Brava.",
+    "Quarta (25/11): neve do Vall d'Aran ao Ripollès, com cota caindo para 1.600 a 1.800 m, e chuva forte em Girona de manhã.",
+    "Vento de ponent com rajadas acima de 70 km/h na Costa Daurada e no centro na tarde de quarta.",
+    "As temperaturas caem mais um degrau; o frio deve continuar pelo menos até o fim da semana."
    ],
-   "fonte": "ElNacional.cat (21/11, 19h)",
-   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-diumenge-22-novembre-atencio-fort-temporal-vent-catalunya-rafegues-fortes-deixaran-cel-net_1729091_102.html",
-   "rotulo": "Vento Catalunha",
+   "fonte": "ElNacional.cat (22/11, 19h)",
+   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dilluns-23-novembre-setmana-moguda-catalunya-calma-dilluns-pas-dues-borrasques-fred-inici-hivern_1729343_102.html",
+   "rotulo": "Frio Catalunha",
    "lado": "t"
   },
   {
@@ -903,6 +904,27 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
+   "id": "bengala-baixa",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Akvan vira depressão e perde força no interior de Odisha",
+   "local": "Sul de Odisha e norte de Andhra Pradesh, Índia",
+   "data": "2026-11-21",
+   "lat": 20.3,
+   "lon": 84.8,
+   "resumo": "O Akvan enfraqueceu para depressão no interior de Odisha, na Índia, a cerca de 70 km do distrito de Angul, e deve virar área de baixa pressão. O governo de Odisha diz que não há mortes nem danos graves.",
+   "pontos": [
+    "Tocou terra perto de Gopalpur na sexta (20/11) com ventos de 70 a 80 km/h e rajadas de 90 km/h.",
+    "Chuva em 24 horas até 8h30 de sexta: 209 mm em Patrapur, 207 mm em Hinjili e 190 mm em Gopalpur.",
+    "Mais de 440 mil pessoas foram levadas para lugares seguros; a East Coast Railway cancelou 45 trens.",
+    "O IMD prevê chuva menos intensa a partir deste sábado (21/11); o governo descarta risco de enchente nos rios."
+   ],
+   "fonte": "IMD e governo de Odisha via PTI/DT Next (21/11, 6h04)",
+   "url": "https://www.dtnext.in/news/national/cyclone-akvan-weakens-into-depression-after-landfall-in-odisha-no-major-damage-flood-threat",
+   "rotulo": "Akvan (Índia)",
+   "lado": "l"
+  },
+  {
    "id": "tailandia-sul",
    "tipo": "enchente",
    "gravidade": "moderado",
@@ -922,27 +944,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.nationthailand.com/news/general/40073694",
    "rotulo": "Alerta Tailândia",
    "lado": "b"
-  },
-  {
-   "id": "california-ondas",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Ondas de mais de 15 m castigam a costa da Califórnia",
-   "local": "Costa da Califórnia, Estados Unidos",
-   "data": "2026-11-16",
-   "lat": 37.6,
-   "lon": -122.5,
-   "resumo": "Ondas gigantes do Pacífico Norte inundaram ruas e fecharam píeres na Califórnia entre 14 e 16/11. Duas tempestades e um rio atmosférico devem trazer chuva forte e risco de enchentes de terça (17/11) a quinta (19/11).",
-   "pontos": [
-    "Mavericks teve ondas de 15 a 18 m no sábado (14/11); uma boia em Point Reyes mediu 9,5 m, o maior valor desde 2015.",
-    "Pacifica: ondas passaram o muro de contenção e uma placa de concreto se soltou; Santa Cruz teve aviso de retirada perto de Capitola.",
-    "Píeres fechados em Ventura, Manhattan Beach, Hermosa Beach, Huntington Beach e Pacific Beach.",
-    "Não há registro de feridos; até 1,2 m de neve e ventos fortes são previstos na Sierra Nevada até sexta (20/11)."
-   ],
-   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11); AP (18/11)",
-   "url": "https://watchers.news/2026/11/16/huge-waves-pummel-california-coast-el-nino-piers-closed-pacifica-san-diego/",
-   "rotulo": "Ondas Califórnia",
-   "lado": "l"
   }
  ]
 }
@@ -1301,6 +1302,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 </body>
