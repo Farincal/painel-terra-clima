@@ -58,6 +58,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -706,10 +707,95 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-22T04:30:00+01:00",
- "manchete": "o ciclone xavier chega a 500 km da samoa americana, mas a rota se afasta, o rio st. johns segue em nível recorde na flórida e o sul do brasil tem novo risco de temporais neste domingo",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-22T10:30:00+01:00",
+ "manchete": "o ciclone xavier perde força a 450 km da samoa americana, o rio st. johns fica estável em nível recorde na flórida e o sul do brasil tem alerta de temporal neste domingo",
  "eventos": [
+  {
+   "id": "rs",
+   "tipo": "enchente",
+   "gravidade": "critico",
+   "titulo": "Temporal mata três pessoas e deixa 60 feridos em Tupanciretã (RS)",
+   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
+   "data": "2026-11-20",
+   "lat": -29.08,
+   "lon": -53.84,
+   "resumo": "Um temporal com granizo matou três pessoas e deixou cerca de 60 feridos em Tupanciretã, na região central do RS, na madrugada de sexta (20/11). Neste domingo (22/11) há novo alerta de tempestade para o Sul.",
+   "pontos": [
+    "Mais de 9,2 mil das 9,3 mil unidades consumidoras ficaram sem luz, segundo a RGE; ao menos 10 torres de transmissão caíram.",
+    "Uma estação do Inmet mediu rajadas de 114 km/h; a Defesa Civil fala em supercélula, possível microexplosão, e não confirmou tornado.",
+    "Onze pacientes do hospital danificado foram transferidos para cidades vizinhas; o abastecimento de água volta aos poucos.",
+    "Neste domingo (22/11), o Inmet tem alerta amarelo de tempestade para RS, SC e PR das 9h33 às 23h59, com 20 a 30 mm por hora, até 50 mm no dia, rajadas de 60 km/h e granizo."
+   ],
+   "fonte": "Defesa Civil do RS via Agora RS (20/11) e Plox (21/11); alerta do Inmet via Mix Vale (21/11)",
+   "url": "https://agorars.com/agora-no-tempo/confirmadas-tres-mortes-apos-temporal-que-devastou-tupancireta/",
+   "rotulo": "Tupanciretã (RS)",
+   "lado": "r"
+  },
+  {
+   "id": "xavier-cook",
+   "tipo": "ciclone",
+   "gravidade": "alto",
+   "titulo": "Ciclone Xavier enfraquece a 450 km da Samoa Americana",
+   "local": "Norte das Ilhas Cook, Pacífico Sul",
+   "data": "2026-11-22",
+   "lat": -11.6,
+   "lon": -167.7,
+   "resumo": "O ciclone Xavier está a cerca de 450 km a nordeste de Pago Pago, na Samoa Americana, com ventos de 75 km/h. A previsão é que perca força e se dissipe sobre o mar, ao norte de Samoa, em cerca de 2 dias.",
+   "pontos": [
+    "Às 9h UTC de 22/11, andava para oés-noroeste a 15 km/h.",
+    "Ondas de até 5,5 m perto do centro da tempestade.",
+    "Cisalhamento do vento e ar seco devem enfraquecê-lo aos poucos; a rota segue para oeste e depois oés-noroeste.",
+    "No pico, em 17/11, chegou a ventos de 235 km/h; Manihiki teve cais danificado e não há registro de mortes."
+   ],
+   "fonte": "Zoom Earth com dados do JTWC (22/11, 9h UTC); PMN News e 1News (18 e 19/11)",
+   "url": "https://zoom.earth/storms/xavier-2027/",
+   "rotulo": "Ciclone Xavier",
+   "lado": "r"
+  },
+  {
+   "id": "florida-enchente",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Rio St. Johns chega ao pico recorde e mantém cheia na Flórida",
+   "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
+   "data": "2026-11-22",
+   "lat": 27.0,
+   "lon": -80.6,
+   "resumo": "O rio St. Johns chegou a 18,8 pés (5,73 m) perto de Cocoa na tarde de sábado (21/11), bem acima do recorde de 1953. A previsão é que o nível fique estável até o meio da semana.",
+   "pontos": [
+    "Com 17,2 pés a água já entra em casas perto do lago Poinsett, em Silver Pines (Rockledge) e Shakespeare Park (Cocoa).",
+    "Chuva de terça a sexta: 616 mm em Cocoa Beach, 571 mm no sul de Titusville e 559 mm em Merritt Island, segundo o NWS.",
+    "Cerca de 120 pessoas foram resgatadas em Brevard e mais de 150 em Volusia; não há registro de mortes.",
+    "Domingo (22/11) deve ter sol, com só 20% de chance de chuva à tarde; em Cocoa, a cheia pode durar até dezembro."
+   ],
+   "fonte": "NWS via Space Coast Daily (21/11, 16h EST) e Florida Today/Yahoo (21/11); CBS News (20/11)",
+   "url": "https://spacecoastdaily.com/2026/11/video-shows-record-setting-flooding-in-brevard-reached-18-8-feet-saturday-afternoon/",
+   "rotulo": "Chuva na Flórida",
+   "lado": "r"
+  },
+  {
+   "id": "parana-argentina",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Rio Paraná segue acima da cota de retirada em Santa Fe",
+   "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
+   "data": "2026-11-21",
+   "lat": -29.15,
+   "lon": -59.65,
+   "resumo": "O rio Paraná marcava 5,87 m no porto de Santa Fe ao meio-dia de sábado (21/11), acima da cota de retirada de 5,70 m. Na cidade, 298 pessoas estão em abrigos.",
+   "pontos": [
+    "Leituras da Prefectura Naval: 5,88 m na noite de sexta, 5,86 m às 9h e 5,87 m às 12h de sábado; o rio Salado marca 2,96 m em Recreo.",
+    "Abrigos de Alto Verde (268 pessoas, 79 famílias) e Colastiné Sur (30 pessoas, 11 famílias); 118 são menores.",
+    "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11).",
+    "Rosário estava a 4,90 m em 17/11, perto do alerta de 5 m."
+   ],
+   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (21/11, 15h12); Infobae (16/11); La Nación (17/11)",
+   "url": "https://www.unosantafe.com.ar/santa-fe/el-parana-volvio-subir-santa-fe-alcanzo-los-587-metros-este-sabado-n10293503.html",
+   "rotulo": "Cheia do Paraná",
+   "lado": "r"
+  },
   {
    "id": "bengala-baixa",
    "tipo": "ciclone",
@@ -732,69 +818,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "florida-enchente",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio St. Johns chega ao pico recorde e mantém cheia na Flórida",
-   "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
-   "data": "2026-11-21",
-   "lat": 27.0,
-   "lon": -80.6,
-   "resumo": "O rio St. Johns marcava 18,76 pés (5,72 m) a oeste de Cocoa na manhã deste sábado (21/11), acima do recorde de 1953, e deve ficar perto do recorde até o início da semana. Partes de Rockledge, Merritt Island e Satellite Beach seguem muito alagadas.",
-   "pontos": [
-    "Chuva de terça a sexta: 616 mm em Cocoa Beach, 571 mm no sul de Titusville e 559 mm em Merritt Island, segundo o NWS.",
-    "Cerca de 120 pessoas foram resgatadas em Brevard e mais de 150 em Volusia; não há registro de mortes.",
-    "Geneva deve bater recorde com 13 pés no domingo (22/11); em Cocoa, a cheia pode durar até dezembro, com cheia leve em janeiro de 2027.",
-    "Ainda há chuva prevista para a tarde de sábado; a chance de chuva cai bastante no domingo."
-   ],
-   "fonte": "NWS via Florida Today/Yahoo (21/11, 12h15 UTC); WESH e News 6 (20/11); AccuWeather (20/11)",
-   "url": "https://www.yahoo.com/news/weather-news/articles/brevard-flooding-continues-st-johns-121545220.html",
-   "rotulo": "Chuva na Flórida",
-   "lado": "r"
-  },
-  {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Temporal mata três pessoas e deixa 60 feridos em Tupanciretã (RS)",
-   "local": "Rio Grande do Sul, Santa Catarina e Paraná, Brasil",
-   "data": "2026-11-20",
-   "lat": -29.08,
-   "lon": -53.84,
-   "resumo": "Um temporal com granizo matou três pessoas e deixou cerca de 60 feridos em Tupanciretã, na região central do RS, na madrugada de sexta (20/11). A Defesa Civil diz que cerca de 5 mil casas foram destelhadas.",
-   "pontos": [
-    "Mais de 9,2 mil das 9,3 mil unidades consumidoras ficaram sem luz, segundo a RGE; ao menos 10 torres de transmissão caíram.",
-    "Uma estação do Inmet mediu rajadas de 114 km/h; a Defesa Civil fala em supercélula, possível microexplosão, e não confirmou tornado.",
-    "Onze pacientes do hospital danificado foram transferidos para cidades vizinhas; o abastecimento de água volta aos poucos.",
-    "O RS liberou R$ 2 milhões em ajuda imediata; neste domingo (22/11) há risco de tempestades com granizo, microexplosões e até tornados na divisa RS/SC, em quase todo SC e no oeste e sudoeste do PR."
-   ],
-   "fonte": "Defesa Civil do RS via Agora RS (20/11) e Plox (21/11); previsão Meteored via ND Mais (21/11)",
-   "url": "https://agorars.com/agora-no-tempo/confirmadas-tres-mortes-apos-temporal-que-devastou-tupancireta/",
-   "rotulo": "Tupanciretã (RS)",
-   "lado": "r"
-  },
-  {
-   "id": "xavier-cook",
-   "tipo": "ciclone",
-   "gravidade": "alto",
-   "titulo": "Ciclone Xavier se aproxima da Samoa Americana, mas rota se afasta",
-   "local": "Norte das Ilhas Cook, Pacífico Sul",
-   "data": "2026-11-22",
-   "lat": -12.6,
-   "lon": -166.4,
-   "resumo": "O ciclone Xavier está a cerca de 500 km a leste-nordeste de Pago Pago, na Samoa Americana, com ventos de 85 km/h. A rota prevista pelo JTWC se afastou do território, mas ventos fortes no lado sul da tempestade ainda devem atingi-lo.",
-   "pontos": [
-    "Às 3h UTC de 22/11, andava para oeste a 22 km/h.",
-    "Deve manter ventos de 75 a 85 km/h nas próximas 24 horas e virar para oés-noroeste depois de cerca de 36 horas.",
-    "Ar seco e cisalhamento do vento podem enfraquecê-lo mais rápido; um modelo (NAVGEM) ainda o leva sobre Samoa em cerca de 60 horas.",
-    "No pico, em 17/11, chegou a ventos de 235 km/h; Manihiki teve cais danificado e não há registro de mortes."
-   ],
-   "fonte": "Zoom Earth com dados do JTWC (22/11, 3h UTC); PMN News e 1News (18 e 19/11)",
-   "url": "https://zoom.earth/storms/xavier-2027/",
-   "rotulo": "Ciclone Xavier",
-   "lado": "r"
-  },
-  {
    "id": "fiji-seca",
    "tipo": "seca",
    "gravidade": "alto",
@@ -814,27 +837,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
    "rotulo": "Seca em Fiji",
    "lado": "b"
-  },
-  {
-   "id": "parana-argentina",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio Paraná volta a subir em Santa Fe e chega a 5,87 m",
-   "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
-   "data": "2026-11-19",
-   "lat": -29.15,
-   "lon": -59.65,
-   "resumo": "Depois de recuar pela primeira vez em 44 dias, o rio Paraná voltou a subir e chegou a 5,87 m em Santa Fe na quinta (19/11), acima da cota de retirada de 5,70 m. Na cidade, 292 pessoas estão em abrigos.",
-   "pontos": [
-    "Leitura da Prefectura Naval às 18h de 19/11: 5,87 m no porto de Santa Fe; o rio Salado marca 2,97 m em Recreo.",
-    "Abrigos de Alto Verde (262 pessoas) e Colastiné Sur (30), somando 89 famílias.",
-    "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11).",
-    "Rosário estava a 4,90 m em 17/11, perto do alerta de 5 m."
-   ],
-   "fonte": "Centro de Operações de Santa Fe via UNO Santa Fe (19/11); La Nación (17/11); Infobae (16/11)",
-   "url": "https://www.unosantafe.com.ar/santa-fe/crecida-del-parana-el-rio-llego-los-587-metros-y-hay-292-personas-alojadas-los-centros-asistencia-municipal-n10293200.html",
-   "rotulo": "Cheia do Paraná",
-   "lado": "r"
   },
   {
    "id": "mayon",
@@ -861,64 +863,22 @@ footer{border-top:1px solid var(--line)}
    "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Frio chega de repente à Catalunha após avisos por ondas no norte da Espanha",
-   "local": "Galícia, Astúrias, Cantábria e norte da Espanha",
-   "data": "2026-11-20",
-   "lat": 43.2,
-   "lon": -5.5,
-   "resumo": "A Catalunha tem uma queda brusca de temperatura nesta sexta (20/11), com tramontana e geada fraca nos vales dos Pireneus. No norte da Espanha, a Aemet manteve aviso laranja por ondas de 5 a 7 m até o fim de quinta (19/11).",
+   "titulo": "Vento forte de ponent varre a Catalunha neste domingo",
+   "local": "Catalunha e Pireneus, Espanha",
+   "data": "2026-11-22",
+   "lat": 41.5,
+   "lon": 1.6,
+   "resumo": "A Catalunha tem vento forte de oeste-noroeste neste domingo (22/11), com rajadas que podem passar de 72 km/h de manhã e no meio do dia. O céu fica limpo e não há chuva importante prevista.",
    "pontos": [
-    "Sexta: máximas de 15 a 20 °C na Catalunha, rajadas fortes no Camp de Tarragona e sem chuva.",
-    "Sábado (21/11) deve ter a manhã mais fria da semana, com mínimas de 0 a 10 °C e abaixo de zero nos Pireneus.",
-    "Domingo (22/11): a cota de neve cai de cerca de 2.000 m para 1.400 m nos Pireneus ocidentais.",
-    "Galícia, Astúrias, Cantábria e País Basco tiveram aviso laranja por ressaca na quinta, com rajadas de até 74 km/h."
+    "Vento mais forte entre Barcelona e Tarragona e no Alt Empordà; deve diminuir à tarde.",
+    "Neve a partir de 2.000 a 2.200 m nos Pireneus ocidentais e centrais.",
+    "Temperaturas parecidas com as de sábado, com queda marcada nos Pireneus ocidentais.",
+    "Orientação: prender objetos em varandas e cuidado com galhos, árvores e mobiliário urbano."
    ],
-   "fonte": "ElNacional.cat (19/11); Aemet via El Plural (18/11) e Cantabria Press (17/11)",
-   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-divendres-20-novembre-canvi-radical-fred-arriba-cop-catalunya-patacada-temperatures_1728137_102.html",
-   "rotulo": "Frio na Espanha",
+   "fonte": "ElNacional.cat (21/11, 19h)",
+   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-diumenge-22-novembre-atencio-fort-temporal-vent-catalunya-rafegues-fortes-deixaran-cel-net_1729091_102.html",
+   "rotulo": "Vento Catalunha",
    "lado": "t"
-  },
-  {
-   "id": "queensland-calor",
-   "tipo": "calor",
-   "gravidade": "moderado",
-   "titulo": "Weipa, na Austrália, soma 41 dias seguidos acima de 36 °C",
-   "local": "Cabo York, Queensland, Austrália",
-   "data": "2026-11-16",
-   "lat": -12.63,
-   "lon": 141.88,
-   "resumo": "A cidade de Weipa, no norte de Queensland, teve 41 dias seguidos acima de 36 °C até 15/11, a sequência mais longa já registrada lá. O aviso de onda de calor severa vale até quinta (19/11).",
-   "pontos": [
-    "Recorde de novembro: 39,9 °C em 10/11; média das máximas de 38,5 °C de 1 a 15/11.",
-    "Previsão de máximas de 38 a 41 °C na península; mínimas entre 23 e 25 °C.",
-    "Comunidades na ponta do Cabo York têm cortes noturnos de água há dois meses.",
-    "Também há aviso de calor severo no distrito de Tiwi, no Território do Norte."
-   ],
-   "fonte": "Bureau of Meteorology via The Watchers (16/11)",
-   "url": "https://watchers.news/2026/11/16/severe-heatwave-far-north-queensland-weipa-record-november-2026/",
-   "rotulo": "Calor em Weipa",
-   "lado": "l"
-  },
-  {
-   "id": "california-ondas",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Ondas de mais de 15 m castigam a costa da Califórnia",
-   "local": "Costa da Califórnia, Estados Unidos",
-   "data": "2026-11-16",
-   "lat": 37.6,
-   "lon": -122.5,
-   "resumo": "Ondas gigantes do Pacífico Norte inundaram ruas e fecharam píeres na Califórnia entre 14 e 16/11. Duas tempestades e um rio atmosférico devem trazer chuva forte e risco de enchentes de terça (17/11) a quinta (19/11).",
-   "pontos": [
-    "Mavericks teve ondas de 15 a 18 m no sábado (14/11); uma boia em Point Reyes mediu 9,5 m, o maior valor desde 2015.",
-    "Pacifica: ondas passaram o muro de contenção e uma placa de concreto se soltou; Santa Cruz teve aviso de retirada perto de Capitola.",
-    "Píeres fechados em Ventura, Manhattan Beach, Hermosa Beach, Huntington Beach e Pacific Beach.",
-    "Não há registro de feridos; até 1,2 m de neve e ventos fortes são previstos na Sierra Nevada até sexta (20/11)."
-   ],
-   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11); AP (18/11)",
-   "url": "https://watchers.news/2026/11/16/huge-waves-pummel-california-coast-el-nino-piers-closed-pacifica-san-diego/",
-   "rotulo": "Ondas Califórnia",
-   "lado": "l"
   },
   {
    "id": "bahia-granizo",
@@ -961,9 +921,31 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.nationthailand.com/news/general/40073694",
    "rotulo": "Alerta Tailândia",
    "lado": "b"
+  },
+  {
+   "id": "california-ondas",
+   "tipo": "outro",
+   "gravidade": "moderado",
+   "titulo": "Ondas de mais de 15 m castigam a costa da Califórnia",
+   "local": "Costa da Califórnia, Estados Unidos",
+   "data": "2026-11-16",
+   "lat": 37.6,
+   "lon": -122.5,
+   "resumo": "Ondas gigantes do Pacífico Norte inundaram ruas e fecharam píeres na Califórnia entre 14 e 16/11. Duas tempestades e um rio atmosférico devem trazer chuva forte e risco de enchentes de terça (17/11) a quinta (19/11).",
+   "pontos": [
+    "Mavericks teve ondas de 15 a 18 m no sábado (14/11); uma boia em Point Reyes mediu 9,5 m, o maior valor desde 2015.",
+    "Pacifica: ondas passaram o muro de contenção e uma placa de concreto se soltou; Santa Cruz teve aviso de retirada perto de Capitola.",
+    "Píeres fechados em Ventura, Manhattan Beach, Hermosa Beach, Huntington Beach e Pacific Beach.",
+    "Não há registro de feridos; até 1,2 m de neve e ventos fortes são previstos na Sierra Nevada até sexta (20/11)."
+   ],
+   "fonte": "NWS e Guarda Costeira dos EUA via The Watchers (16/11); AP (18/11)",
+   "url": "https://watchers.news/2026/11/16/huge-waves-pummel-california-coast-el-nino-piers-closed-pacifica-san-diego/",
+   "rotulo": "Ondas Califórnia",
+   "lado": "l"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1318,8 +1300,6 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
-
 
 </body>
 </html>
