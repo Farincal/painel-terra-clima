@@ -62,6 +62,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -712,8 +713,8 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-23T04:30:00+01:00",
- "manchete": "temporais no rs já afetam 25 mil pessoas em 46 cidades e há novo alerta para terça, são paulo recebe 25 alertas de chuva e o ciclone xavier perde força perto da samoa americana",
+ "atualizado": "2026-11-23T10:30:00+01:00",
+ "manchete": "temporais no rs já afetam 25 mil pessoas e há novo alerta para terça, enchente mata um idoso no sul da tailândia e terremoto de 6,7 sacode o centro do peru",
  "eventos": [
   {
    "id": "rs",
@@ -779,27 +780,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "b"
   },
   {
-   "id": "xavier-cook",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Xavier perde força e JTWC emite aviso final",
-   "local": "Norte das Ilhas Cook, Pacífico Sul",
-   "data": "2026-11-23",
-   "lat": -11.6,
-   "lon": -168.2,
-   "resumo": "O ciclone Xavier enfraqueceu para ventos de 55 km/h a cerca de 346 km a nordeste de Pago Pago, na Samoa Americana. O JTWC emitiu o aviso final, mas segue monitorando o sistema.",
-   "pontos": [
-    "Às 3h UTC de 23/11, andava para oés-sudoeste a 7 km/h; pressão de 1002 hPa.",
-    "A previsão é de deslocamento para oeste em ambiente desfavorável, sem reforço.",
-    "No pico, em 17/11, chegou a ventos de 235 km/h sobre o norte das Ilhas Cook.",
-    "Manihiki teve cais danificado; não há registro de mortes."
-   ],
-   "fonte": "Zoom Earth com dados do JTWC (23/11, 3h UTC); PMN News e 1News (18 e 19/11)",
-   "url": "https://zoom.earth/storms/xavier-2027/",
-   "rotulo": "Ciclone Xavier",
-   "lado": "r"
-  },
-  {
    "id": "florida-enchente",
    "tipo": "enchente",
    "gravidade": "alto",
@@ -839,6 +819,69 @@ footer{border-top:1px solid var(--line)}
    "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (22/11, 11h12); Infobae (16/11)",
    "url": "https://www.unosantafe.com.ar/santa-fe/el-parana-volvio-bajar-santa-fe-registro-585-metros-y-hay-90-familias-alojadas-centros-asistencia-n10293598.html",
    "rotulo": "Cheia do Paraná",
+   "lado": "r"
+  },
+  {
+   "id": "tailandia-sul",
+   "tipo": "enchente",
+   "gravidade": "moderado",
+   "titulo": "Enchente no sul da Tailândia deixa 1 morto em Phatthalung",
+   "local": "Phatthalung e sul da Tailândia",
+   "data": "2026-11-23",
+   "lat": 7.62,
+   "lon": 100.07,
+   "resumo": "Um homem de 87 anos foi encontrado morto na água da enchente em Khuan Khanun, em Phatthalung, no domingo (22/11). O instituto HII alerta para enxurradas nos 11 distritos da província de 23 a 25/11.",
+   "pontos": [
+    "A água liberada do açude de Tha Nae alagou 300 m da estrada Khuan Khanun–Si Banphot, com 20 a 30 cm de profundidade.",
+    "Quase todo o distrito de Khuan Khanun tinha água parada na noite de domingo (22/11).",
+    "Quatro canais em observação: Tha Nae, Na Thom, Ai To e Pa Bon.",
+    "O serviço meteorológico prevê mais chuva no sul do país em 24 e 25/11."
+   ],
+   "fonte": "HII e escritório provincial de Phatthalung via The Nation (23/11, 7h19); TMD via The Nation (19/11)",
+   "url": "https://nationthailand.com/news/general/40073803",
+   "rotulo": "Enchente Tailândia",
+   "lado": "b"
+  },
+  {
+   "id": "peru-junin",
+   "tipo": "terremoto",
+   "gravidade": "moderado",
+   "titulo": "Terremoto de magnitude 6,7 sacode o centro do Peru",
+   "local": "Junín, região central do Peru",
+   "data": "2026-11-20",
+   "lat": -10.95,
+   "lon": -76.18,
+   "resumo": "Um terremoto de magnitude 6,7 atingiu o centro do Peru na sexta (20/11), às 19h09 locais, a cerca de 30 km a noroeste da cidade de Junín. Não há registro de mortos nem de feridos.",
+   "pontos": [
+    "Profundidade de 108 km segundo o USGS (129 km pelo dado peruano).",
+    "Danos leves em casas de Junín, cortes de luz e restrições em rodovias.",
+    "O IGP relatou deslizamentos e quedas de rochas em encostas.",
+    "Centenas de pessoas deixaram prédios no bairro de Miraflores, em Lima."
+   ],
+   "fonte": "Ministério da Defesa do Peru, IGP e USGS via AFP/Manila Times (22/11)",
+   "url": "https://www.manilatimes.net/2026/11/22/world/americas-emea/67-magnitude-quake-hits-peru-no-report-of-deaths/2475517",
+   "rotulo": "Sismo no Peru",
+   "lado": "l"
+  },
+  {
+   "id": "xavier-cook",
+   "tipo": "ciclone",
+   "gravidade": "moderado",
+   "titulo": "Xavier perde força e JTWC emite aviso final",
+   "local": "Norte das Ilhas Cook, Pacífico Sul",
+   "data": "2026-11-23",
+   "lat": -11.6,
+   "lon": -168.2,
+   "resumo": "O ciclone Xavier enfraqueceu para ventos de 55 km/h a cerca de 346 km a nordeste de Pago Pago, na Samoa Americana. O JTWC emitiu o aviso final, mas segue monitorando o sistema.",
+   "pontos": [
+    "Às 3h UTC de 23/11, andava para oés-sudoeste a 7 km/h; pressão de 1002 hPa.",
+    "A previsão é de deslocamento para oeste em ambiente desfavorável, sem reforço.",
+    "No pico, em 17/11, chegou a ventos de 235 km/h sobre o norte das Ilhas Cook.",
+    "Manihiki teve cais danificado; não há registro de mortes."
+   ],
+   "fonte": "Zoom Earth com dados do JTWC (23/11, 3h UTC); PMN News e 1News (18 e 19/11)",
+   "url": "https://zoom.earth/storms/xavier-2027/",
+   "rotulo": "Ciclone Xavier",
    "lado": "r"
   },
   {
@@ -905,27 +948,6 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   },
   {
-   "id": "bahia-granizo",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Chuvas põem 19 cidades da Bahia em situação de emergência",
-   "local": "Sudoeste, Recôncavo e Piemonte do Paraguaçu, Bahia, Brasil",
-   "data": "2026-11-19",
-   "lat": -12.6,
-   "lon": -39.2,
-   "resumo": "Dezenove municípios da Bahia decretaram situação de emergência após os temporais desde o sábado (14/11). Em Malhada, no sudoeste, choveu mais de 200 mm em menos de 12 horas e moradores do distrito de Canabrava ficaram ilhados.",
-   "pontos": [
-    "Entre as cidades em emergência estão Ilhéus, Porto Seguro, Eunápolis, Prado, Malhada e Santo Estêvão.",
-    "Santo Estêvão: 40 famílias desabrigadas e 37 escolas danificadas; em Malhada, uma família foi resgatada de barco no telhado.",
-    "A BA-160 tem dois pontos danificados entre Julião e Canabrava; um segue interditado.",
-    "Não há registro de mortes; Ilhéus segue em alerta, e a Climatempo aponta o sul da Bahia como área de maior risco nesta sexta (20/11)."
-   ],
-   "fonte": "Folhapress via O Tempo (17/11); Governo da Bahia via Correio das Cidades (19/11); InfoSAJ (16/11); Climatempo (20/11)",
-   "url": "https://www.otempo.com.br/brasil/2026/11/17/chuvas-deixam-estragos-no-interior-da-bahia-e-19-municipios-decretam-situacao-de-emergencia",
-   "rotulo": "Chuva na Bahia",
-   "lado": "r"
-  },
-  {
    "id": "bengala-baixa",
    "tipo": "ciclone",
    "gravidade": "moderado",
@@ -945,27 +967,6 @@ footer{border-top:1px solid var(--line)}
    "url": "https://www.dtnext.in/news/national/cyclone-akvan-weakens-into-depression-after-landfall-in-odisha-no-major-damage-flood-threat",
    "rotulo": "Akvan (Índia)",
    "lado": "l"
-  },
-  {
-   "id": "tailandia-sul",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Sul da Tailândia em alerta para enchentes de 18 a 22/11",
-   "local": "Sul da Tailândia e Prachuap Khiri Khan",
-   "data": "2026-11-19",
-   "lat": 8.4,
-   "lon": 99.9,
-   "resumo": "O Departamento Meteorológico da Tailândia mantém aviso de chuva forte a muito forte no sul do país até domingo (22/11). Há risco de enxurradas e deslizamentos, mas não há registro de vítimas.",
-   "pontos": [
-    "Chuva muito forte isolada em Nakhon Si Thammarat, Phatthalung e Songkhla; forte em Surat Thani, Pattani, Yala e Narathiwat.",
-    "Ondas de 2 a 3 m no sul do Golfo da Tailândia, acima de 3 m nas trovoadas; barcos pequenos devem ficar no porto até 22/11.",
-    "A DDPM pôs 15 províncias em alerta para enxurradas e deslizamentos de 18 a 22/11.",
-    "No norte do país, a temperatura deve cair de 1 a 5 °C até 22/11."
-   ],
-   "fonte": "Departamento Meteorológico da Tailândia via The Nation (19/11); DDPM via The Watchers (16/11)",
-   "url": "https://www.nationthailand.com/news/general/40073694",
-   "rotulo": "Alerta Tailândia",
-   "lado": "b"
   }
  ]
 }
@@ -1327,6 +1328,7 @@ footer{border-top:1px solid var(--line)}
 
 
 
-</body></html>
+
+
 </body>
 </html>
