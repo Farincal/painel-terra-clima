@@ -65,6 +65,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -713,30 +714,29 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-23T22:30:00+01:00",
- "manchete": "inmet dá alerta vermelho de tempestade para o sul do brasil na terça, rio st. johns segue em cheia recorde na flórida e kīlauea volta a lançar lava no havaí",
+<script type="application/json" id="dados">{
+ "atualizado": "2026-11-24T04:30:00+01:00",
+ "manchete": "sul do brasil entra no dia de alerta vermelho para tempestades em 642 cidades, rio st. johns segue em cheia recorde na flórida e rio paraná continua alto na argentina",
  "eventos": [
   {
    "id": "rs",
    "tipo": "enchente",
    "gravidade": "critico",
-   "titulo": "Temporais no RS afetam 25,4 mil; Inmet dá alerta vermelho para terça",
+   "titulo": "RS tem 25 mil afetados e entra em alerta vermelho de tempestade",
    "local": "Tupanciretã, Rio Grande do Sul, Brasil",
-   "data": "2026-11-23",
+   "data": "2026-11-24",
    "lat": -29.08,
    "lon": -53.84,
-   "resumo": "Os temporais desde 16/11 já afetam 25.407 pessoas em 44 municípios do Rio Grande do Sul, segundo a Defesa Civil. O Inmet emitiu alerta vermelho de tempestade para terça (24/11) no norte do estado, oeste de SC e quase todo o Paraná.",
+   "resumo": "O Rio Grande do Sul entra nesta terça (24/11) em alerta vermelho do Inmet para tempestades, com 25.212 pessoas já afetadas pelos temporais desde 16/11. A Defesa Civil gaúcha prevê até 140 mm de chuva por dia e granizo grande até quarta (25/11).",
    "pontos": [
-    "Balanço de segunda (23/11): 25.407 afetados, 19.854 desalojados, 48 desabrigados, 265 feridos e 5 mortos, todos em Tupanciretã.",
-    "7.974 casas destelhadas, 685 danificadas e 47 alagadas; 29 escolas e 3 unidades de saúde com danos.",
-    "Alerta vermelho do Inmet para terça: chuva acima de 60 mm/h ou 100 mm/dia, rajadas de até 100 km/h e granizo.",
-    "No RS, o alerta cobre o norte, com destaque para Passo Fundo e Erechim."
+    "Balanço da Defesa Civil (23/11): 46 municípios, 25.212 afetados, 19.854 desalojados, 265 feridos e 5 mortos.",
+    "7.973 casas destelhadas e 682 danificadas; 29 escolas e 3 unidades de saúde com danos.",
+    "Inmet: alerta vermelho em 642 cidades de RS, SC, PR e MS na terça, com chuva acima de 100 mm/dia e rajadas acima de 100 km/h.",
+    "Defesa Civil do RS: acumulado pode passar de 160 mm no Noroeste, Norte, Serra e Vales; rios Taquari e Uruguai podem chegar ao nível de alerta."
    ],
-   "fonte": "Defesa Civil do RS via Agora RS (23/11, 10h47); Inmet via Metrópoles (23/11, 11h36)",
-   "url": "https://agorars.com/agora-no-tempo/temporais-rs-44-municipios-danos-25-mil-afetados/",
-   "rotulo": "Tupanciretã (RS)",
+   "fonte": "Defesa Civil do RS via Correio do Estado (23/11, 7h14) e Portal do Estado do RS (23/11); Inmet via O Tempo (23/11, 12h09)",
+   "url": "https://www.estado.rs.gov.br/defesa-civil-do-rio-grande-do-sul-alerta-para-tempestades-com-granizo-ventos-fortes-e-chuva-intensa-nesta-terca-feira-24",
+   "rotulo": "Alerta no RS",
    "lado": "r"
   },
   {
@@ -893,16 +893,16 @@ footer{border-top:1px solid var(--line)}
    "titulo": "Xavier perde força e JTWC emite aviso final",
    "local": "Norte das Ilhas Cook, Pacífico Sul",
    "data": "2026-11-23",
-   "lat": -11.6,
-   "lon": -168.2,
+   "lat": -11.8,
+   "lon": -168.8,
    "resumo": "O ciclone Xavier enfraqueceu para ventos de 55 km/h a cerca de 346 km a nordeste de Pago Pago, na Samoa Americana. O JTWC emitiu o aviso final, mas segue monitorando o sistema.",
    "pontos": [
-    "Às 3h UTC de 23/11, andava para oés-sudoeste a 7 km/h; pressão de 1002 hPa.",
+    "À 0h UTC de 23/11, estava em 11,8°S 168,8°W com ventos de 55 km/h, rumo oés-sudoeste.",
     "A previsão é de deslocamento para oeste em ambiente desfavorável, sem reforço.",
     "No pico, em 17/11, chegou a ventos de 235 km/h sobre o norte das Ilhas Cook.",
     "Manihiki teve cais danificado; não há registro de mortes."
    ],
-   "fonte": "Zoom Earth com dados do JTWC (23/11, 3h UTC); PMN News e 1News (18 e 19/11)",
+   "fonte": "Zoom Earth com dados do JTWC (23/11, 3h UTC); Weather Underground (23/11, 0h UTC); PMN News e 1News (18 e 19/11)",
    "url": "https://zoom.earth/storms/xavier-2027/",
    "rotulo": "Ciclone Xavier",
    "lado": "r"
@@ -971,8 +971,7 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   }
  ]
-}
-</script>
+}</script>
 
 <script>
 (function(){
@@ -1327,12 +1326,6 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
-
-
-
-
-
 
 </body>
 </html>
