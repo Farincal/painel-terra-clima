@@ -66,6 +66,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -715,8 +716,8 @@ footer{border-top:1px solid var(--line)}
 </div>
 
 <script type="application/json" id="dados">{
- "atualizado": "2026-11-24T04:30:00+01:00",
- "manchete": "sul do brasil entra no dia de alerta vermelho para tempestades em 642 cidades, rio st. johns segue em cheia recorde na flórida e rio paraná continua alto na argentina",
+ "atualizado": "2026-11-24T10:30:00+01:00",
+ "manchete": "sul do brasil vive dia de alerta vermelho para tempestades, chuva mata duas jovens no equador e rio st. johns segue em cheia recorde na flórida",
  "eventos": [
   {
    "id": "rs",
@@ -824,6 +825,27 @@ footer{border-top:1px solid var(--line)}
    "lado": "r"
   },
   {
+   "id": "equador-losrios",
+   "tipo": "enchente",
+   "gravidade": "alto",
+   "titulo": "Deslizamento mata duas jovens em Quevedo, no Equador",
+   "local": "Província de Los Ríos, Equador",
+   "data": "2026-11-23",
+   "lat": -1.02,
+   "lon": -79.46,
+   "resumo": "Um deslizamento de terra atingiu casas em Quevedo, na província de Los Ríos, na madrugada desta segunda (23/11), e matou duas irmãs de 14 e 15 anos. A chuva da noite também alagou ruas e casas em Babahoyo.",
+   "pontos": [
+    "Três pessoas ficaram feridas em Quevedo, entre elas uma grávida.",
+    "Em Babahoyo, o rio chegou a 6,65 m, perto da máxima de 7,10 m; a estrada Montalvo–Balsapamba foi fechada.",
+    "Los Ríos soma 228 ocorrências de chuva desde 29/8, segundo a SNGR.",
+    "No país, desde 29/8: 16 mortos, 36.729 desabrigados e 25.654 casas afetadas (SNGR, 18/11)."
+   ],
+   "fonte": "SNGR, ECU 911 e Diario Extra via The Rio Times (23/11)",
+   "url": "https://www.riotimesonline.com/los-rios-ecuador-floods-landslides-quevedo/",
+   "rotulo": "Chuva no Equador",
+   "lado": "l"
+  },
+  {
    "id": "tailandia-sul",
    "tipo": "enchente",
    "gravidade": "moderado",
@@ -866,43 +888,22 @@ footer{border-top:1px solid var(--line)}
    "lado": "l"
   },
   {
-   "id": "peru-junin",
-   "tipo": "terremoto",
-   "gravidade": "moderado",
-   "titulo": "Terremoto de magnitude 6,7 sacode o centro do Peru",
-   "local": "Junín, região central do Peru",
-   "data": "2026-11-20",
-   "lat": -10.95,
-   "lon": -76.18,
-   "resumo": "Um terremoto de magnitude 6,7 atingiu o centro do Peru na sexta (20/11), às 19h09 locais, a cerca de 30 km a noroeste da cidade de Junín. Não há registro de mortos nem de feridos.",
-   "pontos": [
-    "Profundidade de 108 km segundo o USGS (129 km pelo dado peruano).",
-    "Danos leves em casas de Junín, cortes de luz e restrições em rodovias.",
-    "O IGP relatou deslizamentos e quedas de rochas em encostas.",
-    "Centenas de pessoas deixaram prédios no bairro de Miraflores, em Lima."
-   ],
-   "fonte": "Ministério da Defesa do Peru, IGP e USGS via AFP/Manila Times (22/11)",
-   "url": "https://www.manilatimes.net/2026/11/22/world/americas-emea/67-magnitude-quake-hits-peru-no-report-of-deaths/2475517",
-   "rotulo": "Sismo no Peru",
-   "lado": "l"
-  },
-  {
    "id": "xavier-cook",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Xavier perde força e JTWC emite aviso final",
+   "titulo": "Xavier vira remanescente no Pacífico Sul",
    "local": "Norte das Ilhas Cook, Pacífico Sul",
    "data": "2026-11-23",
    "lat": -11.8,
    "lon": -168.8,
-   "resumo": "O ciclone Xavier enfraqueceu para ventos de 55 km/h a cerca de 346 km a nordeste de Pago Pago, na Samoa Americana. O JTWC emitiu o aviso final, mas segue monitorando o sistema.",
+   "resumo": "O ciclone Xavier perdeu as características tropicais e virou remanescente, com ventos de 55 km/h, no Pacífico Sul. O JTWC já emitiu o aviso final sobre o sistema.",
    "pontos": [
-    "À 0h UTC de 23/11, estava em 11,8°S 168,8°W com ventos de 55 km/h, rumo oés-sudoeste.",
-    "A previsão é de deslocamento para oeste em ambiente desfavorável, sem reforço.",
-    "No pico, em 17/11, chegou a ventos de 235 km/h sobre o norte das Ilhas Cook.",
+    "À 0h UTC de 23/11, estava em 11,8°S 168,8°W, cerca de 346 km a nordeste de Pago Pago.",
+    "Às 12h UTC de 23/11, aparecia como remanescente, ainda com ventos de 55 km/h.",
+    "No pico, em 17/11, chegou a ventos de 235 km/h e 929 hPa sobre o norte das Ilhas Cook.",
     "Manihiki teve cais danificado; não há registro de mortes."
    ],
-   "fonte": "Zoom Earth com dados do JTWC (23/11, 3h UTC); Weather Underground (23/11, 0h UTC); PMN News e 1News (18 e 19/11)",
+   "fonte": "Zoom Earth com dados do JTWC (23/11, 12h UTC); Weather Underground (23/11, 0h UTC); PMN News e 1News (18 e 19/11)",
    "url": "https://zoom.earth/storms/xavier-2027/",
    "rotulo": "Ciclone Xavier",
    "lado": "r"
@@ -953,21 +954,21 @@ footer{border-top:1px solid var(--line)}
    "id": "charles-leste",
    "tipo": "outro",
    "gravidade": "moderado",
-   "titulo": "Catalunha terá duas borrascas e neve nesta semana",
+   "titulo": "Borrasca traz chuva e neve à Catalunha a partir desta terça",
    "local": "Catalunha e Pireneus, Espanha",
-   "data": "2026-11-22",
+   "data": "2026-11-24",
    "lat": 41.5,
    "lon": 1.6,
-   "resumo": "Depois do vento forte de domingo (22/11), a Catalunha tem dia calmo e mais frio na segunda (23/11). Uma borrasca traz chuva e neve a partir da tarde de terça (24/11), e outra, mais fraca, passa na quinta (26/11).",
+   "resumo": "Uma borrasca traz chuva entre Lleida e Barcelona a partir do fim da tarde desta terça (24/11), com neve nas montanhas acima de 1.600 a 1.800 m. O frio aumenta até sexta (27/11), com geada nos Pireneus.",
    "pontos": [
-    "Segunda: céu limpo, mestral com rajadas acima de 60 km/h no litoral sul e tramuntana forte na Costa Brava.",
-    "Quarta (25/11): neve do Vall d'Aran ao Ripollès, com cota caindo para 1.600 a 1.800 m, e chuva forte em Girona de manhã.",
-    "Vento de ponent com rajadas acima de 70 km/h na Costa Daurada e no centro na tarde de quarta.",
-    "As temperaturas caem mais um degrau; o frio deve continuar pelo menos até o fim da semana."
+    "Terça: pancadas fracas à tarde em Lleida e no norte; chuva à noite entre Lleida e Barcelona; máximas perto de 15 °C.",
+    "Vento sul moderado, mais forte na Costa Brava e no Empordà, e vento de foehn no Vall d'Aran.",
+    "Quarta (25/11): chuva fraca em Girona e nos Pireneus; cota de neve cai para 1.200 a 1.400 m e volta o mestral.",
+    "Quinta (26/11): cota de neve de 1.000 a 1.200 m; sexta (27/11) seca, com mínimas de 0 a 5 °C."
    ],
-   "fonte": "ElNacional.cat (22/11, 19h)",
-   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dilluns-23-novembre-setmana-moguda-catalunya-calma-dilluns-pas-dues-borrasques-fred-inici-hivern_1729343_102.html",
-   "rotulo": "Frio Catalunha",
+   "fonte": "ElNacional.cat (23/11, 20h14)",
+   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dimarts-24-novembre-canvi-temps-catalunya-pluja-neu-fred-on-quan-ploura-aquest-dimarts_1730108_102.html",
+   "rotulo": "Neve Catalunha",
    "lado": "t"
   }
  ]
