@@ -70,6 +70,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -720,8 +721,8 @@ footer{border-top:1px solid var(--line)}
 
 <script type="application/json" id="dados">
 {
- "atualizado": "2026-11-25T04:30:00+01:00",
- "manchete": "rs segue em alerta de tempestade até esta quarta, califórnia retira moradores por maré recorde e enchente atinge 12 mil na tailândia",
+ "atualizado": "2026-11-25T10:30:00+01:00",
+ "manchete": "tornado deixa rastro no rs, maré quase recorde alaga a califórnia e a flórida volta a ter alerta de enchente",
  "eventos": [
   {
    "id": "rs",
@@ -735,11 +736,11 @@ footer{border-top:1px solid var(--line)}
    "resumo": "O alerta de tempestade para quase todo o Rio Grande do Sul vale até as 23h59 desta quarta (25/11), após a volta da chuva na terça. Os temporais desde 16/11 já afetaram cerca de 25 mil pessoas e deixaram 5 mortos.",
    "pontos": [
     "Balanço da Defesa Civil (23/11): 46 municípios, 25.212 afetados, 19.854 desalojados, 265 feridos e 5 mortos.",
-    "Tupanciretã: 20.098 afetados, ao menos 7.796 casas destelhadas e só 40% da energia restabelecida; aulas suspensas por 7 dias.",
-    "Quarta (25/11): temporais isolados com granizo no Noroeste e Norte, com 10 a 50 mm no dia, segundo a Defesa Civil.",
-    "Governo federal liberou R$ 3 milhões para Tupanciretã; foram enviados 78 geradores e 3.600 telhas."
+    "A MetSul confirmou um tornado em Tupanciretã na madrugada de 20/11, com ventos estimados de 200 a 300 km/h (F2 a F3).",
+    "Tupanciretã: 7.796 casas destelhadas, 20 escolas danificadas e cerca de 5.000 postes ou trechos de rede afetados.",
+    "Quarta (25/11): risco de temporal com granizo no Norte e Noroeste; até 51 mm em Iraí e alerta amarelo do Inmet."
    ],
-   "fonte": "Defesa Civil do RS via O Tempo (24/11) e Agora RS (24/11); Inmet via Agora RS (24/11)",
+   "fonte": "Defesa Civil do RS via O Tempo (24/11) e O Timoneiro (24/11); MetSul via O Timoneiro (24/11); Inmet via O Alto Uruguai (24/11)",
    "url": "https://otempo.com.br/brasil/2026/11/24/nao-suba-em-telhados-tupancireta-orienta-moradores-a-buscar-abrigo-e-suspende-aulas-por-sete-dias",
    "rotulo": "Alerta no RS",
    "lado": "r"
@@ -790,20 +791,20 @@ footer{border-top:1px solid var(--line)}
    "id": "florida-enchente",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Flórida tem rio St. Johns em cheia grave e nova vigilância de enchente",
+   "titulo": "Flórida tem vigilância de enchente e rio St. Johns acima do recorde",
    "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
    "data": "2026-11-25",
    "lat": 27.0,
    "lon": -80.6,
-   "resumo": "O sul da Flórida está em vigilância de enchente desde a noite de terça (24/11), com previsão de 2,5 a 7,5 cm de chuva e até 15 cm nos piores pontos. No centro do estado, o rio St. Johns segue em cheia grave perto de Astor.",
+   "resumo": "A costa leste da Flórida está em vigilância de enchente nesta quarta (25/11), com nova chuva sobre áreas já alagadas. O rio St. Johns segue em cheia grave em vários pontos, acima dos recordes de 1953 e 2022.",
    "pontos": [
-    "Vigilância de enchente nas áreas costeiras e urbanas de Miami-Dade, Broward e Palm Beach.",
-    "Perto de Astor: 4,2 pés às 11h30 de terça (24/11), em cheia grave; o NWS prevê pico de 4,4 pés na quinta (26/11).",
-    "Perto de Cocoa: 18,6 pés (5,67 m) em 23/11, acima do recorde de 1953; cota de inundação de 16 pés.",
-    "Cerca de 120 pessoas foram resgatadas em Brevard e mais de 150 em Volusia; não há registro de mortes."
+    "Vigilância de enchente em Brevard, Treasure Coast e Okeechobee até 1h de quinta (26/11), com 2,5 a 5 cm de chuva; outra vale para Miami-Dade, Broward e Palm Beach.",
+    "Perto de Cocoa: 18,5 pés às 7h30 de terça (24/11), acima do recorde de 17,55 pés de 1953; pico de 18,77 pés em 21/11.",
+    "Perto de Sanford, previsão de 8,2 pés às 19h de quarta; em Astor, 4,4 pés na tarde de quinta.",
+    "Cerca de 150 resgates em Brevard e mais de 150 em Volusia; estado de emergência em 23 condados."
    ],
-   "fonte": "NWS Melbourne via DefconLevel (24/11, 12h02 EST); WLRN (24/11); CBS News (20/11)",
-   "url": "https://www.wlrn.org/weather/2026-11-24/flood-watch-in-effect-for-the-east-coast-of-south-florida",
+   "fonte": "NWS Melbourne e NWS Miami via CFLDR (24/11, 8h30); WLRN (24/11); FWC e Brevard EM via CFLDR",
+   "url": "https://www.cfldr.com/florida-flooding",
    "rotulo": "Chuva na Flórida",
    "lado": "r"
   },
@@ -811,20 +812,20 @@ footer{border-top:1px solid var(--line)}
    "id": "humboldt-mare",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Califórnia retira moradores de King Salmon por maré recorde",
-   "local": "King Salmon, condado de Humboldt, Califórnia, Estados Unidos",
+   "titulo": "Maré quase recorde força retirada na Califórnia e alaga São Francisco",
+   "local": "Costa norte da Califórnia (Humboldt e Baía de São Francisco), EUA",
    "data": "2026-11-24",
    "lat": 40.74,
    "lon": -124.22,
-   "resumo": "O condado de Humboldt, na Califórnia, ordenou a retirada obrigatória de moradores de King Salmon nesta terça (24/11) por causa de marés altas que podem bater recorde. O NWS liga a água alta ao oceano aquecido pelo El Niño e à ressaca.",
+   "resumo": "Marés altas perto do recorde atingem a costa da Califórnia até quinta (26/11), com pico previsto para esta quarta (25/11). Em Humboldt, moradores de King Salmon foram retirados; em São Francisco, bondes foram suspensos na orla.",
    "pontos": [
-    "Previsão do NWS: 11,1 pés na terça, 11,3 pés na quarta (25/11) e 10,6 pés na quinta.",
-    "O recorde atual é de 10,37 pés, registrado no ano passado.",
-    "O xerife declarou emergência local; a área está fechada ao público.",
-    "Abrigo da Cruz Vermelha aberto em Loleta, com espaço para animais."
+    "Previsão do NWS em King Salmon: 11,3 pés na quarta, acima do recorde de 10,37 pés; retirada obrigatória desde terça (24/11).",
+    "Alertas de inundação costeira vão do condado de Sonoma ao sul da baía de Monterey; o mar pode subir 82 cm acima do normal.",
+    "Em São Francisco, os cable cars foram suspensos e barreiras foram instaladas no Embarcadero em 23/11.",
+    "Ondas de Kelvin do El Niño elevaram o nível do mar em até 30 cm na costa do Pacífico."
    ],
-   "fonte": "Condado de Humboldt e NWS via Nature World News (24/11)",
-   "url": "https://www.natureworldnews.com/articles/74036/20261124/humboldt-county-orders-king-salmon-evacuation-king-tides-threaten-record-flooding.htm",
+   "fonte": "Condado de Humboldt e NWS via Nature World News (24/11); NWS via Bloomberg/Claims Journal (24/11)",
+   "url": "https://www.claimsjournal.com/news/national/2026/11/24/341517.htm",
    "rotulo": "Maré Califórnia",
    "lado": "l"
   },
@@ -834,18 +835,18 @@ footer{border-top:1px solid var(--line)}
    "gravidade": "alto",
    "titulo": "Rio Paraná segue acima da cota de retirada em Santa Fe",
    "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
-   "data": "2026-11-22",
+   "data": "2026-11-24",
    "lat": -29.15,
    "lon": -59.65,
-   "resumo": "O rio Paraná marcava 5,85 m no porto de Santa Fe na manhã deste domingo (22/11), um centímetro abaixo da leitura anterior e ainda acima da cota de retirada de 5,70 m. Na cidade, 298 pessoas de 90 famílias seguem em abrigos.",
+   "resumo": "O rio Paraná marcava 5,77 m no porto de Santa Fe na terça (24/11), em queda lenta mas ainda acima da cota de retirada de 5,70 m. Na cidade, 309 pessoas de 94 famílias estão em abrigos.",
    "pontos": [
-    "Leituras da Prefectura Naval: 5,88 m na sexta, 5,86 m e 5,85 m no fim de semana; o rio Salado marca 2,96 m em Recreo.",
-    "Abrigos de Alto Verde (268 pessoas, 79 famílias) e Colastiné Sur (30 pessoas, 11 famílias); 118 são menores. Não houve novas entradas no sábado.",
-    "A prefeitura prepara um terceiro abrigo, com 40 módulos na primeira etapa, e instala bombas no porto na quarta (25/11).",
+    "Leituras da Prefectura Naval: 5,88 m na sexta (20/11), 5,85 m no domingo e 5,77 m na terça; o rio Salado marca 2,86 m em Recreo.",
+    "Abrigos de Alto Verde (279 pessoas, 83 famílias; 11 entraram na terça) e Colastiné Sur (30 pessoas); 120 são menores.",
+    "A prefeitura monta 10 módulos habitacionais em Alto Verde, projeta 40 em Colastiné Sur e prepara 4 bombas nesta semana.",
     "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11)."
    ],
-   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (22/11, 11h12); Infobae (16/11)",
-   "url": "https://www.unosantafe.com.ar/santa-fe/el-parana-volvio-bajar-santa-fe-registro-585-metros-y-hay-90-familias-alojadas-centros-asistencia-n10293598.html",
+   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (24/11, 19h11); Infobae (16/11)",
+   "url": "https://www.unosantafe.com.ar/santa-fe/crecida-del-parana-el-rio-descendio-los-577-metros-y-ya-hay-309-personas-alojadas-centros-asistencia-n10294017.html",
    "rotulo": "Cheia do Paraná",
    "lado": "r"
   },
@@ -939,17 +940,17 @@ footer{border-top:1px solid var(--line)}
    "gravidade": "alto",
    "titulo": "Fiji declara estado de desastre nacional por seca do El Niño",
    "local": "Fiji, Pacífico Sul",
-   "data": "2026-11-18",
+   "data": "2026-11-25",
    "lat": -17.8,
    "lon": 178.0,
    "resumo": "O governo de Fiji declarou estado de desastre em todo o país por causa da seca ligada ao El Niño, nesta quarta (18/11). A medida vale por até 30 dias e pode ser prorrogada.",
    "pontos": [
-    "Anúncio do primeiro-ministro Sitiveni Rabuka após aval do gabinete e do conselho nacional de riscos.",
-    "Avaliações mostraram que a resposta à seca chegou a níveis de crise.",
-    "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027.",
-    "Ilhas remotas e agricultores são os mais pressionados; a população é orientada a poupar água."
+    "Desastre nacional declarado em 18/11 pelo primeiro-ministro Sitiveni Rabuka, por até 30 dias.",
+    "Cerca de 61% das fontes de água monitoradas estão em nível crítico; no Norte, 10 de 16 bacias.",
+    "Caminhões-pipa operam a partir de três pontos em Labasa; escolas encerram atividades na sexta (27/11).",
+    "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027."
    ],
-   "fonte": "Governo de Fiji via 1News (18/11)",
+   "fonte": "Governo de Fiji via 1News (18/11); PACNEWS/Islands Business (25/11)",
    "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
    "rotulo": "Seca em Fiji",
    "lado": "b"
@@ -1332,7 +1333,6 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
-
 
 </body>
 </html>
