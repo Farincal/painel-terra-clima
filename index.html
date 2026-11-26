@@ -74,6 +74,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -722,266 +723,264 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">
-{
- "atualizado": "2026-11-26T04:30:00+01:00",
- "manchete": "ciclone extratropical leva frio ao sul do brasil, paraná soma seis mortos e marés quebram recordes na califórnia",
- "eventos": [
-  {
-   "id": "parana-temporal",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "Chuvas matam seis e atingem mais de 40 cidades no Paraná",
-   "local": "Sudoeste, oeste e Região de Curitiba, Paraná, Brasil",
-   "data": "2026-11-25",
-   "lat": -25.9,
-   "lon": -53.0,
-   "resumo": "As chuvas desde segunda (23/11) deixaram seis mortos no Paraná, segundo a Defesa Civil estadual. O balanço da noite de quarta (25/11) já soma cerca de 11 mil afetados em pelo menos 40 cidades.",
-   "pontos": [
-    "Mortes: 2 em Campo Largo, 2 em Nova Esperança do Sudoeste, 1 em Verê e 1 em Mato Rico.",
-    "Balanço da noite de quarta (25/11): cerca de 11 mil afetados, 2.400 desalojados e 242 desabrigados.",
-    "Chuva em 24 horas: 117,2 mm em Verê, 113,2 mm em Francisco Beltrão e 96 mm em Pato Branco.",
-    "A Copel tinha 110 mil clientes sem luz na tarde de quarta; alerta de tempestades segue até sexta (27/11)."
-   ],
-   "fonte": "Defesa Civil do Paraná via TV Sim Brasil (25/11, 20h48) e Esmael Morais (25/11)",
-   "url": "https://tvsimbrasil.com.br/pr/parana/infra/noticia/2026/11/25/temporais-ja-deixam-mortos-no-parana-desabrigados",
-   "rotulo": "Mortes no PR",
-   "lado": "t"
-  },
-  {
-   "id": "ciclone-sc",
-   "tipo": "ciclone",
-   "gravidade": "moderado",
-   "titulo": "Ciclone extratropical ganha força e empurra frente fria",
-   "local": "Alto-mar perto de Santa Catarina; Sul e Sudeste do Brasil",
-   "data": "2026-11-26",
-   "lat": -27.5,
-   "lon": -46.5,
-   "resumo": "O ciclone extratropical formado no Atlântico, perto da costa de Santa Catarina, se intensifica nesta quinta (26/11). Ele empurra uma frente fria pelo litoral e traz ar frio ao Sul.",
-   "pontos": [
-    "Inmet: alerta laranja de tempestade em todo o RJ e em partes de SP, MG, PR, SC e MS.",
-    "Risco de até 100 mm de chuva no dia, rajadas de até 100 km/h e granizo.",
-    "Cemaden alerta para deslizamentos na serra do RJ, Baixada Santista, Grande SP e região de Curitiba.",
-    "De quinta a domingo (26 a 29/11): mínimas de 6 a 12 °C nas áreas altas do RS e de SC."
-   ],
-   "fonte": "Inmet e Cemaden via TribunaOnline (25/11, 14h36); ND Mais (24/11)",
-   "url": "https://tribunaonline.com.br/variedades/ciclone-provoca-virada-no-tempo-nesta-quarta-feira-25-e-coloca-sul-e-sudeste-sob-risco-de-temporais/",
-   "rotulo": "Ciclone no Sul",
-   "lado": "r"
-  },
-  {
-   "id": "rs",
-   "tipo": "enchente",
-   "gravidade": "critico",
-   "titulo": "RS contabiliza estragos após semana de temporais e tornado",
-   "local": "Tupanciretã, Rio Grande do Sul, Brasil",
-   "data": "2026-11-25",
-   "lat": -29.08,
-   "lon": -53.84,
-   "resumo": "Os temporais desde 16/11 já afetaram cerca de 25 mil pessoas e deixaram 5 mortos no Rio Grande do Sul. O alerta de tempestade valeu até a noite de quarta (25/11), e o ar frio chega nesta quinta.",
-   "pontos": [
-    "Balanço da Defesa Civil (23/11): 46 municípios, 25.212 afetados, 19.854 desalojados, 265 feridos e 5 mortos.",
-    "A MetSul confirmou um tornado em Tupanciretã na madrugada de 20/11, com ventos estimados de 200 a 300 km/h (F2 a F3).",
-    "Tupanciretã: 7.796 casas destelhadas, 20 escolas danificadas e cerca de 5.000 postes ou trechos de rede afetados.",
-    "Quarta (25/11): risco de temporal com granizo no Norte e Noroeste; até 51 mm em Iraí e alerta amarelo do Inmet."
-   ],
-   "fonte": "Defesa Civil do RS via O Tempo (24/11) e O Timoneiro (24/11); MetSul via O Timoneiro (24/11); Inmet via O Alto Uruguai (24/11)",
-   "url": "https://otempo.com.br/brasil/2026/11/24/nao-suba-em-telhados-tupancireta-orienta-moradores-a-buscar-abrigo-e-suspende-aulas-por-sete-dias",
-   "rotulo": "Estragos no RS",
-   "lado": "r"
-  },
-  {
-   "id": "florida-enchente",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio St. Johns segue acima do recorde na Flórida",
-   "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
-   "data": "2026-11-25",
-   "lat": 27.0,
-   "lon": -80.6,
-   "resumo": "O rio St. Johns segue em cheia grave na Flórida e continua acima do recorde de 1953 perto de Cocoa. Novas cristas são esperadas em Sanford e Astor nesta quinta (26/11), feriado de Ação de Graças.",
-   "pontos": [
-    "Cocoa: 18,43 pés na tarde de quarta (25/11), acima do recorde de 17,55 pés de 1953.",
-    "Sanford: 8,44 pés, com crista de cerca de 8,7 pés prevista para as 19h de quinta; DeLand deve subir a 6,4 pés até sábado.",
-    "Mais de 300 resgates em Brevard e Volusia; estado de emergência em 23 condados.",
-    "Declaração federal de desastre (DR-4956) cobre seis condados, entre eles Brevard e Palm Beach."
-   ],
-   "fonte": "NWS e governo da Flórida via CFLDR (25/11, 16h30 ET)",
-   "url": "https://www.cfldr.com/florida-flooding",
-   "rotulo": "Chuva na Flórida",
-   "lado": "r"
-  },
-  {
-   "id": "humboldt-mare",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Marés recordes alagam a costa da Califórnia",
-   "local": "Costa norte da Califórnia (Humboldt e Baía de São Francisco), EUA",
-   "data": "2026-11-25",
-   "lat": 40.74,
-   "lon": -124.22,
-   "resumo": "Marés altas quebraram recordes na costa da Califórnia nesta semana, de São Francisco a San Diego. Os alertas de inundação costeira seguem até a tarde de quinta (26/11).",
-   "pontos": [
-    "São Francisco: 8,23 pés na terça (24/11), acima do recorde de novembro de 7,97 pés, de 1982.",
-    "Quarta (25/11): recordes em La Jolla (8,11 pés) e Santa Bárbara (8,1 pés); San Pedro igualou o recorde de 8,19 pés.",
-    "King Salmon, em Humboldt, está sob retirada obrigatória desde terça (24/11).",
-    "Ondas de até 15 pés no condado de Ventura e 11 pés em Los Angeles na quinta."
-   ],
-   "fonte": "NWS via AccuWeather (24/11) e LAist (25/11)",
-   "url": "https://laist.com/news/climate-environment/king-tides-break-southern-california-records-more-on-thanksgiving",
-   "rotulo": "Marés Califórnia",
-   "lado": "l"
-  },
-  {
-   "id": "parana-argentina",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio Paraná segue acima da cota de retirada em Santa Fe",
-   "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
-   "data": "2026-11-24",
-   "lat": -29.15,
-   "lon": -59.65,
-   "resumo": "O rio Paraná marcava 5,77 m no porto de Santa Fe na terça (24/11), em queda lenta mas ainda acima da cota de retirada de 5,70 m. Na cidade, 309 pessoas de 94 famílias estão em abrigos.",
-   "pontos": [
-    "Leituras da Prefectura Naval: 5,88 m na sexta (20/11), 5,85 m no domingo e 5,77 m na terça; o rio Salado marca 2,86 m em Recreo.",
-    "Abrigos de Alto Verde (279 pessoas, 83 famílias; 11 entraram na terça) e Colastiné Sur (30 pessoas); 120 são menores.",
-    "A prefeitura monta 10 módulos habitacionais em Alto Verde, projeta 40 em Colastiné Sur e prepara 4 bombas nesta semana.",
-    "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11)."
-   ],
-   "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (24/11, 19h11); Infobae (16/11)",
-   "url": "https://www.unosantafe.com.ar/santa-fe/crecida-del-parana-el-rio-descendio-los-577-metros-y-ya-hay-309-personas-alojadas-centros-asistencia-n10294017.html",
-   "rotulo": "Cheia do Paraná",
-   "lado": "r"
-  },
-  {
-   "id": "equador-losrios",
-   "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Deslizamento mata duas jovens em Quevedo, no Equador",
-   "local": "Província de Los Ríos, Equador",
-   "data": "2026-11-23",
-   "lat": -1.02,
-   "lon": -79.46,
-   "resumo": "Um deslizamento de terra atingiu casas em Quevedo, na província de Los Ríos, na madrugada desta segunda (23/11), e matou duas irmãs de 14 e 15 anos. A chuva da noite também alagou ruas e casas em Babahoyo.",
-   "pontos": [
-    "Três pessoas ficaram feridas em Quevedo, entre elas uma grávida.",
-    "Em Babahoyo, o rio chegou a 6,65 m, perto da máxima de 7,10 m; a estrada Montalvo–Balsapamba foi fechada.",
-    "Los Ríos soma 228 ocorrências de chuva desde 29/8, segundo a SNGR.",
-    "No país, desde 29/8: 16 mortos, 36.729 desabrigados e 25.654 casas afetadas (SNGR, 18/11)."
-   ],
-   "fonte": "SNGR, ECU 911 e Diario Extra via The Rio Times (23/11)",
-   "url": "https://www.riotimesonline.com/los-rios-ecuador-floods-landslides-quevedo/",
-   "rotulo": "Chuva no Equador",
-   "lado": "l"
-  },
-  {
-   "id": "tailandia-sul",
-   "tipo": "enchente",
-   "gravidade": "moderado",
-   "titulo": "Enchente atinge quase 12 mil pessoas no sul da Tailândia",
-   "local": "Phatthalung e sul da Tailândia",
-   "data": "2026-11-24",
-   "lat": 7.62,
-   "lon": 100.07,
-   "resumo": "A enchente em Phatthalung, no sul da Tailândia, já afeta 11.902 pessoas de 4.449 famílias em 6 distritos. O serviço meteorológico prevê chuva forte a muito forte em 15 províncias de 27 a 30/11.",
-   "pontos": [
-    "Mueang Phatthalung e Khuan Khanun são os distritos mais atingidos; 86 vilas afetadas.",
-    "Em Songkhla, o lago transbordou e atingiu mais de 100 famílias em Sathing Phra.",
-    "Cerca de 740 hectares de arrozais, pomares e plantações foram danificados.",
-    "Um homem de 87 anos foi encontrado morto na água em Khuan Khanun no domingo (22/11)."
-   ],
-   "fonte": "TMD e The Nation via Nature World News (24/11); The Nation (23/11)",
-   "url": "https://www.natureworldnews.com/articles/74019/20261124/floods-hit-nearly-12000-people-southern-thailand-more-heavy-rain-forecast.htm",
-   "rotulo": "Enchente Tailândia",
-   "lado": "b"
-  },
-  {
-   "id": "fiji-seca",
-   "tipo": "seca",
-   "gravidade": "alto",
-   "titulo": "Fiji declara estado de desastre nacional por seca do El Niño",
-   "local": "Fiji, Pacífico Sul",
-   "data": "2026-11-25",
-   "lat": -17.8,
-   "lon": 178.0,
-   "resumo": "O governo de Fiji declarou estado de desastre em todo o país por causa da seca ligada ao El Niño, nesta quarta (18/11). A medida vale por até 30 dias e pode ser prorrogada.",
-   "pontos": [
-    "Desastre nacional declarado em 18/11 pelo primeiro-ministro Sitiveni Rabuka, por até 30 dias.",
-    "Cerca de 61% das fontes de água monitoradas estão em nível crítico; no Norte, 10 de 16 bacias.",
-    "Caminhões-pipa operam a partir de três pontos em Labasa; escolas encerram atividades na sexta (27/11).",
-    "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027."
-   ],
-   "fonte": "Governo de Fiji via 1News (18/11); PACNEWS/Islands Business (25/11)",
-   "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
-   "rotulo": "Seca em Fiji",
-   "lado": "b"
-  },
-  {
-   "id": "mayon",
-   "tipo": "vulcao",
-   "gravidade": "alto",
-   "titulo": "Mayon segue em alerta 3 com novo domo de lava",
-   "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-19",
-   "lat": 13.26,
-   "lon": 123.69,
-   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível de alerta 3, com novo domo de lava visto na cratera em 13/11. A zona de perigo de 6 km continua proibida, e voos sobre o cume estão vetados.",
-   "pontos": [
-    "Boletim de 19/11: 10 terremotos vulcânicos em 24 horas e emissão de 1.494 toneladas de SO₂.",
-    "O chão da cratera seguiu inchando, com breve desinflação a nordeste.",
-    "O novo domo foi avistado pelo Phivolcs em 13/11, após satélites mostrarem a cratera inchando de 4 a 12/11.",
-    "Quase 4.000 pessoas foram retiradas no início do mês; uma erupção em 11/11 lançou cinzas."
-   ],
-   "fonte": "Phivolcs via Pilipino Star Ngayon (19/11) e Journal News Online (13/11)",
-   "url": "https://www.philstar.com/pilipino-star-ngayon/probinsiya/2026/11/19/2571075/bulkang-mayon-nagtala-ng-10-pagyanig",
-   "rotulo": "Vulcão Mayon",
-   "lado": "r"
-  },
-  {
-   "id": "kilauea",
-   "tipo": "vulcao",
-   "gravidade": "moderado",
-   "titulo": "Kīlauea tem episódio 57 com fontes de lava de 200 m",
-   "local": "Cratera Halemaʻumaʻu, Havaí, Estados Unidos",
-   "data": "2026-11-23",
-   "lat": 19.41,
-   "lon": -155.28,
-   "resumo": "O vulcão Kīlauea, no Havaí, lançou fontes de lava de até 200 m de altura na madrugada desta segunda (23/11), no episódio 57 da erupção. A atividade ficou restrita à caldeira do cume, dentro do parque nacional.",
-   "pontos": [
-    "As fontes duraram 5,8 horas, das 0h15 às 6h locais; o pico foi à 1h30.",
-    "O radar do NWS detectou partículas vulcânicas a até 14.500 pés (4,4 km).",
-    "Depois do episódio, o USGS baixou o alerta de 'atenção' para 'aviso' e o código de aviação de laranja para amarelo.",
-    "Houve queda de fragmentos na borda sul da cratera."
-   ],
-   "fonte": "USGS HVO via Big Island Video News (23/11)",
-   "url": "https://www.bigislandvideonews.com/2026/11/23/kilauea-volcano-update-high-lava-fountains-erupt-overnight/",
-   "rotulo": "Kīlauea (Havaí)",
-   "lado": "l"
-  },
-  {
-   "id": "charles-leste",
-   "tipo": "outro",
-   "gravidade": "moderado",
-   "titulo": "Frio polar e mestral forte na Catalunha",
-   "local": "Catalunha e Pireneus, Espanha",
-   "data": "2026-11-26",
-   "lat": 41.5,
-   "lon": 1.6,
-   "resumo": "A Catalunha tem nesta quinta (26/11) um dia de ar polar, com neve nos Pireneus ocidentais e mestral forte em Tarragona. O fim de semana deve ser seco, mas frio.",
-   "pontos": [
-    "Neve fraca acima de 1.000 a 1.200 m no Vale de Aran, norte do Pallars Sobirà e Alt Pirineu.",
-    "Mestral em Tarragona com rajadas acima de 70 a 80 km/h, diminuindo ao longo do dia.",
-    "Neblina no centro da Catalunha (Garrigues, Pla de Bages e planície de Vic).",
-    "Sexta e sábado (27 e 28/11): sol e mínimas de 0 a 5 °C, com geada nos Pireneus e no interior."
-   ],
-   "fonte": "Previsão do El Nacional para 26/11; Meteocat via NacióDigital (24/11)",
-   "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dijous-26-novembre-fred-polar-catalunya-hivern-anticipa-treu-urpes-neu-vent_1731215_102.html",
-   "rotulo": "Frio na Catalunha",
-   "lado": "t"
-  }
- ]
-}
-</script>
+<script type="application/json" id="dados">{
+  "atualizado": "2026-11-26T10:30:00+01:00",
+  "manchete": "ciclone extratropical põe o sudeste em alerta de temporal e esfria o sul, paraná soma seis mortos e o rio st. johns segue em recorde na flórida",
+  "eventos": [
+    {
+      "id": "parana-temporal",
+      "tipo": "enchente",
+      "gravidade": "critico",
+      "titulo": "Chuvas matam seis e atingem mais de 40 cidades no Paraná",
+      "local": "Sudoeste, oeste e Região de Curitiba, Paraná, Brasil",
+      "data": "2026-11-25",
+      "lat": -25.9,
+      "lon": -53.0,
+      "resumo": "As chuvas desde segunda (23/11) deixaram seis mortos no Paraná, segundo a Defesa Civil estadual. O balanço da noite de quarta (25/11) já soma cerca de 11 mil afetados em pelo menos 40 cidades.",
+      "pontos": [
+        "Mortes: 2 em Campo Largo, 2 em Nova Esperança do Sudoeste, 1 em Verê e 1 em Mato Rico.",
+        "Balanço da noite de quarta (25/11): cerca de 11 mil afetados, 2.400 desalojados e 242 desabrigados.",
+        "Chuva em 24 horas: 117,2 mm em Verê, 113,2 mm em Francisco Beltrão e 96 mm em Pato Branco.",
+        "A Copel tinha 110 mil clientes sem luz na tarde de quarta; alerta de tempestades segue até sexta (27/11)."
+      ],
+      "fonte": "Defesa Civil do Paraná via TV Sim Brasil (25/11, 20h48) e Esmael Morais (25/11)",
+      "url": "https://tvsimbrasil.com.br/pr/parana/infra/noticia/2026/11/25/temporais-ja-deixam-mortos-no-parana-desabrigados",
+      "rotulo": "Mortes no PR",
+      "lado": "t"
+    },
+    {
+      "id": "ciclone-sc",
+      "tipo": "ciclone",
+      "gravidade": "moderado",
+      "titulo": "Ciclone no Atlântico põe Sudeste em alerta de temporal",
+      "local": "Alto-mar perto de Santa Catarina; Sul e Sudeste do Brasil",
+      "data": "2026-11-26",
+      "lat": -27.5,
+      "lon": -46.5,
+      "resumo": "O ciclone extratropical formado perto da costa de Santa Catarina empurra uma frente fria pelo Sudeste nesta quinta (26/11). O Inmet mantém alerta laranja de tempestade para 1.278 cidades em seis estados.",
+      "pontos": [
+        "Alerta laranja do Inmet em MG, SP, ES, MS, GO e RJ, incluindo São Paulo, Rio, Belo Horizonte e Vitória.",
+        "Previsão de 50 a 100 mm por dia (30 a 60 mm por hora) e ventos de 60 a 100 km/h.",
+        "No RJ, 100 a 150 mm na região metropolitana, com mais de 200 mm possíveis na serra.",
+        "Mínimas abaixo de 10 °C nas áreas altas do RS e de SC; sexta (27/11) com máxima de 16 °C em Curitiba."
+      ],
+      "fonte": "Inmet via Revista Fórum (24/11) e Clima ao Vivo (25/11)",
+      "url": "https://revistaforum.com.br/clima/alerta-chuvas-intensas-sao-paulo-26-11-2026",
+      "rotulo": "Ciclone/frente fria",
+      "lado": "r"
+    },
+    {
+      "id": "rs",
+      "tipo": "enchente",
+      "gravidade": "critico",
+      "titulo": "RS contabiliza estragos após semana de temporais e tornado",
+      "local": "Tupanciretã, Rio Grande do Sul, Brasil",
+      "data": "2026-11-25",
+      "lat": -29.08,
+      "lon": -53.84,
+      "resumo": "Os temporais desde 16/11 já afetaram cerca de 25 mil pessoas e deixaram 5 mortos no Rio Grande do Sul. O alerta de tempestade valeu até a noite de quarta (25/11), e o ar frio chega nesta quinta.",
+      "pontos": [
+        "Balanço da Defesa Civil (23/11): 46 municípios, 25.212 afetados, 19.854 desalojados, 265 feridos e 5 mortos.",
+        "A MetSul confirmou um tornado em Tupanciretã na madrugada de 20/11, com ventos estimados de 200 a 300 km/h (F2 a F3).",
+        "Tupanciretã: 7.796 casas destelhadas, 20 escolas danificadas e cerca de 5.000 postes ou trechos de rede afetados.",
+        "Quarta (25/11): risco de temporal com granizo no Norte e Noroeste; até 51 mm em Iraí e alerta amarelo do Inmet."
+      ],
+      "fonte": "Defesa Civil do RS via O Tempo (24/11) e O Timoneiro (24/11); MetSul via O Timoneiro (24/11); Inmet via O Alto Uruguai (24/11)",
+      "url": "https://otempo.com.br/brasil/2026/11/24/nao-suba-em-telhados-tupancireta-orienta-moradores-a-buscar-abrigo-e-suspende-aulas-por-sete-dias",
+      "rotulo": "Estragos no RS",
+      "lado": "r"
+    },
+    {
+      "id": "florida-enchente",
+      "tipo": "enchente",
+      "gravidade": "alto",
+      "titulo": "Rio St. Johns segue acima do recorde na Flórida",
+      "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
+      "data": "2026-11-25",
+      "lat": 27.0,
+      "lon": -80.6,
+      "resumo": "O rio St. Johns segue em cheia grave na Flórida e continua acima do recorde de 1953 perto de Cocoa. Novas cristas são esperadas em Sanford e Astor nesta quinta (26/11), feriado de Ação de Graças.",
+      "pontos": [
+        "Cocoa: 18,43 pés na tarde de quarta (25/11), acima do recorde de 17,55 pés de 1953.",
+        "Sanford: 8,44 pés, com crista de cerca de 8,7 pés prevista para as 19h de quinta; DeLand deve subir a 6,4 pés até sábado.",
+        "Mais de 300 resgates em Brevard e Volusia; em Seminole, ao menos 495 casas danificadas e o fórum cível de Sanford fechado.",
+        "Declaração federal de desastre (DR-4956) cobre seis condados, entre eles Brevard e Palm Beach."
+      ],
+      "fonte": "NWS e governo da Flórida via CFLDR (25/11, 16h30 ET); Condado de Seminole via WFTV (25/11)",
+      "url": "https://www.cfldr.com/florida-flooding",
+      "rotulo": "Chuva na Flórida",
+      "lado": "r"
+    },
+    {
+      "id": "humboldt-mare",
+      "tipo": "enchente",
+      "gravidade": "alto",
+      "titulo": "Marés recordes alagam a costa da Califórnia",
+      "local": "Costa norte da Califórnia (Humboldt e Baía de São Francisco), EUA",
+      "data": "2026-11-25",
+      "lat": 40.74,
+      "lon": -124.22,
+      "resumo": "Marés altas quebraram recordes na costa da Califórnia nesta semana, de São Francisco a San Diego. Os alertas de inundação costeira seguem até a tarde de quinta (26/11).",
+      "pontos": [
+        "São Francisco: 8,23 pés na terça (24/11), acima do recorde de novembro de 7,97 pés, de 1982.",
+        "Quarta (25/11): recordes em La Jolla (8,11 pés) e Santa Bárbara (8,1 pés); San Pedro igualou o recorde de 8,19 pés.",
+        "King Salmon, em Humboldt, está sob retirada obrigatória desde terça (24/11).",
+        "Ondas de até 15 pés no condado de Ventura e 11 pés em Los Angeles na quinta."
+      ],
+      "fonte": "NWS via AccuWeather (24/11) e LAist (25/11)",
+      "url": "https://laist.com/news/climate-environment/king-tides-break-southern-california-records-more-on-thanksgiving",
+      "rotulo": "Marés Califórnia",
+      "lado": "l"
+    },
+    {
+      "id": "parana-argentina",
+      "tipo": "enchente",
+      "gravidade": "alto",
+      "titulo": "Rio Paraná segue acima da cota de retirada em Santa Fe",
+      "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
+      "data": "2026-11-24",
+      "lat": -29.15,
+      "lon": -59.65,
+      "resumo": "O rio Paraná marcava 5,77 m no porto de Santa Fe na terça (24/11), em queda lenta mas ainda acima da cota de retirada de 5,70 m. Na cidade, 309 pessoas de 94 famílias estão em abrigos.",
+      "pontos": [
+        "Leituras da Prefectura Naval: 5,88 m na sexta (20/11), 5,85 m no domingo e 5,77 m na terça; o rio Salado marca 2,86 m em Recreo.",
+        "Abrigos de Alto Verde (279 pessoas, 83 famílias; 11 entraram na terça) e Colastiné Sur (30 pessoas); 120 são menores.",
+        "A prefeitura monta 10 módulos habitacionais em Alto Verde, projeta 40 em Colastiné Sur e prepara 4 bombas nesta semana.",
+        "Retirados nas províncias: 2.242 no Chaco, 2.005 em Corrientes, 164 em Santa Fe e 136 em Entre Ríos (balanço de 16/11)."
+      ],
+      "fonte": "Prefectura Naval e Município de Santa Fe via UNO Santa Fe (24/11, 19h11); Infobae (16/11)",
+      "url": "https://www.unosantafe.com.ar/santa-fe/crecida-del-parana-el-rio-descendio-los-577-metros-y-ya-hay-309-personas-alojadas-centros-asistencia-n10294017.html",
+      "rotulo": "Cheia do Paraná",
+      "lado": "r"
+    },
+    {
+      "id": "equador-losrios",
+      "tipo": "enchente",
+      "gravidade": "alto",
+      "titulo": "Deslizamento mata duas jovens em Quevedo, no Equador",
+      "local": "Província de Los Ríos, Equador",
+      "data": "2026-11-23",
+      "lat": -1.02,
+      "lon": -79.46,
+      "resumo": "Um deslizamento de terra atingiu casas em Quevedo, na província de Los Ríos, na madrugada desta segunda (23/11), e matou duas irmãs de 14 e 15 anos. A chuva da noite também alagou ruas e casas em Babahoyo.",
+      "pontos": [
+        "Três pessoas ficaram feridas em Quevedo, entre elas uma grávida.",
+        "Em Babahoyo, o rio chegou a 6,65 m, perto da máxima de 7,10 m; a estrada Montalvo–Balsapamba foi fechada.",
+        "Los Ríos soma 228 ocorrências de chuva desde 29/8, segundo a SNGR.",
+        "No país, desde 29/8: 16 mortos, 36.729 desabrigados e 25.654 casas afetadas (SNGR, 18/11)."
+      ],
+      "fonte": "SNGR, ECU 911 e Diario Extra via The Rio Times (23/11)",
+      "url": "https://www.riotimesonline.com/los-rios-ecuador-floods-landslides-quevedo/",
+      "rotulo": "Chuva no Equador",
+      "lado": "l"
+    },
+    {
+      "id": "tailandia-sul",
+      "tipo": "enchente",
+      "gravidade": "moderado",
+      "titulo": "Enchente atinge quase 12 mil pessoas no sul da Tailândia",
+      "local": "Phatthalung e sul da Tailândia",
+      "data": "2026-11-24",
+      "lat": 7.62,
+      "lon": 100.07,
+      "resumo": "A enchente em Phatthalung, no sul da Tailândia, já afeta 11.902 pessoas de 4.449 famílias em 6 distritos. O serviço meteorológico prevê chuva forte a muito forte em 15 províncias de 27 a 30/11.",
+      "pontos": [
+        "Mueang Phatthalung e Khuan Khanun são os distritos mais atingidos; 86 vilas afetadas.",
+        "Em Songkhla, o lago transbordou e atingiu mais de 100 famílias em Sathing Phra.",
+        "Cerca de 740 hectares de arrozais, pomares e plantações foram danificados.",
+        "Um homem de 87 anos foi encontrado morto na água em Khuan Khanun no domingo (22/11)."
+      ],
+      "fonte": "TMD e The Nation via Nature World News (24/11); The Nation (23/11)",
+      "url": "https://www.natureworldnews.com/articles/74019/20261124/floods-hit-nearly-12000-people-southern-thailand-more-heavy-rain-forecast.htm",
+      "rotulo": "Enchente Tailândia",
+      "lado": "b"
+    },
+    {
+      "id": "fiji-seca",
+      "tipo": "seca",
+      "gravidade": "alto",
+      "titulo": "Fiji declara estado de desastre nacional por seca do El Niño",
+      "local": "Fiji, Pacífico Sul",
+      "data": "2026-11-25",
+      "lat": -17.8,
+      "lon": 178.0,
+      "resumo": "O governo de Fiji declarou estado de desastre em todo o país por causa da seca ligada ao El Niño, nesta quarta (18/11). A medida vale por até 30 dias e pode ser prorrogada.",
+      "pontos": [
+        "Desastre nacional declarado em 18/11 pelo primeiro-ministro Sitiveni Rabuka, por até 30 dias.",
+        "Cerca de 61% das fontes de água monitoradas estão em nível crítico; no Norte, 10 de 16 bacias.",
+        "Caminhões-pipa operam a partir de três pontos em Labasa; escolas encerram atividades na sexta (27/11).",
+        "O serviço meteorológico prevê chuva abaixo do normal até o início de 2027."
+      ],
+      "fonte": "Governo de Fiji via 1News (18/11); PACNEWS/Islands Business (25/11)",
+      "url": "https://www.1news.co.nz/2026/11/18/fiji-declares-nationwide-state-of-disaster-as-el-nino-drought-worsens/",
+      "rotulo": "Seca em Fiji",
+      "lado": "b"
+    },
+    {
+      "id": "mayon",
+      "tipo": "vulcao",
+      "gravidade": "alto",
+      "titulo": "Mayon segue em alerta 3 com novo domo de lava",
+      "local": "Albay, ilha de Luzon, Filipinas",
+      "data": "2026-11-19",
+      "lat": 13.26,
+      "lon": 123.69,
+      "resumo": "O vulcão Mayon, nas Filipinas, segue no nível de alerta 3, com novo domo de lava visto na cratera em 13/11. A zona de perigo de 6 km continua proibida, e voos sobre o cume estão vetados.",
+      "pontos": [
+        "Boletim de 19/11: 10 terremotos vulcânicos em 24 horas e emissão de 1.494 toneladas de SO₂.",
+        "O chão da cratera seguiu inchando, com breve desinflação a nordeste.",
+        "O novo domo foi avistado pelo Phivolcs em 13/11, após satélites mostrarem a cratera inchando de 4 a 12/11.",
+        "Quase 4.000 pessoas foram retiradas no início do mês; uma erupção em 11/11 lançou cinzas."
+      ],
+      "fonte": "Phivolcs via Pilipino Star Ngayon (19/11) e Journal News Online (13/11)",
+      "url": "https://www.philstar.com/pilipino-star-ngayon/probinsiya/2026/11/19/2571075/bulkang-mayon-nagtala-ng-10-pagyanig",
+      "rotulo": "Vulcão Mayon",
+      "lado": "r"
+    },
+    {
+      "id": "kilauea",
+      "tipo": "vulcao",
+      "gravidade": "moderado",
+      "titulo": "Kīlauea tem episódio 57 com fontes de lava de 200 m",
+      "local": "Cratera Halemaʻumaʻu, Havaí, Estados Unidos",
+      "data": "2026-11-23",
+      "lat": 19.41,
+      "lon": -155.28,
+      "resumo": "O vulcão Kīlauea, no Havaí, lançou fontes de lava de até 200 m de altura na madrugada desta segunda (23/11), no episódio 57 da erupção. A atividade ficou restrita à caldeira do cume, dentro do parque nacional.",
+      "pontos": [
+        "As fontes duraram 5,8 horas, das 0h15 às 6h locais; o pico foi à 1h30.",
+        "O radar do NWS detectou partículas vulcânicas a até 14.500 pés (4,4 km).",
+        "Depois do episódio, o USGS baixou o alerta de 'atenção' para 'aviso' e o código de aviação de laranja para amarelo.",
+        "Houve queda de fragmentos na borda sul da cratera."
+      ],
+      "fonte": "USGS HVO via Big Island Video News (23/11)",
+      "url": "https://www.bigislandvideonews.com/2026/11/23/kilauea-volcano-update-high-lava-fountains-erupt-overnight/",
+      "rotulo": "Kīlauea (Havaí)",
+      "lado": "l"
+    },
+    {
+      "id": "charles-leste",
+      "tipo": "outro",
+      "gravidade": "moderado",
+      "titulo": "Frio polar e mestral forte na Catalunha",
+      "local": "Catalunha e Pireneus, Espanha",
+      "data": "2026-11-26",
+      "lat": 41.5,
+      "lon": 1.6,
+      "resumo": "A Catalunha tem nesta quinta (26/11) um dia de ar polar, com neve nos Pireneus ocidentais e mestral forte em Tarragona. O fim de semana deve ser seco, mas frio.",
+      "pontos": [
+        "Neve fraca acima de 1.000 a 1.200 m no Vale de Aran, norte do Pallars Sobirà e Alt Pirineu.",
+        "Mestral em Tarragona com rajadas acima de 70 a 80 km/h, diminuindo ao longo do dia.",
+        "Neblina no centro da Catalunha (Garrigues, Pla de Bages e planície de Vic).",
+        "Sexta e sábado (27 e 28/11): sol e mínimas de 0 a 5 °C, com geada nos Pireneus e no interior."
+      ],
+      "fonte": "Previsão do El Nacional para 26/11; Meteocat via NacióDigital (24/11)",
+      "url": "https://www.elnacional.cat/ca/temps-avui/temps-catalunya-dijous-26-novembre-fred-polar-catalunya-hivern-anticipa-treu-urpes-neu-vent_1731215_102.html",
+      "rotulo": "Frio na Catalunha",
+      "lado": "t"
+    }
+  ]
+}</script>
 
 <script>
 (function(){
@@ -1336,6 +1335,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
