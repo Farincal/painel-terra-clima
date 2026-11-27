@@ -79,6 +79,7 @@
 
 
 
+
 <title>Painel Terra e Clima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -727,9 +728,10 @@ footer{border-top:1px solid var(--line)}
   </footer>
 </div>
 
-<script type="application/json" id="dados">{
- "atualizado": "2026-11-27T10:30:00+01:00",
- "manchete": "paraná entra em novo alerta de temporal com 22 mil afetados, incêndio sai de controle na tasmânia e o rio st. johns segue acima do recorde na flórida",
+<script type="application/json" id="dados">
+{
+ "atualizado": "2026-11-27T16:30:00+01:00",
+ "manchete": "o sudeste do brasil fica em alerta à espera da primeira zcas, o fogo na tasmânia passa de 14 mil hectares e o rio st. johns atinge o pico em sanford",
  "eventos": [
   {
    "id": "parana-temporal",
@@ -745,9 +747,9 @@ footer{border-top:1px solid var(--line)}
     "Boletim da Defesa Civil (26/11): cerca de 22 mil afetados, quase 300 desabrigados e 6 mortos.",
     "Alerta do Inmet para sexta (27/11), das 9h40 às 23h59: 50 a 100 mm no dia e rajadas de 60 a 100 km/h no Oeste, Sudoeste e Centro-Sul.",
     "A Defesa Civil Nacional reconheceu emergência em 9 municípios do Paraná em 26/11.",
-    "Ampére é a cidade mais atingida: 4,7 mil afetados e cerca de 500 casas danificadas."
+    "Ampére é a cidade mais atingida: 4,7 mil afetados e cerca de 500 casas danificadas; o Inmet mantém alerta amarelo no sábado (28/11)."
    ],
-   "fonte": "Defesa Civil do Paraná via BandNews FM Curitiba (26/11); Inmet via Banda B (26/11, 21h03); Paraná Shop (27/11)",
+   "fonte": "Defesa Civil do Paraná via BandNews FM Curitiba (26/11); Inmet via Banda B (26/11) e Paraná Shop (27/11)",
    "url": "https://www.bandab.com.br/noticias-parana/chuvas-intensas-e-ventos-de-ate-100-km-h-parana-entra-em-alerta-nesta-sexta-confira-as-cidades-afetadas/",
    "rotulo": "Alerta no PR",
    "lado": "t"
@@ -756,21 +758,21 @@ footer{border-top:1px solid var(--line)}
    "id": "ciclone-sc",
    "tipo": "ciclone",
    "gravidade": "moderado",
-   "titulo": "Angra dos Reis passa de 180 mm em temporal no Sudeste",
-   "local": "Alto-mar perto de Santa Catarina; Sul e Sudeste do Brasil",
-   "data": "2026-11-26",
-   "lat": -23.5,
-   "lon": -45.0,
-   "resumo": "A frente fria ligada ao ciclone extratropical na costa de Santa Catarina despejou mais de 180 mm de chuva em Angra dos Reis (RJ). O Inmet mantém alerta laranja em 1.278 municípios de seis estados.",
+   "titulo": "Sudeste segue em alerta; primeira ZCAS chega no domingo",
+   "local": "Rio de Janeiro, Espírito Santo, Minas Gerais e leste de São Paulo, Brasil",
+   "data": "2026-11-27",
+   "lat": -21.5,
+   "lon": -43.0,
+   "resumo": "O Inmet mantém alerta de chuva forte nesta sexta (27/11) para RJ, ES, MG e leste de SP, com risco de deslizamentos. A partir de domingo (29/11), a primeira ZCAS da temporada deve trazer de 200 a 300 mm até 5/12 na Zona da Mata mineira e na serra do Rio.",
    "pontos": [
-    "Cemaden: mais de 180 mm na Vila Histórica de Angra, 130 mm no Parque Perequê, 104,2 mm em Paraty e 87,2 mm em Resende.",
-    "Em Angra, a Defesa Civil não registrou deslizamentos nem transbordo de rios; houve só alagamentos pontuais.",
-    "Petrópolis teve 33 ocorrências na quinta (26/11), a maioria deslizamentos, sem vítimas.",
+    "Chuva pode chegar perto de 100 mm em 24 horas no Espírito Santo nesta sexta (27/11).",
+    "Cemaden: mais de 180 mm em Angra dos Reis, 104,2 mm em Paraty e 87,2 mm em Resende na quinta (26/11).",
+    "ZCAS de 29/11 a 5/12: 200 a 300 mm no sul de Minas, na Zona da Mata e na serra fluminense, segundo a Climatempo.",
     "Em Monte Alegre do Sul (SP), um deslizamento matou uma mulher de 21 anos e o filho de 1 ano."
    ],
-   "fonte": "Cemaden e Defesa Civil via Rio de Janeiro em Pauta e Agenda do Poder (26/11); EcoSerrano (26/11); Xinhua (25/11)",
-   "url": "https://agendadopoder.com.br/chuva-angra-reis-maior-volume/",
-   "rotulo": "Temporal Sudeste",
+   "fonte": "Inmet via Conexão Itajubá e Brasil de Fato (27/11); Cemaden via Agenda do Poder (26/11); Xinhua (25/11)",
+   "url": "https://www.brasildefato.com.br/2026/11/27/sul-sudeste-e-centro-oeste-tem-novos-temporais-nesta-sexta-27-e-fim-de-semana/",
+   "rotulo": "ZCAS no Sudeste",
    "lado": "r"
   },
   {
@@ -798,20 +800,20 @@ footer{border-top:1px solid var(--line)}
    "id": "flinders-incendio",
    "tipo": "incendio",
    "gravidade": "alto",
-   "titulo": "Incêndio fora de controle na ilha Flinders, Austrália",
+   "titulo": "Fogo fora de controle já queimou 15 mil ha na ilha Flinders",
    "local": "Ilha Flinders, Tasmânia, Austrália",
    "data": "2026-11-27",
    "lat": -39.9,
    "lon": 147.9,
-   "resumo": "Um incêndio florestal causado por raios segue fora de controle na ilha Flinders, na Tasmânia. Ao menos oito construções foram destruídas ou muito danificadas.",
+   "resumo": "O incêndio florestal causado por raio na ilha Flinders, na Tasmânia, segue fora de controle e já queimou quase 15 mil hectares. Até seis casas foram danificadas ou destruídas.",
    "pontos": [
-    "O Tasmania Fire Service emitiu alerta de emergência em 25/11 para Killiecrankie, Leeka e Mount Tanner: \"tarde demais para sair\".",
-    "O fogo já tinha queimado cerca de 3.000 hectares até terça (24/11).",
-    "Sexta (27/11): dia quente e seco, com rajadas de 50 a 60 km/h na ilha.",
-    "No norte da Tasmânia, há alerta de 40 a 70 mm de chuva e risco de enxurradas no sábado."
+    "TasALERT: cerca de 14.977 hectares queimados, mais de 10% da ilha.",
+    "Alerta de emergência em Killiecrankie, Mount Tanner e Leeka: \"tarde demais para sair\".",
+    "Mais de 60 bombeiros e 10 aeronaves, sete delas helicópteros, atuaram na quinta (26/11).",
+    "O vento volta a subir nesta sexta (27/11); há chuva prevista para sábado."
    ],
-   "fonte": "Tasmania Fire Service via ABC/Anadolu (25/11) e The Guardian via urgent.news (27/11)",
-   "url": "https://www.anews.com.tr/australia/2026/11/25/its-too-late-to-leave-bushfire-prompts-emergency-warning-on-australian-island",
+   "fonte": "Tasmania Fire Service via ABC News (27/11) e Deep Arrival (26/11)",
+   "url": "https://www.abc.net.au/news/2026-11-27/sailors-support-flinders-island-residents-during-bushfire/107432336",
    "rotulo": "Fogo na Tasmânia",
    "lado": "l"
   },
@@ -819,19 +821,19 @@ footer{border-top:1px solid var(--line)}
    "id": "florida-enchente",
    "tipo": "enchente",
    "gravidade": "alto",
-   "titulo": "Rio St. Johns segue acima do recorde na Flórida",
+   "titulo": "Rio St. Johns atinge o pico em Sanford, na Flórida",
    "local": "Costa leste da Flórida, de Broward a Jacksonville, Estados Unidos",
-   "data": "2026-11-26",
+   "data": "2026-11-27",
    "lat": 27.0,
    "lon": -80.6,
-   "resumo": "O rio St. Johns segue em cheia grave na Flórida, acima do recorde de 1953 perto de Cocoa. Em DeLand, o NWS prevê alta até cerca de 6,4 pés no sábado (28/11).",
+   "resumo": "O rio St. Johns atingiu o pico de 8,83 pés em Sanford na manhã desta sexta (27/11), em cheia grave. Em DeLand, o rio ainda sobe até cerca de 6,5 pés no domingo (29/11).",
    "pontos": [
-    "Cocoa: 18,30 pés na tarde de quinta (26/11), acima do recorde de 1953, após pico de 18,46 pés em 25/11.",
-    "Sanford: 8,66 pés, o maior nível desta cheia, com pico previsto perto de 8,7 pés na madrugada de sexta (27/11).",
-    "DeLand: 6,09 pés, subindo até cerca de 6,4 pés às 19h de sábado; Astor atingiu o pico de 4,41 pés.",
+    "Sanford: pico provisório de 8,83 pés às 7h (ET), pouco abaixo do recorde de 8,96 pés de 2022.",
+    "Cocoa: 18,25 pés, em cheia grave, depois de passar o recorde de 1953 nesta semana.",
+    "Astor: pico de 4,47 pés às 4h30, o maior desta cheia; DeLand marca 6,20 pés.",
     "Brevard soma mais de 2.400 casas danificadas ou destruídas; Seminole, mais de 500."
    ],
-   "fonte": "NWS e condados via Central Florida Disaster Relief (26/11, 16h30 ET); The Florida Press (26/11)",
+   "fonte": "NWS e condados via Central Florida Disaster Relief (27/11, 8h30 ET)",
    "url": "https://www.cfldr.com/florida-flooding",
    "rotulo": "Chuva na Flórida",
    "lado": "r"
@@ -839,21 +841,21 @@ footer{border-top:1px solid var(--line)}
   {
    "id": "parana-argentina",
    "tipo": "enchente",
-   "gravidade": "alto",
-   "titulo": "Rio Paraná desce, mas segue na cota de retirada em Santa Fe",
+   "gravidade": "moderado",
+   "titulo": "Rio Paraná sai do nível de retirada em Santa Fe",
    "local": "Chaco, Corrientes, Santa Fe e Entre Ríos, Argentina",
-   "data": "2026-11-26",
+   "data": "2026-11-27",
    "lat": -29.15,
    "lon": -59.65,
-   "resumo": "O rio Paraná marcava 5,71 m no porto de Santa Fe na quinta (26/11), ainda no nível de retirada de 5,70 m. Na cidade, 315 pessoas estão em abrigos.",
+   "resumo": "O rio Paraná marcou 5,69 m no porto de Santa Fe nesta sexta (27/11), 1 cm abaixo do nível de retirada. Ainda há 315 pessoas em abrigos na cidade.",
    "pontos": [
-    "Prefectura Naval: 5,74 m às 3h e 5,71 m às 9h de quinta (26/11), 6 cm abaixo do dia anterior.",
-    "Cotas de referência: alerta em 5,30 m e retirada em 5,70 m; o rio Salado marca 2,84 m em Recreo.",
-    "Abrigos de Alto Verde (285 pessoas, 84 famílias) e Colastiné Sur (30 pessoas); 124 são menores.",
-    "A prefeitura instala 4 bombas preventivas e a ONG TECHO monta 10 módulos em Alto Verde e 40 em outro abrigo."
+    "Prefectura Naval: 5,69 m às 6h de sexta (27/11); alerta em 5,30 m e retirada em 5,70 m.",
+    "O INA prevê 5,64 m em Santa Fe e 5,08 m em Reconquista em 1º/12.",
+    "Abrigos de Alto Verde e Colastiné Sur: 315 pessoas, 124 delas menores.",
+    "Meteorologistas esperam nova alta a partir de meados de dezembro, com chuva no norte."
    ],
-   "fonte": "Prefectura Naval e Município de Santa Fe via LT9 e Examedia (26/11)",
-   "url": "https://www.lt9.com.ar/el-rio-parana-marco-574-metros-en-santa-fe-y-315-personas-estan-evacuadas/",
+   "fonte": "Prefectura Naval e INA via Aire de Santa Fe (27/11)",
+   "url": "https://www.airedesantafe.com.ar/santa-fe/el-rio-parana-dio-una-tregua-santa-fe-la-ciudad-salio-del-nivel-evacuacion-casi-dos-semanas-n678146",
    "rotulo": "Cheia do Paraná",
    "lado": "r"
   },
@@ -884,18 +886,18 @@ footer{border-top:1px solid var(--line)}
    "gravidade": "alto",
    "titulo": "Mayon segue em alerta 3 com novo domo de lava",
    "local": "Albay, ilha de Luzon, Filipinas",
-   "data": "2026-11-19",
+   "data": "2026-11-27",
    "lat": 13.26,
    "lon": 123.69,
-   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível de alerta 3, com novo domo de lava visto na cratera em 13/11. A zona de perigo de 6 km continua proibida, e voos sobre o cume estão vetados.",
+   "resumo": "O vulcão Mayon, nas Filipinas, segue no nível de alerta 3, com novo domo de lava na cratera. A zona de perigo de 6 km continua proibida.",
    "pontos": [
-    "Boletim de 19/11: 10 terremotos vulcânicos em 24 horas e emissão de 1.494 toneladas de SO₂.",
-    "O chão da cratera seguiu inchando, com breve desinflação a nordeste.",
-    "O novo domo foi avistado pelo Phivolcs em 13/11, após satélites mostrarem a cratera inchando de 4 a 12/11.",
+    "Boletim de 27/11: 8 terremotos vulcânicos e 9 desmoronamentos de rocha em 24 horas.",
+    "Emissão de 2.361 toneladas de SO₂ por dia medida em 26/11.",
+    "O novo domo foi avistado pelo Phivolcs em 13/11, após a cratera inchar de 4 a 12/11.",
     "Quase 4.000 pessoas foram retiradas no início do mês; uma erupção em 11/11 lançou cinzas."
    ],
-   "fonte": "Phivolcs via Pilipino Star Ngayon (19/11) e Journal News Online (13/11)",
-   "url": "https://www.philstar.com/pilipino-star-ngayon/probinsiya/2026/11/19/2571075/bulkang-mayon-nagtala-ng-10-pagyanig",
+   "fonte": "Phivolcs via Geology Science (27/11) e Journal News Online (13/11)",
+   "url": "https://geologyscience.com/geology-news/mayon-volcano-alert-level-3-november-27-2026-earthquakes-gas/",
    "rotulo": "Vulcão Mayon",
    "lado": "r"
   },
@@ -912,10 +914,10 @@ footer{border-top:1px solid var(--line)}
    "pontos": [
     "Phatthalung: 11.902 afetados de 4.449 famílias em 6 distritos e 86 vilas.",
     "Sexta (27/11): chuva forte em 11 províncias do Sul, com ondas de cerca de 2 m no Golfo.",
-    "Uma área de baixa pressão deve chegar ao extremo sul em 29 e 30/11, com risco de chuva muito forte.",
+    "O pico da chuva é previsto para domingo (29/11), com chuva muito forte de Chumphon a Krabi e Trang.",
     "Um homem de 87 anos foi encontrado morto na água em Khuan Khanun no domingo (22/11)."
    ],
-   "fonte": "DDPM via The Nation (25/11); TMD via Thaiger (27/11); Nature World News (24/11)",
+   "fonte": "DDPM via The Nation (25/11); TMD via Thaiger (27/11) e The Nation (26/11)",
    "url": "https://www.nationthailand.com/news/general/40073922",
    "rotulo": "Enchente Tailândia",
    "lado": "b"
@@ -926,17 +928,18 @@ footer{border-top:1px solid var(--line)}
    "gravidade": "moderado",
    "titulo": "Mina de ouro inundada após chuva mata 13 em Java",
    "local": "Pongkor, distrito de Bogor, Java Ocidental, Indonésia",
-   "data": "2026-11-26",
+   "data": "2026-11-27",
    "lat": -6.65,
    "lon": 106.55,
-   "resumo": "Uma mina ilegal de ouro em Bogor, na Indonésia, inundou após chuva forte e matou pelo menos 13 trabalhadores. Outros 13 seguem desaparecidos.",
+   "resumo": "Uma mina ilegal de ouro em Bogor, na Indonésia, inundou após chuva forte e matou pelo menos 13 trabalhadores. Outros 13 seguem presos sob a terra.",
    "pontos": [
-    "A mina alagou na segunda (23/11); 11 mineiros conseguiram escapar.",
-    "325 socorristas trabalham em poços estreitos de cerca de 100 m de profundidade.",
-    "Água alta, pouca luz e terreno escorregadio dificultam as buscas."
+    "37 pessoas entraram em dois poços; 11 escaparam e 26 ficaram presas.",
+    "O rio Ciseureuh transbordou para os poços, que ficam a cerca de 3 m da margem.",
+    "Os poços têm cerca de 1 m de largura e até 100 m de profundidade; a água volta a entrar.",
+    "A polícia alerta para novos deslizamentos e investiga os donos da mina."
    ],
-   "fonte": "Autoridades locais via Al Jazeera (26/11)",
-   "url": "https://www.aljazeera.com/news/2026/11/26/at-least-13-dead-in-indonesia-gold-mine-flood-as-rescue-efforts-intensify",
+   "fonte": "Polícia e autoridades locais via The Jakarta Post (27/11) e Al Jazeera (26/11)",
+   "url": "https://www.thejakartapost.com/indonesia/2026/11/27/death-toll-from-flooded-illegal-gold-mine-in-west-java-climbs-to-13",
    "rotulo": "Mina em Java",
    "lado": "b"
   },
@@ -983,7 +986,8 @@ footer{border-top:1px solid var(--line)}
    "lado": "t"
   }
  ]
-}</script>
+}
+</script>
 
 <script>
 (function(){
@@ -1338,6 +1342,7 @@ footer{border-top:1px solid var(--line)}
   }
 })();
 </script>
+
 
 
 
